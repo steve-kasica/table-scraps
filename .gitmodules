@@ -1,0 +1,72 @@
+[submodule "notebooks/la_times/census-hard-to-map-analysis"]
+	path = notebooks/la_times/census-hard-to-map-analysis
+	url = https://github.com/datadesk/census-hard-to-map-analysis.git
+[submodule "notebooks/la_times/hsr-document-analysis"]
+	path = notebooks/la_times/hsr-document-analysis
+	url = https://github.com/datadesk/hsr-document-analysis.git
+[submodule "notebooks/la_times/lawlers-law"]
+	path = notebooks/la_times/lawlers-law
+	url = https://github.com/ryanvmenezes/lawlers-law.git
+[submodule "notebooks/la_times/swana-census-analysis"]
+	path = notebooks/la_times/swana-census-analysis
+	url = https://github.com/datadesk/swana-census-analysis.git
+[submodule "notebooks/la_times/highschool-homicide-analysis"]
+	path = notebooks/la_times/highschool-homicide-analysis
+	url = https://github.com/datadesk/highschool-homicide-analysis.git
+[submodule "notebooks/la_times/deleon-district-election-results-analysis"]
+	path = notebooks/la_times/deleon-district-election-results-analysis
+	url = https://github.com/datadesk/deleon-district-election-results-analysis.git
+[submodule "notebooks/la_times/nyrb-covers-analysis"]
+	path = notebooks/la_times/nyrb-covers-analysis
+	url = https://github.com/datadesk/nyrb-covers-analysis.git
+[submodule "notebooks/la_times/helicopter-accident-analysis"]
+	path = notebooks/la_times/helicopter-accident-analysis
+	url = https://github.com/datadesk/helicopter-accident-analysis.git
+[submodule "notebooks/la_times/hollister-ranch-analysis"]
+	path = notebooks/la_times/hollister-ranch-analysis
+	url = https://github.com/datadesk/hollister-ranch-analysis.git
+[submodule "notebooks/la_times/la-settlements-analysis"]
+	path = notebooks/la_times/la-settlements-analysis
+	url = https://github.com/datadesk/la-settlements-analysis.git
+[submodule "notebooks/la_times/california-k12-notebooks"]
+	path = notebooks/la_times/california-k12-notebooks
+	url = https://github.com/datadesk/california-k12-notebooks.git
+[submodule "notebooks/la_times/street-racing-analysis"]
+	path = notebooks/la_times/street-racing-analysis
+	url = https://github.com/datadesk/street-racing-analysis.git
+[submodule "notebooks/la_times/homeless-arrests-analysis"]
+	path = notebooks/la_times/homeless-arrests-analysis
+	url = https://github.com/datadesk/homeless-arrests-analysis.git
+[submodule "notebooks/la_times/ferc-enforcement-analysis"]
+	path = notebooks/la_times/ferc-enforcement-analysis
+	url = https://github.com/datadesk/ferc-enforcement-analysis.git
+[submodule "notebooks/la_times/houston-flood-zone-analysis"]
+	path = notebooks/la_times/houston-flood-zone-analysis
+	url = https://github.com/datadesk/houston-flood-zone-analysis.git
+[submodule "notebooks/la_times/california-kindergarten-vaccination-analysis"]
+	path = notebooks/la_times/california-kindergarten-vaccination-analysis
+	url = https://github.com/datadesk/california-kindergarten-vaccination-analysis.git
+[submodule "notebooks/la_times/california-h2a-visas-analysis"]
+	path = notebooks/la_times/california-h2a-visas-analysis
+	url = https://github.com/datadesk/california-h2a-visas-analysis.git
+[submodule "notebooks/la_times/construction-jobs-analysis"]
+	path = notebooks/la_times/construction-jobs-analysis
+	url = https://github.com/datadesk/construction-jobs-analysis.git
+[submodule "notebooks/la_times/california-crop-production-wages-analysis"]
+	path = notebooks/la_times/california-crop-production-wages-analysis
+	url = https://github.com/datadesk/california-crop-production-wages-analysis.git
+[submodule "notebooks/la_times/california-electricity-capacity-analysis"]
+	path = notebooks/la_times/california-electricity-capacity-analysis
+	url = https://github.com/datadesk/california-electricity-capacity-analysis.git
+[submodule "notebooks/la_times/california-ccscore-analysis"]
+	path = notebooks/la_times/california-ccscore-analysis
+	url = https://github.com/datadesk/california-ccscore-analysis.git
+[submodule "notebooks/la_times/la-vacant-building-complaints-analysis"]
+	path = notebooks/la_times/la-vacant-building-complaints-analysis
+	url = https://github.com/datadesk/la-vacant-building-complaints-analysis.git
+[submodule "notebooks/la_times/kobe-every-shot-ever"]
+	path = notebooks/la_times/kobe-every-shot-ever
+	url = https://github.com/datadesk/kobe-every-shot-ever.git
+[submodule "notebooks/la_times/lapd-crime-classification-analysis"]
+	path = notebooks/la_times/lapd-crime-classification-analysis
+	url = https://github.com/datadesk/lapd-crime-classification-analysis.git
