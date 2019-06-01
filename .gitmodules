@@ -70,3 +70,240 @@
 [submodule "notebooks/la_times/lapd-crime-classification-analysis"]
 	path = notebooks/la_times/lapd-crime-classification-analysis
 	url = https://github.com/datadesk/lapd-crime-classification-analysis.git
+[submodule "notebooks/buzzfeednews/2019-04-democratic-candidate-codonors"]
+	path = notebooks/buzzfeednews/2019-04-democratic-candidate-codonors
+	url = https://github.com/BuzzFeedNews/2019-04-democratic-candidate-codonors.git
+[submodule "notebooks/buzzfeednews/2018-12-fake-news-top-50"]
+	path = notebooks/buzzfeednews/2018-12-fake-news-top-50
+	url = https://github.com/BuzzFeedNews/2018-12-fake-news-top-50.git
+[submodule "notebooks/buzzfeednews/2018-10-russian-troll-tweets"]
+	path = notebooks/buzzfeednews/2018-10-russian-troll-tweets
+	url = https://github.com/BuzzFeedNews/2018-10-russian-troll-tweets.git
+[submodule "notebooks/buzzfeednews/2018-10-midterm-demographics"]
+	path = notebooks/buzzfeednews/2018-10-midterm-demographics
+	url = https://github.com/BuzzFeedNews/2018-10-midterm-demographics.git
+[submodule "notebooks/buzzfeednews/2018-09-ftc-analysis"]
+	path = notebooks/buzzfeednews/2018-09-ftc-analysis
+	url = https://github.com/BuzzFeedNews/2018-09-ftc-analysis.git
+[submodule "notebooks/buzzfeednews/2018-08-charlottesville-twitter-trolls"]
+	path = notebooks/buzzfeednews/2018-08-charlottesville-twitter-trolls
+	url = https://github.com/BuzzFeedNews/2018-08-charlottesville-twitter-trolls.git
+[submodule "notebooks/buzzfeednews/2018-07-ofsted-inspections"]
+	path = notebooks/buzzfeednews/2018-07-ofsted-inspections
+	url = https://github.com/BuzzFeedNews/2018-07-ofsted-inspections.git
+[submodule "notebooks/buzzfeednews/2018-06-nyc-311-complaints-and-gentrification"]
+	path = notebooks/buzzfeednews/2018-06-nyc-311-complaints-and-gentrification
+	url = https://github.com/BuzzFeedNews/2018-06-nyc-311-complaints-and-gentrification.git
+[submodule "notebooks/buzzfeednews/2018-05-fentanyl-and-cocaine-overdose-deaths"]
+	path = notebooks/buzzfeednews/2018-05-fentanyl-and-cocaine-overdose-deaths
+	url = https://github.com/BuzzFeedNews/2018-05-fentanyl-and-cocaine-overdose-deaths.git
+[submodule "notebooks/buzzfeednews/2018-03-oscars-script-diversity-analysis"]
+	path = notebooks/buzzfeednews/2018-03-oscars-script-diversity-analysis
+	url = https://github.com/BuzzFeedNews/2018-03-oscars-script-diversity-analysis.git
+[submodule "notebooks/buzzfeednews/2018-02-olympic-figure-skating-analysis"]
+	path = notebooks/buzzfeednews/2018-02-olympic-figure-skating-analysis
+	url = https://github.com/BuzzFeedNews/2018-02-olympic-figure-skating-analysis.git
+[submodule "notebooks/buzzfeednews/2018-02-figure-skating-analysis"]
+	path = notebooks/buzzfeednews/2018-02-figure-skating-analysis
+	url = https://github.com/BuzzFeedNews/2018-02-figure-skating-analysis.git
+[submodule "notebooks/buzzfeednews/2018-01-trump-state-of-the-union"]
+	path = notebooks/buzzfeednews/2018-01-trump-state-of-the-union
+	url = https://github.com/BuzzFeedNews/2018-01-trump-state-of-the-union.git
+[submodule "notebooks/buzzfeednews/2018-01-twitter-withheld-accounts"]
+	path = notebooks/buzzfeednews/2018-01-twitter-withheld-accounts
+	url = https://github.com/BuzzFeedNews/2018-01-twitter-withheld-accounts.git
+[submodule "notebooks/buzzfeednews/2018-01-trump-twitter-wars"]
+	path = notebooks/buzzfeednews/2018-01-trump-twitter-wars
+	url = https://github.com/BuzzFeedNews/2018-01-trump-twitter-wars.git
+[submodule "notebooks/buzzfeednews/2017-12-fake-news-top-50"]
+	path = notebooks/buzzfeednews/2017-12-fake-news-top-50
+	url = https://github.com/BuzzFeedNews/2017-12-fake-news-top-50.git
+[submodule "notebooks/buzzfeednews/2017-12-sexual-misconduct-cable-news-coverage"]
+	path = notebooks/buzzfeednews/2017-12-sexual-misconduct-cable-news-coverage
+	url = https://github.com/BuzzFeedNews/2017-12-sexual-misconduct-cable-news-coverage.git
+[submodule "notebooks/buzzfeednews/2017-11-federal-employee-diversity"]
+	path = notebooks/buzzfeednews/2017-11-federal-employee-diversity
+	url = https://github.com/BuzzFeedNews/2017-11-federal-employee-diversity.git
+[submodule "notebooks/buzzfeednews/2017-11-gun-sales-estimates"]
+	path = notebooks/buzzfeednews/2017-11-gun-sales-estimates
+	url = https://github.com/BuzzFeedNews/2017-11-gun-sales-estimates.git
+[submodule "notebooks/buzzfeednews/2017-09-harvey-emissions-update"]
+	path = notebooks/buzzfeednews/2017-09-harvey-emissions-update
+	url = https://github.com/BuzzFeedNews/2017-09-harvey-emissions-update.git
+[submodule "notebooks/buzzfeednews/2017-09-federal-employee-departure-rates"]
+	path = notebooks/buzzfeednews/2017-09-federal-employee-departure-rates
+	url = https://github.com/BuzzFeedNews/2017-09-federal-employee-departure-rates.git
+[submodule "notebooks/buzzfeednews/2017-09-science-foia"]
+	path = notebooks/buzzfeednews/2017-09-science-foia
+	url = https://github.com/BuzzFeedNews/2017-09-science-foia.git
+[submodule "notebooks/buzzfeednews/2017-08-harvey-emissions-reports"]
+	path = notebooks/buzzfeednews/2017-08-harvey-emissions-reports
+	url = https://github.com/BuzzFeedNews/2017-08-harvey-emissions-reports.git
+[submodule "notebooks/buzzfeednews/2017-08-partisan-sites-and-facebook-pages"]
+	path = notebooks/buzzfeednews/2017-08-partisan-sites-and-facebook-pages
+	url = https://github.com/BuzzFeedNews/2017-08-partisan-sites-and-facebook-pages.git
+[submodule "notebooks/buzzfeednews/2017-08-spy-plane-finder"]
+	path = notebooks/buzzfeednews/2017-08-spy-plane-finder
+	url = https://github.com/BuzzFeedNews/2017-08-spy-plane-finder.git
+[submodule "notebooks/buzzfeednews/2017-07-doj-gs-15"]
+	path = notebooks/buzzfeednews/2017-07-doj-gs-15
+	url = https://github.com/BuzzFeedNews/2017-07-doj-gs-15.git
+[submodule "notebooks/buzzfeednews/2017-05-us-health-care"]
+	path = notebooks/buzzfeednews/2017-05-us-health-care
+	url = https://github.com/BuzzFeedNews/2017-05-us-health-care.git
+[submodule "notebooks/buzzfeednews/2017-04-fake-news-ad-trackers"]
+	path = notebooks/buzzfeednews/2017-04-fake-news-ad-trackers
+	url = https://github.com/BuzzFeedNews/2017-04-fake-news-ad-trackers.git
+[submodule "notebooks/buzzfeednews/2017-01-immigration-and-science"]
+	path = notebooks/buzzfeednews/2017-01-immigration-and-science
+	url = https://github.com/BuzzFeedNews/2017-01-immigration-and-science.git
+[submodule "notebooks/buzzfeednews/2017-01-media-platform-and-news-trust-survey"]
+	path = notebooks/buzzfeednews/2017-01-media-platform-and-news-trust-survey
+	url = https://github.com/BuzzFeedNews/2017-01-media-platform-and-news-trust-survey.git
+[submodule "notebooks/buzzfeednews/2017-01-causes-of-warming"]
+	path = notebooks/buzzfeednews/2017-01-causes-of-warming
+	url = https://github.com/BuzzFeedNews/2017-01-causes-of-warming.git
+[submodule "notebooks/buzzfeednews/2016-12-transgender-rights-survey"]
+	path = notebooks/buzzfeednews/2016-12-transgender-rights-survey
+	url = https://github.com/BuzzFeedNews/2016-12-transgender-rights-survey.git
+[submodule "notebooks/buzzfeednews/2016-12-warmest-year"]
+	path = notebooks/buzzfeednews/2016-12-warmest-year
+	url = https://github.com/BuzzFeedNews/2016-12-warmest-year.git
+[submodule "notebooks/buzzfeednews/2016-12-medicare-claims-analysis"]
+	path = notebooks/buzzfeednews/2016-12-medicare-claims-analysis
+	url = https://github.com/BuzzFeedNews/2016-12-medicare-claims-analysis.git
+[submodule "notebooks/buzzfeednews/2016-12-inpatient-discharge-analysis"]
+	path = notebooks/buzzfeednews/2016-12-inpatient-discharge-analysis
+	url = https://github.com/BuzzFeedNews/2016-12-inpatient-discharge-analysis.git
+[submodule "notebooks/buzzfeednews/2016-12-river-point-involuntary-commitment-petitions"]
+	path = notebooks/buzzfeednews/2016-12-river-point-involuntary-commitment-petitions
+	url = https://github.com/BuzzFeedNews/2016-12-river-point-involuntary-commitment-petitions.git
+[submodule "notebooks/buzzfeednews/2016-12-fake-news-survey"]
+	path = notebooks/buzzfeednews/2016-12-fake-news-survey
+	url = https://github.com/BuzzFeedNews/2016-12-fake-news-survey.git
+[submodule "notebooks/buzzfeednews/2016-11-grading-the-election-forecasts"]
+	path = notebooks/buzzfeednews/2016-11-grading-the-election-forecasts
+	url = https://github.com/BuzzFeedNews/2016-11-grading-the-election-forecasts.git
+[submodule "notebooks/buzzfeednews/2016-11-voter-power-by-demographic"]
+	path = notebooks/buzzfeednews/2016-11-voter-power-by-demographic
+	url = https://github.com/BuzzFeedNews/2016-11-voter-power-by-demographic.git
+[submodule "notebooks/buzzfeednews/2016-11-bellwether-counties"]
+	path = notebooks/buzzfeednews/2016-11-bellwether-counties
+	url = https://github.com/BuzzFeedNews/2016-11-bellwether-counties.git
+[submodule "notebooks/buzzfeednews/2016-10-tech-campaign-contributions"]
+	path = notebooks/buzzfeednews/2016-10-tech-campaign-contributions
+	url = https://github.com/BuzzFeedNews/2016-10-tech-campaign-contributions.git
+[submodule "notebooks/buzzfeednews/2016-10-facebook-fact-check"]
+	path = notebooks/buzzfeednews/2016-10-facebook-fact-check
+	url = https://github.com/BuzzFeedNews/2016-10-facebook-fact-check.git
+[submodule "notebooks/buzzfeednews/2016-10-white-ancestry-and-trump-support"]
+	path = notebooks/buzzfeednews/2016-10-white-ancestry-and-trump-support
+	url = https://github.com/BuzzFeedNews/2016-10-white-ancestry-and-trump-support.git
+[submodule "notebooks/buzzfeednews/2016-09-shy-trumpers"]
+	path = notebooks/buzzfeednews/2016-09-shy-trumpers
+	url = https://github.com/BuzzFeedNews/2016-09-shy-trumpers.git
+[submodule "notebooks/buzzfeednews/2016-09-ucr-analysis"]
+	path = notebooks/buzzfeednews/2016-09-ucr-analysis
+	url = https://github.com/BuzzFeedNews/2016-09-ucr-analysis.git
+[submodule "notebooks/buzzfeednews/2016-08-sports-gender-gaps"]
+	path = notebooks/buzzfeednews/2016-08-sports-gender-gaps
+	url = https://github.com/BuzzFeedNews/2016-08-sports-gender-gaps.git
+[submodule "notebooks/buzzfeednews/2016-07-athletic-performances"]
+	path = notebooks/buzzfeednews/2016-07-athletic-performances
+	url = https://github.com/BuzzFeedNews/2016-07-athletic-performances.git
+[submodule "notebooks/buzzfeednews/2016-07-rnc-dnc-surveillance-planes"]
+	path = notebooks/buzzfeednews/2016-07-rnc-dnc-surveillance-planes
+	url = https://github.com/BuzzFeedNews/2016-07-rnc-dnc-surveillance-planes.git
+[submodule "notebooks/buzzfeednews/2016-05-H-2-debarments-and-violations"]
+	path = notebooks/buzzfeednews/2016-05-H-2-debarments-and-violations
+	url = https://github.com/BuzzFeedNews/2016-05-H-2-debarments-and-violations.git
+[submodule "notebooks/buzzfeednews/2016-04-republican-donor-movements"]
+	path = notebooks/buzzfeednews/2016-04-republican-donor-movements
+	url = https://github.com/BuzzFeedNews/2016-04-republican-donor-movements.git
+[submodule "notebooks/buzzfeednews/2016-04-bernie-sanders-donors"]
+	path = notebooks/buzzfeednews/2016-04-bernie-sanders-donors
+	url = https://github.com/BuzzFeedNews/2016-04-bernie-sanders-donors.git
+[submodule "notebooks/buzzfeednews/2016-04-federal-surveillance-planes"]
+	path = notebooks/buzzfeednews/2016-04-federal-surveillance-planes
+	url = https://github.com/BuzzFeedNews/2016-04-federal-surveillance-planes.git
+[submodule "notebooks/buzzfeednews/2016-02-republican-donor-movements"]
+	path = notebooks/buzzfeednews/2016-02-republican-donor-movements
+	url = https://github.com/BuzzFeedNews/2016-02-republican-donor-movements.git
+[submodule "notebooks/buzzfeednews/2016-01-immigrant-detention-india"]
+	path = notebooks/buzzfeednews/2016-01-immigrant-detention-india
+	url = https://github.com/BuzzFeedNews/2016-01-immigrant-detention-india.git
+[submodule "notebooks/buzzfeednews/2016-01-port-arthur-arrests"]
+	path = notebooks/buzzfeednews/2016-01-port-arthur-arrests
+	url = https://github.com/BuzzFeedNews/2016-01-port-arthur-arrests.git
+[submodule "notebooks/buzzfeednews/2016-01-texas-municipal-courts"]
+	path = notebooks/buzzfeednews/2016-01-texas-municipal-courts
+	url = https://github.com/BuzzFeedNews/2016-01-texas-municipal-courts.git
+[submodule "notebooks/buzzfeednews/2016-01-tennis-betting-analysis"]
+	path = notebooks/buzzfeednews/2016-01-tennis-betting-analysis
+	url = https://github.com/BuzzFeedNews/2016-01-tennis-betting-analysis.git
+[submodule "notebooks/buzzfeednews/2015-12-the-coyote"]
+	path = notebooks/buzzfeednews/2015-12-the-coyote
+	url = https://github.com/BuzzFeedNews/2015-12-the-coyote.git
+[submodule "notebooks/buzzfeednews/2015-12-fatal-police-shootings"]
+	path = notebooks/buzzfeednews/2015-12-fatal-police-shootings
+	url = https://github.com/BuzzFeedNews/2015-12-fatal-police-shootings.git
+[submodule "notebooks/buzzfeednews/2015-12-mass-shooting-intervals"]
+	path = notebooks/buzzfeednews/2015-12-mass-shooting-intervals
+	url = https://github.com/BuzzFeedNews/2015-12-mass-shooting-intervals.git
+[submodule "notebooks/buzzfeednews/2015-12-H-2-visas-and-experience-requirements"]
+	path = notebooks/buzzfeednews/2015-12-H-2-visas-and-experience-requirements
+	url = https://github.com/BuzzFeedNews/2015-12-H-2-visas-and-experience-requirements.git
+[submodule "notebooks/buzzfeednews/2015-11-lottery-simulations"]
+	path = notebooks/buzzfeednews/2015-11-lottery-simulations
+	url = https://github.com/BuzzFeedNews/2015-11-lottery-simulations.git
+[submodule "notebooks/buzzfeednews/2015-11-refugees-in-the-united-states"]
+	path = notebooks/buzzfeednews/2015-11-refugees-in-the-united-states
+	url = https://github.com/BuzzFeedNews/2015-11-refugees-in-the-united-states.git
+[submodule "notebooks/buzzfeednews/2015-10-walker-donors"]
+	path = notebooks/buzzfeednews/2015-10-walker-donors
+	url = https://github.com/BuzzFeedNews/2015-10-walker-donors.git
+[submodule "notebooks/buzzfeednews/2015-08-immigrant-detention"]
+	path = notebooks/buzzfeednews/2015-08-immigrant-detention
+	url = https://github.com/BuzzFeedNews/2015-08-immigrant-detention.git
+[submodule "notebooks/buzzfeednews/2015-07-h2-visas-and-enforcement"]
+	path = notebooks/buzzfeednews/2015-07-h2-visas-and-enforcement
+	url = https://github.com/BuzzFeedNews/2015-07-h2-visas-and-enforcement.git
+[submodule "notebooks/buzzfeednews/2015-07-primates"]
+	path = notebooks/buzzfeednews/2015-07-primates
+	url = https://github.com/BuzzFeedNews/2015-07-primates.git
+[submodule "notebooks/buzzfeednews/2015-06-ssm-and-abortion-poll"]
+	path = notebooks/buzzfeednews/2015-06-ssm-and-abortion-poll
+	url = https://github.com/BuzzFeedNews/2015-06-ssm-and-abortion-poll.git
+[submodule "notebooks/buzzfeednews/2015-05-talkpay-tweets"]
+	path = notebooks/buzzfeednews/2015-05-talkpay-tweets
+	url = https://github.com/BuzzFeedNews/2015-05-talkpay-tweets.git
+[submodule "notebooks/buzzfeednews/2015-03-earthquake-maps"]
+	path = notebooks/buzzfeednews/2015-03-earthquake-maps
+	url = https://github.com/BuzzFeedNews/2015-03-earthquake-maps.git
+[submodule "notebooks/buzzfeednews/2015-02-texas-cpa-deficiencies"]
+	path = notebooks/buzzfeednews/2015-02-texas-cpa-deficiencies
+	url = https://github.com/BuzzFeedNews/2015-02-texas-cpa-deficiencies.git
+[submodule "notebooks/buzzfeednews/2015-02-georgia-cpa-scores"]
+	path = notebooks/buzzfeednews/2015-02-georgia-cpa-scores
+	url = https://github.com/BuzzFeedNews/2015-02-georgia-cpa-scores.git
+[submodule "notebooks/buzzfeednews/presidential-language-notebooks"]
+	path = notebooks/buzzfeednews/presidential-language-notebooks
+	url = https://github.com/BuzzFeedNews/presidential-language-notebooks.git
+[submodule "notebooks/buzzfeednews/2014-09-rising-sunday-show-guests"]
+	path = notebooks/buzzfeednews/2014-09-rising-sunday-show-guests
+	url = https://github.com/BuzzFeedNews/2014-09-rising-sunday-show-guests.git
+[submodule "notebooks/buzzfeednews/2014-09-tuition-and-minimum-wage"]
+	path = notebooks/buzzfeednews/2014-09-tuition-and-minimum-wage
+	url = https://github.com/BuzzFeedNews/2014-09-tuition-and-minimum-wage.git
+[submodule "notebooks/buzzfeednews/2014-08-st-louis-county-segregation"]
+	path = notebooks/buzzfeednews/2014-08-st-louis-county-segregation
+	url = https://github.com/BuzzFeedNews/2014-08-st-louis-county-segregation.git
+[submodule "notebooks/buzzfeednews/2014-08-irs-scams"]
+	path = notebooks/buzzfeednews/2014-08-irs-scams
+	url = https://github.com/BuzzFeedNews/2014-08-irs-scams.git
+[submodule "notebooks/buzzfeednews/2014-06-firework-injuries"]
+	path = notebooks/buzzfeednews/2014-06-firework-injuries
+	url = https://github.com/BuzzFeedNews/2014-06-firework-injuries.git
+[submodule "notebooks/buzzfeednews/2014-06-bikeshare-gender-maps"]
+	path = notebooks/buzzfeednews/2014-06-bikeshare-gender-maps
+	url = https://github.com/BuzzFeedNews/2014-06-bikeshare-gender-maps.git
