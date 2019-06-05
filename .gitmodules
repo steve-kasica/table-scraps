@@ -4,3 +4,6 @@
 [submodule "notebooks/la_times/california-crop-production-wages-analysis"]
 	path = notebooks/la_times/california-crop-production-wages-analysis
 	url = https://github.com/datadesk/california-crop-production-wages-analysis.git
+[submodule "notebooks/buzzfeednews/2019-04-democratic-candidate-codonors"]
+	path = notebooks/buzzfeednews/2019-04-democratic-candidate-codonors
+	url = https://github.com/BuzzFeedNews/2019-04-democratic-candidate-codonors

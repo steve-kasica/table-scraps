@@ -1,0 +1,159 @@
+Summary of Comments on analyze-campaign­codonors.html.pdf 
+Page: 1 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 1:10:31 PM 
+LL: Import CSV data 
+
+Page: 3 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 1:10:44 PM 
+LL: Import ASCII data 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:11:12 PM HL: Convert ambiguous data to tabular format 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:11:17 PM 
+LL: Peak at data 
+
+Page: 4 
+
+Author: steph Subject: Highlight Date: 04-Jun-19 11:04:22 AM 
+LL: Join datasets, right 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:11:55 PM 
+LL: Create new column from calculation with existing columns 
+HL: Calculate proportion 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:12:11 PM 
+LL: Sort dataset by one column DESC 
+
+Page: 5 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 1:12:17 PM 
+LL: Peak at data 
+
+Page: 6 
+
+Author: steph Subject: Highlight Date: 04-Jun-19 11:08:10 AM HL: Create a unique key 
+Author: steph Subject: Highlight Date: 04-Jun-19 11:10:22 AM 
+LL: Replace NA with value string 
+Author: steph Subject: Highlight Date: 04-Jun-19 11:08:58 AM 
+LL: Slice strings by position index 
+Author: steph Subject: Highlight Date: 04-Jun-19 11:11:55 AM 
+LL: Strip periods, commas, and whitespace from strings 
+Author: steph Subject: Highlight Date: 04-Jun-19 11:12:27 AM 
+LL: Convert strings to upper case 
+
+Page: 7 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 1:13:25 PM 
+LL: Subset data based on one value in column. 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:31:40 PM 
+LL: Remove record if column value is not an empty string. 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:15:52 PM 
+LL: Convert data type to int 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:17:37 PM 
+LL: Subset the dataset by specific dimensions 
+
+Page: 8 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 1:36:19 PM HL: Merging three different, but thematically similar datasets into one master dataset. 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:26:23 PM HL: Union many tables into one table. 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:33:48 PM 
+LL: Join dataset, left 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:34:12 PM 
+LL: Join dataset, left 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:19:26 PM 
+LL: Peak at data 
+
+Page: 9 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 1:40:42 PM 
+LL: Find number of unique values where column value is less than or equal to integer. 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:38:34 PM 
+LL: Subset dataset where column value is less than or equal to integer. 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:48:46 PM 
+LL: Subset dataset where column value is greater than constant. 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:48:15 PM 
+LL: Group by two columns and sum other column 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:48:57 PM Peak at data 
+
+Page: 10 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 1:50:03 PM 
+LL: Group by one column and count column frequency 
+
+Page: 11 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:50:47 PM 
+LL: Rename column to slugify style 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 1:51:11 PM 
+LL: Subset data by specific dimensions 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:58:31 PM 
+LL: Join data, left 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:58:11 PM HL: Prevent double-counting 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:59:33 PM 
+LL: Subset data where value in one column is less than another. 
+Author: steph Subject: Highlight Date: 05-Jun-19 1:59:50 PM 
+LL: Sort dataset by three column, ASC 
+Author: steph Subject: Highlight Date: 05-Jun-19 2:03:56 PM 
+LL: Peak at dataset 
+
+Page: 12 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 2:04:59 PM 
+LL: Subset data where value in one column is less than another 
+Author: steph Subject: Highlight Date: 05-Jun-19 2:03:47 PM 
+LL: Peak at dataset 
+
+Page: 13 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 2:05:50 PM 
+LL: Group by two columns and count frequency. 
+Author: steph Subject: Highlight Date: 05-Jun-19 2:06:08 PM 
+LL: Sort dataset by one column, DESC 
+Author: steph Subject: Highlight Date: 05-Jun-19 2:06:29 PM 
+LL: Export results to CSV. 
+Author: steph Subject: Highlight Date: 05-Jun-19 2:06:56 PM 
+LL: Peak at data where column value is greater than constant 
+
+Page: 14 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 2:07:45 PM 
+LL: Group by three columns and count frequency 
+Author: steph Subject: Highlight Date: 05-Jun-19 2:08:00 PM 
+LL: Sort dataset by column DESC 
+Author: steph Subject: Highlight Date: 05-Jun-19 2:08:39 PM 
+LL: Export results to CSV 
+Author: steph Subject: Highlight Date: 05-Jun-19 2:08:32 PM 
+LL: Peak at data where column value is greater than constant. 
+
+Page: 15 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 2:12:30 PM 
+LL: Subset data where column value is in whitelist formed by a different dataset 
+Author: steph Subject: Highlight Date: 05-Jun-19 2:13:09 PM 
+LL: Group by column and count unique values. 
+Author: steph Subject: Highlight Date: 05-Jun-19 2:13:47 PM 
+LL: Report number of records where unique count was greater than constant 
+
+Page: 16 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 2:21:05 PM 
+LL: Gather dataset by one id column 
+Author: steph Subject: Highlight Date: 05-Jun-19 2:22:35 PM 
+LL: Group by column and count unique values 
+Author: steph Subject: Highlight Date: 05-Jun-19 2:25:29 PM 
+LL: Sort vector DESC 
+Author: steph Subject: Highlight Date: 05-Jun-19 2:25:54 PM 
+LL: Join dataset, left 
+Author: steph Subject: Highlight Date: 05-Jun-19 2:28:42 PM 
+LL: Create new column by calculation of existing columns 
+HL: Calculate a normalized rate 
+
+Page: 17 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 2:29:07 PM 
+LL: Group by column and count frequency. 
+Author: steph Subject: Highlight Date: 05-Jun-19 2:29:29 PM 
+LL: Sort vector DESC 
+Author: steph Subject: Highlight Date: 05-Jun-19 2:30:16 PM 
+LL: Group by column and count normalized frequency 
+HL: Normalize proportion 
+
+
