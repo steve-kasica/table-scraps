@@ -1,0 +1,23 @@
+Summary of Comments on 01-download.html.pdf 
+Page: 1  
+Author: steph Subject: Highlight  Date: 05-Jun-19 4:50:29 PM  
+LL: Import data, CSV  
+Author: steph Subject: Highlight  Date: 05-Jun-19 4:51:24 PM  
+
+Page: 2 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 4:51:24 PM 
+Page: 3 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 4:51:24 PM 
+Page: 4 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 4:51:24 PM 
+Page: 5 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 4:52:04 PM 
+LL: Import data, zip HL: Import separate data spanning multiple years 
+Page: 6 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 4:52:18 PM 
+LL: Extract CSV data from zip files 

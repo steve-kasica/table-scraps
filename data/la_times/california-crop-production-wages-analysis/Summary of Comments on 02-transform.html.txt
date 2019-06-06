@@ -1,0 +1,62 @@
+Summary of Comments on 02-transform.html.pdf 
+Page: 1 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 4:40:43 PM 
+HL: Create table explicitly for whitelist Author: steph Subject: Highlight Date: 01-Jun-19 1:13:37 PM 
+LL: Import data, CSV 
+
+Page: 2 
+Author: steph Subject: Highlight Date: 01-Jun-19 1:14:01 PM 
+LL: 
+Import data, CSV Author: steph Subject: Highlight Date: 05-Jun-19 4:40:01 PM 
+
+LL: 
+Convert column data type to string Author: steph Subject: Highlight Date: 01-Jun-19 1:20:01 PM 
+
+LL: 
+Join datasets, inner Author: steph Subject: Highlight Date: 05-Jun-19 4:41:50 PM 
+
+LL: 
+Subset dataset by inner-join whitelist Author: steph Subject: Highlight Date: 05-Jun-19 4:42:18 PM 
+
+LL: 
+Subset dataset by expression boolean expression Author: steph Subject: Highlight Date: 05-Jun-19 4:42:23 PM 
+
+HL: Parallel table operations Author: steph Subject: Highlight Date: 05-Jun-19 4:42:33 PM 
+
+LL: 
+Subset dataset by boolean expression Author: steph Subject: Highlight Date: 05-Jun-19 4:42:40 PM 
+
+LL: 
+Subset dataset by dimension Author: steph Subject: Highlight Date: 05-Jun-19 4:42:53 PM 
+
+
+
+HL: Detrend dataset 
+
+Page: 3 
+Author: steph Subject: Highlight Date: 05-Jun-19 4:43:38 PM 
+LL: Create new dimension from calculation on other columns.  
+HL: Adjust for inflation Author: steph Subject: Highlight Date: 05-Jun-19 4:44:15 PM 
+LL: Group by four columns sum two columns Author: steph Subject: Highlight Date: 02-Jun-19 12:52:10 PM 
+HL: Calculate average Author: steph Subject: Highlight Date: 05-Jun-19 4:45:01 PM 
+
+LL: Create new column from calculation on two other columns. 
+HL: Calculate average Author: steph Subject: Highlight Date: 02-Jun-19 6:27:53 PM 
+LL: Export data, CSV 
+
+Page: 4 
+
+Author: steph Subject: Highlight Date: 02-Jun-19 6:31:47 PM 
+LL: 
+Join datasets, union Author: steph Subject: Highlight Date: 05-Jun-19 4:45:35 PM 
+
+LL: 
+Convert column data type to string Author: steph Subject: Highlight Date: 02-Jun-19 6:33:38 PM 
+
+LL: 
+Export data, CSV 
+
+
+
+

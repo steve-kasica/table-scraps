@@ -1,0 +1,86 @@
+Summary of Comments on 03-analysis.html.pdf 
+Page: 2 
+Author: steph Subject: Highlight Date: 05-Jun-19 4:55:15 PM 
+LL: 
+Convert data type to string Author: steph Subject: Highlight Date: 05-Jun-19 4:55:03 PM 
+
+LL: 
+Import CSV Author: steph Subject: Highlight Date: 05-Jun-19 4:55:24 PM 
+
+LL: 
+Peak at data Author: steph Subject: Highlight Date: 05-Jun-19 4:56:19 PM 
+
+LL: 
+Subset data where column value starts with string Author: steph Subject: Highlight Date: 05-Jun-19 5:04:00 PM 
+
+LL: 
+TK Author: steph Subject: Highlight Date: 05-Jun-19 5:03:56 PM 
+
+LL: 
+Lookup value Author: steph Subject: Highlight Date: 05-Jun-19 5:04:39 PM 
+
+
+
+HL: Calculate percent change 
+
+Page: 3 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 5:05:02 PM 
+LL: 
+Subset dataset where column value equals string Author: steph Subject: Highlight Date: 05-Jun-19 5:05:15 PM 
+
+LL: 
+Lookup value Author: steph Subject: Highlight Date: 05-Jun-19 5:05:37 PM 
+
+
+HL: Calculate percent change Author: steph Subject: Highlight Date: 05-Jun-19 5:05:53 PM 
+LL: Plot line chart 
+
+Page: 4 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 5:06:16 PM 
+LL: 
+View two dimensions of the data Author: steph Subject: Highlight Date: 05-Jun-19 5:06:35 PM 
+
+LL: 
+Export data in CSV format for graphics 
+
+
+
+Page: 5 
+Author: steph Subject: Highlight Date: 05-Jun-19 5:06:55 PM 
+LL: 
+Import CSV Author: steph Subject: Highlight Date: 05-Jun-19 5:07:03 PM 
+
+LL: 
+Peak at data Author: steph Subject: Highlight Date: 05-Jun-19 5:07:24 PM 
+
+LL: 
+Subset data where value equals string Author: steph Subject: Highlight Date: 05-Jun-19 5:08:11 PM 
+
+LL: 
+Subset data where value equals integer Author: steph Subject: Highlight Date: 05-Jun-19 5:08:39 PM 
+
+LL: 
+Subset dataset where column value starts with string 
+
+
+
+
+Page: 6 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 5:09:12 PM 
+LL: 
+Sort dataset by one column, DESC 
+
+LL: 
+Peak at data 
+
+
+
+Page: 10 
+
+Author: steph Subject: Highlight Date: 05-Jun-19 5:09:39 PM 
+LL: Output dataset to CSV 
+
+
