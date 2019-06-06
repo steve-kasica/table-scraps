@@ -1,0 +1,65 @@
+Summary of Comments on notebook.html.pdf 
+Page: 1 
+
+Author: steph Subject: Highlight Date: 06-Jun-19 9:16:14 AM 
+LL: Import data, Excel 
+Author: steph Subject: Highlight Date: 06-Jun-19 9:17:29 AM 
+LL: Import data, map 
+Author: steph Subject: Highlight Date: 06-Jun-19 9:10:36 AM 
+LL: Import data, Excel 
+Author: steph Subject: Highlight Date: 06-Jun-19 9:10:49 AM 
+LL: Convert data type to string 
+Page: 2 
+
+Author: steph Subject: Highlight Date: 06-Jun-19 9:11:05 AM 
+LL: Peak at data 
+Author: steph Subject: Highlight Date: 06-Jun-19 9:11:22 AM 
+LL: Rename columns slugify 
+Author: steph Subject: Highlight Date: 06-Jun-19 9:11:32 AM 
+LL: 
+Peak at data 
+
+LL: 
+Import data, shapefile 
+
+
+Author: steph Subject: Highlight Date: 06-Jun-19 9:11:48 AM 
+Page: 3 
+
+Author: steph Subject: Highlight Date: 06-Jun-19 9:12:10 AM 
+LL: Peak at data 
+Author: steph Subject: Highlight Date: 06-Jun-19 9:12:28 AM 
+LL: Subset data by dimension 
+Author: steph Subject: Highlight Date: 06-Jun-19 9:12:43 AM 
+LL: Rename column slugify 
+Author: steph Subject: Highlight Date: 06-Jun-19 9:12:50 AM 
+LL: Peak at data 
+Page: 4 
+
+Author: steph Subject: Highlight Date: 06-Jun-19 9:13:08 AM 
+LL: Join data, inner 
+Author: steph Subject: Highlight Date: 06-Jun-19 9:13:21 AM 
+LL: Output data for graphics 
+Author: steph Subject: Highlight Date: 06-Jun-19 9:14:17 AM 
+LL: 
+Create new column from calculation on another column 
+
+LL: 
+Slice each value string for all rows 
+
+
+Author: steph Subject: Highlight Date: 06-Jun-19 9:14:34 AM 
+LL: Group by column and count frequency 
+Author: steph Subject: Highlight Date: 06-Jun-19 9:14:53 AM 
+LL: 
+Sort dataset by column DESC 
+
+LL: 
+Peak at data 
+
+
+Page: 5 
+
+Author: steph Subject: Highlight Date: 06-Jun-19 9:15:17 AM 
+LL: Group by column and count frequency 
+

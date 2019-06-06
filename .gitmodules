@@ -7,3 +7,6 @@
 [submodule "notebooks/buzzfeednews/2019-04-democratic-candidate-codonors"]
 	path = notebooks/buzzfeednews/2019-04-democratic-candidate-codonors
 	url = https://github.com/BuzzFeedNews/2019-04-democratic-candidate-codonors
+[submodule "notebooks/la_times/census-hard-to-map-analysis"]
+	path = notebooks/la_times/census-hard-to-map-analysis
+	url = https://github.com/datadesk/census-hard-to-map-analysis.git
