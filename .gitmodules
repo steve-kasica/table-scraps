@@ -10,3 +10,6 @@
 [submodule "notebooks/la_times/census-hard-to-map-analysis"]
 	path = notebooks/la_times/census-hard-to-map-analysis
 	url = https://github.com/datadesk/census-hard-to-map-analysis.git
+[submodule "open-journalism"]
+	path = open-journalism
+	url = https://github.com/silva-shih/open-journalism.git
