@@ -1,223 +1,62 @@
-1 
-2 
 Summary of Comments on analysis.html.pdf 
 Page: 1 
 
-Number: 1 Author: steph Subject: Highlight Date: 05-Jun-19 12:19:52 PM 
-HL: Python 2.7 environment Number: 2 Author: steph Subject: Highlight Date: 31-May-19 3:20:12 PM 
-HL: Dataset contains incomplete records 
-2 
-
+Author: steph Subject: Highlight Date: 10-Jun-19 1:13:31 PM HL [paragraph 1] Find outliers in data 
+HL [paragraph 1] Analyze rates 
+Author: steph Subject: Highlight Date: 10-Jun-19 1:14:04 PM HL [paragraph 3] Analyze monthly government data 
 Page: 2 
-Number: 1 Author: steph Subject: Highlight  Date: 05-Jun-19 12:20:33 PM  
-LL: Modify display format of tables  
-Number: 2 Author: steph Subject: Highlight LL: Import Excel data Number: 3 Author: steph Subject: Highlight HL: Manually select which columns to use in analysis  Date: 05-Jun-19 12:20:47 PM Date: 31-May-19 3:19:41 PM  
-Number: 4 Author: steph Subject: Highlight LL: Subset data dimensions with semantically meaningful colNumber: 5 Author: steph Subject: Highlight LL: Convert column data type, date to string  Date: 05-Jun-19 12:21:56 PM umn names Date: 31-May-19 3:24:40 PM  
 
-1 
-2 
-3 
-
+Author: steph Subject: Highlight Date: 10-Jun-19 12:22:21 PM LL [2] Adjust table display 
+Author: steph Subject: Highlight Date: 10-Jun-19 12:23:16 PM LL [3-4] Import government data in Excel format 
+Author: steph Subject: Highlight Date: 10-Jun-19 12:41:33 PM LL [5-6] Subset dataset by explicit columns 
+Author: steph Subject: Highlight Date: 10-Jun-19 12:41:28 PM LL [7-8] Inspect and convert column data types. 
 Page: 3 
 
-Number: 1 Author: steph Subject: Highlight Date: 05-Jun-19 12:22:11 PM 
-LL: 
-Peak at data Number: 2 Author: steph Subject: Highlight Date: 05-Jun-19 12:22:50 PM 
-
-LL: 
-Subset dataset by column value in whitelist Number: 3 Author: steph Subject: Highlight Date: 05-Jun-19 12:22:58 PM 
-
-LL: 
-Drop entirely duplicate rows 
-
-
-1 
-3 
-4 
-5 
-
+Author: steph Subject: Highlight Date: 10-Jun-19 12:41:47 PM LL [9] Peek at data 
+Author: steph Subject: Highlight Date: 10-Jun-19 12:45:34 PM LL [10] Filter dataset by month strings using a whitelist 
+LL [10] Create new table by filtering existing table 
+Author: steph Subject: Highlight Date: 10-Jun-19 12:43:38 PM LL [11] Drop entirely duplicate rows 
 Page: 4 
-Number: 1 Author: steph Subject: Highlight Date: 05-Jun-19 12:24:03 PM 
-LL: 
-Count total records in table Number: 2 Author: steph Subject: Highlight Date: 05-Jun-19 12:25:56 PM 
 
-HL: Drop incomplete data Number: 3 Author: steph Subject: Highlight Date: 05-Jun-19 12:38:54 PM 
-
-LL: 
-Group by column Number: 4 Author: steph Subject: Highlight Date: 05-Jun-19 12:41:52 PM 
-
-LL: 
-Subset dataset where count is not equal to value. Number: 5 Author: steph Subject: Highlight Date: 31-May-19 3:47:02 PM 
-
-LL: 
-Peak at data Number: 6 Author: steph Subject: Highlight Date: 05-Jun-19 12:41:14 PM 
-
-LL: 
-Subset data where column value is not in blacklist 
-
-
-
-2 
-
+Author: steph Subject: Highlight Date: 10-Jun-19 12:44:23 PM 
+LL [12-13] Count rows in tables Author: steph Subject: Highlight Date: 10-Jun-19 12:54:02 PM LL [14] Aggregate data on categorical value and count 
+LL [14] Create new table by aggregating existing LL [15] Drop incomplete data LL [16] Peek at data LL [14-17] Exclude incomplete data 
 Page: 5 
-Number: 1 Author: steph Subject: Highlight Date: 31-May-19 3:52:09 PM 
-LL: 
-Count total records Number: 2 Author: steph Subject: Highlight Date: 05-Jun-19 12:43:23 PM 
+Author: steph Subject: Highlight Date: 10-Jun-19 12:54:29 PM LL [18] Count total rows 
 
-LL: 
-Subset dataset column value in whitelist 
-
-LL: 
-Treat date (month) as a string Number: 3 Author: steph Subject: Highlight Date: 05-Jun-19 12:46:07 PM 
-
-LL: 
-Group by one column and sum one column Number: 4 Author: steph Subject: Highlight Date: 05-Jun-19 12:44:34 PM 
-
-LL: 
-Peak at data Number: 5 Author: steph Subject: Highlight Date: 31-May-19 3:55:53 PM 
-
-LL: 
-Count total records Number: 6 Author: steph Subject: Highlight Date: 05-Jun-19 12:45:12 PM 
-
-LL: 
-Subset dataset by column in whitelist Number: 7 Author: steph Subject: Highlight Date: 05-Jun-19 12:46:00 PM 
-
-LL: 
-Group by one column and sum one column Number: 8 Author: steph Subject: Highlight Date: 05-Jun-19 12:46:17 PM 
-
-LL: 
-Peak at data Number: 9 Author: steph Subject: Highlight Date: 31-May-19 3:58:11 PM 
-
-LL: 
-Count total records 
-
-
-
-2 
-3 
-6 
-7 
-4 
-5 
-
+Author: steph Subject: Highlight Date: 10-Jun-19 1:23:18 PM HL [19-29] Group data into different tables. 
+Author: steph Subject: Highlight Date: 10-Jun-19 12:55:37 PM LL [5] Peek at data 
+Author: steph Subject: Highlight Date: 10-Jun-19 12:55:58 PM LL [22] Count total rows 
+Author: steph Subject: Highlight Date: 10-Jun-19 12:56:24 PM LL [25] Peek at data 
+Author: steph Subject: Highlight Date: 10-Jun-19 12:56:42 PM LL [26] Count total rows 
 Page: 6 
-Number: 1 Author: steph Subject: Highlight Date: 05-Jun-19 12:47:19 PM 
-LL: Group by one column and sum one column 
-HL: Parallel workflows Number: 2 Author: steph Subject: Highlight Date: 31-May-19 3:58:55 PM 
-LL: 
-Peak at data, 5 Number: 3 Author: steph Subject: Highlight Date: 31-May-19 3:59:41 PM 
 
-LL: 
-Count total records Number: 4 Author: steph Subject: Highlight Date: 31-May-19 4:01:04 PM 
-
-LL: 
-Join datasets, inner Number: 5 Author: steph Subject: Highlight Date: 05-Jun-19 12:50:46 PM 
-
-LL: 
-join datasets, inner 
-
-
-
-HL: Divide-process-and-merge Number: 6 Author: steph Subject: Highlight Date: 31-May-19 4:01:29 PM 
-LL: 
-Count total records Number: 7 Author: steph Subject: Highlight Date: 31-May-19 4:01:39 PM 
-
-LL: 
-Peak at data Number: 8 Author: steph Subject: Highlight Date: 31-May-19 4:26:52 PM 
-
-
-HL: Calculate yearly change 
-
+Author: steph Subject: Highlight Date: 10-Jun-19 1:00:02 PM LL [19-29] Group by date and categorical variable, calculating sum of another column. 
+Author: steph Subject: Highlight Date: 10-Jun-19 12:57:06 PM LL [28] Peek at data 
+Author: steph Subject: Highlight Date: 10-Jun-19 12:57:20 PM LL [29] Count total records 
+Author: steph Subject: Highlight Date: 10-Jun-19 1:24:37 PM HL [30] Combine multiple tables into one master table 
+LL [30] Inner join tables together 
+Author: steph Subject: Highlight Date: 10-Jun-19 1:00:35 PM LL [31] Count total records 
+Author: steph Subject: Highlight Date: 10-Jun-19 1:00:55 PM LL [32] Peek at data 
 Page: 7 
-Number: 1 Author: steph Subject: Highlight Date: 05-Jun-19 12:52:36 PM 
-LL: Create new dimension from function on existing columns 
-HL: Calculate percent change Number: 2 Author: steph Subject: Highlight Date: 05-Jun-19 12:53:05 PM 
-LL: 
-Sort dataset by one value DESC Number: 3 Author: steph Subject: Highlight Date: 05-Jun-19 12:53:11 PM 
 
-LL: 
-Peak at data Number: 4 Author: steph Subject: Highlight Date: 05-Jun-19 12:53:53 PM 
-
-LL: 
-Create new column calculation on existing fields. 
-
-
-
-HL: Calculate difference Number: 5 Author: steph Subject: Highlight Date: 31-May-19 4:11:18 PM 
-LL: Peak at data 
-3 
-4 
-5 
-
+Author: steph Subject: Highlight Date: 10-Jun-19 1:02:35 PM LL [33-34] Calculate percent change for each group. 
+Author: steph Subject: Highlight Date: 10-Jun-19 1:53:48 PM LL [35] Find the maximum values 
+Author: steph Subject: Highlight Date: 10-Jun-19 1:04:00 PM LL [36-37] Calculate difference between years 
 Page: 8 
-Number: 1 Author: steph  Subject: Highlight  Date: 05-Jun-19 12:54:08 PM  
-LL: Sort dataset by one column, DESC  
-Number: 2 Author: steph LL: Peak at data Number: 3 Author: steph LL: Group by one column and calculate  Subject: Highlight Subject: Highlight mean of one column.  Date: 05-Jun-19 12:54:12 PM Date: 05-Jun-19 12:54:33 PM  
-Number: 4 Author: steph LL: Peak at data Number: 5 Author: steph LL: join dataset, inner  Subject: Highlight Subject: Highlight  Date: 05-Jun-19 12:54:38 PM Date: 31-May-19 4:13:35 PM  
 
-
+Author: steph Subject: Highlight Date: 10-Jun-19 1:54:06 PM LL [38] Find the maximum values 
+Author: steph Subject: Highlight Date: 10-Jun-19 1:06:28 PM LL [39-40] Group dataset by categorical variable, calculate average. 
+Author: steph Subject: Highlight Date: 10-Jun-19 1:07:13 PM LL [41] Join (inner) secondary table to master table 
 Page: 9 
-Number: 1 Author: steph Subject: Highlight Date: 31-May-19 4:13:55 PM 
-LL: 
-Peak at data Number: 2 Author: steph Subject: Highlight Date: 05-Jun-19 12:55:32 PM 
 
-LL: 
-Calculate summary statistic, percent change 
-
-
-HL: Calculate summary statistics Number: 3 Author: steph Subject: Highlight Date: 31-May-19 4:15:12 PM 
-LL: 
-Calculate summary statistic, percent change Number: 4 Author: steph Subject: Highlight Date: 31-May-19 4:15:33 PM 
-
-LL: 
-Calculate summary statistic, difference Number: 5 Author: steph Subject: Highlight Date: 31-May-19 4:16:34 PM 
-
-LL: 
-Calculate summary statistic, percentage 
-
-
-
-1 
-2 
-
+Author: steph Subject: Highlight Date: 10-Jun-19 1:08:48 PM LL [43-46] Calculate summary statistics, percent change 
 Page: 10 
 
-Number: 1  Author: steph  Subject: Highlight  Date: 05-Jun-19 1:01:27 PM  
-HL: Plot histogram with annotations  
-Number: 2  Author: steph  Subject: Highlight  Date: 05-Jun-19 1:02:01 PM  
-
-LL: Create new column from calculation on existing columns HL: Calculate z-score 
-
-Page: 11 
-
-Number: 1 Author: steph Subject: Highlight Date: 05-Jun-19 1:02:18 PM 
-LL: 
-Sort dataset by one column DESC Number: 2 Author: steph Subject: Highlight Date: 05-Jun-19 1:02:23 PM 
-
-LL: 
-Peak at data 
-
-
-
-Page: 12 
-
-Number: 1  Author: steph  Subject: Highlight  Date: 05-Jun-19 1:02:33 PM  
-LL: Sort dataset by one column ASC  
-Number: 2  Author: steph  Subject: Highlight  Date: 05-Jun-19 1:02:38 PM  
-
-LL: Peak at data 
-2 
-
+Author: steph Subject: Highlight Date: 10-Jun-19 1:09:26 PM LL [47] Create plot, histogram with annotations 
+Author: steph Subject: Highlight Date: 10-Jun-19 1:09:43 PM LL [48] Calculate z-score 
 Page: 13 
 
-Number: 1 Author: steph Subject: Highlight Date: 05-Jun-19 1:02:50 PM 
-HL: Plot histogram with annotations Number: 2 Author: steph Subject: Highlight Date: 05-Jun-19 1:03:04 PM 
-LL: 
-Sort dataset by one column DESC Number: 3 Author: steph Subject: Highlight Date: 05-Jun-19 1:03:10 PM 
-
-LL: 
-Export data to CSV 
-
-
-
+Author: steph Subject: Highlight Date: 10-Jun-19 1:11:18 PM LL [51] Create plot, histogram with annotations 
+Author: steph Subject: Highlight Date: 10-Jun-19 1:11:12 PM LL [52] Export results to CSV 
 

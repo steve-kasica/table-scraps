@@ -1,65 +1,20 @@
 Summary of Comments on notebook.html.pdf 
 Page: 1 
 
-Author: steph Subject: Highlight Date: 06-Jun-19 9:16:14 AM 
-LL: Import data, Excel 
-Author: steph Subject: Highlight Date: 06-Jun-19 9:17:29 AM 
-LL: Import data, map 
-Author: steph Subject: Highlight Date: 06-Jun-19 9:10:36 AM 
-LL: Import data, Excel 
-Author: steph Subject: Highlight Date: 06-Jun-19 9:10:49 AM 
-LL: Convert data type to string 
+Author: steph Subject: Highlight Date: 10-Jun-19 2:39:03 PM HL [paragraph 1] Combine tabular and geospatial datasets HL [paragraph 1] use government data Author: steph Subject: Highlight Date: 10-Jun-19 2:40:00 PM 
 Page: 2 
 
-Author: steph Subject: Highlight Date: 06-Jun-19 9:11:05 AM 
-LL: Peak at data 
-Author: steph Subject: Highlight Date: 06-Jun-19 9:11:22 AM 
-LL: Rename columns slugify 
-Author: steph Subject: Highlight Date: 06-Jun-19 9:11:32 AM 
-LL: 
-Peak at data 
-
-LL: 
-Import data, shapefile 
-
-
-Author: steph Subject: Highlight Date: 06-Jun-19 9:11:48 AM 
+Author: steph Subject: Highlight Date: 10-Jun-19 2:40:23 PM LL [2-3] Import Excel data 
+Author: steph Subject: Highlight Date: 10-Jun-19 2:41:21 PM LL [4-5] Rename columns to no-space and lowercase 
+Author: steph Subject: Highlight Date: 10-Jun-19 2:41:48 PM LL [6 and 25] Import shapefile 
 Page: 3 
 
-Author: steph Subject: Highlight Date: 06-Jun-19 9:12:10 AM 
-LL: Peak at data 
-Author: steph Subject: Highlight Date: 06-Jun-19 9:12:28 AM 
-LL: Subset data by dimension 
-Author: steph Subject: Highlight Date: 06-Jun-19 9:12:43 AM 
-LL: Rename column slugify 
-Author: steph Subject: Highlight Date: 06-Jun-19 9:12:50 AM 
-LL: Peak at data 
+Author: steph Subject: Highlight Date: 10-Jun-19 2:43:03 PM LL [7-8] Subset data and rename column to lowercase 
 Page: 4 
 
-Author: steph Subject: Highlight Date: 06-Jun-19 9:13:08 AM 
-LL: Join data, inner 
-Author: steph Subject: Highlight Date: 06-Jun-19 9:13:21 AM 
-LL: Output data for graphics 
-Author: steph Subject: Highlight Date: 06-Jun-19 9:14:17 AM 
-LL: 
-Create new column from calculation on another column 
-
-LL: 
-Slice each value string for all rows 
-
-
-Author: steph Subject: Highlight Date: 06-Jun-19 9:14:34 AM 
-LL: Group by column and count frequency 
-Author: steph Subject: Highlight Date: 06-Jun-19 9:14:53 AM 
-LL: 
-Sort dataset by column DESC 
-
-LL: 
-Peak at data 
-
-
-Page: 5 
-
-Author: steph Subject: Highlight Date: 06-Jun-19 9:15:17 AM 
-LL: Group by column and count frequency 
+Author: steph Subject: Highlight Date: 10-Jun-19 2:43:32 PM LL [9] Merge data and shape file 
+Author: steph Subject: Highlight Date: 10-Jun-19 2:43:48 PM LL [11] Output intermediate results 
+Author: steph Subject: Highlight Date: 10-Jun-19 2:47:09 PM LL [12] Slice column values by position 
+LL [14, 18] Filter dataset by top 100 values 
+LL [13, 19] Find maximum value 
 
