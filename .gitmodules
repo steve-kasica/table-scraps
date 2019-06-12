@@ -13,3 +13,6 @@
 [submodule "open-journalism"]
 	path = open-journalism
 	url = https://github.com/silva-shih/open-journalism.git
+[submodule "notebooks/TheOregonian/long-term-care-db"]
+	path = notebooks/TheOregonian/long-term-care-db
+	url = https://github.com/TheOregonian/long-term-care-db.git

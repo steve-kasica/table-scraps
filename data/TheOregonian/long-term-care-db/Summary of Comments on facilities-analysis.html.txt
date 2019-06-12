@@ -1,0 +1,17 @@
+Summary of Comments on facilities-analysis.html.pdf 
+Page: 1 
+
+Author: steph Subject: Highlight Date: 11-Jun-19 8:21:41 PM LL [93] Count number of entities 
+Author: steph Subject: Highlight Date: 11-Jun-19 8:16:25 PM LL [94] Count the number of missing records 
+Page: 2 
+
+Author: steph Subject: Highlight Date: 11-Jun-19 8:22:14 PM LL [95] Count the number of inaccurate records 
+Author: steph Subject: Highlight Date: 11-Jun-19 8:23:20 PM LL [96,97] Determine facilities large discrepancies 
+Author: steph Subject: Highlight Date: 11-Jun-19 8:24:12 PM LL [99-101] Determine how common an issue in the data. 
+Page: 3 
+
+Author: steph Subject: Highlight Date: 11-Jun-19 8:24:46 PM LL [114-115] Find disparities in the data 
+Page: 4 
+
+Author: steph Subject: Highlight Date: 11-Jun-19 8:25:16 PM LL [118] Find the worst records 
+
