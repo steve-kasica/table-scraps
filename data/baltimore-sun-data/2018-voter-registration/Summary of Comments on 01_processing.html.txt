@@ -1,0 +1,10 @@
+Summary of Comments on 01_processing.html.pdf 
+Page: 2 
+
+Author: steph Subject: Highlight Date: 12-Jun-19 4:27:53 PM LL [1] Calculate percentages 
+Author: steph Subject: Highlight Date: 12-Jun-19 4:19:56 PM LL [1] Build reusable wrangling workflows 
+Page: 5 
+
+Author: steph Subject: Highlight Date: 12-Jun-19 4:31:11 PM HL [25] parallel wrangling, perform the same operations on different tables 
+LL [25] Combine tables in many files into one table to work with 
+

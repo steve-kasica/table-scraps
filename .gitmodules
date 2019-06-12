@@ -16,3 +16,6 @@
 [submodule "notebooks/TheOregonian/long-term-care-db"]
 	path = notebooks/TheOregonian/long-term-care-db
 	url = https://github.com/TheOregonian/long-term-care-db.git
+[submodule "notebooks/baltimore-sun-data/2018-voter-registration"]
+	path = notebooks/baltimore-sun-data/2018-voter-registration
+	url = https://github.com/baltimore-sun-data/2018-voter-registration.git

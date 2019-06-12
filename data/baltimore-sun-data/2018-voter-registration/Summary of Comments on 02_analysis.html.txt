@@ -1,0 +1,19 @@
+Summary of Comments on 02_analysis.html.pdf 
+Page: 1 
+
+Author: steph Subject: Highlight Date: 12-Jun-19 4:16:24 PM HL [paragraph 1] Use government data 
+Page: 3 
+
+Author: steph Subject: Highlight Date: 12-Jun-19 4:34:35 PM LL [4] Calculate percent of total 
+Page: 4 
+
+Author: steph Subject: Highlight Date: 12-Jun-19 4:39:07 PM LL [6] Calculate percent change in demographics among different counties 
+Page: 6 
+
+Author: steph Subject: Highlight Date: 12-Jun-19 4:42:25 PM LL [12] Find the greatest rate of change among different groups 
+Author: steph Subject: Highlight Date: 12-Jun-19 4:43:10 PM LL [13] Compare current statistic against all time record 
+Page: 8 
+
+Author: steph Subject: Highlight Date: 12-Jun-19 4:50:20 PM LL [17] Perform name entity resolution 
+Author: steph Subject: Highlight Date: 12-Jun-19 4:51:43 PM LL [18] Calculate percent change in a date range 
+
