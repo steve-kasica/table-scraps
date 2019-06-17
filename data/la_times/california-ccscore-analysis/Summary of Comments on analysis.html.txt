@@ -3,60 +3,52 @@ Page: 1
 
 Author: steph Subject: Highlight Date: 10-Jun-19 1:13:31 PM HL [paragraph 1] Find outliers in data 
 HL [paragraph 1] Analyze rates 
-Author: steph Subject: Highlight Date: 10-Jun-19 1:14:04 PM HL [paragraph 3] Analyze monthly government data 
 Page: 2 
+Author: steph Subject: Highlight Date: 16-Jun-19 11:57:00 AM LL [2] format table display 
 
-Author: steph Subject: Highlight Date: 10-Jun-19 12:22:21 PM LL [2] Adjust table display 
-Author: steph Subject: Highlight Date: 10-Jun-19 12:23:16 PM LL [3-4] Import government data in Excel format 
-Author: steph Subject: Highlight Date: 10-Jun-19 12:41:33 PM LL [5-6] Subset dataset by explicit columns 
-Author: steph Subject: Highlight Date: 10-Jun-19 12:41:28 PM LL [7-8] Inspect and convert column data types. 
+Author: steph Subject: Highlight Date: 16-Jun-19 11:57:35 AM LL [3-4] Import official state dataset 
+Author: steph Subject: Highlight Date: 16-Jun-19 11:58:35 AM LL [5-6] Drop irreverent columns 
+Author: steph Subject: Highlight Date: 16-Jun-19 12:00:48 PM LL [7] Convert column from TK to string 
 Page: 3 
 
+Author: steph Subject: Highlight Date: 16-Jun-19 12:02:10 PM LL [8] Lookup table column types 
 Author: steph Subject: Highlight Date: 10-Jun-19 12:41:47 PM LL [9] Peek at data 
-Author: steph Subject: Highlight Date: 10-Jun-19 12:45:34 PM LL [10] Filter dataset by month strings using a whitelist 
-LL [10] Create new table by filtering existing table 
-Author: steph Subject: Highlight Date: 10-Jun-19 12:43:38 PM LL [11] Drop entirely duplicate rows 
+Author: steph Subject: Highlight Date: 16-Jun-19 12:03:01 PM LL [10] Filter dataset by date range 
+Author: steph Subject: Highlight Date: 16-Jun-19 12:03:11 PM LL [11] Drop duplicate rows 
 Page: 4 
 
-Author: steph Subject: Highlight Date: 10-Jun-19 12:44:23 PM 
-LL [12-13] Count rows in tables Author: steph Subject: Highlight Date: 10-Jun-19 12:54:02 PM LL [14] Aggregate data on categorical value and count 
-LL [14] Create new table by aggregating existing LL [15] Drop incomplete data LL [16] Peek at data LL [14-17] Exclude incomplete data 
+Author: steph Subject: Highlight Date: 16-Jun-19 12:03:33 PM 
+LL [12-13] Count table rows Author: steph Subject: Highlight Date: 16-Jun-19 12:06:39 PM LL [14-17] Remove rows contributing to incomplete data 
+LL [14] Aggregate and count LL [16] Peek at data 
 Page: 5 
-Author: steph Subject: Highlight Date: 10-Jun-19 12:54:29 PM LL [18] Count total rows 
 
-Author: steph Subject: Highlight Date: 10-Jun-19 1:23:18 PM HL [19-29] Group data into different tables. 
-Author: steph Subject: Highlight Date: 10-Jun-19 12:55:37 PM LL [5] Peek at data 
-Author: steph Subject: Highlight Date: 10-Jun-19 12:55:58 PM LL [22] Count total rows 
-Author: steph Subject: Highlight Date: 10-Jun-19 12:56:24 PM LL [25] Peek at data 
-Author: steph Subject: Highlight Date: 10-Jun-19 12:56:42 PM LL [26] Count total rows 
+Author: steph Subject: Highlight Date: 10-Jun-19 12:54:29 PM 
+LL [18] Count total rows Author: steph Subject: Highlight Date: 16-Jun-19 12:08:48 PM LL [19] Filter dataset by date range 
+LL [19-22] Group by and sum ML [19-22] Parallel work flow 
 Page: 6 
 
-Author: steph Subject: Highlight Date: 10-Jun-19 1:00:02 PM LL [19-29] Group by date and categorical variable, calculating sum of another column. 
-Author: steph Subject: Highlight Date: 10-Jun-19 12:57:06 PM LL [28] Peek at data 
-Author: steph Subject: Highlight Date: 10-Jun-19 12:57:20 PM LL [29] Count total records 
-Author: steph Subject: Highlight Date: 10-Jun-19 1:24:37 PM HL [30] Combine multiple tables into one master table 
-LL [30] Inner join tables together 
-Author: steph Subject: Highlight Date: 10-Jun-19 1:00:35 PM LL [31] Count total records 
-Author: steph Subject: Highlight Date: 10-Jun-19 1:00:55 PM LL [32] Peek at data 
+Author: steph Subject: Highlight Date: 16-Jun-19 12:09:38 PM LL [19-29] Group by and sum 
+Author: steph Subject: Highlight Date: 16-Jun-19 12:10:50 PM LL [30] Inner join multiple tables 
 Page: 7 
 
-Author: steph Subject: Highlight Date: 10-Jun-19 1:02:35 PM LL [33-34] Calculate percent change for each group. 
+Author: steph Subject: Highlight Date: 16-Jun-19 12:11:16 PM LL [33-34] Calculate percent change 
 Author: steph Subject: Highlight Date: 10-Jun-19 1:53:48 PM LL [35] Find the maximum values 
-Author: steph Subject: Highlight Date: 10-Jun-19 1:04:00 PM LL [36-37] Calculate difference between years 
+Author: steph Subject: Highlight Date: 16-Jun-19 12:11:43 PM LL [36-37] Calculate difference 
 Page: 8 
 
-Author: steph Subject: Highlight Date: 10-Jun-19 1:54:06 PM LL [38] Find the maximum values 
-Author: steph Subject: Highlight Date: 10-Jun-19 1:06:28 PM LL [39-40] Group dataset by categorical variable, calculate average. 
-Author: steph Subject: Highlight Date: 10-Jun-19 1:07:13 PM LL [41] Join (inner) secondary table to master table 
+Author: steph Subject: Highlight Date: 16-Jun-19 12:12:50 PM LL [38] Rank the worst performers 
+Author: steph Subject: Highlight Date: 16-Jun-19 12:13:17 PM LL [39-40] Calculate monthly average per capita 
+Author: steph Subject: Highlight Date: 16-Jun-19 12:14:17 PM ML [41] Merge with master table 
 Page: 9 
 
-Author: steph Subject: Highlight Date: 10-Jun-19 1:08:48 PM LL [43-46] Calculate summary statistics, percent change 
+Author: steph Subject: Highlight Date: 16-Jun-19 12:15:09 PM LL [43-46] Calculate percent change 
+ML [43-46] Calculate summary statistics 
 Page: 10 
 
-Author: steph Subject: Highlight Date: 10-Jun-19 1:09:26 PM LL [47] Create plot, histogram with annotations 
+Author: steph Subject: Highlight Date: 16-Jun-19 12:15:25 PM LL [47] Plot histogram with annotations 
 Author: steph Subject: Highlight Date: 10-Jun-19 1:09:43 PM LL [48] Calculate z-score 
 Page: 13 
 
-Author: steph Subject: Highlight Date: 10-Jun-19 1:11:18 PM LL [51] Create plot, histogram with annotations 
-Author: steph Subject: Highlight Date: 10-Jun-19 1:11:12 PM LL [52] Export results to CSV 
+Author: steph Subject: Highlight Date: 16-Jun-19 12:15:47 PM LL [51] Plot histogram with annotations 
+Author: steph Subject: Highlight Date: 16-Jun-19 12:16:11 PM LL [52] Export master table 
 

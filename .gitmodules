@@ -1,21 +1,24 @@
 [submodule "notebooks/la_times/california-ccscore-analysis"]
 	path = notebooks/la_times/california-ccscore-analysis
-	url = https://github.com/datadesk/california-ccscore-analysis.git
+	url = https://github.com/swkasica/california-ccscore-analysis.git
 [submodule "notebooks/la_times/california-crop-production-wages-analysis"]
 	path = notebooks/la_times/california-crop-production-wages-analysis
-	url = https://github.com/datadesk/california-crop-production-wages-analysis.git
+	url = https://github.com/swkasica/california-crop-production-wages-analysis.git
 [submodule "notebooks/buzzfeednews/2019-04-democratic-candidate-codonors"]
 	path = notebooks/buzzfeednews/2019-04-democratic-candidate-codonors
-	url = https://github.com/BuzzFeedNews/2019-04-democratic-candidate-codonors
+	url = https://github.com/swkasica/2019-04-democratic-candidate-codonors
 [submodule "notebooks/la_times/census-hard-to-map-analysis"]
 	path = notebooks/la_times/census-hard-to-map-analysis
-	url = https://github.com/datadesk/census-hard-to-map-analysis.git
+	url = https://github.com/swkasica/census-hard-to-map-analysis.git
 [submodule "open-journalism"]
 	path = open-journalism
 	url = https://github.com/silva-shih/open-journalism.git
 [submodule "notebooks/TheOregonian/long-term-care-db"]
 	path = notebooks/TheOregonian/long-term-care-db
-	url = https://github.com/TheOregonian/long-term-care-db.git
+	url = https://github.com/swkasica/long-term-care-db.git
 [submodule "notebooks/baltimore-sun-data/2018-voter-registration"]
 	path = notebooks/baltimore-sun-data/2018-voter-registration
-	url = https://github.com/baltimore-sun-data/2018-voter-registration.git
+	url = https://github.com/swkasica/2018-voter-registration.git
+[submodule "pdfannots"]
+	path = pdfannots
+	url = https://github.com/0xabu/pdfannots.git
