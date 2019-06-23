@@ -1,0 +1,95 @@
+- consolidation:
+    - union tables
+    - join tables:
+        - inner join tables    
+        - right join tables
+        - left join tables
+- augmentation:
+    - merge data sources
+    - merge metadata    
+- transformation:
+    - changing resolution:
+        - aggregate and calculate:
+            - group by
+            - sum column
+            - count rows
+            - construct pivot table
+    - reshape:
+        - melt table
+        - drop columns
+- analysis:
+    - count column values
+    - count unique values in column
+    - compare trends over time:
+        - percentage difference
+        - calculate difference
+- cleaning:
+    - canonicalize column names
+    - change column data type
+    - drop erroneous rows
+    - deduplicate:
+        - prevent double-counting
+        - drop entirely duplicate rows
+        - drop rows with duplicate value in one column
+        - create a unique key
+    - format column values:
+        - regular expression replace
+        - strip whitespace
+        - change case
+        - slice column values
+    - manually fix data errors        
+    - remove incomplete data
+    - resolve entity names
+    - sort table
+    - filter rows
+- detrending:
+    - adjust for inflation
+    - adjust for season
+- rank entities by common metric:
+    - formulate performance metric:
+        - figure a rate:
+            - calculate percentage
+            - calculate per 1k
+            - calculate proportion
+        - calculate central tendency:
+            - calculate mean
+        - quantify change over time:
+            - calculate percentage difference
+        - calculate standardized scores:
+            - calculate z-score
+    - sort table and view top
+- provenance documentation:
+    - encode table name as new column
+- workflows:
+    - documentation:
+        - annotate workflow        
+    - computational thinking:
+        - architect a subroutine
+        - architect parallel workflows
+        - architect repeating process
+    - export intermediate results
+    - export results
+    - export data for graphics
+- acquisition:
+    - data type:
+        - use structured ascii
+        - import structured ASCII
+        - use geospatial data
+        - use tabular data
+    - data source:
+        - extract data in non-tabular:    
+            - pull tables out of pdf
+            - scrape web for data
+        - use third-party data    
+- visualization:
+    - raw tables:
+        - create a lookup table
+        - peek at data
+        - format table display
+        - inspect table schema        
+    - charts:
+        - plot histogram
+        - plot stacked bar chart
+        - plot stacked column chart    
+- wtf:
+    - manually construct table
