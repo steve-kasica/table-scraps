@@ -4,6 +4,7 @@
         - inner join tables    
         - right join tables
         - left join tables
+        - cartesian product
 - augmentation:
     - merge data sources
     - merge metadata    
@@ -45,6 +46,7 @@
 - detrending:
     - adjust for inflation
     - adjust for season
+    - compute index number    
 - rank entities by common metric:
     - formulate performance metric:
         - figure a rate:
@@ -93,3 +95,4 @@
         - plot stacked column chart    
 - wtf:
     - manually construct table
+    - generate raw data
