@@ -25,3 +25,6 @@
 [submodule "notebooks/stlpublicradio/2018-05-31-crime-and-heat-analysis"]
 	path = notebooks/stlpublicradio/2018-05-31-crime-and-heat-analysis
 	url = https://github.com/swkasica/2018-05-31-crime-and-heat-analysis.git
+[submodule "notebooks/buzzfeednews/2016-11-bellwether-counties"]
+	path = notebooks/buzzfeednews/2016-11-bellwether-counties
+	url = https://github.com/swkasica/2016-11-bellwether-counties.git
