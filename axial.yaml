@@ -1,33 +1,48 @@
-- consolidation:
-    - union tables
-    - join tables:
-        - inner join tables    
-        - right join tables
-        - left join tables
-        - cartesian product
-- augmentation:
-    - merge data sources
-    - merge metadata    
+
 - transformation:
+    - inner join tables
+    - cartesian product
+    - append:
+        - right join tables    
+        - left join tables
+        - append to table
+        - merge data sources
+        - merge metadata
+    - consolidation:
+        - union tables
     - changing resolution:
         - aggregate and calculate:
             - group by
             - sum column
-            - count rows
             - construct pivot table
     - reshape:
         - melt table
         - drop columns
 - analysis:
-    - count column values
-    - count unique values in column
-    - compare trends over time:
-        - percentage difference
-        - calculate difference
+    - calculate frequency:
+        - count column values
+        - count unique values in column
+        - count rows
+    - rank entities by common metric:
+        - formulate performance metric:
+            - figure a rate:
+                - calculate percentage
+                - calculate per 1k
+                - calculate proportion
+            - calculate central tendency:
+                - calculate mean
+            - compare trends over time:
+                - calculate percentage difference
+                - percentage difference
+                - calculate difference
+            - calculate standardized scores:
+                - calculate z-score
+        - sort table and view top        
 - cleaning:
-    - canonicalize column names
-    - change column data type
-    - drop erroneous rows
+    - detrending:
+        - adjust for inflation
+        - adjust for season
+        - compute index number    
     - deduplicate:
         - prevent double-counting
         - drop entirely duplicate rows
@@ -38,28 +53,16 @@
         - strip whitespace
         - change case
         - slice column values
-    - manually fix data errors        
-    - remove incomplete data
+    - ??: 
+        - filter rows
+        - drop erroneous rows    
+        - remove incomplete data        
+    - canonicalize column names
+    - change column data type
+    - manually fix data errors
     - resolve entity names
     - sort table
-    - filter rows
-- detrending:
-    - adjust for inflation
-    - adjust for season
-    - compute index number    
-- rank entities by common metric:
-    - formulate performance metric:
-        - figure a rate:
-            - calculate percentage
-            - calculate per 1k
-            - calculate proportion
-        - calculate central tendency:
-            - calculate mean
-        - quantify change over time:
-            - calculate percentage difference
-        - calculate standardized scores:
-            - calculate z-score
-    - sort table and view top
+    - extract value from column
 - provenance documentation:
     - encode table name as new column
 - workflows:
@@ -79,7 +82,7 @@
         - use geospatial data
         - use tabular data
     - data source:
-        - extract data in non-tabular:    
+        - extract data in non-tabular:
             - pull tables out of pdf
             - scrape web for data
         - use third-party data    
@@ -92,7 +95,9 @@
     - charts:
         - plot histogram
         - plot stacked bar chart
-        - plot stacked column chart    
+        - plot stacked column chart
+        - plot scatterplot
 - wtf:
     - manually construct table
     - generate raw data
+    - split and merge
