@@ -1,28 +1,30 @@
-
-- transformation:
-    - inner join tables
-    - cartesian product
-    - append:
-        - right join tables    
-        - left join tables
-        - append to table
-        - merge data sources
-        - merge metadata
-    - consolidate data sources:
-        - union tables
-    - changing resolution:
-        - aggregate and calculate:
-            - group by
-            - sum column
-            - construct pivot table
+- transform:
+    - merge:
+        - inner join tables
+        - cartesian product
+        - append:
+            - right join tables
+            - left join tables
+            - append to table
+            - merge data sources
+            - merge metadata
+        - consolidate data sources:
+            - union tables
     - reshape:
         - melt table
         - drop columns
-- analysis:
+        - changing resolution:
+            - aggregate and calculate:
+                - group by
+                - multi-dimensional transform
+                - create rolling window
+                - sum column
+                - construct pivot table
+- prep for analysis:
     - calculate frequency:
         - count column values
-        - count unique values in column
         - count rows
+        - count unique values in column
     - rank entities by common metric:
         - formulate performance metric:
             - figure a rate:
@@ -33,9 +35,8 @@
                 - calculate mean
             - compare trends over time:
                 - calculate percentage difference
-                - percentage difference
                 - calculate difference
-            - calculate spread                        
+            - calculate spread
             - calculate standardized scores:
                 - calculate z-score
         - sort table and view top        
@@ -52,56 +53,58 @@
     - format column values:
         - strip whitespace
         - change case
+        - resolve entity names        
     - extract value from column:
         - regular expression replace    
         - extract property from datetime
         - slice column values
     - pruning:
         - filter rows
-        - drop erroneous rows    
-        - remove incomplete data        
-    - canonicalize column names
-    - change column data type
+        - drop erroneous rows
+        - remove incomplete data
+    - schema:
+        - canonicalize column names
+        - change column data type
     - manually fix data errors
-    - resolve entity names
-    - sort table
-- provenance documentation:
+    - sort table    
+- document provenance:
     - encode table name as new column
-- workflows:
-    - documentation:
+- build workflow:
+    - document:
         - annotate workflow        
-    - computational thinking:
+    - think computationally:
         - architect a subroutine
         - architect parallel workflows
         - architect repeating process
-    - export intermediate results
-    - export results
-    - export data for graphics
-- acquisition:
+    - export data:
+        - export intermediate results
+        - export results
+        - export data for graphics
+- acquire:
     - data type:
-        - use structured ascii
-        - import structured ASCII
-        - use geospatial data
+        - use non-tabular data:
+            - use structured ascii
+            - import structured ASCII
+            - use geospatial data
         - use tabular data
     - data source:
-        - extract data in non-tabular:
+        - extraction:
             - pull tables out of pdf
             - scrape web for data
         - use third-party data
         - use another news orgs data
 - visualization:
-    - raw tables:
+    - display a table:
         - create a lookup table
         - peek at data
         - format table display
-        - inspect table schema
-    - Understand aggregated data:
+    - inspect table schema
+    - Understand data:
         - plot histogram
         - plot stacked bar chart
         - plot stacked column chart
-        - plot scatterplot
+        - plot scatterplot        
 - wtf:
     - manually construct table
     - generate raw data
     - split and merge
-    - create a model
