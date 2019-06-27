@@ -28,3 +28,6 @@
 [submodule "notebooks/buzzfeednews/2016-11-bellwether-counties"]
 	path = notebooks/buzzfeednews/2016-11-bellwether-counties
 	url = https://github.com/swkasica/2016-11-bellwether-counties.git
+[submodule "notebooks/buzzfeednews/2016-09-shy-trumpers"]
+	path = notebooks/buzzfeednews/2016-09-shy-trumpers
+	url = https://github.com/swkasica/2016-09-shy-trumpers.git

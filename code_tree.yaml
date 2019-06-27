@@ -8,7 +8,7 @@
         - append to table
         - merge data sources
         - merge metadata
-    - consolidation:
+    - consolidate data sources:
         - union tables
     - changing resolution:
         - aggregate and calculate:
@@ -87,7 +87,8 @@
         - extract data in non-tabular:
             - pull tables out of pdf
             - scrape web for data
-        - use third-party data    
+        - use third-party data
+        - use another news orgs data
 - visualization:
     - raw tables:
         - create a lookup table
