@@ -1,5 +1,5 @@
 - transform:
-    - merge:
+    - combine:
         - inner join tables
         - cartesian product
         - append:
@@ -12,7 +12,10 @@
             - union tables
     - reshape:
         - melt table
+        - create a lookup table  # rename to use lookup table
         - drop columns
+        - add calculated column from axillary data
+#        - add column from intra-table calculation  # Add this to some documents
         - changing resolution:
             - aggregate and calculate:
                 - group by
@@ -20,6 +23,9 @@
                 - create rolling window
                 - sum column
                 - construct pivot table
+    - split:
+        - split and merge  # split, compute, and merge
+        - architect parallel workflows        
 - prep for analysis:
     - calculate frequency:
         - count column values
@@ -65,7 +71,7 @@
     - schema:
         - canonicalize column names
         - change column data type
-    - manually fix data errors
+    - fix data errors manually
     - sort table    
 - document provenance:
     - encode table name as new column
@@ -74,8 +80,8 @@
         - annotate workflow        
     - think computationally:
         - architect a subroutine
-        - architect parallel workflows
         - architect repeating process
+        - redundant computation  # rename to repetitive code
     - export data:
         - export intermediate results
         - export results
@@ -91,20 +97,20 @@
         - extraction:
             - pull tables out of pdf
             - scrape web for data
-        - use third-party data
-        - use another news orgs data
-- visualization:
+        - use existing data:
+            - use third-party data
+            - use another news orgs data
+        - create new data:
+            - construct table manually
+            - collect raw data # First-hand observations or logs 
+            - generate data computationally # for what Heat and Humidity did
+- display:
     - display a table:
-        - create a lookup table
         - peek at data
+        - inspect table schema        
         - format table display
-    - inspect table schema
     - Understand data:
         - plot histogram
         - plot stacked bar chart
         - plot stacked column chart
         - plot scatterplot        
-- wtf:
-    - manually construct table
-    - generate raw data
-    - split and merge
