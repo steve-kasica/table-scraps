@@ -31,3 +31,6 @@
 [submodule "notebooks/buzzfeednews/2016-09-shy-trumpers"]
 	path = notebooks/buzzfeednews/2016-09-shy-trumpers
 	url = https://github.com/swkasica/2016-09-shy-trumpers.git
+[submodule "notebooks/buzzfeednews/2016-04-republican-donor-movements"]
+	path = notebooks/buzzfeednews/2016-04-republican-donor-movements
+	url = https://github.com/BuzzFeedNews/2016-04-republican-donor-movements.git
