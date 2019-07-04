@@ -6,3 +6,5 @@
 .jupyter
 .gitconfig
 .conda
+.config
+.npm
