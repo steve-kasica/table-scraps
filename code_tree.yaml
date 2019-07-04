@@ -11,20 +11,23 @@
         - consolidate data sources:
             - union tables
     - reshape:
-        - melt table
-        - create a lookup table  # rename to use lookup table
+        - gather table
+        - spread table
+        - extract single value
+        - use lookup table
         - drop columns
         - add calculated column from axillary data
-#        - add column from intra-table calculation  # Add this to some documents
+        - add column from intra-table calculation
         - changing resolution:
             - aggregate and calculate:
                 - group by
+                - group by nominal and date range
                 - multi-dimensional transform
                 - create rolling window
                 - sum column
                 - construct pivot table
     - split:
-        - split and merge  # split, compute, and merge
+        - split, compute, and merge
         - architect parallel workflows        
 - prep for analysis:
     - calculate frequency:
@@ -43,7 +46,7 @@
                 - calculate percentage difference
                 - calculate difference
             - calculate spread
-            - calculate standardized scores:
+            - calculate standardized scores:  # for locating outliers
                 - calculate z-score
         - sort table and view top        
 - cleaning:
@@ -59,11 +62,13 @@
     - format column values:
         - strip whitespace
         - change case
-        - resolve entity names        
+        - resolve entity names
+        - Convert to date object
     - extract value from column:
         - regular expression replace    
         - extract property from datetime
         - slice column values
+        - split column on delimiter
     - pruning:
         - filter rows
         - drop erroneous rows
@@ -71,6 +76,7 @@
     - schema:
         - canonicalize column names
         - change column data type
+        - name all columns
     - fix data errors manually
     - sort table    
 - document provenance:
@@ -81,7 +87,7 @@
     - think computationally:
         - architect a subroutine
         - architect repeating process
-        - redundant computation  # rename to repetitive code
+        - repetitive code  # rename to repetitive code need to recode
     - export data:
         - export intermediate results
         - export results
@@ -90,7 +96,6 @@
     - data type:
         - use non-tabular data:
             - use structured ascii
-            - import structured ASCII
             - use geospatial data
         - use tabular data
     - data source:
@@ -102,8 +107,8 @@
             - use another news orgs data
         - create new data:
             - construct table manually
-            - collect raw data # First-hand observations or logs 
-            - generate data computationally # for what Heat and Humidity did
+           # - collect raw data # First-hand observations or logs (Have not seen yet)
+            - generate data computationally
 - display:
     - display a table:
         - peek at data
@@ -113,4 +118,6 @@
         - plot histogram
         - plot stacked bar chart
         - plot stacked column chart
-        - plot scatterplot        
+        - plot scatterplot
+- wtf:
+    - pain point

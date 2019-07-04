@@ -21,7 +21,7 @@
 	url = https://github.com/swkasica/2018-voter-registration.git
 [submodule "pdfannots"]
 	path = pdfannots
-	url = https://github.com/0xabu/pdfannots.git
+	url = https://github.com/swkasica/pdfannots.git
 [submodule "notebooks/stlpublicradio/2018-05-31-crime-and-heat-analysis"]
 	path = notebooks/stlpublicradio/2018-05-31-crime-and-heat-analysis
 	url = https://github.com/swkasica/2018-05-31-crime-and-heat-analysis.git
