@@ -1,7 +1,10 @@
 - transform:
     - combine:
         - inner join tables
-        - cartesian product
+        - cartesian product        
+        - key generation:
+            - designate a primary key
+            - create and discard temporary join key
         - append:
             - right join tables
             - left join tables
@@ -15,19 +18,25 @@
         - spread table
         - extract single value
         - use lookup table
+        - create a crosstab # is this the same as "use lookup table?"
         - drop columns
+        - create join key        
         - add calculated column from axillary data
         - add column from intra-table calculation
         - changing resolution:
             - aggregate and calculate:
                 - group by
-                - group by nominal and date range
+                - group by geography
+                - group by nominal
+                - group by datetime
+                - group by boolean expression
                 - multi-dimensional transform
                 - create rolling window
                 - sum column
                 - construct pivot table
     - split:
         - split, compute, and merge
+        - split and compute
         - architect parallel workflows        
 - prep for analysis:
     - calculate frequency:
@@ -43,7 +52,7 @@
             - calculate central tendency:
                 - calculate mean
             - compare trends over time:
-                - calculate percentage difference
+                - calculate percentage difference # a.k.a precent change
                 - calculate difference
             - calculate spread
             - calculate standardized scores:  # for locating outliers
@@ -53,45 +62,56 @@
     - detrending:
         - adjust for inflation
         - adjust for season
-        - compute index number    
+        - compute index number
     - deduplicate:
         - prevent double-counting
         - drop entirely duplicate rows
         - drop rows with duplicate value in one column
         - create a unique key
+        - remove all rows but the master record
     - format column values:
         - strip whitespace
         - change case
+        - convert to date object
+        - replace NA values
+    - standardize table:
         - resolve entity names
-        - Convert to date object
+        - impose standardized column names
     - extract value from column:
         - regular expression replace    
         - extract property from datetime
         - slice column values
         - split column on delimiter
     - pruning:
+        - trim by date range
+        - trim by geographic area
         - filter rows
         - drop erroneous rows
         - remove incomplete data
     - schema:
         - canonicalize column names
         - change column data type
+        - rename column
         - name all columns
-    - fix data errors manually
-    - sort table    
+    - fix errors:
+        - fix data errors manually
+        - geocode addresses
+    - sort table
 - document provenance:
     - encode table name as new column
+    - encode file name as new column
 - build workflow:
     - document:
         - annotate workflow        
     - think computationally:
         - architect a subroutine
         - architect repeating process
-        - repetitive code  # rename to repetitive code need to recode
+        - repetitive code
     - export data:
         - export intermediate results
         - export results
         - export data for graphics
+    - cache results from external service
 - acquire:
     - data type:
         - use non-tabular data:
@@ -114,10 +134,13 @@
         - peek at data
         - inspect table schema        
         - format table display
+        - display entire table
     - Understand data:
         - plot histogram
         - plot stacked bar chart
         - plot stacked column chart
         - plot scatterplot
+        - plot column chart
 - wtf:
     - pain point
+    - omits data quality exploration
