@@ -34,3 +34,7 @@
 [submodule "notebooks/buzzfeednews/2016-04-republican-donor-movements"]
 	path = notebooks/buzzfeednews/2016-04-republican-donor-movements
 	url = https://github.com/BuzzFeedNews/2016-04-republican-donor-movements.git
+[submodule "notebooks/la_times/census-hard-to-map-analysis"]
+	path = notebooks/la_times/california-h2a-visas-analysis
+	url = https://github.com/swkasica/california-h2a-visas-analysis.git
+	
