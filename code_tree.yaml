@@ -74,6 +74,7 @@
         - change case
         - convert to date object
         - replace NA values
+        - scale numeric values
     - standardize table:
         - resolve entity names
         - impose standardized column names
@@ -110,7 +111,7 @@
     - export data:
         - export intermediate results
         - export results
-        - export data for graphics
+        - export data for graphics  # Make wrangle data for graphics, measurement, etc... What need'st thou wrangle so much data about?
     - cache results from external service
 - acquire:
     - data type:
@@ -140,7 +141,9 @@
         - plot stacked bar chart
         - plot stacked column chart
         - plot scatterplot
+        - plot trendline
         - plot column chart
 - wtf:
     - pain point
     - omits data quality exploration
+    - Wrangle data for graphics
