@@ -8,3 +8,4 @@
 .conda
 .config
 .npm
+.wget-hsts
