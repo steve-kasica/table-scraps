@@ -163,5 +163,6 @@
 - not wrangling:
     - analysis:
         - fit a generalized linear model
+        - look for trends
         - Find most frequently occurring  # although this is tied closely with sort
         - Find worst offender
