@@ -44,3 +44,6 @@
 [submodule "notebooks/wuft/Power_of_Irma"]
 	path = notebooks/wuft/Power_of_Irma
 	url = https://github.com/swkasica/Power_of_Irma
+[submodule "notebooks/time/wikipedia-rankings"]
+	path = notebooks/time/wikipedia-rankings
+	url = https://github.com/swkasica/wikipedia-rankings

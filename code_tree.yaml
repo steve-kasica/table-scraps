@@ -58,10 +58,13 @@
                 - calculate percentage difference # a.k.a precent change
                 - calculate difference  # also includes days
             - calculate spread
-            - calculate standardized scores:  # for locating outliers
-                - calculate z-score
         - sort table and view top        
 - cleaning:
+    - Log-ify values
+    - scale numeric values
+    - calculate standardized scores:
+        - calculate z-score
+    - resolve entity names        
     - detrending:
         - adjust for inflation
         - adjust for season
@@ -77,12 +80,7 @@
         - change case
         - convert to date object
         - replace NA values
-        - scale numeric values
-        - Log-ify values
         - change date format
-    - standardize table:
-        - resolve entity names
-        - impose standardized column names
     - extract value from column:
         - regular expression replace    
         - extract property from datetime
@@ -96,6 +94,7 @@
         - remove incomplete data
         - set data confidence threshold
     - schema:
+        - impose standardized column names    
         - canonicalize column names
         - change column data type
         - rename column
@@ -154,6 +153,7 @@
         - plot column chart
         - plot violin plot
         - plot boxplot
+        - plot scree plot
 - wtf:
     - pain point
     - omits data quality exploration
@@ -162,6 +162,7 @@
     - tolerate dirty data
 - not wrangling:
     - analysis:
+        - analyze principle components
         - fit a generalized linear model
         - look for trends
         - Find most frequently occurring  # although this is tied closely with sort
