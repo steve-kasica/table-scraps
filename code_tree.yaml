@@ -5,6 +5,7 @@
         - key generation:
             - designate a primary key
             - create and discard temporary join key
+            - join on geography
         - append:
             - right join tables
             - left join tables
@@ -89,6 +90,7 @@
         - filter rows
         - drop erroneous rows
         - remove incomplete data
+        - set data confidence threshold
     - schema:
         - canonicalize column names
         - change column data type
@@ -98,6 +100,7 @@
         - fix data errors manually
         - geocode addresses
     - sort table
+    - Log-ify values
 - document provenance:
     - encode table name as new column
     - encode file name as new column
@@ -126,6 +129,7 @@
         - use existing data:
             - use third-party data
             - use another news orgs data
+            - use previously cleaned data
         - create new data:
             - construct table manually
            # - collect raw data # First-hand observations or logs (Have not seen yet)
@@ -147,3 +151,10 @@
     - pain point
     - omits data quality exploration
     - Wrangle data for graphics
+    - toggle step on and off
+    - tolerate dirty data
+- not wrangling:
+    - analysis:
+        - fit a generalized linear model
+        - Find most frequently occurring  # although this is tied closely with sort
+        - Find worst offender

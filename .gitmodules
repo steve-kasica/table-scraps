@@ -41,3 +41,6 @@
 [submodule "notebooks/nola/Endangered-Species-Act-Louisiana"]
 	path = notebooks/nola/Endangered-Species-Act-Louisiana
 	url = https://github.com/swkasica/Endangered-Species-Act-Louisiana
+[submodule "notebooks/wuft/Power_of_Irma"]
+	path = notebooks/wuft/Power_of_Irma
+	url = https://github.com/swkasica/Power_of_Irma
