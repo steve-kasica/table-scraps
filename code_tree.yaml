@@ -20,7 +20,9 @@
         - extract single value
         - use lookup table
         - create a crosstab # is this the same as "use lookup table?"
-        - drop columns
+        - subset data:  # which comes from R's subset function
+            - drop columns
+            - select columns
         - create join key        
         - add calculated column from axillary data
         - add column from intra-table calculation
@@ -54,7 +56,7 @@
                 - calculate mean
             - compare trends over time:
                 - calculate percentage difference # a.k.a precent change
-                - calculate difference
+                - calculate difference  # also includes days
             - calculate spread
             - calculate standardized scores:  # for locating outliers
                 - calculate z-score
@@ -76,13 +78,15 @@
         - convert to date object
         - replace NA values
         - scale numeric values
+        - Log-ify values
+        - change date format
     - standardize table:
         - resolve entity names
         - impose standardized column names
     - extract value from column:
         - regular expression replace    
         - extract property from datetime
-        - slice column values
+        - slice column values  # by position right? Useful for zipcodes
         - split column on delimiter
     - pruning:
         - trim by date range
@@ -99,12 +103,13 @@
     - fix errors:
         - fix data errors manually
         - geocode addresses
+        - fix incorrect calculation
     - sort table
-    - Log-ify values
 - document provenance:
     - encode table name as new column
     - encode file name as new column
 - build workflow:
+    - refine table inplace # implying you overwrite some previous data as opposed to making new tables
     - document:
         - annotate workflow        
     - think computationally:
@@ -147,6 +152,8 @@
         - plot scatterplot
         - plot trendline
         - plot column chart
+        - plot violin plot
+        - plot boxplot
 - wtf:
     - pain point
     - omits data quality exploration
