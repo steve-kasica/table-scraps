@@ -1,14 +1,22 @@
 - transform:
+    - wtf transform:
+        - aggregate and calculate fail
+    - suitability:
+        - thematically disparate merger
     - combine:
+        - resort after merge
         - inner join tables
-        - cartesian product        
+        - natural join
+        - cartesian product
         - key generation:
             - designate a primary key
+            - create a non-unique key to group by
             - create and discard temporary join key
             - join on geography
         - append:
             - right join tables
             - left join tables
+            - peel and merge
             - append to table
             - merge data sources
             - merge metadata
@@ -28,6 +36,7 @@
         - add column from intra-table calculation
         - changing resolution:
             - aggregate and calculate:
+                - create frequency table
                 - group by
                 - group by geography
                 - group by nominal
@@ -47,6 +56,10 @@
         - count rows
         - count unique values in column
     - rank entities by common metric:
+        - calculate ranks
+        - break ties
+        - sort table and view top
+        - sort table by multiple dimensions  # rename to sort table by one or more dimensions 
         - formulate performance metric:
             - figure a rate:
                 - calculate percentage
@@ -56,9 +69,8 @@
                 - calculate mean
             - compare trends over time:
                 - calculate percentage difference # a.k.a precent change
-                - calculate difference  # also includes days
+                - calculate difference  # also includes days, also called a split
             - calculate spread
-        - sort table and view top        
 - cleaning:
     - Log-ify values
     - scale numeric values
@@ -81,14 +93,18 @@
         - convert to date object
         - replace NA values
         - change date format
+        - round floating point
     - extract value from column:
         - regular expression replace    
         - extract property from datetime
         - slice column values  # by position right? Useful for zipcodes
         - split column on delimiter
+        - concatenate columns
+        - get unique values
     - pruning:
         - trim by date range
         - trim by geographic area
+        - trim by quantitative threshold
         - filter rows
         - drop erroneous rows
         - remove incomplete data
@@ -139,9 +155,11 @@
            # - collect raw data # First-hand observations or logs (Have not seen yet)
             - generate data computationally
 - display:
+    - sanity check:
+        - check results of previous operation
+        - peek at data    
     - display a table:
-        - peek at data
-        - inspect table schema        
+        - inspect table schema
         - format table display
         - display entire table
     - Understand data:
@@ -160,6 +178,7 @@
     - Wrangle data for graphics
     - toggle step on and off
     - tolerate dirty data
+    - encode table summary data in row
 - not wrangling:
     - analysis:
         - analyze principle components
