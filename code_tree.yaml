@@ -1,188 +1,188 @@
-- transform:
-    - wtf transform:
-        - aggregate and calculate fail
-    - suitability:
-        - thematically disparate merger
-    - combine:
-        - resort after merge
-        - inner join tables
-        - natural join
-        - cartesian product
-        - key generation:
-            - designate a primary key
-            - create a non-unique key to group by
-            - create and discard temporary join key
-            - join on geography
-        - append:
-            - right join tables
-            - left join tables
-            - peel and merge
-            - append to table
-            - merge data sources
-            - merge metadata
-        - consolidate data sources:
-            - union tables
-    - reshape:
-        - gather table
-        - spread table
-        - extract single value
-        - use lookup table
-        - create a crosstab # is this the same as "use lookup table?"
-        - subset data:  # which comes from R's subset function
-            - drop columns
-            - select columns
-        - create join key        
-        - add calculated column from axillary data
-        - add column from intra-table calculation
-        - changing resolution:
-            - aggregate and calculate:
-                - create frequency table
-                - group by
-                - group by geography
-                - group by nominal
-                - group by datetime
-                - group by boolean expression
-                - multi-dimensional transform
-                - create rolling window
-                - sum column
-                - construct pivot table
-    - split:
-        - split, compute, and merge
-        - split and compute
-        - architect parallel workflows        
-- prep for analysis:
-    - calculate frequency:
-        - count column values
-        - count rows
-        - count unique values in column
-    - rank entities by common metric:
-        - calculate ranks
-        - break ties
-        - sort table and view top
-        - sort table by multiple dimensions  # rename to sort table by one or more dimensions 
+- wrangling actions:
+    - amend:
+        - detrend:
+            - adjust for inflation
+            - adjust for season
+            - compute index number    
+        - encode table-level data:
+            - encode table identification in row
+            - encode table summary data in row  # closely related to peel & merge            
         - formulate performance metric:
-            - figure a rate:
+            - calculate standardized score:
+                - calculate z-score
+            - figuring a normalized rate:
                 - calculate percentage
                 - calculate per 1k
                 - calculate proportion
             - calculate central tendency:
                 - calculate mean
-            - compare trends over time:
-                - calculate percentage difference # a.k.a precent change
-                - calculate difference  # also includes days, also called a split
-            - calculate spread
-- cleaning:
-    - Log-ify values
-    - scale numeric values
-    - calculate standardized scores:
-        - calculate z-score
-    - resolve entity names        
-    - detrending:
-        - adjust for inflation
-        - adjust for season
-        - compute index number
-    - deduplicate:
-        - prevent double-counting
-        - drop entirely duplicate rows
-        - drop rows with duplicate value in one column
-        - create a unique key
-        - remove all rows but the master record
-    - format column values:
-        - strip whitespace
-        - change case
-        - convert to date object
-        - replace NA values
-        - change date format
-        - round floating point
-    - extract value from column:
-        - regular expression replace    
-        - extract property from datetime
-        - slice column values  # by position right? Useful for zipcodes
-        - split column on delimiter
-        - concatenate columns
-        - get unique values
-    - pruning:
-        - trim by date range
-        - trim by geographic area
-        - trim by quantitative threshold
-        - filter rows
-        - drop erroneous rows
-        - remove incomplete data
-        - set data confidence threshold
-    - schema:
-        - impose standardized column names    
-        - canonicalize column names
-        - change column data type
-        - rename column
-        - name all columns
-    - fix errors:
-        - fix data errors manually
-        - geocode addresses
-        - fix incorrect calculation
-    - sort table
-- document provenance:
-    - encode table name as new column
-    - encode file name as new column
-- build workflow:
-    - refine table inplace # implying you overwrite some previous data as opposed to making new tables
-    - document:
-        - annotate workflow        
-    - think computationally:
-        - architect a subroutine
-        - architect repeating process
-        - repetitive code
+            - quantify change:
+                - calculate percentage difference
+                - calculate difference
+            - calculate spread  # TODO what is this?            
+        - key generation:
+            - create a semi-unique key  # e.g. concat city state for group or join
+            - create a unique key
+            - concatenate columns  # TODO rename concatenate columns into key (has this always been the case            
+        - rank entities:
+            - assign ranks  # TODO explicitly compute ranks in a sorted table
+            - break ties
+            - sort table            
+            - sort table and view top
+    - clean:
+        - trim fat:
+            - reduce dimensionality:
+                - drop columns
+                - select columns
+            - prune data:
+                - trim by date range
+                - trim by geographic area
+                - trim by quantitative threshold
+                - filter rows
+                - drop erroneous rows
+                - remove incomplete data
+                - set data confidence threshold
+                - deduplicate:
+                    - prevent double-counting
+                    - drop entirely duplicate rows
+                    - drop rows with duplicate value in one column
+                    - remove all rows but the master record  # uh what?                
+        - edit:
+            - handle incomplete data:
+                - replace NA values
+            - fix data errors manually
+            - fix incorrect calculation
+            - regular expression replace  # TODO re-examine this code, can we be more specific as to why?
+            - resolve entity names:
+                - manually perform name entity resolution  # TODO renamed from resolve entity names
+                - strip whitespace  # TODO rename all to trim whitespace
+            - scale values:
+                - Log-ify values
+                - scale numeric values  # TODO linear function                        
+        - format:
+            - value formatting:
+                - change case
+                - change date format
+                - round floating point
+            - meta formatting:
+                - canonicalize column names
+                - change column data type
+        - separate:
+            - extract property from datetime
+            - slice column values
+            - split column on delimiter
+            - get unique values            
+    - integrate:
+        - consolidate:
+            - union tables
+        - supplement:
+            - right join tables
+            - left join tables
+            - join with lookup table  # similar to ammend
+            - merge metadata
+            - ping web service:
+                - add calculated column from axillary data
+                - geocode addresses            
+        - intersect:
+            - inner join tables
+            - natural join  # TODO what does this really mean?
+        - other:
+            - cartesian product  # seems like the opposite of intersection
+            - self join table  # Is this just fancy duplication?          
+    - transform:
+        - summarize:
+            - aggregate:
+                - group by single column
+                - group by multiple columns
+                - create rolling window  # TODO explain rolling window                    
+                - construct pivot table
+                - create a crosstab            
+            - calculate:
+                - sum column values
+                - get max value
+                - count value frequency
+                - count unique values in column
+        - reshape:
+            - spread table
+            - gather table
+
+- wrangling support:  # maybe wrangling environment
+    - display dataset:
+        - check sanity:
+            - check results of previous operation
+            - peek at data    
+            - inspect table schema            
+        - display a table:
+            - format table display
+            - display entire table
+        - Understand distribution:
+            - plot histogram
+            - plot stacked bar chart
+            - plot stacked column chart
+            - plot scatterplot
+            - plot trendline
+            - plot column chart
+            - plot violin plot
+            - plot boxplot
+            - plot scree plot
+    - documentation:
+        - annotate workflow
     - export data:
+        - cache results from external service    
         - export intermediate results
-        - export results
-        - export data for graphics  # Make wrangle data for graphics, measurement, etc... What need'st thou wrangle so much data about?
-    - cache results from external service
-- acquire:
-    - data type:
-        - use non-tabular data:
-            - use structured ascii
-            - use geospatial data
-        - use tabular data
-    - data source:
-        - extraction:
+        - export results            
+    - workflow building:
+        - think computationally:
+            - architect a subroutine
+            - architect repeating process
+        - toggle step on and off
+    - data acquisition:
+        - extracted data:
             - pull tables out of pdf
             - scrape web for data
-        - use existing data:
-            - use third-party data
-            - use another news orgs data
-            - use previously cleaned data
-        - create new data:
+
+        - create:
             - construct table manually
-           # - collect raw data # First-hand observations or logs (Have not seen yet)
             - generate data computationally
-- display:
-    - sanity check:
-        - check results of previous operation
-        - peek at data    
-    - display a table:
-        - inspect table schema
-        - format table display
-        - display entire table
-    - Understand data:
-        - plot histogram
-        - plot stacked bar chart
-        - plot stacked column chart
-        - plot scatterplot
-        - plot trendline
-        - plot column chart
-        - plot violin plot
-        - plot boxplot
-        - plot scree plot
-- wtf:
-    - pain point
-    - omits data quality exploration
-    - Wrangle data for graphics
-    - toggle step on and off
-    - tolerate dirty data
-    - encode table summary data in row
-- not wrangling:
+           # - collect raw data # First-hand observations or logs (Have not coded that article yet)
+    - data properties:
+        - quality:
+            - use previously cleaned data    
+        - structure:
+            - use structured ascii
+            - use geospatial data
+            - use tabular data
+        - source:
+            - use public disclosure data
+            - use public data
+            - use academic data
+            - use non-public, provided data
+            - use another news orgs data
+            - use data from colleague        
+- wrangling purpose:
     - analysis:
+        - extract single value        
         - analyze principle components
         - fit a generalized linear model
         - look for trends
-        - Find most frequently occurring  # although this is tied closely with sort
-        - Find worst offender
+        - find most frequently occurring  # closely related to sort
+        - find worst offender
+        - count number of records
+    - wrangle data for graphics
+    - combine seemingly disparate datasets
+- wrangling strategies:
+    - value replacement
+    - Preserve existing values
+    - table splitting:
+        - split, compute, and merge
+        - split and compute
+        - peel and merge
+    - tolerate dirty data
+    - omits data quality exploration
+    - temporary joining column
+
+- wrangling pain points:
+    - repetitive code
+    - resort after merge
+    - data loss from aggregation
+    - encoding provenance in data
