@@ -23,12 +23,13 @@
         - key generation:
             - create a semi-unique key  # e.g. concat city state for group or join
             - create a unique key
-            - concatenate columns  # TODO rename concatenate columns into key (has this always been the case            
+            - concatenate columns  # TODO rename concatenate columns into key (has this always been the case?)
+            - designate column as primary key
         - rank entities:
             - assign ranks  # TODO explicitly compute ranks in a sorted table
             - break ties
             - sort table            
-            - sort table and view top
+            - sort table and view top  # rename to sort table
     - clean:
         - trim fat:
             - reduce dimensionality:
@@ -105,12 +106,12 @@
         - reshape:
             - spread table
             - gather table
-
 - wrangling support:  # maybe wrangling environment
     - display dataset:
         - check sanity:
             - check results of previous operation
-            - peek at data    
+            - compare total number of rows
+            - peek at data
             - inspect table schema            
         - display a table:
             - format table display
@@ -140,7 +141,6 @@
         - extracted data:
             - pull tables out of pdf
             - scrape web for data
-
         - create:
             - construct table manually
             - generate data computationally
@@ -180,9 +180,9 @@
     - tolerate dirty data
     - omits data quality exploration
     - temporary joining column
-
 - wrangling pain points:
     - repetitive code
+    - make an incorrect conclusion
     - resort after merge
     - data loss from aggregation
     - encoding provenance in data

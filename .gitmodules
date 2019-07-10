@@ -50,3 +50,6 @@
 [submodule "notebooks/time/babyname_politics"]
 	path = notebooks/time/babyname_politics
 	url = https://github.com/swkasica/babyname_politics.git
+[submodule "notebooks/buzzfeednews/2015-11-refugees-in-the-united-states"]
+	path = notebooks/buzzfeednews/2015-11-refugees-in-the-united-states
+	url = https://github.com/BuzzFeedNews/2015-11-refugees-in-the-united-states.git
