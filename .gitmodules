@@ -53,3 +53,6 @@
 [submodule "notebooks/buzzfeednews/2015-11-refugees-in-the-united-states"]
 	path = notebooks/buzzfeednews/2015-11-refugees-in-the-united-states
 	url = https://github.com/BuzzFeedNews/2015-11-refugees-in-the-united-states.git
+[submodule "notebooks/publicl/employment-discrimination"]
+	path = notebooks/publicl/employment-discrimination
+	url = https://github.com/swkasica/employment-discrimination
