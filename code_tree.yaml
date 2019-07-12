@@ -35,19 +35,19 @@
                               desc: 'TK'
                             - name: Calculate per 1K
                               desc: 'TK'
-                            - name: calculate proportion
+                            - name: Calculate Proportion
                               desc: 'TK'
                       - name: Calculate Central Tendency
                         desc: 'These metrics try to find typical value in the data.'
                         sub:
-                          - name: calculate mean
+                          - name: Calculate Mean
                             desc: 'TK'
-                      - name: quantify change
+                      - name: Quantify Change
                         desc: 'Measuring how much things change, usually over time.'
                         sub:
                           - name: calculate percentage difference
                             desc: '"the difference between two values taken as a percentage of whichever value you are using as the base," according to Philip Meyer in *Precision Journalism.* This term is synonymous with percent change.'
-                      - name: calculate difference
+                      - name: Calculate Difference
                         desc: 'TK' 
                       - name: calculate spread
                         desc: 'TK'
@@ -279,7 +279,7 @@
           - name: Understand distribution
             desc: 'Operations that reveal something of the underlying distribution of data.'
             sub:
-                - name: plot histogram
+                - name: Plot Histogram
                   desc: ''
                 - name: plot stacked bar chart
                   desc: ''
@@ -397,6 +397,8 @@
               desc: ''
             - name: count number of records
               desc: ''
+            - name: calculate statistic
+              desc: 'Compute a statistic such as median, total count of records, etc..'
         - name: wrangle data for graphics
           desc: 'When a purpose of the notebook is to format data for other visualization tools'
         - name: combine seemingly disparate datasets
@@ -404,19 +406,19 @@
     - name: strategies
       desc: ''
       sub:
-        - name: value replacement
-          desc: 'When modifications to table values overwrite the previous values.'
-        - name: Preserve existing values
-          desc: ''
+        - name: Value Replacement
+          desc: 'The output of an intra- or inter- column calculation is reassigned to an existing column.'
+        - name: Preserve Existing Values
+          desc: 'The output of an intra- or inter- column calculation is assigned to a new row'
         - name: set data confidence threshold    
           desc: ''
-        - name: table splitting
-          desc: 'Tables may be divided, partitioned, or otherwise split into multiple tables to accomplish a transformation goal. This often, but not always, involves re-merging the split table back into one table.'
+        - name: Table Splitting
+          desc: 'Tables may be divided, partitioned, or otherwise split into multiple tables to accomplish a transformation goal.'
           sub:
             - name: split, compute, and merge  # wait is it filter or split? Is it a clean partition?
               desc: 'First, the journalist partitions a single data frame into multiple, separate data frames. Then, often identical computations are run on all the data frame. Finally, the multiple data frames are consolidated into one data frame again.'
-            - name: split and compute
-              desc: 'Is similar to *Split, compute, and merge* but the separate data frames are not recombined at the end of the wrangling process.'
+            - name: Split and Compute
+              desc: 'One table is split into two or more and identical computations are applied to each table.'
             - name: peel and merge
               desc: 'When a single column of a data frame is isolated and computed upon, such as computing the frequency of a nominal column, and the results are merged back into the original table.'
             - name: merge tables to create pivot table

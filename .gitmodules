@@ -56,3 +56,6 @@
 [submodule "notebooks/publicl/employment-discrimination"]
 	path = notebooks/publicl/employment-discrimination
 	url = https://github.com/swkasica/employment-discrimination
+[submodule "notebooks/fivethirtyeight/data"]
+	path = notebooks/fivethirtyeight/data
+	url = https://github.com/swkasica/data.git
