@@ -1,8 +1,46 @@
 # Data Wrangling in Journalism
 
-## Workflows analyzed
 
-* ["The drought eased up, and these Californians turned on the spigot"](https://www.latimes.com/local/lanow/la-me-ln-water-conservation-backslide-20161018-snap-htmlstory.html); *Los Angeles Times*; Oct. 31, 2016; [:octocat:](https://github.com/datadesk/california-ccscore-analysis)
-* ["Wages rise on California farms. Americans still don’t want the job"](http://www.latimes.com/projects/la-fi-farms-immigration); *Los Angeles Times*; March 17, 2017; [:octocat:](https://github.com/datadesk/california-crop-production-wages-analysis)
-* ["Democrats Who Really Like More Than One Presidential Candidate Have Found A Temporary Solution: Give Them All Money"](https://www.buzzfeednews.com/article/tariniparti/democratic-donors-2020-candidates); *BuzzFeed News*; April 16, 2019; [:octocat:](https://github.com/buzzfeednews/2019-04-democratic-candidate-codonors)
-* ["A census undercount could cost California billions — and L.A. is famously hard to track"](https://www.latimes.com/local/lanow/la-me-la-county-census-hard-to-count-20190429-htmlstory.html); *Los Angeles Times*; April 29, 2019; [:octocat:](https://github.com/datadesk/census-hard-to-map-analysis)
+## Analysis coded
+
+Aldhous, Peter. (2016, September 16). "Shy Trumpers" polling analysis. *BuzzFeed News*. Retrieved from https://github.com/BuzzFeedNews/2016-09-shy-trumpers
+
+Chinoy, Sahil. (2018, November 12). The Cube Root Law. *New York Times*. Retrieved from https://observablehq.com/@sahilchinoy/the-cube-root-law
+
+Chinoy, Sahil. (2018, October 11). Heat index. *New York Times*. Retrieved from https://observablehq.com/@sahilchinoy/heat-index
+
+Flowers, Andrew. (2014, April 8). Bechdel. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data/tree/master/bechdel
+
+Hickey, Walter. (2018, February 26). Bob Ross. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data/tree/master/bob-ross
+
+Jones, Brent. (2018, May 31). Crime and heat analysis. *St. Louis Public Radio*. Retrieved from https://github.com/stlpublicradio/2018-05-31-crime-and-heat-analysis
+
+Meiners, Joan. (2018, August 16). Endangered species act Louisiana: American alligator. Retrieved from https://github.com/beecycles/Endangered-Species-Act-Louisiana
+
+Menezes, Ryan; Stevens, Matt; Welsh, Ben. (2016, October 31). California "Conservation-Consumption Score" analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/california-cc-score-analysis
+
+Singer-Vine, Jeremy. (2019, April 16). Analysis of early 2020 Democratic campaign co-donors. *BuzzFeed News*. Retrieved from https://github.com/BuzzFeedNews/2019-04-democratic-candidate-codonors
+
+Singer-Vine, Jeremy. (2015, November 18). US Refugee Data and Analysis. *BuzzFeed News*. Retrieved from https://github.com/BuzzFeedNews/2015-11-refugees-in-the-united-states
+
+Templon, John. (2016, November 2). Counties That Predict The Election. *BuzzFeed News*. Retrieved from https://github.com/BuzzFeedNews/2016-11-bellwether-counties
+
+Templon, John. (2016, April 26). Analysis of Republican Donor Movement. *BuzzFeed News*. Retrieved from https://github.com/BuzzFeedNews/2016-04-republican-donor-movements
+
+Welsh, Ben. (2019, April 29). Census "hard to count" analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/census-hard-to-map-analysis
+
+Welsh, Ben. (2017, March 17). California crop production wages analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/california-crop-production-wages-analysis
+
+Welsh, Ben. (2017, May 25). California H-2A visas analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/california-h2a-visas-analysis
+
+Wilson, Chris. (2016, December 20). Baby Name Politics. *Time*. Retrieved from https://github.com/TimeMagazine/babyname_politics
+
+Wilson, Chris. (2014, May 27). Wikipedia rankings. *Time*. Retrieved from https://github.com/TimeMagazine/wikipedia-rankings
+
+Yerardi, Joe. (2019, February 28). Injustice at Work. Center for Public Integrity; *Vox*. Retrieved from https://github.com/PublicI/employment-discrimination
+
+Zhang, Christine. (2018, October 15). Maryland voter registration analysis. *Baltimore Sun*. Retrieved from https://github.com/baltimore-sun-data/2018-voter-registration
+
+Zarkhin, Fedor. (2017, April 21). Long-term care complaints data and analysis. *The Oregonian*. Retrieved from https://github.com/TheOregonian/long-term-care-db
+
+Meiners. Joan. (2017, November 30). Power of Irma. *WUFT*. Retrieved from https://github.com/beecycles/Power_of_Irma
