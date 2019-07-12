@@ -1,192 +1,442 @@
-- wrangling actions:
-    - amend:
-        - detrend:
-            - adjust for inflation
-            - adjust for season
-            - compute index number    
-        - encode table-level data:
-            - encode table identification in row
-            - encode table summary data in row  # closely related to peel & merge            
-        - formulate performance metric:
-            - calculate standardized score:
-                - calculate z-score
-            - figuring a normalized rate:
-                - calculate percentage
-                - calculate per 1k
-                - calculate proportion
-            - calculate central tendency:
-                - calculate mean
-            - quantify change:
-                - calculate percentage difference
-                - calculate difference
-            - calculate spread  # TODO what is this?            
-        - key generation:
-            - create a semi-unique key  # e.g. concat city state for group or join
-            - create a unique key
-            - concatenate columns  # TODO rename concatenate columns into key (has this always been the case?)
-            - designate column as primary key
-        - rank entities:
-            - assign ranks  # TODO explicitly compute ranks in a sorted table
-            - break ties
-            - sort table            
-            - sort table and view top  # rename to sort table
-    - clean:
-        - trim fat:
-            - reduce dimensionality:
-                - drop columns
-                - select columns
-                - align table columns for consolidation
-            - prune data:
-                - trim by date range
-                - trim by geographic area
-                - trim by quantitative threshold
-                - filter rows
-                - drop erroneous rows
-                - remove incomplete data
-                - set data confidence threshold
-                - deduplicate:
-                    - prevent double-counting
-                    - drop entirely duplicate rows
-                    - drop rows with duplicate value in one column
-                    - remove all rows but the master record  # uh what?                
-        - edit:
-            - handle incomplete data:
-                - replace NA values
-            - fix data errors manually
-            - fix incorrect calculation
-            - regular expression replace  # TODO re-examine this code, can we be more specific as to why?
-            - resolve entity names:
-                - manually perform name entity resolution  # TODO rename perform name entity resolution manually
-                - strip whitespace  # TODO rename all to trim whitespace
-                - combine entities by string matching
-            - scale values:
-                - Log-ify values
-                - scale numeric values  # TODO linear function                        
-        - format:
-            - value formatting:
-                - change case
-                - change date format
-                - round floating point
-            - meta formatting:
-                - canonicalize column names
-                - change column data type
-        - separate:
-            - extract property from datetime
-            - slice column values
-            - split column on delimiter
-            - get unique values            
-    - integrate:
-        - consolidate:
-            - union tables
-            - concatenate files together
-        - supplement:
-            - right join tables
-            - left join tables
-            - join with lookup table  # similar to ammend
-            - merge metadata
-            - ping web service:
-                - add calculated column from axillary data
-                - geocode addresses            
-        - intersect:
-            - inner join tables
-            - natural join  # TODO what does this really mean?
-        - other:
-            - cartesian product  # seems like the opposite of intersection
-            - self join table  # Is this just fancy duplication?          
-    - transform:
-        - summarize:
-            - aggregate:
-                - group by single column
-                - group by multiple columns
-                - create rolling window  # TODO explain rolling window                    
-                - construct pivot table
-                - create a crosstab            
-            - calculate:
-                - sum column values
-                - get max value
-                - count value frequency
-                - count unique values in column
-        - reshape:
-            - spread table
-            - gather table
-- wrangling support:  # maybe wrangling environment
-    - display dataset:
-        - check sanity:
-            - check results of previous operation
-            - compare total number of rows
-            - peek at data
-            - inspect table schema            
-        - display a table:
-            - format table display
-            - display entire table
-        - Understand distribution:
-            - plot histogram
-            - plot stacked bar chart
-            - plot stacked column chart
-            - plot scatterplot
-            - plot trendline
-            - plot column chart
-            - plot violin plot
-            - plot boxplot
-            - plot scree plot
-    - documentation:
-        - annotate workflow
-    - export data:
-        - cache results from external service    
-        - export intermediate results
-        - export results            
-    - workflow building:
-        - think computationally:
-            - architect a subroutine
-            - architect repeating process
-        - toggle step on and off
-    - data acquisition:
-        - extracted data:
-            - pull tables out of pdf
-            - scrape web for data
-        - create:
-            - construct table manually
-            - generate data computationally
-           # - collect raw data # First-hand observations or logs (Have not coded that article yet)
-    - data properties:
-        - quality:
-            - use previously cleaned data    
-        - structure:
-            - use structured ascii
-            - use geospatial data
-            - use tabular data
-        - source:
-            - use public disclosure data
-            - use public data
-            - use academic data
-            - use non-public, provided data
-            - use another news orgs data
-            - use data from colleague        
-- wrangling purpose:
-    - analysis:
-        - extract single value        
-        - analyze principle components
-        - fit a generalized linear model
-        - look for trends
-        - find most frequently occurring  # closely related to sort
-        - find worst offender
-        - count number of records
-    - wrangle data for graphics
-    - combine seemingly disparate datasets
-- wrangling strategies:
-    - value replacement
-    - Preserve existing values
-    - table splitting:
-        - split, compute, and merge  # wait is it filter or split? Is it a clean partition?
-        - split and compute
-        - peel and merge
-        - merge tables to create pivot table
-    - tolerate dirty data
-    - omits data quality exploration
-    - temporary joining column
-- wrangling pain points:
-    - repetitive code
-    - make an incorrect conclusion
-    - resort after merge
-    - data loss from aggregation
-    - encoding provenance in data
+- name: Actions
+  desc: 'TK'
+  sub:
+    - name: Amend
+      desc: '*Amending* a table constitutes creating new columns in the table without *integrating* other tables.'
+      sub:
+          - name: Detrend
+            desc: '"filter out the secular effect in order to see what is going on specifically with the phenomenon you are investigating," Philip Meyer in *Precision Journalism*.'
+            sub:
+                - name: Adjust for Inflation
+                  desc: 'TK'
+                - name: Adjust for Season
+                  desc: 'TK'
+                - name: Compute Index Number
+                  desc: 'TK'
+                - name: encode table-level data
+                  desc: 'Adding columns populated with data aggregated from the whole table, such as the frequency of nominal variables.'
+                  sub:
+                      - name: encode table identification in row
+                        desc: 'When some way of identifying the table is encoded as a separate column in each row. Common identification methods include the name of the corresponding file, an arbitrary table name, or boolean value.'
+                      - name: encode table summary data in row
+                        desc: 'When high-level, aggregated data about the table is encoded in the rows. For example, a table column contains the frequency of nominal values in a different column of the same table.'
+                - name: formulate performance metric
+                  desc: 'Codes in this category specify a calculation that is later used to compare different entities or the same entity over time. A recurring theme between many of these notebooks is to compare different entities, such as political parties, by a common, quantitative metric, such as percentage of all newly registered voters.'
+                  sub:
+                      - name: Calculate Standardized Score
+                        desc: 'Standardized scores are metrics that quantify deviation from some definition of "normal."'
+                        sub:
+                          - name: calculate z-score
+                            desc: 'Calculate how many standard deviations a value in a column is away from the mean. Journalists perform this function to simply find outliers in a dataset or when preparing the data for principle component analysis.'
+                      - name: figuring a normalized rate
+                        desc: 'Figuring a rate often normalizes some performance metric to allow fair comparisons between entities. This code covers: simple rational numbers, percentages, and per-1000 rates.'
+                        sub:
+                            - name: Calculate Percentage
+                              desc: 'TK'
+                            - name: Calculate per 1K
+                              desc: 'TK'
+                            - name: calculate proportion
+                              desc: 'TK'
+                      - name: Calculate Central Tendency
+                        desc: 'These metrics try to find typical value in the data.'
+                        sub:
+                          - name: calculate mean
+                            desc: 'TK'
+                      - name: quantify change
+                        desc: 'Measuring how much things change, usually over time.'
+                        sub:
+                          - name: calculate percentage difference
+                            desc: '"the difference between two values taken as a percentage of whichever value you are using as the base," according to Philip Meyer in *Precision Journalism.* This term is synonymous with percent change.'
+                      - name: calculate difference
+                        desc: 'TK' 
+                      - name: calculate spread
+                        desc: 'TK'
+          - name: key generation
+            desc: 'Operations that create "key" columns. These columns are often, but not always, used in group by or join operations. As this step is often a discrete precursor to data *integration*, it belongs in the *amend* group.'
+            sub:
+                - name: create a semi-unique key
+                  desc: 'TK'
+                - name: create a unique key
+                  desc: 'TK'
+                - name: concatenate columns into key
+                  desc: 'TK'
+                - name: designate column as primary key
+                  desc: 'TK'
+          - name: rank data
+            desc: 'Operations that encode semantic meaning about the data with table index.'
+            sub:
+                - name: assign ranks         
+                  desc: 'When a column of numerical ranks is explicitly assigned to rows in the table.'
+                - name: break ties
+                  desc: 'TK'
+                - name: sort table
+                  desc: 'When rank is implicitly assigned by rearranging row position in the table.'
+
+    - name: clean
+      desc: 'Operations to correct erroneous or remove otherwise unwanted rows and values from the table.'
+      sub:
+          - name: trim fat
+            desc: 'Removing portions of the table not relevant to analysis.'
+            sub:
+                - name: prune columns
+                  desc: 'Simply put, these operations remove table columns.'
+                  sub:
+                    - name: drop columns
+                      desc: 'TK'
+                    - name: select columns
+                      desc: 'TK'
+                    - name: align table columns for consolidation
+                      desc: 'TK'
+                - name: prune rows
+                  desc: 'Simply put, these operations remove table rows.'
+                  sub:
+                      - name: trim by date range
+                        desc: 'TK'
+                      - name: trim by geographic area
+                        desc: 'TK'
+                      - name: trim by quantitative threshold
+                        desc: 'TK'
+                - name: filter rows
+                  desc: 'TK'
+                - name: drop erroneous rows
+                  desc: 'TK'
+                - name: remove incomplete data
+                  desc: 'TK'
+                - name: deduplicate
+                  desc: 'Remove rows from the table that contain two or more of the same "observation." Duplicates may constitute rows with identical values in all, one, or zero columns.'
+                  sub:
+                      - name: prevent double-counting
+                        desc: 'TK'
+                      - name: drop entirely duplicate rows
+                        desc: 'TK'
+                      - name: drop rows with duplicate value in one column
+                        desc: 'TK'
+                      - name: remove all rows but the master record
+                        desc: 'TK'
+          - name: edit
+            desc: 'Operations that fundamentally modify table values.'
+            sub:
+                - name: replace NA values
+                  desc: 'Raw data may contain incomplete table values (denoted as NA) or empty values (denoted as NULL)'
+                - name: fix data errors manually
+                  desc: 'TK'
+                - name: fix incorrect calculation
+                  desc: 'TK'
+                - name: remove with regular expression
+                  desc: 'TK'
+                - name: resolve entity names
+                  desc: 'Any method that essentialyl perform name entity resolution.'
+                  sub:
+                      - name: perform name entity resolution manually
+                        desc: 'TK'
+                      - name: strip whitespace
+                        desc: 'Note that this might also fall under *resolving entity names*.'
+                      - name: combine entities by string matching
+                        desc: 'TK'
+                - name: scale values
+                  desc: 'Operations that apply some mathematical operation to columns of quantitative data. This code is different from the codes under **Formulate performance metric** because this closer to cleaning.'
+                  sub:
+                      - name: Log-ify values
+                        desc: 'TK'
+                      - name: perform scalar multiplication
+                        desc: 'TK'
+          - name: format
+            desc: 'Operations that modify the table values appearance or style.'
+            sub:
+                - name: Value Formatting
+                  desc: 'Operations that modify the values within the table.'
+                  sub:
+                      - name: change case
+                        desc: 'TK'
+                      - name: change date format
+                        desc: 'TK'
+                      - name: round floating point
+                        desc: 'TK'
+                - name: Meta Formatting
+                  desc: 'Operations that modify anything except table values.'
+                  sub:
+                      - name: canonicalize column names
+                        desc: 'TK'
+                      - name: change column data type
+                        desc: 'TK'
+          - name: separate
+            desc: 'Mapping one column into more than one because multiple dimensions of the dataset packed into one column.'
+            sub:
+              - name: extract property from datetime
+                desc: 'TK'
+              - name: slice column values
+                desc: 'Extracting the relevant column values by character position, e.g. the first five digits of a zip code.'
+              - name: split column on delimiter
+                desc: 'TK'
+              - name: get unique values
+                desc: 'TK'            
+    - name: integrate
+      desc: 'Combining data residing in different tables into one table.'
+      sub:
+        - name: consolidate
+          desc: 'Row-wise combination of multiple tables into one. Schema changes are non-existent or inconsequential.'
+          sub:
+            - name: union tables
+              desc: 'TK'
+            - name: concatenate files together
+              desc: 'TK'
+        - name: intersect
+          desc: 'Joining two tables such that non-matching rows are excluded from the combined table.'
+          sub:
+            - name: inner join tables
+              desc: 'TK'
+            - name: natural join  # TODO what does this really mean?        
+              desc: 'TK'
+        - name: supplement
+          desc: 'Joining a table with a primary table such that all the rows in the primary table are in the combined table.'
+          sub:
+            - name: right join tables
+              desc: 'TK'
+            - name: left join tables
+              desc: 'TK'
+            - name: join with lookup table  # similar to ammend
+              desc: 'Two column tables meant for mapping a key from one table to the unique column in the lookup table.'
+            - name: merge metadata
+              desc: 'TK'
+            - name: ping web service
+              desc: 'TK'
+              sub:
+                  - name: add calculated column from axillary data
+                    desc: 'TK'
+                  - name: geocode addresses
+                    desc: 'TK'
+        - name: other
+          desc: 'Integration operations that do not fall into the previous two categories'
+          sub:
+            - name: cartesian product  # seems like the opposite of intersection
+              desc: 'TK'
+            - name: self join table  # Is this just fancy duplication?          
+              desc: 'TK'
+    - name: transform
+      desc: 'Operations that transform a table into an aggregated, lower-resolution view of the original table.'
+      sub:
+          - name: summarize
+            desc: ''
+            sub:
+                - name: aggregate
+                  desc: 'Codes that group the table along one or more table dimension.'
+                  sub:
+                      - name: group by single axis
+                        desc: 'Grouping one or more columns such that grouped columns are hierarchically ordered when grouping by two or more columns. This operation is commonly implemented with `groupby` in Pandas.'
+                        sub:
+                            - name: group by single column
+                              desc: ''
+                            - name: group by multiple columns
+                              desc: ''
+                      - name: group by double axis
+                        desc: 'Grouping by more than one column such that one grouped column is not hierarchically paired with another grouped column.'
+                        sub:
+                          - name: construct pivot table
+                            desc: 'Is essentially the same as a crosstab except that the table axes may contain hierarchical, nominal data.'
+                          - name: create a crosstab
+                            desc: ' User performs a crosstab query, as defined by [Microsoft Office](https://support.office.com/en-us/article/make-summary-data-easier-to-read-by-using-a-crosstab-query-8465b89c-2ff2-4cc8-ba60-2cd8484667e8). Crosstabs are very similar to the reshaping operation *spread*, except that they summarize values using aggregate functions.'
+                      - name: create rolling window
+                        desc: ''
+          - name: calculate
+            desc: 'These are within-column calculations that often, but not always, immediately follow an *aggregation* operation.'
+            sub:
+                - name: sum column values
+                  desc: ''
+                - name: get max value
+                  desc: ''
+                - name: count value frequency
+                  desc: ''
+                - name: count unique values in column
+                  desc: ''
+          - name: reshape
+            desc: "Operations fundamentally change the table's structure, but do not perform any kind of summarization calculation. *Constructing a pivot table* often involves a *spread-like* operation when defining what values to use as columns in the new table. The difference with *reshaping* is that sometimes the journalist may not summarize the reshaped table."
+            sub:
+                - name: spread table
+                  desc: ''
+                - name: gather table
+                  desc: ''
+    - name: display dataset
+      desc: 'Different ways to check in on the state of the dataset during wrangling.'
+      sub:
+          - name: check sanity
+            desc: 'Operations that confirm the effect of a previous wrangling operation.'
+            sub:
+                - name: check results of previous operation
+                  desc: ''
+                - name: compare total number of rows
+                  desc: ''
+                - name: peek at data
+                  desc: ''
+                - name: inspect table schema
+                  desc: ''
+          - name: display a table
+            desc: 'Operations that have to do with displaying the raw data as a table.'
+            sub:
+                - name: format table display
+                  desc: ''
+                - name: display entire table
+                  desc: ''
+          - name: Understand distribution
+            desc: 'Operations that reveal something of the underlying distribution of data.'
+            sub:
+                - name: plot histogram
+                  desc: ''
+                - name: plot stacked bar chart
+                  desc: ''
+                - name: plot stacked column chart
+                  desc: ''
+                - name: plot scatterplot
+                  desc: ''
+                - name: plot trendline
+                  desc: ''
+                - name: plot column chart
+                  desc: ''
+                - name: plot violin plot
+                  desc: ''
+                - name: plot boxplot
+                  desc: ''
+                - name: plot scree plot
+                  desc: ''
+- name: observations
+  desc: ''
+  sub:
+    - name: document
+      desc: 'When journalist annotate their data wrangling processes with non-executing comments or notes.'
+      sub:
+        - name: annotate workflow
+          desc: ''
+    - name: cache results from external service
+      desc: ''            
+    - name: export data
+      desc: 'Ways in which journalist export the results of their data wrangling.'
+      sub:
+          - name: export intermediate results
+            desc: ''
+          - name: export results
+            desc: ''
+    - name: workflow building
+      desc: ''
+      sub:
+          - name: think computationally
+            desc: 'Codes that demonstrate computational thinking on the part of the journalist.'
+            sub:
+              - name: architect a subroutine
+                desc: ''
+              - name: architect repeating process
+                desc: ''
+          - name: toggle step on and off
+            desc: ''
+    - name: acquire data
+      desc: 'Codes relating to how data is originally acquired by journalists.'
+      sub:
+        - name: extracted data
+          desc: 'Extraction occurs when data is originally in a format that is not readily accessible for wrangling and analysis through programmatic methods. '
+          sub:
+            - name: pull tables out of pdf
+              desc: ''
+            - name: scrape web for data
+              desc: ''
+    - name: create
+      desc: 'Data used in wrangling/analysis is collected or generated by the journalist. In "Heat and Index" Sahil Chinoy computationally generates temperature and humidity data.'
+      sub:
+        - name: construct table manually
+          desc: ''
+        - name: generate data computationally
+          desc: ''
+#     - name: collect raw data
+#       desc: 'First-hand observations or logs (Have not coded that article yet)'    
+    - name: data properties
+      desc: ''
+      sub:
+        - name: history
+          desc: ''
+          sub:
+            - name: use previously cleaned data
+              desc: ''
+        - name: structure
+          desc: 'Is the data tabular, geospatial. What kind of data is the journalist dealing with?'
+          sub:
+            - name: use structured ascii
+              desc: ''
+            - name: use geospatial data
+              desc: ''
+            - name: use tabular data
+              desc: ''
+        - name: source
+          desc: 'Where did this data come from?'
+          sub:
+              - name: use public disclosure data
+                desc: ''
+              - name: use public data
+                desc: ''
+              - name: use academic data
+                desc: ''
+              - name: use non-public, provided data
+                desc: ''
+              - name: use another news orgs data
+                desc: ''
+              - name: use data from colleague        
+                desc: ''
+    - name: purpose
+      desc: 'Why does this data need to be wrangled? For what end does wrangling serve? This category ventures into analysis, which not wrangling.'
+      sub:
+        - name: analysis
+          desc: 'Kinds of analysis data journalists need to wrangle data to perform.'
+          sub:
+            - name: extract single value
+              desc: ''
+            - name: analyze principle components
+              desc: ''
+            - name: fit a generalized linear model
+              desc: ''
+            - name: look for trends
+              desc: ''
+            - name: find most frequently occurring
+              desc: ''
+            - name: find worst offender
+              desc: ''
+            - name: count number of records
+              desc: ''
+        - name: wrangle data for graphics
+          desc: 'When a purpose of the notebook is to format data for other visualization tools'
+        - name: combine seemingly disparate datasets
+          desc: 'When a notebook largely constitutes combining seemingly unrelated datasets.'
+    - name: strategies
+      desc: ''
+      sub:
+        - name: value replacement
+          desc: 'When modifications to table values overwrite the previous values.'
+        - name: Preserve existing values
+          desc: ''
+        - name: set data confidence threshold    
+          desc: ''
+        - name: table splitting
+          desc: 'Tables may be divided, partitioned, or otherwise split into multiple tables to accomplish a transformation goal. This often, but not always, involves re-merging the split table back into one table.'
+          sub:
+            - name: split, compute, and merge  # wait is it filter or split? Is it a clean partition?
+              desc: 'First, the journalist partitions a single data frame into multiple, separate data frames. Then, often identical computations are run on all the data frame. Finally, the multiple data frames are consolidated into one data frame again.'
+            - name: split and compute
+              desc: 'Is similar to *Split, compute, and merge* but the separate data frames are not recombined at the end of the wrangling process.'
+            - name: peel and merge
+              desc: 'When a single column of a data frame is isolated and computed upon, such as computing the frequency of a nominal column, and the results are merged back into the original table.'
+            - name: merge tables to create pivot table
+              desc: ''
+        - name: tolerate dirty data
+          desc: ''
+        - name: omits data quality exploration
+          desc: ''
+        - name: temporary joining column
+          desc: ''
+    - name: pain points
+      desc: ''
+      sub:
+        - name: repetitive code
+          desc: 'Instances where code is repetitively copied and pasted.'
+        - name: make an incorrect conclusion
+          desc: 'Instances where the journalist has made an incorrect conclusion about the data.'
+        - name: resort after merge
+          desc: ''
+        - name: data loss from aggregation
+          desc: ''
+        - name: encoding provenance in data
+          desc: ''
