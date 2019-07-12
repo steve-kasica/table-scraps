@@ -1,56 +1,56 @@
-- name: Actions
+- name: actions
   desc: 'TK'
   sub:
-    - name: Amend
+    - name: amend
       desc: '*Amending* a table constitutes creating new columns in the table without *integrating* other tables.'
       sub:
-          - name: Detrend
+          - name: detrend
             desc: '"filter out the secular effect in order to see what is going on specifically with the phenomenon you are investigating," Philip Meyer in *Precision Journalism*.'
             sub:
-                - name: Adjust for Inflation
+                - name: adjust for inflation
                   desc: 'TK'
-                - name: Adjust for Season
+                - name: adjust for season
                   desc: 'TK'
-                - name: Compute Index Number
+                - name: compute index number
                   desc: 'TK'
-                - name: encode table-level data
-                  desc: 'Adding columns populated with data aggregated from the whole table, such as the frequency of nominal variables.'
+          - name: encode table-level data
+            desc: 'Adding columns populated with data aggregated from the whole table, such as the frequency of nominal variables.'
+            sub:
+              - name: encode table identification in row
+                desc: 'When some way of identifying the table is encoded as a separate column in each row. Common identification methods include the name of the corresponding file, an arbitrary table name, or boolean value.'
+              - name: encode table summary data in row
+                desc: 'When high-level, aggregated data about the table is encoded in the rows. For example, a table column contains the frequency of nominal values in a different column of the same table.'
+          - name: formulate performance metric
+            desc: 'Codes in this category specify a calculation that is later used to compare different entities or the same entity over time. A recurring theme between many of these notebooks is to compare different entities, such as political parties, by a common, quantitative metric, such as percentage of all newly registered voters.'
+            sub:
+                - name: Calculate Standardized Score
+                  desc: 'Standardized scores are metrics that quantify deviation from some definition of "normal."'
                   sub:
-                      - name: encode table identification in row
-                        desc: 'When some way of identifying the table is encoded as a separate column in each row. Common identification methods include the name of the corresponding file, an arbitrary table name, or boolean value.'
-                      - name: encode table summary data in row
-                        desc: 'When high-level, aggregated data about the table is encoded in the rows. For example, a table column contains the frequency of nominal values in a different column of the same table.'
-                - name: formulate performance metric
-                  desc: 'Codes in this category specify a calculation that is later used to compare different entities or the same entity over time. A recurring theme between many of these notebooks is to compare different entities, such as political parties, by a common, quantitative metric, such as percentage of all newly registered voters.'
+                    - name: calculate z-score
+                      desc: 'Calculate how many standard deviations a value in a column is away from the mean. Journalists perform this function to simply find outliers in a dataset or when preparing the data for principle component analysis.'
+                - name: figuring a normalized rate
+                  desc: 'Figuring a rate often normalizes some performance metric to allow fair comparisons between entities. This code covers: simple rational numbers, percentages, and per-1000 rates.'
                   sub:
-                      - name: Calculate Standardized Score
-                        desc: 'Standardized scores are metrics that quantify deviation from some definition of "normal."'
-                        sub:
-                          - name: calculate z-score
-                            desc: 'Calculate how many standard deviations a value in a column is away from the mean. Journalists perform this function to simply find outliers in a dataset or when preparing the data for principle component analysis.'
-                      - name: figuring a normalized rate
-                        desc: 'Figuring a rate often normalizes some performance metric to allow fair comparisons between entities. This code covers: simple rational numbers, percentages, and per-1000 rates.'
-                        sub:
-                            - name: Calculate Percentage
-                              desc: 'TK'
-                            - name: Calculate per 1K
-                              desc: 'TK'
-                            - name: Calculate Proportion
-                              desc: 'TK'
-                      - name: Calculate Central Tendency
-                        desc: 'These metrics try to find typical value in the data.'
-                        sub:
-                          - name: Calculate Mean
-                            desc: 'TK'
-                      - name: Quantify Change
-                        desc: 'Measuring how much things change, usually over time.'
-                        sub:
-                          - name: calculate percentage difference
-                            desc: '"the difference between two values taken as a percentage of whichever value you are using as the base," according to Philip Meyer in *Precision Journalism.* This term is synonymous with percent change.'
-                      - name: Calculate Difference
-                        desc: 'TK' 
-                      - name: calculate spread
+                      - name: Calculate Percentage
                         desc: 'TK'
+                      - name: Calculate per 1K
+                        desc: 'TK'
+                      - name: Calculate Proportion
+                        desc: 'TK'
+                - name: Calculate Central Tendency
+                  desc: 'These metrics try to find typical value in the data.'
+                  sub:
+                    - name: Calculate Mean
+                      desc: 'TK'
+                - name: Quantify Change
+                  desc: 'Measuring how much things change, usually over time.'
+                  sub:
+                    - name: calculate percentage difference
+                      desc: '"the difference between two values taken as a percentage of whichever value you are using as the base," according to Philip Meyer in *Precision Journalism.* This term is synonymous with percent change.'
+                - name: Calculate Difference
+                  desc: 'TK' 
+                - name: calculate spread
+                  desc: 'TK'
           - name: key generation
             desc: 'Operations that create "key" columns. These columns are often, but not always, used in group by or join operations. As this step is often a discrete precursor to data *integration*, it belongs in the *amend* group.'
             sub:
@@ -140,6 +140,8 @@
                         desc: 'TK'
                       - name: perform scalar multiplication
                         desc: 'TK'
+                      - name: whiten matrix
+                        desc: 'Divide each feature by its standard deviation across all observations to give it unit variance.'
           - name: format
             desc: 'Operations that modify the table values appearance or style.'
             sub:
@@ -343,8 +345,8 @@
           desc: ''
         - name: generate data computationally
           desc: ''
-#     - name: collect raw data
-#       desc: 'First-hand observations or logs (Have not coded that article yet)'    
+    - name: collect raw data
+      desc: 'First-hand observations or logs'    
     - name: data properties
       desc: ''
       sub:
@@ -387,6 +389,8 @@
               desc: ''
             - name: analyze principle components
               desc: ''
+            - name: run cluster analysis
+              desc: 'Run some kind of clusting analysis, such as K-means.'
             - name: fit a generalized linear model
               desc: ''
             - name: look for trends
@@ -396,6 +400,8 @@
             - name: find worst offender
               desc: ''
             - name: count number of records
+              desc: ''
+            - name: cluster analysis
               desc: ''
             - name: calculate statistic
               desc: 'Compute a statistic such as median, total count of records, etc..'
