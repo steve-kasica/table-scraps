@@ -33,10 +33,10 @@
                   sub:
                       - name: Calculate Percentage
                         desc: 'TK'
-                      - name: Calculate per 1K
+                      - name: Calculate per 1K  # should include in proportion
                         desc: 'TK'
                       - name: Calculate Proportion
-                        desc: 'TK'
+                        desc: 'Dividing a value by a constant such as per 1K, per million, etc...'
                 - name: Calculate Central Tendency
                   desc: 'These metrics try to find typical value in the data.'
                   sub:
@@ -165,7 +165,7 @@
             desc: 'Mapping one column into more than one because multiple dimensions of the dataset packed into one column.'
             sub:
               - name: extract property from datetime
-                desc: 'TK'
+                desc: 'Such as extracting the day of the month, year, etc.. from a datetime column'
               - name: slice column values
                 desc: 'Extracting the relevant column values by character position, e.g. the first five digits of a zip code.'
               - name: split column on delimiter
@@ -176,12 +176,14 @@
       desc: 'Combining data residing in different tables into one table.'
       sub:
         - name: consolidate
-          desc: 'Row-wise combination of multiple tables into one. Schema changes are non-existent or inconsequential.'
+          desc: 'Combination of multiple tables into one. Schema changes are non-existent or inconsequential.'
           sub:
             - name: union tables
               desc: 'TK'
             - name: concatenate files together
               desc: 'TK'
+            - name: full join tables
+              desc: 'Combine all rows and all columns of the two tables.'
         - name: intersect
           desc: 'Joining two tables such that non-matching rows are excluded from the combined table.'
           sub:
@@ -256,7 +258,7 @@
                 - name: spread table
                   desc: ''
                 - name: gather table
-                  desc: ''
+                  desc: 'Collapses table into key value pairs.'
     - name: display dataset
       desc: 'Different ways to check in on the state of the dataset during wrangling.'
       sub:
@@ -281,7 +283,7 @@
           - name: Understand distribution
             desc: 'Operations that reveal something of the underlying distribution of data.'
             sub:
-                - name: Plot Histogram
+                - name: Plot histogram
                   desc: ''
                 - name: plot stacked bar chart
                   desc: ''
