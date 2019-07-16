@@ -71,7 +71,8 @@
                   desc: 'TK'
                 - name: sort table
                   desc: 'When rank is implicitly assigned by rearranging row position in the table.'
-
+          - name: create flag
+            desc: 'Flags are boolean expressed computed upon column values and used in filtering and grouping'
     - name: clean
       desc: 'Operations to correct erroneous or remove otherwise unwanted rows and values from the table.'
       sub:
@@ -125,14 +126,19 @@
                 - name: remove with regular expression
                   desc: 'TK'
                 - name: resolve entity names
-                  desc: 'Any method that essentialyl perform name entity resolution.'
+                  desc: 'A surjective mapping from previous column values to new column values'
                   sub:
                       - name: perform name entity resolution manually
-                        desc: 'TK'
+                        desc: 'Manually specify the mapping between old and new column values'
                       - name: strip whitespace
                         desc: 'Note that this might also fall under *resolving entity names*.'
                       - name: combine entities by string matching
                         desc: 'TK'
+                - name: translate entity names
+                  desc: 'Performing a bijective mapping between values, often to improve semantic meaning.'
+                  sub:
+                      - name: translate entity names manually
+                        desc: 'Manually specify the mapping between individual'
                 - name: scale values
                   desc: 'Operations that apply some mathematical operation to columns of quantitative data. This code is different from the codes under **Formulate performance metric** because this closer to cleaning.'
                   sub:
@@ -262,17 +268,6 @@
     - name: display dataset
       desc: 'Different ways to check in on the state of the dataset during wrangling.'
       sub:
-          - name: check sanity
-            desc: 'Operations that confirm the effect of a previous wrangling operation.'
-            sub:
-                - name: check results of previous operation
-                  desc: ''
-                - name: compare total number of rows
-                  desc: ''
-                - name: peek at data
-                  desc: ''
-                - name: inspect table schema
-                  desc: ''
           - name: display a table
             desc: 'Operations that have to do with displaying the raw data as a table.'
             sub:
@@ -301,6 +296,19 @@
                   desc: ''
                 - name: plot scree plot
                   desc: ''
+    - name: check sanity
+      desc: 'Operations that confirm the effect of a previous wrangling operation.'
+      sub:
+          - name: check results of previous operation
+            desc: ''
+          - name: compare total number of rows  # rename to test for equality
+            desc: ''
+          - name: test for equality
+            desc: 'Test if two data structures are exactly the same, e.g. two data frames.'
+          - name: peek at data
+            desc: 'Display the first *n* rows and all columns of the table'
+          - name: inspect table schema
+            desc: ''
 - name: observations
   desc: ''
   sub:
@@ -450,3 +458,5 @@
           desc: ''
         - name: encoding provenance in data
           desc: ''
+        - name: data too large for repo
+          desc: 'Raw data cannot be included in SCM because files are too large'

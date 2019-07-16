@@ -1,7 +1,7 @@
 # Data Wrangling in Journalism
 
 
-## Analysis coded
+## Journalist notebooks included in open-coding analysis
 
 Aldhous, Peter. (2016, September 16). "Shy Trumpers" polling analysis. *BuzzFeed News*. Retrieved from https://github.com/BuzzFeedNews/2016-09-shy-trumpers
 
@@ -12,6 +12,8 @@ Chinoy, Sahil. (2018, October 11). Heat index. *New York Times*. Retrieved from 
 Flowers, Andrew. (2014, April 8). Bechdel. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data/tree/master/bechdel
 
 Groskopf, Christopher. (2017, June 27). Analysis of rideshare trips taken in New York City. *Quartz*. Retrieved from https://github.com/Quartz/nyc-trips
+
+Groskopf, Christopher. (2017, April 10). Analysis of work from home IPUMS datawo. *Quartz*. Retrieved from https://github.com/Quartz/work-from-home
 
 Hickey, Walter. (2018, February 26). Bob Ross. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data/tree/master/bob-ross
 

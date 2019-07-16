@@ -62,3 +62,6 @@
 [submodule "notebooks/quartz/nyc-trips"]
 	path = notebooks/quartz/nyc-trips
 	url = https://github.com/swkasica/nyc-trips
+[submodule "notebooks/quartz/work-from-home"]
+	path = notebooks/quartz/work-from-home
+	url = https://github.com/swkasica/work-from-home
