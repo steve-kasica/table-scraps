@@ -1,5 +1,5 @@
 - name: actions
-  desc: 'TK'
+  desc: 'Codes that describe actions the journalist has taken to wrangle data for further analysis.'
   sub:
     - name: amend
       desc: '*Amending* a table constitutes creating new columns in the table without *integrating* other tables.'
@@ -23,25 +23,25 @@
           - name: formulate performance metric
             desc: 'Codes in this category specify a calculation that is later used to compare different entities or the same entity over time. A recurring theme between many of these notebooks is to compare different entities, such as political parties, by a common, quantitative metric, such as percentage of all newly registered voters.'
             sub:
-                - name: Calculate Standardized Score
+                - name: calculate standardized score
                   desc: 'Standardized scores are metrics that quantify deviation from some definition of "normal."'
                   sub:
                     - name: calculate z-score
                       desc: 'Calculate how many standard deviations a value in a column is away from the mean. Journalists perform this function to simply find outliers in a dataset or when preparing the data for principle component analysis.'
-                - name: figuring a normalized rate
-                  desc: 'Figuring a rate often normalizes some performance metric to allow fair comparisons between entities. This code covers: simple rational numbers, percentages, and per-1000 rates.'
+                - name: figure a ratio
+                  desc: 'Operations that normalize quantitative variables to allow comparisons between groups of different sizes.'
                   sub:
-                      - name: Calculate Percentage
-                        desc: 'TK'
-                      - name: Calculate per 1K  # should include in proportion
-                        desc: 'TK'
-                      - name: Calculate Proportion
-                        desc: 'Dividing a value by a constant such as per 1K, per million, etc...'
-                - name: Calculate Central Tendency
+                      - name: calculate ratio
+                        desc: 'Dividing a quantitative variable by another in such a way that enables fair comparisons.'
+                      - name: calculate scaled ratio
+                        desc: 'For example, calculating per 1,000 rates and percentages.'
+                - name: calculate central tendency
                   desc: 'These metrics try to find typical value in the data.'
                   sub:
-                    - name: Calculate Mean
+                    - name: calculate mean
                       desc: 'TK'
+                    - name: calculate median
+                      desc: 'The middle value in a range of numbers.'
                 - name: Quantify Change
                   desc: 'Measuring how much things change, usually over time.'
                   sub:
@@ -115,7 +115,7 @@
                       - name: remove all rows but the master record
                         desc: 'TK'
           - name: edit
-            desc: 'Operations that fundamentally modify table values.'
+            desc: 'Operations that modify table values'
             sub:
                 - name: replace NA values
                   desc: 'Raw data may contain incomplete table values (denoted as NA) or empty values (denoted as NULL)'
@@ -139,6 +139,8 @@
                   sub:
                       - name: translate entity names manually
                         desc: 'Manually specify the mapping between individual'
+                      - name: join with lookup table
+                        desc: 'Two column tables meant for mapping a key from one table to the unique column in the lookup table.'
                 - name: scale values
                   desc: 'Operations that apply some mathematical operation to columns of quantitative data. This code is different from the codes under **Formulate performance metric** because this closer to cleaning.'
                   sub:
@@ -151,7 +153,7 @@
           - name: format
             desc: 'Operations that modify the table values appearance or style.'
             sub:
-                - name: Value Formatting
+                - name: format values
                   desc: 'Operations that modify the values within the table.'
                   sub:
                       - name: change case
@@ -160,13 +162,13 @@
                         desc: 'TK'
                       - name: round floating point
                         desc: 'TK'
-                - name: Meta Formatting
+                - name: format schema
                   desc: 'Operations that modify anything except table values.'
                   sub:
                       - name: canonicalize column names
-                        desc: 'TK'
+                        desc: 'Operations that change column names'
                       - name: change column data type
-                        desc: 'TK'
+                        desc: 'For example, changing a column of values from strings to integers'
           - name: separate
             desc: 'Mapping one column into more than one because multiple dimensions of the dataset packed into one column.'
             sub:
@@ -204,8 +206,6 @@
               desc: 'TK'
             - name: left join tables
               desc: 'TK'
-            - name: join with lookup table  # similar to ammend
-              desc: 'Two column tables meant for mapping a key from one table to the unique column in the lookup table.'
             - name: merge metadata
               desc: 'TK'
             - name: ping web service
@@ -335,9 +335,9 @@
               - name: architect a subroutine
                 desc: ''
               - name: architect repeating process
-                desc: ''
+                desc: 'Instances where journalists employed a loop.'
           - name: toggle step on and off
-            desc: ''
+            desc: 'Some wrangling steps were not always run. Toggling off is often accomplished by commenting out code.'
     - name: acquire data
       desc: 'Codes relating to how data is originally acquired by journalists.'
       sub:
@@ -345,14 +345,14 @@
           desc: 'Extraction occurs when data is originally in a format that is not readily accessible for wrangling and analysis through programmatic methods. '
           sub:
             - name: pull tables out of pdf
-              desc: ''
+              desc: 'Instances where journalists used a PDF extraction tool, such as Tabula, to work with raw data.'
             - name: scrape web for data
               desc: ''
     - name: create
       desc: 'Data used in wrangling/analysis is collected or generated by the journalist. In "Heat and Index" Sahil Chinoy computationally generates temperature and humidity data.'
       sub:
         - name: construct table manually
-          desc: ''
+          desc: 'Journalists hand-type the column names and table values.'
         - name: generate data computationally
           desc: ''
     - name: collect raw data
@@ -396,7 +396,7 @@
           desc: 'Kinds of analysis data journalists need to wrangle data to perform.'
           sub:
             - name: extract single value
-              desc: ''
+              desc: 'Sometimes, the whole point of wrangling is to calculate and report a single value for a story.'
             - name: analyze principle components
               desc: ''
             - name: run cluster analysis
@@ -411,10 +411,6 @@
               desc: ''
             - name: count number of records
               desc: ''
-            - name: cluster analysis
-              desc: ''
-            - name: calculate statistic
-              desc: 'Compute a statistic such as median, total count of records, etc..'
         - name: wrangle data for graphics
           desc: 'When a purpose of the notebook is to format data for other visualization tools'
         - name: combine seemingly disparate datasets
@@ -424,9 +420,9 @@
       sub:
         - name: Value Replacement
           desc: 'The output of an intra- or inter- column calculation is reassigned to an existing column.'
-        - name: Preserve Existing Values
+        - name: preserve existing values
           desc: 'The output of an intra- or inter- column calculation is assigned to a new row'
-        - name: set data confidence threshold    
+        - name: set data confidence threshold
           desc: ''
         - name: Table Splitting
           desc: 'Tables may be divided, partitioned, or otherwise split into multiple tables to accomplish a transformation goal.'
