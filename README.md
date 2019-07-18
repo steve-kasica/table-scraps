@@ -27,6 +27,8 @@ Meiners, Joan. (2018, August 16). Endangered species act Louisiana: American all
 
 Menezes, Ryan; Stevens, Matt; Welsh, Ben. (2016, October 31). California "Conservation-Consumption Score" analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/california-cc-score-analysis
 
+Oh, Soo. (2015, July 8). Central line infection data. *Vox*. Retrieved from https://github.com/voxmedia/data-projects
+
 Singer-Vine, Jeremy. (2019, April 16). Analysis of early 2020 Democratic campaign co-donors. *BuzzFeed News*. Retrieved from https://github.com/BuzzFeedNews/2019-04-democratic-candidate-codonors
 
 Singer-Vine, Jeremy. (2015, November 18). US Refugee Data and Analysis. *BuzzFeed News*. Retrieved from https://github.com/BuzzFeedNews/2015-11-refugees-in-the-united-states

@@ -39,7 +39,7 @@
                   desc: 'These metrics try to find typical value in the data.'
                   sub:
                     - name: calculate mean
-                      desc: 'TK'
+                      desc: 'The average of a set of numbers.'
                     - name: calculate median
                       desc: 'The middle value in a range of numbers.'
                 - name: quantify change
@@ -55,9 +55,9 @@
             desc: 'Operations that create "key" columns. These columns are often, but not always, used in group by or join operations. As this step is often a discrete precursor to data *integration*, it belongs in the *amend* group.'
             sub:
                 - name: create a semi-unique key
-                  desc: 'TK'
+                  desc: 'Journalist creates a key that is a close, but imperfect, unique key, e.g. concatenating first name and surname.'
                 - name: create a unique key
-                  desc: 'TK'
+                  desc: 'Journalist create a key that is actually unique in the table'
                 - name: concatenate columns into key
                   desc: 'TK'
                 - name: designate column as primary key
@@ -97,7 +97,9 @@
                         desc: 'TK'
                       - name: trim by quantitative threshold
                         desc: 'TK'
-                - name: filter rows
+                      - name: filter by contains value
+                        desc: 'Remove rows that do or do not contain specific values or types of values.'
+                - name: filter rows  # TODO how is this different from prune rows?
                   desc: 'TK'
                 - name: drop erroneous rows
                   desc: 'TK'
@@ -162,6 +164,8 @@
                         desc: 'TK'
                       - name: round floating point
                         desc: 'TK'
+                      - name: remove delimiting characters
+                        desc: 'Remove characters such as newline (\n) that might make data ill-formed.'
                 - name: format schema
                   desc: 'Operations that modify anything except table values.'
                   sub:
@@ -169,6 +173,8 @@
                         desc: 'Operations that change column names'
                       - name: change column data type
                         desc: 'For example, changing a column of values from strings to integers'
+                - name: sort table rows
+                  desc: 'Sorting a table in a way that does not rank rows, such as by a unique identifier'
           - name: separate
             desc: 'Mapping one column into more than one because multiple dimensions of the dataset packed into one column.'
             sub:
@@ -177,7 +183,7 @@
               - name: slice column values
                 desc: 'Extracting the relevant column values by character position, e.g. the first five digits of a zip code.'
               - name: split column on delimiter
-                desc: 'TK'
+                desc: 'Separate data dimensions by a common character, e.g. lat-long coordinates separated by a comma.'
               - name: get unique values
                 desc: 'TK'            
     - name: integrate
@@ -251,12 +257,12 @@
             desc: 'These are within-column calculations that often, but not always, immediately follow an *aggregation* operation.'
             sub:
                 - name: sum column values
-                  desc: ''
+                  desc: 'Calculate the sum of all values within a column'
                 - name: get max value
-                  desc: ''
+                  desc: 'Calculate the highest value in a column of quantitative values'
                 - name: count value frequency
-                  desc: ''
-                - name: count unique values in column
+                  desc: 'Count the frequency of categorical variables within a column'
+                - name: count unique values in column  # TODO What is this?
                   desc: ''
           - name: reshape
             desc: "Operations fundamentally change the table's structure, but do not perform any kind of summarization calculation. *Constructing a pivot table* often involves a *spread-like* operation when defining what values to use as columns in the new table. The difference with *reshaping* is that sometimes the journalist may not summarize the reshaped table."
@@ -301,16 +307,24 @@
     - name: check sanity
       desc: 'Operations that confirm the effect of a previous wrangling operation.'
       sub:
-          - name: check results of previous operation
+          - name: run a test
+            desc: 'Operations output a clear pass or fail value, often implemented by counting things.'
+            sub:
+              - name: report rows with column number discrepancies
+                desc: 'Finds if a row has a different number of columns than the header row.'
+              - name: compare total number of rows  # rename to test for equality?
+                desc: ''
+              - name: test for equality
+                desc: 'Test if two data structures are exactly the same, e.g. two data frames.'                
+          - name: check results
             desc: ''
-          - name: compare total number of rows  # rename to test for equality
-            desc: ''
-          - name: test for equality
-            desc: 'Test if two data structures are exactly the same, e.g. two data frames.'
-          - name: peek at data
-            desc: 'Display the first *n* rows and all columns of the table'
-          - name: inspect table schema
-            desc: ''
+            sub:
+              - name: check results of previous operation  # seems too vague
+                desc: ''
+              - name: peek at data
+                desc: 'Display the first *n* rows and all columns of the table'
+              - name: inspect table schema
+                desc: ''
 - name: observations
   desc: ''
   sub:
@@ -422,7 +436,7 @@
     - name: strategies
       desc: ''
       sub:
-        - name: Value Replacement
+        - name: value replacement
           desc: 'The output of an intra- or inter- column calculation is reassigned to an existing column.'
         - name: preserve existing values
           desc: 'The output of an intra- or inter- column calculation is assigned to a new row'
