@@ -32,7 +32,7 @@
                   desc: 'Operations that normalize quantitative variables to allow comparisons between groups of different sizes.'
                   sub:
                       - name: calculate ratio
-                        desc: 'Dividing a quantitative variable by another in such a way that enables fair comparisons.'
+                        desc: 'Dividing a quantitative variable by another in such a way that enables fair comparisons. Such as per capita'
                       - name: calculate scaled ratio
                         desc: 'For example, calculating per 1,000 rates and percentages.'
                 - name: calculate central tendency
@@ -268,7 +268,7 @@
             desc: "Operations fundamentally change the table's structure, but do not perform any kind of summarization calculation. *Constructing a pivot table* often involves a *spread-like* operation when defining what values to use as columns in the new table. The difference with *reshaping* is that sometimes the journalist may not summarize the reshaped table."
             sub:
                 - name: spread table
-                  desc: ''
+                  desc: 'Expand two columns of key value pairs into multiple columns.'
                 - name: gather table
                   desc: 'Collapses table into key value pairs.'
     - name: display dataset

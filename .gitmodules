@@ -68,3 +68,6 @@
 [submodule "notebooks/vox"]
 	path = notebooks/vox
 	url = https://github.com/swkasica/data-projects.git
+[submodule "notebooks/nytimes/prison-admissions"]
+	path = notebooks/nytimes/prison-admissions
+	url = https://github.com/TheUpshot/prison-admissions.git

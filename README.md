@@ -23,6 +23,8 @@ Hickey, Walter. (2018, February 26). Bob Ross. *FiveThirtyEight*. Retrieved from
 
 Jones, Brent. (2018, May 31). Crime and heat analysis. *St. Louis Public Radio*. Retrieved from https://github.com/stlpublicradio/2018-05-31-crime-and-heat-analysis
 
+Keller, Josh; Pearce, Adam. (2016, September 7). U.S. State prison admissions by county. *The Upshot*. Retrieved from https://github.com/TheUpshot/prison-admissions
+
 Meiners, Joan. (2018, August 16). Endangered species act Louisiana: American alligator. Retrieved from https://github.com/beecycles/Endangered-Species-Act-Louisiana
 
 Menezes, Ryan; Stevens, Matt; Welsh, Ben. (2016, October 31). California "Conservation-Consumption Score" analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/california-cc-score-analysis
