@@ -57,7 +57,7 @@
 	path = notebooks/publicl/employment-discrimination
 	url = https://github.com/swkasica/employment-discrimination
 [submodule "notebooks/fivethirtyeight/data"]
-	path = notebooks/538/data
+	path = notebooks/data
 	url = https://github.com/swkasica/data.git
 [submodule "notebooks/quartz/nyc-trips"]
 	path = notebooks/quartz/nyc-trips
