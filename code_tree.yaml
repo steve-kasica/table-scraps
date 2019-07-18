@@ -357,8 +357,8 @@
           desc: 'Journalists hand-type the column names and table values.'
         - name: generate data computationally
           desc: ''
-    - name: collect raw data
-      desc: 'First-hand observations or logs'    
+        - name: collect raw data
+          desc: 'First-hand observations or logs'    
     - name: data properties
       desc: ''
       sub:

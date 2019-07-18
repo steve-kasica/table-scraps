@@ -5,7 +5,9 @@
 
 Aldhous, Peter. (2016, September 16). "Shy Trumpers" polling analysis. *BuzzFeed News*. Retrieved from https://github.com/BuzzFeedNews/2016-09-shy-trumpers
 
-Arthur, Rob. (2015, July 30). "Buster Posey MVP." *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data
+Arthur, Rob. (2015, July 30). Buster Posey MVP. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data
+
+Bi, Frank. (2016, Jan 13). Uber launch cities and date. *Forbes*. Retrieved from https://github.com/voxmedia/data-projects
 
 Chinoy, Sahil. (2018, November 12). The Cube Root Law. *New York Times*. Retrieved from https://observablehq.com/@sahilchinoy/the-cube-root-law
 

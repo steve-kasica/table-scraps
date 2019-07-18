@@ -65,3 +65,6 @@
 [submodule "notebooks/quartz/work-from-home"]
 	path = notebooks/quartz/work-from-home
 	url = https://github.com/swkasica/work-from-home
+[submodule "notebooks/vox"]
+	path = notebooks/vox
+	url = https://github.com/swkasica/data-projects.git
