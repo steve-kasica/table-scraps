@@ -42,13 +42,13 @@
                       desc: 'TK'
                     - name: calculate median
                       desc: 'The middle value in a range of numbers.'
-                - name: Quantify Change
+                - name: quantify change
                   desc: 'Measuring how much things change, usually over time.'
                   sub:
                     - name: calculate percentage difference
                       desc: '"the difference between two values taken as a percentage of whichever value you are using as the base," according to Philip Meyer in *Precision Journalism.* This term is synonymous with percent change.'
-                - name: Calculate Difference
-                  desc: 'TK' 
+                    - name: calculate difference
+                      desc: 'Subtracting two quantitative variables, including scalar values, vectors, and matricies.'
                 - name: calculate spread
                   desc: 'TK'
           - name: key generation
@@ -296,6 +296,8 @@
                   desc: ''
                 - name: plot scree plot
                   desc: ''
+                - name: plot line chart
+                  desc: 'Visualizations with lines connecting points on a chart.'
     - name: check sanity
       desc: 'Operations that confirm the effect of a previous wrangling operation.'
       sub:
@@ -411,6 +413,8 @@
               desc: ''
             - name: count number of records
               desc: ''
+            - name: image analysis
+              desc: 'A programmatic, quantitative analysis of images.'
         - name: wrangle data for graphics
           desc: 'When a purpose of the notebook is to format data for other visualization tools'
         - name: combine seemingly disparate datasets

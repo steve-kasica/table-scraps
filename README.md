@@ -5,6 +5,8 @@
 
 Aldhous, Peter. (2016, September 16). "Shy Trumpers" polling analysis. *BuzzFeed News*. Retrieved from https://github.com/BuzzFeedNews/2016-09-shy-trumpers
 
+Arthur, Rob. (2015, July 30). "Buster Posey MVP." *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data
+
 Chinoy, Sahil. (2018, November 12). The Cube Root Law. *New York Times*. Retrieved from https://observablehq.com/@sahilchinoy/the-cube-root-law
 
 Chinoy, Sahil. (2018, October 11). Heat index. *New York Times*. Retrieved from https://observablehq.com/@sahilchinoy/heat-index
