@@ -71,3 +71,6 @@
 [submodule "notebooks/nytimes/prison-admissions"]
 	path = notebooks/nytimes/prison-admissions
 	url = https://github.com/TheUpshot/prison-admissions.git
+[submodule "notebooks/baltimore-sun-data/school-star-ratings-2018"]
+	path = notebooks/baltimore-sun-data/school-star-ratings-2018
+	url = https://github.com/swkasica/school-star-ratings-2018

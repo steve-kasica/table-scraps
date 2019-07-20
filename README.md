@@ -51,8 +51,10 @@ Wilson, Chris. (2014, May 27). Wikipedia rankings. *Time*. Retrieved from https:
 
 Yerardi, Joe. (2019, February 28). Injustice at Work. Center for Public Integrity; *Vox*. Retrieved from https://github.com/PublicI/employment-discrimination
 
+Zarkhin, Fedor. (2017, April 21). Long-term care complaints data and analysis. *The Oregonian*. Retrieved from https://github.com/TheOregonian/long-term-care-db
+
 Zhang, Christine. (2018, October 15). Maryland voter registration analysis. *Baltimore Sun*. Retrieved from https://github.com/baltimore-sun-data/2018-voter-registration
 
-Zarkhin, Fedor. (2017, April 21). Long-term care complaints data and analysis. *The Oregonian*. Retrieved from https://github.com/TheOregonian/long-term-care-db
+Zhang, Christine. (2018, December 4). Maryland schools star ratings analysis. *Baltimore Sun*. Retrieved from https://github.com/baltimore-sun-data/school-star-ratings-2018
 
 Meiners. Joan. (2017, November 30). Power of Irma. *WUFT*. Retrieved from https://github.com/beecycles/Power_of_Irma

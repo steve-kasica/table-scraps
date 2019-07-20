@@ -253,13 +253,15 @@
                             desc: ' User performs a crosstab query, as defined by [Microsoft Office](https://support.office.com/en-us/article/make-summary-data-easier-to-read-by-using-a-crosstab-query-8465b89c-2ff2-4cc8-ba60-2cd8484667e8). Crosstabs are very similar to the reshaping operation *spread*, except that they summarize values using aggregate functions.'
                       - name: create rolling window
                         desc: ''
-          - name: calculate
+          - name: calculate  # TODO are these really any different from performance metrics?
             desc: 'These are within-column calculations that often, but not always, immediately follow an *aggregation* operation.'
             sub:
                 - name: sum column values
                   desc: 'Calculate the sum of all values within a column'
                 - name: get max value
                   desc: 'Calculate the highest value in a column of quantitative values'
+                - name: get min value
+                  desc: 'Calculate the lowest value in a column ofquantitative values.'
                 - name: count value frequency
                   desc: 'Count the frequency of categorical variables within a column'
                 - name: count unique values in column  # TODO What is this?
