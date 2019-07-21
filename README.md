@@ -9,6 +9,10 @@ Arthur, Rob. (2015, July 30). Buster Posey MVP. *FiveThirtyEight*. Retrieved fro
 
 Bi, Frank. (2016, Jan 13). Uber launch cities and date. *Forbes*. Retrieved from https://github.com/voxmedia/data-projects
 
+Bradshaw, Paul. (2019, April 6). Lack of electric car charging points 'putting off drivers'. *BBC*. Retrieved from https://github.com/BBC-Data-Unit/electric-car-charging-points
+
+Bradshaw, Paul. (2019, March 8). Birmingham remains top destination for Londoners. *BBC*. Retrieved from https://github.com/BBC-Data-Unit/internal-migration-london
+
 Chinoy, Sahil. (2018, November 12). The Cube Root Law. *New York Times*. Retrieved from https://observablehq.com/@sahilchinoy/the-cube-root-law
 
 Chinoy, Sahil. (2018, October 11). Heat index. *New York Times*. Retrieved from https://observablehq.com/@sahilchinoy/heat-index
