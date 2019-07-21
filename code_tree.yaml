@@ -219,16 +219,14 @@
         - name: supplement
           desc: 'Joining a table with a primary table such that all the rows in the primary table are in the combined table.'
           sub:
-            - name: right join tables
+            - name: right join tables  # TODO, merge these two codes into a single code
               desc: 'TK'
             - name: left join tables
               desc: 'TK'
-#             - name: join on index
-#               desc: 'When data is joined by index number, kind of like "horizontally concatenating tables."'
             - name: merge metadata
               desc: 'TK'
             - name: ping web service
-              desc: 'TK'
+              desc: 'When data is retrieved through a web service, such as a REST API.'
               sub:
                   - name: add calculated column from axillary data
                     desc: 'TK'
@@ -277,7 +275,7 @@
                   desc: 'Calculate the lowest value in a column ofquantitative values.'
                 - name: count value frequency
                   desc: 'Count the frequency of categorical variables within a column'
-                - name: count unique values in column  # TODO What is this?
+                - name: count unique values in column  # TODO What is this? Won't this be a scalar?
                   desc: ''
           - name: reshape
             desc: "Operations fundamentally change the table's structure, but do not perform any kind of summarization calculation. *Constructing a pivot table* often involves a *spread-like* operation when defining what values to use as columns in the new table. The difference with *reshaping* is that sometimes the journalist may not summarize the reshaped table."
@@ -293,9 +291,9 @@
             desc: 'Operations that have to do with displaying the raw data as a table.'
             sub:
                 - name: format table display
-                  desc: ''
+                  desc: 'Operations that adjust the table displace, such as how many decimals to round floats'
                 - name: display entire table
-                  desc: ''
+                  desc: 'Displaying all rows and all columns of a table'
           - name: Understand distribution
             desc: 'Operations that reveal something of the underlying distribution of data.'
             sub:
@@ -338,20 +336,20 @@
                 desc: ''
               - name: peek at data
                 desc: 'Display the first *n* rows and all columns of the table'
-              - name: inspect table schema
+              - name: inspect table schema  # Tamara had issues with this one
                 desc: ''
               - name: display rows with errors
                 desc: 'E.g. filtering rows with a NA value in a particular column'
 - name: observations
-  desc: ''
+  desc: 'These codes cover observations from the coder about the wrangling processes, not actions performed by the journalist.'
   sub:
     - name: document
       desc: 'When journalist annotate their data wrangling processes with non-executing comments or notes.'
       sub:
         - name: annotate workflow
-          desc: ''
+          desc: 'Adding comments or other notes that explain what the journalistis doing.'
     - name: cache results from external service
-      desc: ''            
+      desc: ''
     - name: export data
       desc: 'Ways in which journalist export the results of their data wrangling.'
       sub:

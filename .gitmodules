@@ -77,3 +77,6 @@
 [submodule "notebooks/bbc/electric-car-charging-points"]
 	path = notebooks/bbc/electric-car-charging-points
 	url = https://github.com/swkasica/electric-car-charging-points
+[submodule "notebooks/bbc/internal-migration-london"]
+	path = notebooks/bbc/internal-migration-london
+	url = https://github.com/swkasica/internal-migration-london
