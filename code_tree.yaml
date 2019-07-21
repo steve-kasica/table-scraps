@@ -20,29 +20,36 @@
                 desc: 'When some way of identifying the table is encoded as a separate column in each row. Common identification methods include the name of the corresponding file, an arbitrary table name, or boolean value.'
               - name: encode table summary data in row
                 desc: 'When high-level, aggregated data about the table is encoded in the rows. For example, a table column contains the frequency of nominal values in a different column of the same table.'
+          - name: support network analysis
+            desc: 'Actions that modify a table to directly support network analysis'
+            sub:
+              - name: add foreign key column
+                desc: 'A column with value that define a relationship to another row, which is not necessarily in a different table.'
+              - name: define edge weights
+                desc: 'Columns that define edge weights'
           - name: formulate performance metric
             desc: 'Codes in this category specify a calculation that is later used to compare different entities or the same entity over time. A recurring theme between many of these notebooks is to compare different entities, such as political parties, by a common, quantitative metric, such as percentage of all newly registered voters.'
             sub:
                 - name: calculate standardized score
-                  desc: 'Standardized scores are metrics that quantify deviation from some definition of "normal."'
+                  desc: 'Measuring deviation from some definition of "normal."'
                   sub:
                     - name: calculate z-score
                       desc: 'Calculate how many standard deviations a value in a column is away from the mean. Journalists perform this function to simply find outliers in a dataset or when preparing the data for principle component analysis.'
-                - name: figure a ratio
-                  desc: 'Operations that normalize quantitative variables to allow comparisons between groups of different sizes.'
+                - name: calculate normalized score  # normalized and standardized can have very different uses between communities
+                  desc: 'Measuring the differences between groups of different sizes.'
                   sub:
                       - name: calculate ratio
                         desc: 'Dividing a quantitative variable by another in such a way that enables fair comparisons. Such as per capita'
                       - name: calculate scaled ratio
                         desc: 'For example, calculating per 1,000 rates and percentages.'
-                - name: calculate central tendency
-                  desc: 'These metrics try to find typical value in the data.'
+                - name: calculate the central tendency
+                  desc: 'Measuring what a typical value is in the data.'
                   sub:
                     - name: calculate mean
                       desc: 'The average of a set of numbers.'
                     - name: calculate median
                       desc: 'The middle value in a range of numbers.'
-                - name: quantify change
+                - name: calculate change
                   desc: 'Measuring how much things change, usually over time.'
                   sub:
                     - name: calculate percentage difference
@@ -216,6 +223,8 @@
               desc: 'TK'
             - name: left join tables
               desc: 'TK'
+#             - name: join on index
+#               desc: 'When data is joined by index number, kind of like "horizontally concatenating tables."'
             - name: merge metadata
               desc: 'TK'
             - name: ping web service
@@ -449,7 +458,7 @@
         - name: preserve existing values
           desc: 'The output of an intra- or inter- column calculation is assigned to a new row'
         - name: set data confidence threshold
-          desc: ''
+          desc: 'Removes rows where a quantitative value is less than, greater than, or not equal to a numeric value.'
         - name: Table Splitting
           desc: 'Tables may be divided, partitioned, or otherwise split into multiple tables to accomplish a transformation goal.'
           sub:
@@ -476,6 +485,8 @@
           desc: 'Instances where the journalist has made an incorrect conclusion about the data.'
         - name: resort after merge
           desc: ''
+        - name: encode redundant information
+          desc: 'When data that already exists in the table is recoded into the table.'
         - name: data loss from aggregation
           desc: ''
         - name: encoding provenance in data

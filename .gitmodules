@@ -74,3 +74,6 @@
 [submodule "notebooks/baltimore-sun-data/school-star-ratings-2018"]
 	path = notebooks/baltimore-sun-data/school-star-ratings-2018
 	url = https://github.com/swkasica/school-star-ratings-2018
+[submodule "notebooks/bbc/electric-car-charging-points"]
+	path = notebooks/bbc/electric-car-charging-points
+	url = https://github.com/swkasica/electric-car-charging-points
