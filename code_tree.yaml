@@ -127,6 +127,8 @@
                   desc: 'TK'
                 - name: remove with regular expression
                   desc: 'TK'
+                - name: pad column values
+                  desc: 'Adding either character prefixes or suffixes consistently to every row within a column'
                 - name: resolve entity names
                   desc: 'A surjective mapping from previous column values to new column values'
                   sub:
@@ -136,6 +138,8 @@
                         desc: 'Note that this might also fall under *resolving entity names*.'
                       - name: combine entities by string matching
                         desc: 'TK'
+                      - name: reconcile primary keys between tables
+                        desc: 'Name entity resolution between tables to facilitate joining'
                 - name: translate entity names
                   desc: 'Performing a bijective mapping between values, often to improve semantic meaning.'
                   sub:
@@ -327,6 +331,8 @@
                 desc: 'Display the first *n* rows and all columns of the table'
               - name: inspect table schema
                 desc: ''
+              - name: display rows with errors
+                desc: 'E.g. filtering rows with a NA value in a particular column'
 - name: observations
   desc: ''
   sub:
