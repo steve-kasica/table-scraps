@@ -252,9 +252,9 @@
                         desc: 'Grouping one or more columns such that grouped columns are hierarchically ordered when grouping by two or more columns. This operation is commonly implemented with `groupby` in Pandas.'
                         sub:
                             - name: group by single column
-                              desc: ''
+                              desc: 'When a table is grouped by a single column.'
                             - name: group by multiple columns
-                              desc: ''
+                              desc: 'When a table is grouped by multiple columns, creating hierarchy.'
                       - name: group by double axis
                         desc: 'Grouping by more than one column such that one grouped column is not hierarchically paired with another grouped column.'
                         sub:
