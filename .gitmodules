@@ -80,3 +80,6 @@
 [submodule "notebooks/bbc/internal-migration-london"]
 	path = notebooks/bbc/internal-migration-london
 	url = https://github.com/swkasica/internal-migration-london
+[submodule "notebooks/bbc/midwife-led-units"]
+	path = notebooks/bbc/midwife-led-units
+	url = https://github.com/swkasica/midwife-led-units

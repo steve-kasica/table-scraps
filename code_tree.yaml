@@ -328,7 +328,9 @@
               - name: compare total number of rows  # rename to test for equality?
                 desc: ''
               - name: test for equality
-                desc: 'Test if two data structures are exactly the same, e.g. two data frames.'                
+                desc: 'Test if two data structures are exactly the same, e.g. two data frames.'
+              - name: test different computations for equality  # TODO Upshot also did this with variance
+                desc: ''
           - name: check results
             desc: ''
             sub:
@@ -347,7 +349,7 @@
       desc: 'When journalist annotate their data wrangling processes with non-executing comments or notes.'
       sub:
         - name: annotate workflow
-          desc: 'Adding comments or other notes that explain what the journalistis doing.'
+          desc: 'Adding comments or notes in Markdown that explain what the journalistis doing.'
     - name: cache results from external service
       desc: ''
     - name: export data
