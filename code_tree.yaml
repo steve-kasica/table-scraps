@@ -90,20 +90,20 @@
                   desc: 'Simply put, these operations remove table columns.'
                   sub:
                     - name: drop columns
-                      desc: 'TK'
+                      desc: 'Remove columns from table by specifying the ones you want to remove.'
                     - name: select columns
-                      desc: 'TK'
+                      desc: 'Remove columns from table by specifying the ones you want to keep.'
                     - name: align table columns for consolidation
                       desc: 'TK'
                 - name: prune rows
                   desc: 'Simply put, these operations remove table rows.'
                   sub:
                       - name: trim by date range
-                        desc: 'TK'
+                        desc: 'Removing rows that are inside or outside a specific date range.'
                       - name: trim by geographic area
-                        desc: 'TK'
+                        desc: 'Remove rows that are inside or outside a geographic area.'
                       - name: trim by quantitative threshold
-                        desc: 'TK'
+                        desc: 'Remove rows that are above, below, equal to, or not equal to a numeric value.'
                       - name: filter by contains value
                         desc: 'Remove rows that do or do not contain specific values or types of values.'
                 - name: filter rows  # TODO how is this different from prune rows?
@@ -118,9 +118,9 @@
                       - name: prevent double-counting
                         desc: 'TK'
                       - name: drop entirely duplicate rows
-                        desc: 'TK'
+                        desc: 'Remove a row from a table if every column value exactly matches all the column values of another row.'
                       - name: drop rows with duplicate value in one column
-                        desc: 'TK'
+                        desc: 'Remove a row if it share the same value in a specific column with another row.'
                       - name: remove all rows but the master record
                         desc: 'TK'
           - name: edit
@@ -133,7 +133,7 @@
                 - name: fix incorrect calculation
                   desc: 'TK'
                 - name: remove with regular expression
-                  desc: 'TK'
+                  desc: 'When column values are replaced with empty strings using regular expressions.'
                 - name: pad column values
                   desc: 'Adding either character prefixes or suffixes consistently to every row within a column'
                 - name: resolve entity names
@@ -261,7 +261,7 @@
                           - name: construct pivot table
                             desc: 'Is essentially the same as a crosstab except that the table axes may contain hierarchical, nominal data.'
                           - name: create a crosstab
-                            desc: ' User performs a crosstab query, as defined by [Microsoft Office](https://support.office.com/en-us/article/make-summary-data-easier-to-read-by-using-a-crosstab-query-8465b89c-2ff2-4cc8-ba60-2cd8484667e8). Crosstabs are very similar to the reshaping operation *spread*, except that they summarize values using aggregate functions.'
+                            desc: 'User performs a crosstab query, as defined by [Microsoft Office](https://support.office.com/en-us/article/make-summary-data-easier-to-read-by-using-a-crosstab-query-8465b89c-2ff2-4cc8-ba60-2cd8484667e8). Crosstabs are very similar to the reshaping operation *spread*, except that they summarize values using aggregate functions.'
                       - name: create rolling window
                         desc: ''
           - name: calculate  # TODO are these really any different from performance metrics?

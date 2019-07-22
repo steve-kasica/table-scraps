@@ -19,6 +19,8 @@ Chinoy, Sahil. (2018, November 12). The Cube Root Law. *New York Times*. Retriev
 
 Chinoy, Sahil. (2018, October 11). Heat index. *New York Times*. Retrieved from https://observablehq.com/@sahilchinoy/heat-index
 
+Flowers, Andrew. (2014, June 3). Infrastructure jobs. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data
+
 Flowers, Andrew. (2014, April 11). Librarians. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data
 
 Flowers, Andrew. (2014, April 8). Bechdel. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data
