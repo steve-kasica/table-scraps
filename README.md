@@ -7,8 +7,6 @@ Aldhous, Peter. (2016, September 16). "Shy Trumpers" polling analysis. *BuzzFeed
 
 Arthur, Rob. (2015, July 30). Buster Posey MVP. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data
 
-Tran, Andrew. (2017, December 18). How the Trump era is changing the federal bureaucracy. *Washington Post*. Retrieved from https://github.com/wpinvestigates/federal_employees_trump_2017
-
 Bi, Frank. (2016, Jan 13). Uber launch cities and date. *Forbes*. Retrieved from https://github.com/voxmedia/data-projects
 
 Bradshaw, Paul. (2019, April 6). Lack of electric car charging points 'putting off drivers'. *BBC*. Retrieved from https://github.com/BBC-Data-Unit/electric-car-charging-points
@@ -33,11 +31,13 @@ Groskopf, Christopher. (2017, April 10). Analysis of work from home IPUMS datawo
 
 Hickey, Walter. (2018, February 26). Bob Ross. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data/tree/master/bob-ross
 
-Jones, Brent. (2018, May 31). Crime and heat analysis. *St. Louis Public Radio*. Retrieved from https://github.com/stlpublicradio/2018-05-31-crime-and-heat-analysis
+Jones, Brent. (2018, May 31). Crime and heat analysis. *St Louis Public Radio*. Retrieved from https://github.com/stlpublicradio/2018-05-31-crime-and-heat-analysis
 
-Keller, Josh; Pearce, Adam. (2016, September 7). U.S. State prison admissions by county. *The Upshot*. Retrieved from https://github.com/TheUpshot/prison-admissions
+Keller, Josh; Pearce, Adam. (2016, September 7). US State prison admissions by county. *The Upshot*. Retrieved from https://github.com/TheUpshot/prison-admissions
 
-Meiners, Joan. (2018, August 16). Endangered species act Louisiana: American alligator. Retrieved from https://github.com/beecycles/Endangered-Species-Act-Louisiana
+Meiners, Joan. (2018, August 16). Endangered species act Louisiana: American alligator. *NOLA*. Retrieved from https://github.com/beecycles/Endangered-Species-Act-Louisiana
+
+Meiners, Joan. (2017, November 30). Power of Irma. *WUFT*. Retrieved from https://github.com/beecycles/Power_of_Irma
 
 Menezes, Ryan; Stevens, Matt; Welsh, Ben. (2016, October 31). California "Conservation-Consumption Score" analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/california-cc-score-analysis
 
@@ -51,6 +51,8 @@ Templon, John. (2016, November 2). Counties That Predict The Election. *BuzzFeed
 
 Templon, John. (2016, April 26). Analysis of Republican Donor Movement. *BuzzFeed News*. Retrieved from https://github.com/BuzzFeedNews/2016-04-republican-donor-movements
 
+Tran, Andrew. (2017, December 18). How the Trump era is changing the federal bureaucracy. *Washington Post*. Retrieved from https://github.com/wpinvestigates/federal_employees_trump_2017
+
 Welsh, Ben. (2019, April 29). Census "hard to count" analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/census-hard-to-map-analysis
 
 Welsh, Ben. (2017, March 17). California crop production wages analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/california-crop-production-wages-analysis
@@ -61,12 +63,10 @@ Wilson, Chris. (2016, December 20). Baby Name Politics. *Time*. Retrieved from h
 
 Wilson, Chris. (2014, May 27). Wikipedia rankings. *Time*. Retrieved from https://github.com/TimeMagazine/wikipedia-rankings
 
-Yerardi, Joe. (2019, February 28). Injustice at Work. Center for Public Integrity; *Vox*. Retrieved from https://github.com/PublicI/employment-discrimination
+Yerardi, Joe. (2019, February 28). Injustice at Work. *Center for Public Integrity*. Retrieved from https://github.com/PublicI/employment-discrimination
 
 Zarkhin, Fedor. (2017, April 21). Long-term care complaints data and analysis. *The Oregonian*. Retrieved from https://github.com/TheOregonian/long-term-care-db
 
 Zhang, Christine. (2018, October 15). Maryland voter registration analysis. *Baltimore Sun*. Retrieved from https://github.com/baltimore-sun-data/2018-voter-registration
 
 Zhang, Christine. (2018, December 4). Maryland schools star ratings analysis. *Baltimore Sun*. Retrieved from https://github.com/baltimore-sun-data/school-star-ratings-2018
-
-Meiners. Joan. (2017, November 30). Power of Irma. *WUFT*. Retrieved from https://github.com/beecycles/Power_of_Irma
