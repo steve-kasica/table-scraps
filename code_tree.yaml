@@ -140,13 +140,15 @@
                   desc: 'A surjective mapping from previous column values to new column values'
                   sub:
                       - name: perform name entity resolution manually
-                        desc: 'Manually specify the mapping between old and new column values'
+                        desc: 'Manually specifying the mapping between old and new column values. Not manually changing individual rows.'
                       - name: strip whitespace
                         desc: 'Note that this might also fall under *resolving entity names*.'
-                      - name: combine entities by string matching
-                        desc: 'TK'
+                      - name: combine entities by string matching  # Double check definition
+                        desc: 'If column contains a specific string, then rename entire column to another string.'
                       - name: reconcile primary keys between tables
                         desc: 'Name entity resolution between tables to facilitate joining'
+                      - name: resolve to arbitrary entity name among choices
+                        desc: 'The actual text of the entity is not necessary as import as uniqueness.'
                 - name: translate entity names
                   desc: 'Performing a bijective mapping between values, often to improve semantic meaning.'
                   sub:
@@ -223,6 +225,8 @@
               desc: 'TK'
             - name: left join tables
               desc: 'TK'
+            - name: outer join tables
+              desc: 'A join that returns rows with no corresponding match'
             - name: merge metadata
               desc: 'TK'
             - name: ping web service
@@ -446,6 +450,8 @@
               desc: ''
             - name: image analysis
               desc: 'A programmatic, quantitative analysis of images.'
+            - name: create a table to lookup values
+              desc: 'The end to wrangling is just to create a table to lookup values.'
         - name: wrangle data for graphics
           desc: 'When a purpose of the notebook is to format data for other visualization tools'
         - name: combine seemingly disparate datasets
@@ -471,13 +477,13 @@
             - name: merge tables to create pivot table
               desc: ''
         - name: tolerate dirty data
-          desc: ''
+          desc: 'Analysis continues despite clear data quality issues.'
         - name: omits data quality exploration
           desc: ''
         - name: temporary joining column
           desc: ''
     - name: pain points
-      desc: ''
+      desc: 'Areas where journalist seem/could be frusterated in the wrangling process.'
       sub:
         - name: repetitive code
           desc: 'Instances where code is repetitively copied and pasted.'

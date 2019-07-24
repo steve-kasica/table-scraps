@@ -7,6 +7,8 @@ Aldhous, Peter. (2016, September 16). "Shy Trumpers" polling analysis. *BuzzFeed
 
 Arthur, Rob. (2015, July 30). Buster Posey MVP. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data
 
+Tran, Andrew. (2017, December 18). How the Trump era is changing the federal bureaucracy. *Washington Post*. Retrieved from https://github.com/wpinvestigates/federal_employees_trump_2017
+
 Bi, Frank. (2016, Jan 13). Uber launch cities and date. *Forbes*. Retrieved from https://github.com/voxmedia/data-projects
 
 Bradshaw, Paul. (2019, April 6). Lack of electric car charging points 'putting off drivers'. *BBC*. Retrieved from https://github.com/BBC-Data-Unit/electric-car-charging-points
