@@ -1,6 +1,33 @@
 - name: actions
   desc: 'Codes that describe actions the journalist has taken to wrangle data for further analysis.'
   sub:
+    - name: import
+      desc: 'Methods for importing data into an environment for wrangling.'
+      sub:
+        - name: download
+          desc: 'Data is imported via download from an external source, such as a RESTful API.'
+          sub:
+            - name: geocode addresses
+              desc: 'Translate addresses to latitude-longitude coordinates through web service, such as those from Bing.'
+            - name: scrape web for data
+              desc: 'Systematically parsing webpages for relevant data.'
+        - name: create
+          desc: 'Data is created inside the wrangling environment.'
+          sub:
+            - name: construct table manually
+              desc: 'Using tables where column names and table values were either copy-and-pasted or entered manually.'
+            - name: generate data computationally
+              desc: 'Using tables populated programatically.'
+        - name: extract
+          desc: 'Extraction occurs when data is one step removed from the format it needs to be in to be imported into the environment.'
+          sub:
+            - name: pull tables out of pdf
+              desc: 'Using a table extraction tool, such as Tabula, to parse tables inside PDF documents.'
+        - name: read
+          desc: 'Import data by reading a structured file on disk such as a CSV'
+          sub:
+            - name: read as tabular data
+              desc: 'Refers to importing files from disk as a table in the environment. Files can be .csv, .xlsx, .fec, and .shp'
     - name: amend
       desc: '*Amending* a table constitutes creating new columns in the table without *integrating* other tables.'
       sub:
@@ -13,13 +40,8 @@
                   desc: 'TK'
                 - name: compute index number
                   desc: 'TK'
-          - name: encode table-level data
-            desc: 'Adding columns populated with data aggregated from the whole table, such as the frequency of nominal variables.'
-            sub:
-              - name: encode table identification in row
-                desc: 'When some way of identifying the table is encoded as a separate column in each row. Common identification methods include the name of the corresponding file, an arbitrary table name, or boolean value.'
-              - name: encode table summary data in row  # TODO tename to "aggregatejoin"
-                desc: 'When high-level, aggregated data about the table is encoded in the rows. For example, a table column contains the frequency of nominal values in a different column of the same table.'
+          - name: encode table identification in row
+            desc: 'When some way of identifying the table is encoded as a separate column in each row. Common identification methods include the name of the corresponding file, an arbitrary table name, or boolean value.'
           - name: support network analysis
             desc: 'Actions that modify a table to directly support network analysis'
             sub:
@@ -58,8 +80,10 @@
                       desc: 'Subtracting two quantitative variables, including scalar values, vectors, and matricies.'
                 - name: calculate spread
                   desc: 'TK'
+                - name: calculate using an external data structure
+                  desc: 'When new column values are calculated using table values and some auxiliary data structure, e.g. an array'
           - name: key generation
-            desc: 'Operations that create "key" columns. These columns are often, but not always, used in group by or join operations. As this step is often a discrete precursor to data *integration*, it belongs in the *amend* group.'
+            desc: 'Operations that create "key" columns.'
             sub:
                 - name: create a semi-unique key
                   desc: 'Journalist creates a key that is a close, but imperfect, unique key, e.g. concatenating first name and surname.'
@@ -221,21 +245,8 @@
         - name: supplement
           desc: 'Joining a table with a primary table such that all the rows in the primary table are in the combined table.'
           sub:
-            - name: right join tables  # TODO, merge these two codes into a single code
-              desc: 'TK'
-            - name: left join tables
-              desc: 'TK'
             - name: outer join tables
               desc: 'A join that returns rows with no corresponding match'
-            - name: merge metadata
-              desc: 'TK'
-            - name: ping web service
-              desc: 'When data is retrieved through a web service, such as a REST API.'
-              sub:
-                  - name: add calculated column from auxiliary data  # TODO fix in PDF
-                    desc: 'TK'
-                  - name: geocode addresses
-                    desc: 'TK'
         - name: other
           desc: 'Integration operations that do not fall into the previous two categories'
           sub:
@@ -249,6 +260,8 @@
           - name: summarize
             desc: ''
             sub:
+                - name: join aggregate
+                  desc: '"extends the input data objects with aggregate values in a new field" - Vega-Lite Join Aggregate docs.'
                 - name: aggregate
                   desc: 'Codes that group the table along one or more table dimension.'
                   sub:
@@ -336,7 +349,7 @@
               - name: test different computations for equality  # TODO Upshot also did this with variance
                 desc: ''
           - name: check results
-            desc: ''
+            desc: 'Operations that output some visual representation of the table.'
             sub:
               - name: check results of previous operation  # seems too vague
                 desc: ''
@@ -346,26 +359,40 @@
                 desc: ''
               - name: display rows with errors
                 desc: 'E.g. filtering rows with a NA value in a particular column'
-- name: observations
-  desc: 'These codes cover observations from the coder about the wrangling processes, not actions performed by the journalist.'
-  sub:
-    - name: document
-      desc: 'When journalist annotate their data wrangling processes with non-executing comments or notes.'
-      sub:
-        - name: annotate workflow
-          desc: 'Adding comments or notes in Markdown that explain what the journalistis doing.'
-    - name: cache results from external service
-      desc: ''
     - name: export data
       desc: 'Ways in which journalist export the results of their data wrangling.'
       sub:
           - name: export intermediate results
             desc: ''
           - name: export results
-            desc: ''
-    - name: workflow building
+            desc: ''                
+- name: observations
+  desc: 'These codes cover observations from the coder about the wrangling processes, not actions performed by the journalist.'
+  sub:
+    - name: data acquisition
       desc: ''
       sub:
+          - name: collect raw data
+            desc: 'Using first-hand observations or logs as data.'
+          - name: use previously cleaned data
+            desc: 'Data that originated from a colleague.'
+          - name: use public data
+            desc: ''
+          - name: use academic data
+            desc: ''
+          - name: use non-public, provided data
+            desc: ''
+          - name: use another news orgs data
+            desc: ''
+          - name: use data from colleague        
+            desc: ''            
+    - name: workflow building
+      desc: 'Codes pretaining to how the wrangling workflow is built.'
+      sub:
+          - name: cache results from external service
+            desc: ''      
+          - name: annotate workflow
+            desc: 'Adding comments or notes in Markdown that explain what the journalistis doing.'      
           - name: think computationally
             desc: 'Codes that demonstrate computational thinking on the part of the journalist.'
             sub:
@@ -375,59 +402,8 @@
                 desc: 'Instances where journalists employed a loop.'
           - name: toggle step on and off
             desc: 'Some wrangling steps were not always run. Toggling off is often accomplished by commenting out code.'
-    - name: acquire data
-      desc: 'Codes relating to how data is originally acquired by journalists.'
-      sub:
-        - name: extracted data
-          desc: 'Extraction occurs when data is originally in a format that is not readily accessible for wrangling and analysis through programmatic methods. '
-          sub:
-            - name: pull tables out of pdf
-              desc: 'Instances where journalists used a PDF extraction tool, such as Tabula, to work with raw data.'
-            - name: scrape web for data
-              desc: ''
-    - name: create
-      desc: 'Data used in wrangling/analysis is collected or generated by the journalist. In "Heat and Index" Sahil Chinoy computationally generates temperature and humidity data.'
-      sub:
-        - name: construct table manually
-          desc: 'Journalists hand-type the column names and table values.'
-        - name: generate data computationally
-          desc: ''
-        - name: collect raw data
-          desc: 'First-hand observations or logs'    
-    - name: data properties
-      desc: ''
-      sub:
-        - name: history
-          desc: ''
-          sub:
-            - name: use previously cleaned data
-              desc: ''
-        - name: structure
-          desc: 'Is the data tabular, geospatial. What kind of data is the journalist dealing with?'
-          sub:
-            - name: use structured ascii
-              desc: ''
-            - name: use geospatial data
-              desc: ''
-            - name: use tabular data
-              desc: ''
-        - name: source
-          desc: 'Where did this data come from?'
-          sub:
-              - name: use public disclosure data
-                desc: ''
-              - name: use public data
-                desc: ''
-              - name: use academic data
-                desc: ''
-              - name: use non-public, provided data
-                desc: ''
-              - name: use another news orgs data
-                desc: ''
-              - name: use data from colleague        
-                desc: ''
     - name: purpose
-      desc: 'Why does this data need to be wrangled? For what end does wrangling serve? This category ventures into analysis, which not wrangling.'
+      desc: 'Why does this data need to be wrangled in the first place?'
       sub:
         - name: analysis
           desc: 'Kinds of analysis data journalists need to wrangle data to perform.'
@@ -457,20 +433,20 @@
         - name: combine seemingly disparate datasets
           desc: 'When a notebook largely constitutes combining seemingly unrelated datasets.'
     - name: strategies
-      desc: ''
+      desc: 'General strategies journalists employ when wrangling data.'
       sub:
         - name: value replacement
-          desc: 'The output of an intra- or inter- column calculation is reassigned to an existing column.'
+          desc: 'The output of any column calculation is reassigned to an existing column.'
         - name: preserve existing values
-          desc: 'The output of an intra- or inter- column calculation is assigned to a new row'
+          desc: 'The output of any column calculation is assigned to a new column'
         - name: set data confidence threshold
           desc: 'Removes rows where a quantitative value is less than, greater than, or not equal to a numeric value.'
-        - name: Table Splitting
+        - name: table splitting
           desc: 'Tables may be divided, partitioned, or otherwise split into multiple tables to accomplish a transformation goal.'
           sub:
             - name: split, compute, and merge  # wait is it filter or split? Is it a clean partition?
               desc: 'First, the journalist partitions a single data frame into multiple, separate data frames. Then, often identical computations are run on all the data frame. Finally, the multiple data frames are consolidated into one data frame again.'
-            - name: Split and Compute
+            - name: split and compute
               desc: 'One table is split into two or more and identical computations are applied to each table.'
             - name: peel and merge
               desc: 'When a single column of a data frame is isolated and computed upon, such as computing the frequency of a nominal column, and the results are merged back into the original table.'
@@ -478,19 +454,19 @@
               desc: ''
         - name: tolerate dirty data
           desc: 'Analysis continues despite clear data quality issues.'
-        - name: omits data quality exploration
-          desc: ''
         - name: temporary joining column
           desc: ''
     - name: pain points
       desc: 'Areas where journalist seem/could be frustrated in the wrangling process.'
       sub:
+        - name: omits data quality exploration
+          desc: 'When it appears the journalist has excluded steps taken to explore the quality of the data'      
         - name: repetitive code
           desc: 'Instances where code is repetitively copied and pasted.'
         - name: make an incorrect conclusion
           desc: 'Instances where the journalist has made an incorrect conclusion about the data.'
         - name: resort after merge
-          desc: ''
+          desc: 'When a sort has to be re-done because a merge ruining the pre-merged order.'
         - name: encode redundant information
           desc: 'When data that already exists in the table is recoded into the table.'
         - name: data loss from aggregation
