@@ -18,12 +18,12 @@
             sub:
               - name: encode table identification in row
                 desc: 'When some way of identifying the table is encoded as a separate column in each row. Common identification methods include the name of the corresponding file, an arbitrary table name, or boolean value.'
-              - name: encode table summary data in row
+              - name: encode table summary data in row  # TODO tename to "aggregatejoin"
                 desc: 'When high-level, aggregated data about the table is encoded in the rows. For example, a table column contains the frequency of nominal values in a different column of the same table.'
           - name: support network analysis
             desc: 'Actions that modify a table to directly support network analysis'
             sub:
-              - name: add foreign key column
+              - name: add foreign key column  # TODO rename to "create edge"
                 desc: 'A column with value that define a relationship to another row, which is not necessarily in a different table.'
               - name: define edge weights
                 desc: 'Columns that define edge weights'
@@ -232,7 +232,7 @@
             - name: ping web service
               desc: 'When data is retrieved through a web service, such as a REST API.'
               sub:
-                  - name: add calculated column from axillary data
+                  - name: add calculated column from auxiliary data  # TODO fix in PDF
                     desc: 'TK'
                   - name: geocode addresses
                     desc: 'TK'
@@ -483,7 +483,7 @@
         - name: temporary joining column
           desc: ''
     - name: pain points
-      desc: 'Areas where journalist seem/could be frusterated in the wrangling process.'
+      desc: 'Areas where journalist seem/could be frustrated in the wrangling process.'
       sub:
         - name: repetitive code
           desc: 'Instances where code is repetitively copied and pasted.'
