@@ -86,3 +86,6 @@
 [submodule "notebooks/washington_post/federal_employees_trump_2017"]
 	path = notebooks/washington_post/federal_employees_trump_2017
 	url = https://github.com/swkasica/federal_employees_trump_2017
+[submodule "notebooks/statesman/2019-ems-analysis"]
+	path = notebooks/statesman/2019-ems-analysis
+	url = https://github.com/swkasica/2019-ems-analysis.git

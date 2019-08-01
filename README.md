@@ -33,6 +33,8 @@ Hickey, Walter. (2018, February 26). Bob Ross. *FiveThirtyEight*. Retrieved from
 
 Jones, Brent. (2018, May 31). Crime and heat analysis. *St Louis Public Radio*. Retrieved from https://github.com/stlpublicradio/2018-05-31-crime-and-heat-analysis
 
+Keemahill, Dan. (2019, February 3). Analysis of Austin-Travis County EMS call data. *Austin American-Statesman*. Retrieved from https://github.com/statesman/2019-ems-analysis
+
 Keller, Josh; Pearce, Adam. (2016, September 7). US State prison admissions by county. *The Upshot*. Retrieved from https://github.com/TheUpshot/prison-admissions
 
 Meiners, Joan. (2018, August 16). Endangered species act Louisiana: American alligator. *NOLA*. Retrieved from https://github.com/beecycles/Endangered-Species-Act-Louisiana
