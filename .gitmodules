@@ -89,3 +89,6 @@
 [submodule "notebooks/statesman/2019-ems-analysis"]
 	path = notebooks/statesman/2019-ems-analysis
 	url = https://github.com/swkasica/2019-ems-analysis.git
+[submodule "notebooks/propublica/auditData"]
+	path = notebooks/propublica/auditData
+	url = https://github.com/swkasica/auditData.git
