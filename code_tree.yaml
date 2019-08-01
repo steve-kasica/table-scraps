@@ -92,7 +92,7 @@
                 - name: concatenate columns into key
                   desc: 'TK'
                 - name: designate column as primary key
-                  desc: 'TK'
+                  desc: 'Designating a column as the unique identifier for all rows in the table.'
           - name: rank data
             desc: 'Operations that encode semantic meaning about the data with table index.'
             sub:
@@ -104,8 +104,8 @@
                   desc: 'When rank is implicitly assigned by rearranging row position in the table.'
           - name: create flag
             desc: 'Flags are boolean expressed computed upon column values and used in filtering and grouping'
-          - name: concatenate columns
-            desc: 'When values in two columns are combined into one, such as state and county FIPS codes.'
+#           - name: concatenate columns
+#             desc: 'When values in two columns are combined into one, such as state and county FIPS codes.'
     - name: clean
       desc: 'Operations to correct erroneous or remove otherwise unwanted rows and values from the table.'
       sub:

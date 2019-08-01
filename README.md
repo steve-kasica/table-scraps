@@ -55,6 +55,8 @@ Templon, John. (2016, April 26). Analysis of Republican Donor Movement. *BuzzFee
 
 Tran, Andrew. (2017, December 18). How the Trump era is changing the federal bureaucracy. *Washington Post*. Retrieved from https://github.com/wpinvestigates/federal_employees_trump_2017
 
+Tran, Andrew. (2016, May 16). Analyzing LendingClub loan data for Connecticut. *TrendCT*. Retrieved from https://github.com/trendct/data
+
 Welsh, Ben. (2019, April 29). Census "hard to count" analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/census-hard-to-map-analysis
 
 Welsh, Ben. (2017, March 17). California crop production wages analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/california-crop-production-wages-analysis

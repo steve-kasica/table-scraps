@@ -92,3 +92,6 @@
 [submodule "notebooks/propublica/auditData"]
 	path = notebooks/propublica/auditData
 	url = https://github.com/swkasica/auditData.git
+[submodule "notebooks/trendct"]
+	path = notebooks/trendct
+	url = https://github.com/swkasica/data-1.git
