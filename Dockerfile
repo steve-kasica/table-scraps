@@ -10,7 +10,7 @@ RUN conda install -c r r-irkernel r-tidyverse r-lubridate r-reshape2
 # Install Python3 and R packages used in notebooks
 RUN conda install -c conda-forge geopandas r-janitor
 RUN conda install altair requests
-RUN pip install fecfile pdfminer.six treelib agate
+RUN pip install fecfile pdfminer.six treelib agate agate-excel
 
 # Install Jupyter Notebook extensions because I like them
 RUN pip install jupyter_contrib_nbextensions \
