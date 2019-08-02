@@ -113,11 +113,13 @@
                 - name: prune columns
                   desc: 'Simply put, these operations remove table columns.'
                   sub:
-                    - name: drop columns
+                    - name: drop columns  # TODO merge into subset columns
                       desc: 'Remove columns from table by specifying the ones you want to remove.'
-                    - name: select columns
+                    - name: select columns  # TODO merge into subset columns
                       desc: 'Remove columns from table by specifying the ones you want to keep.'
-                    - name: align table columns for consolidation
+                    - name: subset columns
+                      desc: 'Removing columns from a table by specifying which ones to remove or keep.'
+                    - name: align table columns for consolidation  # TODO WTF was this?
                       desc: 'TK'
                 - name: prune rows
                   desc: 'Simply put, these operations remove table rows.'
@@ -189,6 +191,8 @@
                         desc: 'TK'
                       - name: whiten matrix
                         desc: 'Divide each feature by its standard deviation across all observations to give it unit variance.'
+                - name: backfill missing data
+                  desc: 'Create new "rows" in the data where there are missing entries.'
           - name: format
             desc: 'Operations that modify the table values appearance or style.'
             sub:
@@ -272,6 +276,8 @@
                               desc: 'When a table is grouped by a single column.'
                             - name: group by multiple columns
                               desc: 'When a table is grouped by multiple columns, creating hierarchy.'
+                            - name: create lookup table
+                              desc: 'Creating a table with two columns that serves as a map from one value to another.'
                       - name: group by double axis
                         desc: 'Grouping by more than one column such that one grouped column is not hierarchically paired with another grouped column.'
                         sub:
@@ -402,36 +408,38 @@
                 desc: 'Instances where journalists employed a loop.'
           - name: toggle step on and off
             desc: 'Some wrangling steps were not always run. Toggling off is often accomplished by commenting out code.'
-    - name: purpose
-      desc: 'Why does this data need to be wrangled in the first place?'
+    - name: wrangling purpose
+      desc: 'Why does this data need to be wrangled?'
       sub:
-        - name: analysis
-          desc: 'Kinds of analysis data journalists need to wrangle data to perform.'
-          sub:
-            - name: extract single value
-              desc: 'Sometimes, the whole point of wrangling is to calculate and report a single value for a story.'
-            - name: analyze principle components
-              desc: ''
-            - name: run cluster analysis
-              desc: 'Run some kind of clusting analysis, such as K-means.'
-            - name: fit a generalized linear model
-              desc: ''
-            - name: look for trends
-              desc: ''
-            - name: find most frequently occurring
-              desc: ''
-            - name: find worst offender
-              desc: ''
-            - name: count number of records
-              desc: ''
-            - name: image analysis
-              desc: 'A programmatic, quantitative analysis of images.'
-            - name: create a table to lookup values
-              desc: 'The end to wrangling is just to create a table to lookup values.'
         - name: wrangle data for graphics
-          desc: 'When a purpose of the notebook is to format data for other visualization tools'
+          desc: 'Data need to be formatted in order to be digested by visualization tools'
+        - name: combine drifting datasets
+          desc: 'Reconcile difference in periodically published datasets that have superficially changed over time, such as schema differences or entity names, to consolidate more than one dataset.'
         - name: combine seemingly disparate datasets
-          desc: 'When a notebook largely constitutes combining seemingly unrelated datasets.'
+          desc: 'When a notebook largely constitutes combining seemingly unrelated datasets.'          
+    - name: analysis  # TODO revisit all sub codes
+      desc: 'Kinds of analysis data journalists need to wrangle data to perform.'
+      sub:
+        - name: extract single value
+          desc: 'Sometimes, the whole point of wrangling is to calculate and report a single value for a story.'
+        - name: analyze principle components
+          desc: ''
+        - name: run cluster analysis
+          desc: 'Run some kind of clusting analysis, such as K-means.'
+        - name: fit a generalized linear model
+          desc: ''
+        - name: look for trends
+          desc: ''
+        - name: find most frequently occurring
+          desc: ''
+        - name: find worst offender
+          desc: ''
+        - name: count number of records
+          desc: ''
+        - name: image analysis
+          desc: 'A programmatic, quantitative analysis of images.'
+        - name: create a table to lookup values
+          desc: 'The end to wrangling is just to create a table to lookup values.'
     - name: strategies
       desc: 'General strategies journalists employ when wrangling data.'
       sub:

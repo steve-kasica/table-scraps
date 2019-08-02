@@ -95,3 +95,6 @@
 [submodule "notebooks/trendct"]
 	path = notebooks/trendct
 	url = https://github.com/swkasica/data-1.git
+[submodule "notebooks/buffalonews/new-york-schools-assessment"]
+	path = notebooks/buffalonews/new-york-schools-assessment
+	url = https://github.com/swkasica/new-york-schools-assessment.git
