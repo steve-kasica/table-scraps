@@ -65,6 +65,8 @@ Welsh, Ben. (2017, March 17). California crop production wages analysis. *Los An
 
 Welsh, Ben. (2017, May 25). California H-2A visas analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/california-h2a-visas-analysis
 
+Wilber, Jared. (2018, June 5). skatemusic. *The Pudding*. Retrieved from https://github.com/polygraph-cool/skatemusic
+
 Wilson, Chris. (2016, December 20). Baby Name Politics. *Time*. Retrieved from https://github.com/TimeMagazine/babyname_politics
 
 Wilson, Chris. (2014, May 27). Wikipedia rankings. *Time*. Retrieved from https://github.com/TimeMagazine/wikipedia-rankings

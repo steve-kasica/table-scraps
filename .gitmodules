@@ -98,3 +98,6 @@
 [submodule "notebooks/buffalonews/new-york-schools-assessment"]
 	path = notebooks/buffalonews/new-york-schools-assessment
 	url = https://github.com/swkasica/new-york-schools-assessment.git
+[submodule "notebooks/polygraph/skatemusic"]
+	path = notebooks/polygraph/skatemusic
+	url = https://github.com/swkasica/skatemusic.git

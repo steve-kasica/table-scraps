@@ -420,6 +420,8 @@
     - name: analysis  # TODO revisit all sub codes
       desc: 'Kinds of analysis data journalists need to wrangle data to perform.'
       sub:
+        - name: Explore similarities and differences different groups
+          desc: 'The end analysis is just comparing different groups by a common metric.'
         - name: extract single value
           desc: 'Sometimes, the whole point of wrangling is to calculate and report a single value for a story.'
         - name: analyze principle components
