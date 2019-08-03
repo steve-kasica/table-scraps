@@ -29,6 +29,8 @@ Groskopf, Christopher. (2017, June 27). Analysis of rideshare trips taken in New
 
 Groskopf, Christopher. (2017, April 10). Analysis of work from home IPUMS datawo. *Quartz*. Retrieved from https://github.com/Quartz/work-from-home
 
+Heinle, Lexie. (2017, August 22). Analysis of NYS ed data for Erie, Niagara counties. *The Buffalo News*. Retrieved from https://github.com/thebuffalonews/new-york-schools-assessment
+
 Hickey, Walter. (2018, February 26). Bob Ross. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data/tree/master/bob-ross
 
 Jones, Brent. (2018, May 31). Crime and heat analysis. *St Louis Public Radio*. Retrieved from https://github.com/stlpublicradio/2018-05-31-crime-and-heat-analysis
