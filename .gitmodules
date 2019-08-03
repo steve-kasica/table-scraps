@@ -101,3 +101,6 @@
 [submodule "notebooks/polygraph/skatemusic"]
 	path = notebooks/polygraph/skatemusic
 	url = https://github.com/swkasica/skatemusic.git
+[submodule "notebooks/correctiv/awb-notebook"]
+	path = notebooks/correctiv/awb-notebook
+	url = https://github.com/swkasica/awb-notebook.git

@@ -168,13 +168,15 @@
                       - name: perform name entity resolution manually
                         desc: 'Manually specifying the mapping between old and new column values. Not manually changing individual rows.'
                       - name: strip whitespace
-                        desc: 'Note that this might also fall under *resolving entity names*.'
+                        desc: 'Removing extra whitespace characters from entity name'
                       - name: combine entities by string matching  # Double check definition
                         desc: 'If column contains a specific string, then rename entire column to another string.'
                       - name: reconcile primary keys between tables
                         desc: 'Name entity resolution between tables to facilitate joining'
                       - name: resolve to arbitrary entity name among choices
                         desc: 'The actual text of the entity is not necessary as import as uniqueness.'
+                      - name: resolve by substring
+                        desc: 'Taking a substring of each entity with the expectation that a fixed, shorter version will combine some entities.'
                 - name: translate entity names
                   desc: 'Performing a bijective mapping between values, often to improve semantic meaning.'
                   sub:
@@ -389,14 +391,14 @@
           - name: use non-public, provided data
             desc: ''
           - name: use another news orgs data
-            desc: ''
+            desc: 'A dataset previously published by another news organization'
           - name: use data from colleague        
-            desc: ''            
+            desc: 'A dataset was provided by another journalist.'            
     - name: workflow building
       desc: 'Codes pretaining to how the wrangling workflow is built.'
       sub:
           - name: cache results from external service
-            desc: ''      
+            desc: 'When results from an API call are cached in disk.'
           - name: annotate workflow
             desc: 'Adding comments or notes in Markdown that explain what the journalistis doing.'      
           - name: think computationally
@@ -420,6 +422,8 @@
     - name: analysis  # TODO revisit all sub codes
       desc: 'Kinds of analysis data journalists need to wrangle data to perform.'
       sub:
+        - name: summarize dataset
+          desc: 'Analysis consists of summarizing and describing different aspects of the dataset.'
         - name: Explore similarities and differences different groups
           desc: 'The end analysis is just comparing different groups by a common metric.'
         - name: extract single value
@@ -485,3 +489,5 @@
           desc: ''
         - name: data too large for repo
           desc: 'Raw data cannot be included in SCM because files are too large'
+        - name: Silently dropping values after groupby
+          desc: 'Pandas silently drops NA values in a groupby'
