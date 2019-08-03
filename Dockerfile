@@ -5,7 +5,7 @@
 FROM jupyter/scipy-notebook
 
 # Add the R Jupyter kernel and install some R packages
-RUN conda install -c r r-irkernel r-tidyverse r-lubridate r-reshape2
+RUN conda install -c r r-irkernel r-tidyverse r-lubridate r-reshape2 r-tidytext
 
 # Install Python3 and R packages used in notebooks
 RUN conda install -c conda-forge geopandas r-janitor
