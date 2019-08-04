@@ -108,9 +108,9 @@
       desc: 'Operations to correct erroneous or remove otherwise unwanted rows and values from the table.'
       sub:
           - name: trim fat
-            desc: 'Removing portions of the table not relevant to analysis.'
+            desc: 'Winnow down data that is not relevant to analysis.'
             sub:
-                - name: prune columns
+                - name: winnow columns
                   desc: 'Simply put, these operations remove table columns.'
                   sub:
                     - name: drop columns  # TODO merge into subset columns
@@ -121,7 +121,7 @@
                       desc: 'Removing columns from a table by specifying which ones to remove or keep.'
                     - name: align table columns for consolidation  # TODO WTF was this?
                       desc: 'TK'
-                - name: prune rows
+                - name: winnow rows
                   desc: 'Simply put, these operations remove table rows.'
                   sub:
                       - name: trim by date range
@@ -155,7 +155,7 @@
                 - name: replace NA values
                   desc: 'Raw data may contain incomplete table values (denoted as NA) or empty values (denoted as NULL)'
                 - name: fix data errors manually
-                  desc: 'TK'
+                  desc: 'Instances where individual row-column values are changed by a journalist.'
                 - name: fix incorrect calculation
                   desc: 'TK'
                 - name: remove with regular expression

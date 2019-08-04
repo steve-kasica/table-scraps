@@ -104,3 +104,6 @@
 [submodule "notebooks/correctiv/awb-notebook"]
 	path = notebooks/correctiv/awb-notebook
 	url = https://github.com/swkasica/awb-notebook.git
+[submodule "notebooks/star-tribune/201901-hospitalquality"]
+	path = notebooks/star-tribune/201901-hospitalquality
+	url = https://github.com/swkasica/201901-hospitalquality.git
