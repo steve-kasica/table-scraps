@@ -24,10 +24,10 @@
             - name: pull tables out of pdf
               desc: 'Using a table extraction tool, such as Tabula, to parse tables inside PDF documents.'
         - name: read
-          desc: 'Import data by reading a structured file on disk such as a CSV'
+          desc: 'Import data by reading a file on disk such as a CSV'
           sub:
             - name: read as tabular data
-              desc: 'Refers to importing files from disk as a table in the environment. Files can be .csv, .xlsx, .fec, and .shp'
+              desc: 'Refers to importing files from disk as a table in the environment. Files can be .csv, .xlsx, .fec, and .shp, .RData'
     - name: amend
       desc: '*Amending* a table constitutes creating new columns in the table without *integrating* other tables.'
       sub:
@@ -367,6 +367,8 @@
                 desc: ''
               - name: display rows with errors
                 desc: 'E.g. filtering rows with a NA value in a particular column'
+              - name: check for NAs
+                desc: 'See if any rows have NA values.'
     - name: export data
       desc: 'Ways in which journalist export the results of their data wrangling.'
       sub:
@@ -413,17 +415,24 @@
     - name: wrangling purpose
       desc: 'Why does this data need to be wrangled?'
       sub:
-        - name: wrangle data for graphics
-          desc: 'Data need to be formatted in order to be digested by visualization tools'
+        - name: wrangle for downstream application
+          desc: 'Output from wrangling will be input into some other program'
+          sub:
+            - name: wrangle data for graphics
+              desc: 'Data need to be formatted in order to be digested by visualization tools'
+            - name: wrangle data for machine learning model
+              desc: 'Data is being wrangled in order to create a model, whether the main point of the piece is for prediction or classification'
         - name: combine drifting datasets
           desc: 'Reconcile difference in periodically published datasets that have superficially changed over time, such as schema differences or entity names, to consolidate more than one dataset.'
         - name: combine seemingly disparate datasets
-          desc: 'When a notebook largely constitutes combining seemingly unrelated datasets.'          
+          desc: 'When a notebook largely constitutes combining seemingly unrelated datasets.'
     - name: analysis  # TODO revisit all sub codes
       desc: 'Kinds of analysis data journalists need to wrangle data to perform.'
       sub:
         - name: summarize dataset
           desc: 'Analysis consists of summarizing and describing different aspects of the dataset.'
+        - name: analyze a model for insights
+          desc: 'Looking at the learned features of a model for insight or predictions, e.g. "classification trees"'
         - name: Explore similarities and differences different groups
           desc: 'The end analysis is just comparing different groups by a common metric.'
         - name: extract single value

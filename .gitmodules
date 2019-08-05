@@ -107,3 +107,6 @@
 [submodule "notebooks/star-tribune/201901-hospitalquality"]
 	path = notebooks/star-tribune/201901-hospitalquality
 	url = https://github.com/swkasica/201901-hospitalquality.git
+[submodule "notebooks/times"]
+	path = notebooks/times
+	url = https://github.com/swkasica/data-2.git

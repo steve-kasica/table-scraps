@@ -15,6 +15,8 @@ Bradshaw, Paul. (2019, March 8). Birmingham remains top destination for Londoner
 
 Bradshaw, Paul. (2016, December 8). Midwife units see one in four mums transferred by ambulance to hospital. *BBC*. Retrieved from https://github.com/BBC-Data-Unit/midwife-led-units
 
+Ceccon, Stefano. (2016, January 16). Analysis: How the Conservatives won. *Times*. Retrieved from https://github.com/times/data
+
 Chinoy, Sahil. (2018, November 12). The Cube Root Law. *New York Times*. Retrieved from https://observablehq.com/@sahilchinoy/the-cube-root-law
 
 Chinoy, Sahil. (2018, October 11). Heat index. *New York Times*. Retrieved from https://observablehq.com/@sahilchinoy/heat-index
