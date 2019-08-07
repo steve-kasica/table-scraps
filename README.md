@@ -59,6 +59,8 @@ Tran, Andrew. (2017, December 18). How the Trump era is changing the federal bur
 
 Tran, Andrew. (2016, May 16). Analyzing LendingClub loan data for Connecticut. *TrendCT*. Retrieved from https://github.com/trendct/data
 
+Webster, MaryJo. (2019, June 1). Education achievement gap analysis. *Star Tribune*. Retrieved from https://github.com/striblab/201901-achievementgap
+
 Wehrmeyer, Stefan. (2016, March 21). Euros für Ärzte Data Analysis. *CORRECTIV*. Retrieved from https://github.com/correctiv/awb-notebook
 
 Welsh, Ben. (2019, April 29). Census "hard to count" analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/census-hard-to-map-analysis
