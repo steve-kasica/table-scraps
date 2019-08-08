@@ -11,3 +11,4 @@
 .wget-hsts
 .python_history
 __pycache__
+secrets.yaml
