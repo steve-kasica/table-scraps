@@ -11,6 +11,8 @@
               desc: 'Translate addresses to latitude-longitude coordinates through web service, such as those from Bing.'
             - name: scrape web for data
               desc: 'Systematically parsing webpages for relevant data.'
+            - name: query database
+              desc: 'Data is imported through a database query.'
         - name: create
           desc: 'Data is created inside the wrangling environment.'
           sub:
@@ -165,8 +167,8 @@
                 - name: resolve entity names
                   desc: 'A surjective mapping from previous column values to new column values'
                   sub:
-                      - name: perform name entity resolution manually
-                        desc: 'Manually specifying the mapping between old and new column values. Not manually changing individual rows.'
+                      - name: perform name entity resolution manually  # TODO this seems like two axes: categorical vs. quantiative and manually vs. automatic.
+                        desc: 'Manually specifying the mapping between old and new column categorical values. Not manually changing individual rows.'
                       - name: strip whitespace
                         desc: 'Removing extra whitespace characters from entity name'
                       - name: combine entities by string matching  # Double check definition
@@ -177,6 +179,8 @@
                         desc: 'The actual text of the entity is not necessary as import as uniqueness.'
                       - name: resolve by substring
                         desc: 'Taking a substring of each entity with the expectation that a fixed, shorter version will combine some entities.'
+                      - name: bin values
+                        desc: 'Classifying quantitative data into categories, e.g. x > 100 <=> category = "under spent" and x > 100 <=> category = "over spent"'
                 - name: translate entity names
                   desc: 'Performing a bijective mapping between values, often to improve semantic meaning.'
                   sub:
@@ -239,7 +243,7 @@
               desc: 'TK'
             - name: concatenate files together
               desc: 'TK'
-            - name: full join tables
+            - name: full join tables  # TODO is full join an outer join?
               desc: 'Combine all rows and all columns of the two tables.'
         - name: intersect
           desc: 'Joining two tables such that non-matching rows are excluded from the combined table.'
@@ -433,8 +437,10 @@
           desc: 'Analysis consists of summarizing and describing different aspects of the dataset.'
         - name: analyze a model for insights
           desc: 'Looking at the learned features of a model for insight or predictions, e.g. "classification trees"'
-        - name: Explore similarities and differences different groups
+        - name: explore similarities and differences different groups
           desc: 'The end analysis is just comparing different groups by a common metric.'
+        - name: show trend over time
+          desc: 'Analysis consists of showing how values change over time'
         - name: extract single value
           desc: 'Sometimes, the whole point of wrangling is to calculate and report a single value for a story.'
         - name: analyze principle components
