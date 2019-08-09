@@ -110,3 +110,6 @@
 [submodule "notebooks/times"]
 	path = notebooks/times
 	url = https://github.com/swkasica/data-2.git
+[submodule "notebooks/npr/school-choice"]
+	path = notebooks/npr/school-choice
+	url = https://github.com/swkasica/school-choice

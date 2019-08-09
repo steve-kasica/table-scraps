@@ -237,14 +237,14 @@
       desc: 'Combining data residing in different tables into one table.'
       sub:
         - name: consolidate
-          desc: 'Combination of multiple tables into one. Schema changes are non-existent or inconsequential.'
+          desc: 'Consolidation is characterized by actions that add essentially combine rows of two tables.'
           sub:
             - name: union tables
               desc: 'TK'
             - name: concatenate files together
               desc: 'TK'
-            - name: full join tables  # TODO is full join an outer join?
-              desc: 'Combine all rows and all columns of the two tables.'
+            - name: full join tables
+              desc: 'Combine all rows and all columns of the two tables. a.k.a full outer join'
         - name: intersect
           desc: 'Joining two tables such that non-matching rows are excluded from the combined table.'
           sub:
@@ -253,10 +253,10 @@
             - name: natural join  # TODO what does this really mean?        
               desc: 'TK'
         - name: supplement
-          desc: 'Joining a table with a primary table such that all the rows in the primary table are in the combined table.'
+          desc: 'Supplementation is characterized by integration operations that add dimensions to existing data'
           sub:
             - name: outer join tables
-              desc: 'A join that returns rows with no corresponding match'
+              desc: 'A join that returns rows with no corresponding match in the table being joined two, e.g. left or right joins.'
         - name: other
           desc: 'Integration operations that do not fall into the previous two categories'
           sub:
@@ -489,13 +489,18 @@
       desc: 'Areas where journalist seem/could be frustrated in the wrangling process.'
       sub:
         - name: omits data quality exploration
-          desc: 'When it appears the journalist has excluded steps taken to explore the quality of the data'      
+          desc: 'When it appears the journalist has excluded steps taken to explore the quality of the data'
         - name: repetitive code
           desc: 'Instances where code is repetitively copied and pasted.'
         - name: make an incorrect conclusion
           desc: 'Instances where the journalist has made an incorrect conclusion about the data.'
-        - name: resort after merge
-          desc: 'When a sort has to be re-done because a merge ruining the pre-merged order.'
+        - name: post-merge clean up
+          desc: 'Pain points that come from the result of merging two datasets together'
+          sub:
+            - name: resort after merge
+              desc: 'When a sort has to be re-done because a merge ruining the pre-merged order.'
+            - name: fill in NA values after an outer join
+              desc: 'As outer joins do not drop non-matching rows, those values have NA'
         - name: encode redundant information
           desc: 'When data that already exists in the table is recoded into the table.'
         - name: data loss from aggregation
