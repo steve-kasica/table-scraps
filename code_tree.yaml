@@ -80,10 +80,12 @@
                       desc: '"the difference between two values taken as a percentage of whichever value you are using as the base," according to Philip Meyer in *Precision Journalism.* This term is synonymous with percent change.'
                     - name: calculate difference
                       desc: 'Subtracting two quantitative variables, including scalar values, vectors, and matricies.'
-                - name: calculate spread
-                  desc: 'TK'
+                # - name: calculate spread  # is this different from calculate difference?
+                #   desc: 'TK'
                 - name: calculate using an external data structure
                   desc: 'When new column values are calculated using table values and some auxiliary data structure, e.g. an array'
+                - name: calculate edge weights
+                  desc: '(Network analysis specific): calculate weights between nodes, such as Haversine distance.'
           - name: key generation
             desc: 'Operations that create "key" columns.'
             sub:
@@ -132,23 +134,23 @@
                         desc: 'Remove rows that are inside or outside a geographic area.'
                       - name: trim by quantitative threshold
                         desc: 'Remove rows that are above, below, equal to, or not equal to a numeric value.'
-                      - name: filter by contains value
+                      - name: trim by contains value
                         desc: 'Remove rows that do or do not contain specific values or types of values.'
                 - name: filter rows  # TODO how is this different from prune rows?
                   desc: 'TK'
                 - name: drop erroneous rows
-                  desc: 'TK'
+                  desc: 'Remove rows that have any number of kinds of errors in them.'
                 - name: remove incomplete data
-                  desc: 'TK'
+                  desc: 'Drop row if value(s) are incomplete, usually denoted as NA.'
                 - name: deduplicate
                   desc: 'Remove rows from the table that contain two or more of the same "observation." Duplicates may constitute rows with identical values in all, one, or zero columns.'
                   sub:
-                      - name: prevent double-counting
-                        desc: 'TK'
-                      - name: drop entirely duplicate rows
-                        desc: 'Remove a row from a table if every column value exactly matches all the column values of another row.'
-                      - name: drop rows with duplicate value in one column
-                        desc: 'Remove a row if it share the same value in a specific column with another row.'
+                      # - name: prevent double-counting
+                      #   desc: ''
+                      - name: drop duplicate rows
+                        desc: 'Remove a row from a table if one or more column values exactly matches all the column values of another row.'
+                      # - name: drop rows with duplicate value in one column  # Merge into drop duplicate rows
+                      #   desc: 'Remove a row if it share the same value in a specific column with another row.'
                       - name: remove all rows but the master record
                         desc: 'TK'
           - name: edit
@@ -173,7 +175,7 @@
                         desc: 'Removing extra whitespace characters from entity name'
                       - name: combine entities by string matching  # Double check definition
                         desc: 'If column contains a specific string, then rename entire column to another string.'
-                      - name: reconcile primary keys between tables
+                      - name: reconcile primary keys between tables  # This is a good one
                         desc: 'Name entity resolution between tables to facilitate joining'
                       - name: resolve to arbitrary entity name among choices
                         desc: 'The actual text of the entity is not necessary as import as uniqueness.'
@@ -229,7 +231,7 @@
                 desc: 'Such as extracting the day of the month, year, etc.. from a datetime column'
               - name: slice column values
                 desc: 'Extracting the relevant column values by character position, e.g. the first five digits of a zip code.'
-              - name: split column on delimiter
+              - name: split column on delimiter  # merge into split column
                 desc: 'Separate data dimensions by a common character, e.g. lat-long coordinates separated by a comma.'
               - name: get unique values
                 desc: 'TK'            
@@ -261,12 +263,12 @@
               desc: 'When a table users a column from a *parallel* table (like arrays) to compute a new column.'
             - name: concat parallel tables
               desc: 'When columns from multiple, parallel tables are concatenated together to form a new table.'
+            - name: self join table
+              desc: 'Join a table with itself'
         - name: other
           desc: 'Integration operations that do not fall into the previous two categories'
           sub:
             - name: cartesian product  # seems like the opposite of intersection
-              desc: 'TK'
-            - name: self join table  # Is this just fancy duplication?          
               desc: 'TK'
     - name: transform
       desc: 'Operations that transform a table into an aggregated, lower-resolution view of the original table.'
@@ -276,10 +278,10 @@
             sub:
                 - name: join aggregate
                   desc: '"extends the input data objects with aggregate values in a new field" - Vega-Lite Join Aggregate docs.'
-                - name: aggregate
+                - name: group
                   desc: 'Codes that group the table along one or more table dimension.'
                   sub:
-                      - name: group by single axis
+                      - name: single dimensional group by
                         desc: 'Grouping one or more columns such that grouped columns are hierarchically ordered when grouping by two or more columns. This operation is commonly implemented with `groupby` in Pandas.'
                         sub:
                             - name: group by single column
@@ -300,14 +302,14 @@
           - name: calculate  # TODO are these really any different from performance metrics?
             desc: 'These are within-column calculations that often, but not always, immediately follow an *aggregation* operation.'
             sub:
-                - name: sum column values  # Merge with sum along a dimension
-                  desc: 'Calculate the sum of all values within a column'
+                # - name: sum column values  # Merge with sum along a dimension
+                #   desc: 'Calculate the sum of all values within a column'
                 - name: sum along dimension
                   desc: 'Calculate the sum of all values within a row or column'
-                - name: get max value
-                  desc: 'Calculate the highest value in a column of quantitative values'
-                - name: get min value
-                  desc: 'Calculate the lowest value in a column ofquantitative values.'
+                - name: get extreme values
+                  desc: 'Calculate the highest or lowest value(s)'
+                # - name: get min value  # TODO merge with get extreme value
+                #   desc: 'Calculate the lowest value in a column ofquantitative values.'
                 - name: count value frequency
                   desc: 'Count the frequency of categorical variables within a column'
                 - name: count unique values in column  # TODO What is this? Won't this be a scalar?
@@ -332,26 +334,28 @@
           - name: Understand distribution
             desc: 'Operations that reveal something of the underlying distribution of data.'
             sub:
-                - name: Plot histogram
-                  desc: ''
-                - name: plot stacked bar chart
-                  desc: ''
-                - name: plot stacked column chart
-                  desc: ''
-                - name: plot scatterplot
-                  desc: ''
-                - name: plot trendline
-                  desc: ''
-                - name: plot column chart
-                  desc: ''
-                - name: plot violin plot
-                  desc: ''
-                - name: plot boxplot
-                  desc: ''
-                - name: plot scree plot
-                  desc: ''
-                - name: plot line chart
-                  desc: 'Visualizations with lines connecting points on a chart.'
+                - name: Visualize data
+                  desc: 'Employing any kind of data visualzation'
+                # - name: Plot histogram
+                #   desc: ''
+                # - name: plot stacked bar chart
+                #   desc: ''
+                # - name: plot stacked column chart
+                #   desc: ''
+                # - name: plot scatterplot
+                #   desc: ''
+                # - name: plot trendline
+                #   desc: ''
+                # - name: plot column chart
+                #   desc: ''
+                # - name: plot violin plot
+                #   desc: ''
+                # - name: plot boxplot
+                #   desc: ''
+                # - name: plot scree plot
+                #   desc: ''
+                # - name: plot line chart
+                #   desc: 'Visualizations with lines connecting points on a chart.'
     - name: check sanity
       desc: 'Operations that confirm the effect of a previous wrangling operation.'
       sub:
@@ -375,7 +379,7 @@
                 desc: 'Display the first *n* rows and all columns of the table'
               - name: inspect table schema  # Tamara had issues with this one
                 desc: ''
-              - name: display rows with errors
+              - name: display rows with missing values
                 desc: 'E.g. filtering rows with a NA value in a particular column'
               - name: check for NAs
                 desc: 'See if any rows have NA values.'
@@ -390,21 +394,25 @@
   desc: 'These codes cover observations from the coder about the wrangling processes, not actions performed by the journalist.'
   sub:
     - name: data acquisition
-      desc: ''
+      desc: 'How the data was acquired by journalists'
       sub:
           - name: collect raw data
             desc: 'Using first-hand observations or logs as data.'
           - name: use previously cleaned data
             desc: 'Data that originated from a colleague.'
           - name: use public data
-            desc: ''
+            desc: 'Includes open-soucred datasets'
           - name: use academic data
             desc: ''
           - name: use non-public, provided data
             desc: ''
+          - name: use open government data
+            desc: 'Data publically available on open data portals, such as data.gov'
+          - name: Freedom of Information data
+            desc: 'Data that was obtained via FOI/FOIA requests.'
           - name: use another news orgs data
             desc: 'A dataset previously published by another news organization'
-          - name: use data from colleague        
+          - name: use data from colleague
             desc: 'A dataset was provided by another journalist.'            
     - name: workflow building
       desc: 'Codes pretaining to how the wrangling workflow is built.'
@@ -425,11 +433,11 @@
     - name: wrangling purpose
       desc: 'Why does this data need to be wrangled?'
       sub:
-        - name: wrangle for downstream application
+        - name: downstream applications
           desc: 'Output from wrangling will be input into some other program'
           sub:
             - name: wrangle data for graphics
-              desc: 'Data need to be formatted in order to be digested by visualization tools'
+              desc: 'Data need to be formatted in order to be visualized in an article'
             - name: wrangle data for machine learning model
               desc: 'Data is being wrangled in order to create a model, whether the main point of the piece is for prediction or classification'
         - name: combine drifting datasets
@@ -443,18 +451,20 @@
           desc: 'Analysis consists of summarizing and describing different aspects of the dataset.'
         - name: analyze a model for insights
           desc: 'Looking at the learned features of a model for insight or predictions, e.g. "classification trees"'
-        - name: explore similarities and differences different groups
+        - name: compare different groups along a common metric
           desc: 'The end analysis is just comparing different groups by a common metric.'
         - name: show trend over time
           desc: 'Analysis consists of showing how values change over time'
-        - name: extract single value
-          desc: 'Sometimes, the whole point of wrangling is to calculate and report a single value for a story.'
+        - name: calculate a statistic
+          desc: 'Calculate a single value for from a dataset, such as number of records.'
         - name: analyze principle components
           desc: ''
         - name: run cluster analysis
           desc: 'Run some kind of clusting analysis, such as K-means.'
         - name: fit a generalized linear model
           desc: ''
+        - name: answer a question
+          desc: 'Analysis consists of using data to answer a specific question'
         - name: look for trends
           desc: ''
         - name: find most frequently occurring
@@ -467,6 +477,10 @@
           desc: 'A programmatic, quantitative analysis of images.'
         - name: create a table to lookup values
           desc: 'The end to wrangling is just to create a table to lookup values.'
+        - name: find nearest neighbours in the network
+          desc: '(Network analysis) Find the closest neighbours for all points'
+        - name: explore dynamic network flow
+          desc: '(Network analysis) explore the flow between different nodes in the graph, e.g. migration between cities.'
     - name: strategies
       desc: 'General strategies journalists employ when wrangling data.'
       sub:
