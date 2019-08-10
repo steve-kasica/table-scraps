@@ -220,7 +220,7 @@
                         desc: 'Operations that change column names'
                       - name: change column data type
                         desc: 'For example, changing a column of values from strings to integers'
-                - name: sort table rows
+                - name: sort table rows  # TODO how is sorting not ranking?
                   desc: 'Sorting a table in a way that does not rank rows, such as by a unique identifier'
           - name: separate
             desc: 'Mapping one column into more than one because multiple dimensions of the dataset packed into one column.'
@@ -257,6 +257,10 @@
           sub:
             - name: outer join tables
               desc: 'A join that returns rows with no corresponding match in the table being joined two, e.g. left or right joins.'
+            - name: amend with column from another table
+              desc: 'When a table users a column from a *parallel* table (like arrays) to compute a new column.'
+            - name: concat parallel tables
+              desc: 'When columns from multiple, parallel tables are concatenated together to form a new table.'
         - name: other
           desc: 'Integration operations that do not fall into the previous two categories'
           sub:
@@ -296,8 +300,10 @@
           - name: calculate  # TODO are these really any different from performance metrics?
             desc: 'These are within-column calculations that often, but not always, immediately follow an *aggregation* operation.'
             sub:
-                - name: sum column values
+                - name: sum column values  # Merge with sum along a dimension
                   desc: 'Calculate the sum of all values within a column'
+                - name: sum along dimension
+                  desc: 'Calculate the sum of all values within a row or column'
                 - name: get max value
                   desc: 'Calculate the highest value in a column of quantitative values'
                 - name: get min value

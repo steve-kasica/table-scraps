@@ -113,3 +113,6 @@
 [submodule "notebooks/npr/school-choice"]
 	path = notebooks/npr/school-choice
 	url = https://github.com/swkasica/school-choice
+[submodule "notebooks/nzz"]
+	path = notebooks/nzz
+	url = https://github.com/swkasica/st-methods.git

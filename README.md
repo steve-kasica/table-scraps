@@ -37,9 +37,13 @@ Hickey, Walter. (2018, February 26). Bob Ross. *FiveThirtyEight*. Retrieved from
 
 Jones, Brent. (2018, May 31). Crime and heat analysis. *St Louis Public Radio*. Retrieved from https://github.com/stlpublicradio/2018-05-31-crime-and-heat-analysis
 
+Kolly, Marie-José. (2018, January 31). 1805-regionen im fokus des US-praesidenten. *Neue Zürcher Zeitung*. Retrieved from https://github.com/nzzdev/st-methods
+
 Keemahill, Dan. (2019, February 3). Analysis of Austin-Travis County EMS call data. *Austin American-Statesman*. Retrieved from https://github.com/statesman/2019-ems-analysis
 
 Keller, Josh; Pearce, Adam. (2016, September 7). US State prison admissions by county. *The Upshot*. Retrieved from https://github.com/TheUpshot/prison-admissions
+
+Mayes, Brittany. (2017, April 17). Data analysis for education's school choice in Indiana project. *NPR*. Retrieved from https://github.com/nprapps/school-choice
 
 Meiners, Joan. (2018, August 16). Endangered species act Louisiana: American alligator. *NOLA*. Retrieved from https://github.com/beecycles/Endangered-Species-Act-Louisiana
 
