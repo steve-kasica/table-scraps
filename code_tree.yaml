@@ -38,8 +38,6 @@
             sub:
                 - name: adjust for inflation
                   desc: 'TK'
-                - name: adjust for season
-                  desc: 'TK'
                 - name: compute index number
                   desc: 'TK'
           - name: encode table identification in row
@@ -129,7 +127,7 @@
                   desc: 'Simply put, these operations remove table rows.'
                   sub:
                       - name: trim by date range
-                        desc: 'Removing rows that are inside or outside a specific date range.'
+                        desc: 'Removing rows that are inside or outside a specific date range. This can be a method for detrending data by adjusting for season.'
                       - name: trim by geographic area
                         desc: 'Remove rows that are inside or outside a geographic area.'
                       - name: trim by quantitative threshold
@@ -383,6 +381,8 @@
                 desc: 'E.g. filtering rows with a NA value in a particular column'
               - name: check for NAs
                 desc: 'See if any rows have NA values.'
+              - name: count number of rows
+                desc: 'Printing out the total number of rows in a table'                
     - name: export data
       desc: 'Ways in which journalist export the results of their data wrangling.'
       sub:
@@ -447,23 +447,26 @@
     - name: analysis  # TODO revisit all sub codes
       desc: 'Kinds of analysis data journalists need to wrangle data to perform.'
       sub:
-        - name: summarize dataset
+        - name: summarize dataset  # Good one
           desc: 'Analysis consists of summarizing and describing different aspects of the dataset.'
-        - name: analyze a model for insights
-          desc: 'Looking at the learned features of a model for insight or predictions, e.g. "classification trees"'
-        - name: compare different groups along a common metric
+        - name: interpret statistical/ml model  # Good one
+          desc: 'Analyze features from a model such as linear regression or classification trees'
+#         - name: analyze a model for insights  # TODO merge into "interpret statistical/ml mode"
+#           desc: 'Looking at the learned features of a model for insight or predictions, e.g. "classification trees"'
+        - name: compare different groups along a common metric  # Good one
           desc: 'The end analysis is just comparing different groups by a common metric.'
-        - name: show trend over time
+        - name: show trend over time  # Good one
           desc: 'Analysis consists of showing how values change over time'
-        - name: calculate a statistic
+        - name: calculate a statistic  # Good one
           desc: 'Calculate a single value for from a dataset, such as number of records.'
+          
         - name: analyze principle components
           desc: ''
-        - name: run cluster analysis
-          desc: 'Run some kind of clusting analysis, such as K-means.'
-        - name: fit a generalized linear model
-          desc: ''
-        - name: answer a question
+#         - name: run cluster analysis
+#           desc: 'Run some kind of clusting analysis, such as K-means.'
+#         - name: fit a generalized linear model
+#           desc: ''
+        - name: answer a question  # Maybe a good one
           desc: 'Analysis consists of using data to answer a specific question'
         - name: look for trends
           desc: ''
@@ -471,10 +474,8 @@
           desc: ''
         - name: find worst offender
           desc: ''
-        - name: count number of records
-          desc: ''
-        - name: image analysis
-          desc: 'A programmatic, quantitative analysis of images.'
+#         - name: image analysis TODO delete
+#           desc: 'A programmatic, quantitative analysis of images.'
         - name: create a table to lookup values
           desc: 'The end to wrangling is just to create a table to lookup values.'
         - name: find nearest neighbours in the network
