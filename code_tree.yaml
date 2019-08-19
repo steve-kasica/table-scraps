@@ -20,6 +20,8 @@
               desc: 'Using tables where column names and table values were either copy-and-pasted or entered manually.'
             - name: generate data computationally
               desc: 'Using tables populated programatically.'
+            - name: copy table schema
+              desc: 'A table is copied without any values but table column names and type identical, or nearly identical, to another table.'
         - name: extract
           desc: 'Extraction occurs when data is one step removed from the format it needs to be in to be imported into the environment.'
           sub:
@@ -104,7 +106,7 @@
                   desc: 'TK'
                 - name: sort table
                   desc: 'When rank is implicitly assigned by rearranging row position in the table.'
-          - name: create flag
+          - name: create flag  # TODO This could almost be a reshape operation, in certain contexts.
             desc: 'Flags are boolean expressed computed upon column values and used in filtering and grouping'
     - name: clean
       desc: 'Operations to correct erroneous or remove otherwise unwanted rows and values from the table.'
@@ -134,18 +136,20 @@
                         desc: 'Remove rows that are above, below, equal to, or not equal to a numeric value.'
                       - name: trim by contains value
                         desc: 'Remove rows that do or do not contain specific values or types of values.'
-                - name: filter rows  # TODO how is this different from prune rows?
-                  desc: 'TK'
+                - name: remove incomplete data
+                  desc: 'Drop row if value(s) are incomplete, usually denoted as NA.'                        
+#                 - name: filter rows  # TODO how is this different from prune rows?
+#                   desc: 'TK'
                 - name: drop erroneous rows
                   desc: 'Remove rows that have any number of kinds of errors in them.'
-                - name: remove incomplete data
-                  desc: 'Drop row if value(s) are incomplete, usually denoted as NA.'
                 - name: deduplicate
                   desc: 'Remove rows from the table that contain two or more of the same "observation." Duplicates may constitute rows with identical values in all, one, or zero columns.'
                   sub:
+                      - name: Drop row based on domain knowledge
+                        desc: 'Deduplication not based on identical rows, but prior domain-specific knowledge about this dataset.'
                       # - name: prevent double-counting
                       #   desc: ''
-                      - name: drop duplicate rows
+                      - name: drop duplicate rows based on values
                         desc: 'Remove a row from a table if one or more column values exactly matches all the column values of another row.'
                       # - name: drop rows with duplicate value in one column  # Merge into drop duplicate rows
                       #   desc: 'Remove a row if it share the same value in a specific column with another row.'
@@ -164,10 +168,10 @@
                   desc: 'When column values are replaced with empty strings using regular expressions.'
                 - name: pad column values
                   desc: 'Adding either character prefixes or suffixes consistently to every row within a column'
-                - name: resolve entity names
+                - name: resolve entities
                   desc: 'A surjective mapping from previous column values to new column values'
                   sub:
-                      - name: perform name entity resolution manually  # TODO this seems like two axes: categorical vs. quantiative and manually vs. automatic.
+                      - name: perform entity resolution manually  # TODO this seems like two axes: categorical vs. quantiative and manually vs. automatic.
                         desc: 'Manually specifying the mapping between old and new column categorical values. Not manually changing individual rows.'
                       - name: strip whitespace
                         desc: 'Removing extra whitespace characters from entity name'
@@ -181,7 +185,7 @@
                         desc: 'Taking a substring of each entity with the expectation that a fixed, shorter version will combine some entities.'
                       - name: bin values
                         desc: 'Classifying quantitative data into categories, e.g. x > 100 <=> category = "under spent" and x > 100 <=> category = "over spent"'
-                - name: translate entity names
+                - name: translate entity names  # TODO combine with resole entities?
                   desc: 'Performing a bijective mapping between values, often to improve semantic meaning.'
                   sub:
                       - name: translate entity names manually
@@ -191,10 +195,10 @@
                 - name: scale values
                   desc: 'Operations that apply some mathematical operation to columns of quantitative data. This code is different from the codes under **Formulate performance metric** because this closer to cleaning.'
                   sub:
-                      - name: Log-ify values
+                      - name: Log-ify values  # TODO absorb into transform vector
                         desc: 'TK'
-                      - name: perform scalar multiplication
-                        desc: 'TK'
+                      - name: transform vector
+                        desc: 'Apply a transformation to a vectory, such as scalar multiplication'
                       - name: whiten matrix
                         desc: 'Divide each feature by its standard deviation across all observations to give it unit variance.'
                 - name: backfill missing data
@@ -232,7 +236,9 @@
               - name: split column on delimiter  # merge into split column
                 desc: 'Separate data dimensions by a common character, e.g. lat-long coordinates separated by a comma.'
               - name: get unique values
-                desc: 'TK'            
+                desc: 'TK'
+          - name: combine columns
+            desc: 'Combining two columns into one'
     - name: integrate
       desc: 'Combining data residing in different tables into one table.'
       sub:
@@ -243,8 +249,6 @@
               desc: 'TK'
             - name: concatenate files together
               desc: 'TK'
-            - name: full join tables
-              desc: 'Combine all rows and all columns of the two tables. a.k.a full outer join'
         - name: intersect
           desc: 'Joining two tables such that non-matching rows are excluded from the combined table.'
           sub:
@@ -253,16 +257,18 @@
             - name: natural join  # TODO what does this really mean?        
               desc: 'TK'
         - name: supplement
-          desc: 'Supplementation is characterized by integration operations that add dimensions to existing data'
+          desc: 'Supplementation is characterized by integration operations that essentially add columns to existing data'
           sub:
             - name: outer join tables
               desc: 'A join that returns rows with no corresponding match in the table being joined two, e.g. left or right joins.'
-            - name: amend with column from another table
-              desc: 'When a table users a column from a *parallel* table (like arrays) to compute a new column.'
+            - name: compute an inter-table column
+              desc: 'When a table uses a column from a *parallel* table (like arrays) to compute a new column.'
             - name: concat parallel tables
               desc: 'When columns from multiple, parallel tables are concatenated together to form a new table.'
             - name: self join table
               desc: 'Join a table with itself'
+            - name: full join tables  # TODO maybe the same code as concat parallel tables
+              desc: 'Combine all rows and all columns of the two tables. a.k.a full outer join'              
         - name: other
           desc: 'Integration operations that do not fall into the previous two categories'
           sub:
@@ -333,7 +339,7 @@
             desc: 'Operations that reveal something of the underlying distribution of data.'
             sub:
                 - name: Visualize data
-                  desc: 'Employing any kind of data visualzation'
+                  desc: 'Employing any kind of data visualzation, including a table'
                 # - name: Plot histogram
                 #   desc: ''
                 # - name: plot stacked bar chart
@@ -401,7 +407,7 @@
           - name: use previously cleaned data
             desc: 'Data that originated from a colleague.'
           - name: use public data
-            desc: 'Includes open-soucred datasets'
+            desc: 'Includes open-soucred datasets, tables on Wikipedia, etc..'
           - name: use academic data
             desc: ''
           - name: use non-public, provided data
@@ -444,6 +450,10 @@
           desc: 'Reconcile difference in periodically published datasets that have superficially changed over time, such as schema differences or entity names, to consolidate more than one dataset.'
         - name: combine seemingly disparate datasets
           desc: 'When a notebook largely constitutes combining seemingly unrelated datasets.'
+        - name: combine data and geography
+          desc: 'Pairing data with GIS info.'
+        - name: aggregate the forest from the trees
+          desc: 'Data of individual observations is aggregated in an attempt to find some meaningful structure or patterns'
     - name: analysis  # TODO revisit all sub codes
       desc: 'Kinds of analysis data journalists need to wrangle data to perform.'
       sub:
@@ -466,7 +476,7 @@
 #           desc: 'Run some kind of clusting analysis, such as K-means.'
 #         - name: fit a generalized linear model
 #           desc: ''
-        - name: answer a question  # Maybe a good one
+        - name: answer a question  # Good one
           desc: 'Analysis consists of using data to answer a specific question'
         - name: look for trends
           desc: ''
@@ -485,10 +495,21 @@
     - name: strategies
       desc: 'General strategies journalists employ when wrangling data.'
       sub:
-        - name: value replacement
-          desc: 'The output of any column calculation is reassigned to an existing column.'
-        - name: preserve existing values
-          desc: 'The output of any column calculation is assigned to a new column'
+        - name: tables evolve
+          desc: 'Data and objects are destroyed during the wrangling process.'
+          sub:
+            - name: value replacement
+              desc: 'The output of any column calculation is reassigned to an existing column.'
+            - name: temporary joining column
+              desc: 'When a key for joining two tables is created and destroyed immediately after the join.'              
+            - name: refine table
+              desc: 'Table refinement refers to when a table is subset *inplace*, a new object is not created in the environment.'
+       - name: data is precious
+         desc: 'Data and objects are neverly actually lost in the programming environment.'
+           - name: preserve existing values
+             desc: 'The output of any column calculation is assigned to a new column'
+           - name: Create child table
+             desc: 'A child table is a subset of the parent table declared as a new object in the environment.'
         - name: set data confidence threshold
           desc: 'Removes rows where a quantitative value is less than, greater than, or not equal to a numeric value.'
         - name: table splitting
@@ -504,13 +525,9 @@
               desc: ''
         - name: tolerate dirty data
           desc: 'Analysis continues despite clear data quality issues.'
-        - name: temporary joining column
-          desc: ''
     - name: pain points
       desc: 'Areas where journalist seem/could be frustrated in the wrangling process.'
       sub:
-        - name: omits data quality exploration
-          desc: 'When it appears the journalist has excluded steps taken to explore the quality of the data'
         - name: repetitive code
           desc: 'Instances where code is repetitively copied and pasted.'
         - name: make an incorrect conclusion
@@ -526,8 +543,8 @@
           desc: 'When data that already exists in the table is recoded into the table.'
         - name: data loss from aggregation
           desc: ''
-        - name: encoding provenance in data
-          desc: ''
+#         - name: encoding provenance in data  # kind of a leap of inference to say this is a pain point
+#           desc: 'I am infering that encoding provenance information, like where data came from'
         - name: data too large for repo
           desc: 'Raw data cannot be included in SCM because files are too large'
         - name: Silently dropping values after groupby
