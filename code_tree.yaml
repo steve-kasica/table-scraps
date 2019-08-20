@@ -103,7 +103,7 @@
                 - name: assign ranks         
                   desc: 'When a column of numerical ranks is explicitly assigned to rows in the table.'
                 - name: break ties
-                  desc: 'TK'
+                  desc: 'When the user specifies a way of breaking ties'
                 - name: sort table
                   desc: 'When rank is implicitly assigned by rearranging row position in the table.'
           - name: create flag  # TODO This could almost be a reshape operation, in certain contexts.
@@ -469,9 +469,8 @@
           desc: 'Analysis consists of showing how values change over time'
         - name: calculate a statistic  # Good one
           desc: 'Calculate a single value for from a dataset, such as number of records.'
-          
-        - name: analyze principle components
-          desc: ''
+        - name: explain variance  # Good one
+          desc: 'This can be done via PCA'
 #         - name: run cluster analysis
 #           desc: 'Run some kind of clusting analysis, such as K-means.'
 #         - name: fit a generalized linear model
@@ -542,7 +541,7 @@
         - name: encode redundant information
           desc: 'When data that already exists in the table is recoded into the table.'
         - name: data loss from aggregation
-          desc: ''
+          desc: 'When table columns are lost because they were dropped form resulting table due to not being relevant in aggregation.'
 #         - name: encoding provenance in data  # kind of a leap of inference to say this is a pain point
 #           desc: 'I am infering that encoding provenance information, like where data came from'
         - name: data too large for repo
