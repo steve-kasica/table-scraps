@@ -160,7 +160,7 @@
             sub:
                 - name: replace NA values
                   desc: 'Raw data may contain incomplete table values (denoted as NA) or empty values (denoted as NULL)'
-                - name: fix data errors manually
+                - name: fix data errors manuallyf
                   desc: 'Instances where individual row-column values are changed by a journalist.'
                 - name: fix incorrect calculation
                   desc: 'TK'
@@ -210,13 +210,15 @@
                   desc: 'Operations that modify the values within the table.'
                   sub:
                       - name: change case
-                        desc: 'TK'
+                        desc: 'Change the case of string values.'
                       - name: change date format
-                        desc: 'TK'
+                        desc: 'Specify the format which dates should be displayed'
                       - name: round floating point
-                        desc: 'TK'
-                      - name: remove delimiting characters
-                        desc: 'Remove characters such as newline (\n) that might make data ill-formed.'
+                        desc: 'Round foating point numbers.'
+#                       - name: remove delimiting characters  # TODO merge into correct bad formatting
+#                         desc: 'Remove characters such as newline (\n) that might make data ill-formed.'
+                      - name: correct bad formatting
+                        desc: 'Changes that correct ill-formed data such as HTML entities and new lines (\n)'
                 - name: format schema
                   desc: 'Operations that modify anything except table values.'
                   sub:
@@ -340,26 +342,6 @@
             sub:
                 - name: Visualize data
                   desc: 'Employing any kind of data visualzation, including a table'
-                # - name: Plot histogram
-                #   desc: ''
-                # - name: plot stacked bar chart
-                #   desc: ''
-                # - name: plot stacked column chart
-                #   desc: ''
-                # - name: plot scatterplot
-                #   desc: ''
-                # - name: plot trendline
-                #   desc: ''
-                # - name: plot column chart
-                #   desc: ''
-                # - name: plot violin plot
-                #   desc: ''
-                # - name: plot boxplot
-                #   desc: ''
-                # - name: plot scree plot
-                #   desc: ''
-                # - name: plot line chart
-                #   desc: 'Visualizations with lines connecting points on a chart.'
     - name: check sanity
       desc: 'Operations that confirm the effect of a previous wrangling operation.'
       sub:
@@ -444,7 +426,7 @@
           sub:
             - name: wrangle data for graphics
               desc: 'Data need to be formatted in order to be visualized in an article'
-            - name: wrangle data for machine learning model
+            - name: wrangle data for model
               desc: 'Data is being wrangled in order to create a model, whether the main point of the piece is for prediction or classification'
         - name: combine drifting datasets
           desc: 'Reconcile difference in periodically published datasets that have superficially changed over time, such as schema differences or entity names, to consolidate more than one dataset.'
@@ -477,8 +459,8 @@
 #           desc: ''
         - name: answer a question  # Good one
           desc: 'Analysis consists of using data to answer a specific question'
-        - name: look for trends
-          desc: ''
+#         - name: look for trends
+#           desc: ''
         - name: find most frequently occurring
           desc: ''
         - name: find worst offender
