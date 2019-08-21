@@ -47,7 +47,7 @@
           - name: support network analysis
             desc: 'Actions that modify a table to directly support network analysis'
             sub:
-              - name: add foreign key column  # TODO rename to "create edge"
+              - name: create edge
                 desc: 'A column with value that define a relationship to another row, which is not necessarily in a different table.'
               - name: define edge weights
                 desc: 'Columns that define edge weights'
@@ -59,7 +59,7 @@
                   sub:
                     - name: calculate z-score
                       desc: 'Calculate how many standard deviations a value in a column is away from the mean. Journalists perform this function to simply find outliers in a dataset or when preparing the data for principle component analysis.'
-                - name: calculate normalized score  # normalized and standardized can have very different uses between communities
+                - name: calculate normalized score
                   desc: 'Measuring the differences between groups of different sizes.'
                   sub:
                       - name: calculate ratio
@@ -80,12 +80,6 @@
                       desc: '"the difference between two values taken as a percentage of whichever value you are using as the base," according to Philip Meyer in *Precision Journalism.* This term is synonymous with percent change.'
                     - name: calculate difference
                       desc: 'Subtracting two quantitative variables, including scalar values, vectors, and matricies.'
-                # - name: calculate spread  # is this different from calculate difference?
-                #   desc: 'TK'
-                - name: calculate using an external data structure
-                  desc: 'When new column values are calculated using table values and some auxiliary data structure, e.g. an array'
-                - name: calculate edge weights
-                  desc: '(Network analysis specific): calculate weights between nodes, such as Haversine distance.'
           - name: key generation
             desc: 'Operations that create "key" columns.'
             sub:
@@ -94,19 +88,19 @@
                 - name: create a unique key
                   desc: 'Journalist create a key that is actually unique in the table'
                 - name: concatenate columns into key
-                  desc: 'TK'
+                  desc: 'Combine two string columns into one to create a key, e.g. combine city and state.'
                 - name: designate column as primary key
                   desc: 'Designating a column as the unique identifier for all rows in the table.'
           - name: rank data
             desc: 'Operations that encode semantic meaning about the data with table index.'
             sub:
-                - name: assign ranks         
+                - name: assign ranks
                   desc: 'When a column of numerical ranks is explicitly assigned to rows in the table.'
                 - name: break ties
                   desc: 'When the user specifies a way of breaking ties'
                 - name: sort table
                   desc: 'When rank is implicitly assigned by rearranging row position in the table.'
-          - name: create flag  # TODO This could almost be a reshape operation, in certain contexts.
+          - name: create flag
             desc: 'Flags are boolean expressed computed upon column values and used in filtering and grouping'
     - name: clean
       desc: 'Operations to correct erroneous or remove otherwise unwanted rows and values from the table.'
@@ -117,14 +111,10 @@
                 - name: winnow columns
                   desc: 'Simply put, these operations remove table columns.'
                   sub:
-                    - name: drop columns  # TODO merge into subset columns
-                      desc: 'Remove columns from table by specifying the ones you want to remove.'
-                    - name: select columns  # TODO merge into subset columns
-                      desc: 'Remove columns from table by specifying the ones you want to keep.'
-                    - name: subset columns
+                    - name: subset columns  # TODO, Can we get more specific like below? I think I can address why.
                       desc: 'Removing columns from a table by specifying which ones to remove or keep.'
-                    - name: align table columns for consolidation  # TODO WTF was this?
-                      desc: 'TK'
+                    - name: align table columns for consolidation
+                      desc: 'Dropping columns so that the table can be row-wise concatenated with another table'
                 - name: winnow rows
                   desc: 'Simply put, these operations remove table rows.'
                   sub:
@@ -138,69 +128,60 @@
                         desc: 'Remove rows that do or do not contain specific values or types of values.'
                 - name: remove incomplete data
                   desc: 'Drop row if value(s) are incomplete, usually denoted as NA.'                        
-#                 - name: filter rows  # TODO how is this different from prune rows?
-#                   desc: 'TK'
                 - name: drop erroneous rows
                   desc: 'Remove rows that have any number of kinds of errors in them.'
                 - name: deduplicate
                   desc: 'Remove rows from the table that contain two or more of the same "observation." Duplicates may constitute rows with identical values in all, one, or zero columns.'
                   sub:
-                      - name: Drop row based on domain knowledge
-                        desc: 'Deduplication not based on identical rows, but prior domain-specific knowledge about this dataset.'
-                      # - name: prevent double-counting
-                      #   desc: ''
+                      - name: Drop duplicate rows based on prior knowledge
+                        desc: 'Drop row based on prior, possibly dataset-specific, knowledge about this dataset, such as "Master Records."'
                       - name: drop duplicate rows based on values
-                        desc: 'Remove a row from a table if one or more column values exactly matches all the column values of another row.'
-                      # - name: drop rows with duplicate value in one column  # Merge into drop duplicate rows
-                      #   desc: 'Remove a row if it share the same value in a specific column with another row.'
-                      - name: remove all rows but the master record
-                        desc: 'TK'
+                        desc: 'Drop row if one or more column values exactly matches all, or some, the same column values of another row.'
           - name: edit
             desc: 'Operations that modify table values'
             sub:
-                - name: replace NA values
-                  desc: 'Raw data may contain incomplete table values (denoted as NA) or empty values (denoted as NULL)'
-                - name: fix data errors manuallyf
+                - name: fix data errors manually
                   desc: 'Instances where individual row-column values are changed by a journalist.'
-                - name: fix incorrect calculation
-                  desc: 'TK'
-                - name: remove with regular expression
-                  desc: 'When column values are replaced with empty strings using regular expressions.'
-                - name: pad column values
-                  desc: 'Adding either character prefixes or suffixes consistently to every row within a column'
-                - name: resolve entities
-                  desc: 'A surjective mapping from previous column values to new column values'
+                - name: map values
+                  desc: 'Codes that have to do with defining the relationship between two sets of column values'
                   sub:
-                      - name: perform entity resolution manually  # TODO this seems like two axes: categorical vs. quantiative and manually vs. automatic.
-                        desc: 'Manually specifying the mapping between old and new column categorical values. Not manually changing individual rows.'
-                      - name: strip whitespace
-                        desc: 'Removing extra whitespace characters from entity name'
-                      - name: combine entities by string matching  # Double check definition
-                        desc: 'If column contains a specific string, then rename entire column to another string.'
-                      - name: reconcile primary keys between tables  # This is a good one
-                        desc: 'Name entity resolution between tables to facilitate joining'
-                      - name: resolve to arbitrary entity name among choices
-                        desc: 'The actual text of the entity is not necessary as import as uniqueness.'
-                      - name: resolve by substring
-                        desc: 'Taking a substring of each entity with the expectation that a fixed, shorter version will combine some entities.'
-                      - name: bin values
-                        desc: 'Classifying quantitative data into categories, e.g. x > 100 <=> category = "under spent" and x > 100 <=> category = "over spent"'
-                - name: translate entity names  # TODO combine with resole entities?
-                  desc: 'Performing a bijective mapping between values, often to improve semantic meaning.'
-                  sub:
-                      - name: translate entity names manually
-                        desc: 'Manually specify the mapping between individual'
-                      - name: join with lookup table
-                        desc: 'Two column tables meant for mapping a key from one table to the unique column in the lookup table.'
-                - name: scale values
-                  desc: 'Operations that apply some mathematical operation to columns of quantitative data. This code is different from the codes under **Formulate performance metric** because this closer to cleaning.'
-                  sub:
-                      - name: Log-ify values  # TODO absorb into transform vector
-                        desc: 'TK'
-                      - name: transform vector
-                        desc: 'Apply a transformation to a vectory, such as scalar multiplication'
-                      - name: whiten matrix
-                        desc: 'Divide each feature by its standard deviation across all observations to give it unit variance.'
+                    - name: translate entity names
+                      desc: 'Performing a bijective mapping between values, often to improve semantic meaning.'
+                      sub:
+                          - name: replace NA values
+                            desc: 'Raw data may contain incomplete table values (denoted as NA) or empty values (denoted as NULL)'
+                          - name: translate entity names manually
+                            desc: 'Manually specify the mapping between individual'
+                          - name: pad column values
+                            desc: 'Adding either character prefixes or suffixes consistently to every row within a column'
+                          - name: join with lookup table
+                            desc: 'Two column tables meant for mapping a key from one table to the unique column in the lookup table.'
+                          - name: scale values
+                            desc: 'Operations that apply some mathematical operation to columns of quantitative data. This code is different from the codes under **Formulate performance metric** because this closer to cleaning.'
+                            sub:
+                              - name: transform vector
+                                desc: 'Apply a transformation to a vectory, such as scalar multiplication'
+                              - name: whiten matrix
+                                desc: 'Divide each feature by its standard deviation across all observations to give it unit variance.'
+                    - name: resolve entities
+                      desc: 'A surjective mapping from previous column values to new column values'
+                      sub:
+                          - name: remove with regular expression
+                            desc: 'When column values are replaced with empty strings using regular expressions.'                      
+                          - name: perform entity resolution manually
+                            desc: 'Manually specifying the mapping between categorical values, not changing individual rows.'
+                          - name: strip whitespace
+                            desc: 'Removing extra whitespace characters from entity name'
+                          - name: combine entities by string matching
+                            desc: 'If column contains a specific string, then rename entire column to another string.'
+                          - name: reconcile primary keys between tables
+                            desc: 'Name entity resolution between tables to facilitate joining'
+                          - name: resolve to arbitrary entity name among choices
+                            desc: 'The actual text of the entity is not necessary as import as uniqueness.'
+    #                       - name: resolve by substring  # TODO, where was this one?
+    #                         desc: 'Taking a substring of each entity with the expectation that a fixed, shorter version will combine some entities.'
+                          - name: bin values
+                            desc: 'Classifying quantitative data into categories, e.g. x > 100 <=> category = "under spent" and x > 100 <=> category = "over spent"'
                 - name: backfill missing data
                   desc: 'Create new "rows" in the data where there are missing entries.'
           - name: format
@@ -215,8 +196,6 @@
                         desc: 'Specify the format which dates should be displayed'
                       - name: round floating point
                         desc: 'Round foating point numbers.'
-#                       - name: remove delimiting characters  # TODO merge into correct bad formatting
-#                         desc: 'Remove characters such as newline (\n) that might make data ill-formed.'
                       - name: correct bad formatting
                         desc: 'Changes that correct ill-formed data such as HTML entities and new lines (\n)'
                 - name: format schema
@@ -226,7 +205,7 @@
                         desc: 'Operations that change column names'
                       - name: change column data type
                         desc: 'For example, changing a column of values from strings to integers'
-                - name: sort table rows  # TODO how is sorting not ranking?
+                - name: sort table rows
                   desc: 'Sorting a table in a way that does not rank rows, such as by a unique identifier'
           - name: separate
             desc: 'Mapping one column into more than one because multiple dimensions of the dataset packed into one column.'
@@ -235,7 +214,7 @@
                 desc: 'Such as extracting the day of the month, year, etc.. from a datetime column'
               - name: slice column values
                 desc: 'Extracting the relevant column values by character position, e.g. the first five digits of a zip code.'
-              - name: split column on delimiter  # merge into split column
+              - name: split column on delimiter
                 desc: 'Separate data dimensions by a common character, e.g. lat-long coordinates separated by a comma.'
               - name: get unique values
                 desc: 'TK'
@@ -256,31 +235,29 @@
           sub:
             - name: inner join tables
               desc: 'TK'
-            - name: natural join  # TODO what does this really mean?        
-              desc: 'TK'
         - name: supplement
           desc: 'Supplementation is characterized by integration operations that essentially add columns to existing data'
           sub:
             - name: outer join tables
               desc: 'A join that returns rows with no corresponding match in the table being joined two, e.g. left or right joins.'
+            - name: full join tables
+              desc: 'Combine all rows and all columns of the two tables. a.k.a full outer join'              
             - name: compute an inter-table column
               desc: 'When a table uses a column from a *parallel* table (like arrays) to compute a new column.'
             - name: concat parallel tables
               desc: 'When columns from multiple, parallel tables are concatenated together to form a new table.'
             - name: self join table
               desc: 'Join a table with itself'
-            - name: full join tables  # TODO maybe the same code as concat parallel tables
-              desc: 'Combine all rows and all columns of the two tables. a.k.a full outer join'              
         - name: other
-          desc: 'Integration operations that do not fall into the previous two categories'
+          desc: 'Integration operations that do not fall into the other categories'
           sub:
-            - name: cartesian product  # seems like the opposite of intersection
+            - name: cartesian product
               desc: 'TK'
     - name: transform
       desc: 'Operations that transform a table into an aggregated, lower-resolution view of the original table.'
       sub:
           - name: summarize
-            desc: ''
+            desc: 'Codes that aggregate and calculate tables to get a more coarse view of the data.'
             sub:
                 - name: join aggregate
                   desc: '"extends the input data objects with aggregate values in a new field" - Vega-Lite Join Aggregate docs.'
@@ -304,22 +281,18 @@
                           - name: create a crosstab
                             desc: 'User performs a crosstab query, as defined by [Microsoft Office](https://support.office.com/en-us/article/make-summary-data-easier-to-read-by-using-a-crosstab-query-8465b89c-2ff2-4cc8-ba60-2cd8484667e8). Crosstabs are very similar to the reshaping operation *spread*, except that they summarize values using aggregate functions.'
                       - name: create rolling window
-                        desc: ''
-          - name: calculate  # TODO are these really any different from performance metrics?
+                        desc: 'Performs rolling-window aggregation'
+          - name: calculate
             desc: 'These are within-column calculations that often, but not always, immediately follow an *aggregation* operation.'
             sub:
-                # - name: sum column values  # Merge with sum along a dimension
-                #   desc: 'Calculate the sum of all values within a column'
                 - name: sum along dimension
                   desc: 'Calculate the sum of all values within a row or column'
                 - name: get extreme values
                   desc: 'Calculate the highest or lowest value(s)'
-                # - name: get min value  # TODO merge with get extreme value
-                #   desc: 'Calculate the lowest value in a column ofquantitative values.'
                 - name: count value frequency
                   desc: 'Count the frequency of categorical variables within a column'
-                - name: count unique values in column  # TODO What is this? Won't this be a scalar?
-                  desc: ''
+                - name: count unique values in column
+                  desc: 'Produces a scalar with unique values in the column.'
           - name: reshape
             desc: "Operations fundamentally change the table's structure, but do not perform any kind of summarization calculation. *Constructing a pivot table* often involves a *spread-like* operation when defining what values to use as columns in the new table. The difference with *reshaping* is that sometimes the journalist may not summarize the reshaped table."
             sub:
@@ -335,8 +308,6 @@
             sub:
                 - name: format table display
                   desc: 'Operations that adjust the table displace, such as how many decimals to round floats'
-                - name: display entire table
-                  desc: 'Displaying all rows and all columns of a table'
           - name: Understand distribution
             desc: 'Operations that reveal something of the underlying distribution of data.'
             sub:
@@ -350,16 +321,14 @@
             sub:
               - name: report rows with column number discrepancies
                 desc: 'Finds if a row has a different number of columns than the header row.'
-              - name: compare total number of rows  # rename to test for equality?
-                desc: ''
               - name: test for equality
                 desc: 'Test if two data structures are exactly the same, e.g. two data frames.'
-              - name: test different computations for equality  # TODO Upshot also did this with variance
-                desc: ''
+              - name: test different computations for equality  # The Upshot did this with variance
+                desc: 'Test the results of a calculation against different methods/packages.'
           - name: check results
             desc: 'Operations that output some visual representation of the table.'
             sub:
-              - name: check results of previous operation  # seems too vague
+              - name: check results of previous operation
                 desc: ''
               - name: peek at data
                 desc: 'Display the first *n* rows and all columns of the table'
@@ -413,7 +382,7 @@
             desc: 'Codes that demonstrate computational thinking on the part of the journalist.'
             sub:
               - name: architect a subroutine
-                desc: ''
+                desc: 'A set of instructions grouped together to be performed multiple times.'
               - name: architect repeating process
                 desc: 'Instances where journalists employed a loop.'
           - name: toggle step on and off
@@ -421,11 +390,11 @@
     - name: wrangling purpose
       desc: 'Why does this data need to be wrangled?'
       sub:
-        - name: downstream applications
+        - name: input for downstream applications
           desc: 'Output from wrangling will be input into some other program'
           sub:
             - name: wrangle data for graphics
-              desc: 'Data need to be formatted in order to be visualized in an article'
+              desc: 'Data need to be formatted in order to be visualized in an article, including tables.'
             - name: wrangle data for model
               desc: 'Data is being wrangled in order to create a model, whether the main point of the piece is for prediction or classification'
         - name: combine drifting datasets
@@ -436,39 +405,23 @@
           desc: 'Pairing data with GIS info.'
         - name: aggregate the forest from the trees
           desc: 'Data of individual observations is aggregated in an attempt to find some meaningful structure or patterns'
-    - name: analysis  # TODO revisit all sub codes
+    - name: analysis
       desc: 'Kinds of analysis data journalists need to wrangle data to perform.'
       sub:
-        - name: summarize dataset  # Good one
-          desc: 'Analysis consists of summarizing and describing different aspects of the dataset.'
-        - name: interpret statistical/ml model  # Good one
+        - name: interpret statistical/ml model
           desc: 'Analyze features from a model such as linear regression or classification trees'
-#         - name: analyze a model for insights  # TODO merge into "interpret statistical/ml mode"
-#           desc: 'Looking at the learned features of a model for insight or predictions, e.g. "classification trees"'
-        - name: compare different groups along a common metric  # Good one
+        - name: compare different groups along a common metric
           desc: 'The end analysis is just comparing different groups by a common metric.'
-        - name: show trend over time  # Good one
+        - name: show trend over time
           desc: 'Analysis consists of showing how values change over time'
-        - name: calculate a statistic  # Good one
+        - name: calculate a statistic
           desc: 'Calculate a single value for from a dataset, such as number of records.'
-        - name: explain variance  # Good one
+        - name: explain variance
           desc: 'This can be done via PCA'
-#         - name: run cluster analysis
-#           desc: 'Run some kind of clusting analysis, such as K-means.'
-#         - name: fit a generalized linear model
-#           desc: ''
-        - name: answer a question  # Good one
+        - name: answer a question
           desc: 'Analysis consists of using data to answer a specific question'
-#         - name: look for trends
-#           desc: ''
-        - name: find most frequently occurring
-          desc: ''
-        - name: find worst offender
-          desc: ''
-#         - name: image analysis TODO delete
-#           desc: 'A programmatic, quantitative analysis of images.'
-        - name: create a table to lookup values
-          desc: 'The end to wrangling is just to create a table to lookup values.'
+        - name: outlier detection
+          desc: 'Finding extreme cases or outliers in the data'
         - name: find nearest neighbours in the network
           desc: '(Network analysis) Find the closest neighbours for all points'
         - name: explore dynamic network flow
@@ -485,30 +438,31 @@
               desc: 'When a key for joining two tables is created and destroyed immediately after the join.'              
             - name: refine table
               desc: 'Table refinement refers to when a table is subset *inplace*, a new object is not created in the environment.'
-       - name: data is precious
-         desc: 'Data and objects are neverly actually lost in the programming environment.'
-           - name: preserve existing values
-             desc: 'The output of any column calculation is assigned to a new column'
-           - name: Create child table
-             desc: 'A child table is a subset of the parent table declared as a new object in the environment.'
+        - name: data is precious
+          desc: 'Data and objects are neverly actually lost in the programming environment.'
+          sub:
+            - name: preserve existing values
+              desc: 'The output of any column calculation is assigned to a new column'
+            - name: Create child table
+              desc: 'A child table is a subset of the parent table declared as a new object in the environment.'
         - name: set data confidence threshold
           desc: 'Removes rows where a quantitative value is less than, greater than, or not equal to a numeric value.'
         - name: table splitting
           desc: 'Tables may be divided, partitioned, or otherwise split into multiple tables to accomplish a transformation goal.'
           sub:
-            - name: split, compute, and merge  # wait is it filter or split? Is it a clean partition?
+            - name: split, compute, and merge
               desc: 'First, the journalist partitions a single data frame into multiple, separate data frames. Then, often identical computations are run on all the data frame. Finally, the multiple data frames are consolidated into one data frame again.'
             - name: split and compute
               desc: 'One table is split into two or more and identical computations are applied to each table.'
-            - name: peel and merge
-              desc: 'When a single column of a data frame is isolated and computed upon, such as computing the frequency of a nominal column, and the results are merged back into the original table.'
             - name: merge tables to create pivot table
-              desc: ''
+              desc: 'Create a pivot table through successive join commands'
         - name: tolerate dirty data
           desc: 'Analysis continues despite clear data quality issues.'
     - name: pain points
       desc: 'Areas where journalist seem/could be frustrated in the wrangling process.'
       sub:
+        - name: fix incorrect calculation
+          desc: 'Calculations in the data are incorrect and the journalist must recalculate them'      
         - name: repetitive code
           desc: 'Instances where code is repetitively copied and pasted.'
         - name: make an incorrect conclusion
@@ -524,9 +478,5 @@
           desc: 'When data that already exists in the table is recoded into the table.'
         - name: data loss from aggregation
           desc: 'When table columns are lost because they were dropped form resulting table due to not being relevant in aggregation.'
-#         - name: encoding provenance in data  # kind of a leap of inference to say this is a pain point
-#           desc: 'I am infering that encoding provenance information, like where data came from'
         - name: data too large for repo
           desc: 'Raw data cannot be included in SCM because files are too large'
-        - name: Silently dropping values after groupby
-          desc: 'Pandas silently drops NA values in a groupby'
