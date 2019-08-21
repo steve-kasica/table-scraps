@@ -1,0 +1,14 @@
+{
+  "name": "@palewire/swana-population-map",
+  "main": "@datadesk/swana-population-map.js",
+  "version": "267.0.0",
+  "homepage": "https://observablehq.com/@palewire/swana-population-map",
+  "author": {
+    "name": "Ben Welsh",
+    "url": "https://observablehq.com/@palewire"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

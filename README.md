@@ -71,6 +71,8 @@ Wehrmeyer, Stefan. (2016, March 21). Euros für Ärzte Data Analysis. *CORRECTIV
 
 Welsh, Ben. (2019, April 29). Census "hard to count" analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/census-hard-to-map-analysis
 
+Welsh, Ben. (2017, March 28). SWANA population map. *Los Angeles Times*. Retrieved from https://observablehq.com/@datadesk/swana-population-map
+
 Welsh, Ben. (2017, March 17). California crop production wages analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/california-crop-production-wages-analysis
 
 Welsh, Ben. (2017, May 25). California H-2A visas analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/california-h2a-visas-analysis
