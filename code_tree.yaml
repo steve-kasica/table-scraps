@@ -1,33 +1,33 @@
 - name: actions
-  desc: 'Codes that describe actions the journalist has taken to wrangle data for further analysis.'
+  desc: 'Codes that describe actions the journalist has taken to wrangle data for further analysis'
   sub:
     - name: import
-      desc: 'Methods for importing data into an environment for wrangling.'
+      desc: 'Codes describing how data is imported into the programming environment.'
       sub:
-        - name: download
-          desc: 'Data is imported via download from an external source, such as a RESTful API.'
+        - name: fetch
+          desc: 'Data is imported via download from an external source'
           sub:
             - name: geocode addresses
               desc: 'Translate addresses to latitude-longitude coordinates through web service, such as those from Bing.'
-            - name: scrape web for data
-              desc: 'Systematically parsing webpages for relevant data.'
             - name: query database
-              desc: 'Data is imported through a database query.'
+              desc: 'Data is imported through a database query'
         - name: create
-          desc: 'Data is created inside the wrangling environment.'
+          desc: 'Data is created inside the programming environment'
           sub:
             - name: construct table manually
               desc: 'Using tables where column names and table values were either copy-and-pasted or entered manually.'
             - name: generate data computationally
-              desc: 'Using tables populated programatically.'
+              desc: 'Using tables populated programmatically.'
             - name: copy table schema
-              desc: 'A table is copied without any values but table column names and type identical, or nearly identical, to another table.'
+              desc: 'A table is copied without any values but table column names and type identical, or nearly identical, to another table'
         - name: extract
-          desc: 'Extraction occurs when data is one step removed from the format it needs to be in to be imported into the environment.'
+          desc: 'Essentially tabular data may be "locked" in a non-tabular format and need to parsed and extracted into a tabular form.'
           sub:
             - name: pull tables out of pdf
               desc: 'Using a table extraction tool, such as Tabula, to parse tables inside PDF documents.'
-        - name: read
+            - name: scrape web for data
+              desc: 'Systematically parsing web pages for relevant data'
+        - name: load
           desc: 'Import data by reading a file on disk such as a CSV'
           sub:
             - name: read as tabular data
@@ -58,7 +58,7 @@
                   desc: 'Measuring deviation from some definition of "normal."'
                   sub:
                     - name: calculate z-score
-                      desc: 'Calculate how many standard deviations a value in a column is away from the mean. Journalists perform this function to simply find outliers in a dataset or when preparing the data for principle component analysis.'
+                      desc: 'Calculate how many standard deviations a value in a column is away from the mean. Journalists perform this function to simply find outliers in a dataset or when preparing the data for principal component analysis.'
                 - name: calculate normalized score
                   desc: 'Measuring the differences between groups of different sizes.'
                   sub:
@@ -79,7 +79,7 @@
                     - name: calculate percentage difference
                       desc: '"the difference between two values taken as a percentage of whichever value you are using as the base," according to Philip Meyer in *Precision Journalism.* This term is synonymous with percent change.'
                     - name: calculate difference
-                      desc: 'Subtracting two quantitative variables, including scalar values, vectors, and matricies.'
+                      desc: 'Subtracting two quantitative variables, including scalar values, vectors, and matrices.'
           - name: key generation
             desc: 'Operations that create "key" columns.'
             sub:
@@ -121,7 +121,7 @@
                       - name: trim by date range
                         desc: 'Removing rows that are inside or outside a specific date range. This can be a method for detrending data by adjusting for season.'
                       - name: trim by geographic area
-                        desc: 'Remove rows that are inside or outside a geographic area.'
+                        desc: 'Remove rows that are inside or outside the geographic area.'
                       - name: trim by quantitative threshold
                         desc: 'Remove rows that are above, below, equal to, or not equal to a numeric value.'
                       - name: trim by contains value
@@ -160,7 +160,7 @@
                             desc: 'Operations that apply some mathematical operation to columns of quantitative data. This code is different from the codes under **Formulate performance metric** because this closer to cleaning.'
                             sub:
                               - name: transform vector
-                                desc: 'Apply a transformation to a vectory, such as scalar multiplication'
+                                desc: 'Apply a transformation to a vector, such as scalar multiplication'
                               - name: whiten matrix
                                 desc: 'Divide each feature by its standard deviation across all observations to give it unit variance.'
                     - name: resolve entities
@@ -195,7 +195,7 @@
                       - name: change date format
                         desc: 'Specify the format which dates should be displayed'
                       - name: round floating point
-                        desc: 'Round foating point numbers.'
+                        desc: 'Round floating point numbers.'
                       - name: correct bad formatting
                         desc: 'Changes that correct ill-formed data such as HTML entities and new lines (\n)'
                 - name: format schema
@@ -312,7 +312,7 @@
             desc: 'Operations that reveal something of the underlying distribution of data.'
             sub:
                 - name: Visualize data
-                  desc: 'Employing any kind of data visualzation, including a table'
+                  desc: 'Employing any kind of data visualization, including a table'
     - name: check sanity
       desc: 'Operations that confirm the effect of a previous wrangling operation.'
       sub:
@@ -358,7 +358,7 @@
           - name: use previously cleaned data
             desc: 'Data that originated from a colleague.'
           - name: use public data
-            desc: 'Includes open-soucred datasets, tables on Wikipedia, etc..'
+            desc: 'Includes open-source datasets, tables on Wikipedia, etc..'
           - name: use academic data
             desc: ''
           - name: use non-public, provided data
@@ -372,12 +372,12 @@
           - name: use data from colleague
             desc: 'A dataset was provided by another journalist.'            
     - name: workflow building
-      desc: 'Codes pretaining to how the wrangling workflow is built.'
+      desc: 'Codes pertaining to how the wrangling workflow is built.'
       sub:
           - name: cache results from external service
             desc: 'When results from an API call are cached in disk.'
           - name: annotate workflow
-            desc: 'Adding comments or notes in Markdown that explain what the journalistis doing.'      
+            desc: 'Adding comments or notes in Markdown that explain what the journalists doing.'      
           - name: think computationally
             desc: 'Codes that demonstrate computational thinking on the part of the journalist.'
             sub:
@@ -437,7 +437,7 @@
             - name: temporary joining column
               desc: 'When a key for joining two tables is created and destroyed immediately after the join.'              
             - name: refine table
-              desc: 'Table refinement refers to when a table is subset *inplace*, a new object is not created in the environment.'
+              desc: 'Table refinement refers to when a table is subset *in place*, a new object is not created in the environment.'
         - name: data is precious
           desc: 'Data and objects are neverly actually lost in the programming environment.'
           sub:
