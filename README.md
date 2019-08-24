@@ -5,9 +5,9 @@
 
 Aldhous, Peter. (2016, September 16). "Shy Trumpers" polling analysis. *BuzzFeed News*. Retrieved from https://github.com/BuzzFeedNews/2016-09-shy-trumpers
 
-Arthur, Rob. (2015, July 30). Buster Posey MVP. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data
+Arthur, Rob. (2015, July 30). Buster Posey MVP. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data/tree/master/buster-posey-mvp
 
-Bi, Frank. (2016, Jan 13). Uber launch cities and date. *Forbes*. Retrieved from https://github.com/voxmedia/data-projects
+Bi, Frank. (2016, Jan 13). Uber launch cities and date. *Vox*. Retrieved from https://github.com/voxmedia/data-projects/tree/master/verge-uber-launch-dates
 
 Bradshaw, Paul. (2019, April 6). Lack of electric car charging points 'putting off drivers'. *BBC*. Retrieved from https://github.com/BBC-Data-Unit/electric-car-charging-points
 
@@ -15,17 +15,19 @@ Bradshaw, Paul. (2019, March 8). Birmingham remains top destination for Londoner
 
 Bradshaw, Paul. (2016, December 8). Midwife units see one in four mums transferred by ambulance to hospital. *BBC*. Retrieved from https://github.com/BBC-Data-Unit/midwife-led-units
 
-Ceccon, Stefano. (2016, January 16). Analysis: How the Conservatives won. *Times*. Retrieved from https://github.com/times/data
+Ceccon, Stefano. (2016, January 16). Analysis: How the Conservatives won. *The Times and Sunday Times*. Retrieved from https://github.com/times/data/tree/master/general-election-2015-classification-tree
 
 Chinoy, Sahil. (2018, November 12). The Cube Root Law. *New York Times*. Retrieved from https://observablehq.com/@sahilchinoy/the-cube-root-law
 
 Chinoy, Sahil. (2018, October 11). Heat index. *New York Times*. Retrieved from https://observablehq.com/@sahilchinoy/heat-index
 
-Flowers, Andrew. (2014, June 3). Infrastructure jobs. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data
+Flowers, Andrew. (2014, June 3). Infrastructure jobs. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data/tree/master/infrastructure-jobs
 
-Flowers, Andrew. (2014, April 11). Librarians. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data
+Flowers, Andrew. (2014, April 11). Librarians. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data/tree/master/librarians
 
-Flowers, Andrew. (2014, April 8). Bechdel. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data
+Flowers, Andrew. (2014, April 8). Bechdel. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data/tree/master/bechdel
+
+Fresques, Hannah. (2019, April 1). IRS Audit Rates by County. *ProPublica*. Retrieved from https://github.com/propublica/auditData
 
 Groskopf, Christopher. (2017, June 27). Analysis of rideshare trips taken in New York City. *Quartz*. Retrieved from https://github.com/Quartz/nyc-trips
 
@@ -37,21 +39,21 @@ Hickey, Walter. (2018, February 26). Bob Ross. *FiveThirtyEight*. Retrieved from
 
 Jones, Brent. (2018, May 31). Crime and heat analysis. *St Louis Public Radio*. Retrieved from https://github.com/stlpublicradio/2018-05-31-crime-and-heat-analysis
 
-Kolly, Marie-José. (2018, January 31). 1805-regionen im fokus des US-praesidenten. *Neue Zürcher Zeitung*. Retrieved from https://github.com/nzzdev/st-methods
+Kolly, Marie-José. (2018, January 31). 1805-regionen im fokus des US-praesidenten. *Neue Zürcher Zeitung*. Retrieved from https://github.com/nzzdev/st-methods/tree/master/1805-regionen im fokus des US-praesidenten
 
 Keemahill, Dan. (2019, February 3). Analysis of Austin-Travis County EMS call data. *Austin American-Statesman*. Retrieved from https://github.com/statesman/2019-ems-analysis
 
-Keller, Josh; Pearce, Adam. (2016, September 7). US State prison admissions by county. *The Upshot*. Retrieved from https://github.com/TheUpshot/prison-admissions
+Keller, Josh; Pearce, Adam. (2016, September 7). US State prison admissions by county. *New York Times*. Retrieved from https://github.com/TheUpshot/prison-admissions
 
-Mayes, Brittany. (2017, April 17). Data analysis for education's school choice in Indiana project. *NPR*. Retrieved from https://github.com/nprapps/school-choice
+Mayes, Brittany. (2017, April 17). Data analysis for education's school choice in Indiana project. *National Public Radio*. Retrieved from https://github.com/nprapps/school-choice
 
 Meiners, Joan. (2018, August 16). Endangered species act Louisiana: American alligator. *NOLA*. Retrieved from https://github.com/beecycles/Endangered-Species-Act-Louisiana
 
 Meiners, Joan. (2017, November 30). Power of Irma. *WUFT*. Retrieved from https://github.com/beecycles/Power_of_Irma
 
-Menezes, Ryan; Stevens, Matt; Welsh, Ben. (2016, October 31). California "Conservation-Consumption Score" analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/california-cc-score-analysis
+Menezes, Ryan; Stevens, Matt; Welsh, Ben. (2016, October 31). California "Conservation-Consumption Score" analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/california-ccscore-analysis
 
-Oh, Soo. (2015, July 8). Central line infection data. *Vox*. Retrieved from https://github.com/voxmedia/data-projects
+Oh, Soo. (2015, July 8). Central line infection data. *Vox*. Retrieved from https://github.com/voxmedia/data-projects/tree/master/vox-central-line-infections
 
 Singer-Vine, Jeremy. (2019, April 16). Analysis of early 2020 Democratic campaign co-donors. *BuzzFeed News*. Retrieved from https://github.com/BuzzFeedNews/2019-04-democratic-candidate-codonors
 
@@ -61,11 +63,13 @@ Templon, John. (2016, November 2). Counties That Predict The Election. *BuzzFeed
 
 Templon, John. (2016, April 26). Analysis of Republican Donor Movement. *BuzzFeed News*. Retrieved from https://github.com/BuzzFeedNews/2016-04-republican-donor-movements
 
-Tran, Andrew. (2017, December 18). How the Trump era is changing the federal bureaucracy. *Washington Post*. Retrieved from https://github.com/wpinvestigates/federal_employees_trump_2017
+Tran, Andrew. (2017, December 18). How the Trump era is changing the federal bureaucracy. *The Washington Post*. Retrieved from https://github.com/wpinvestigates/federal_employees_trump_2017
 
-Tran, Andrew. (2016, May 16). Analyzing LendingClub loan data for Connecticut. *TrendCT*. Retrieved from https://github.com/trendct/data
+Tran, Andrew. (2016, May 16). Analyzing LendingClub loan data for Connecticut. *TrendCT*. Retrieved from https://github.com/trendct/data/tree/master/2016/05/lending-club
 
 Webster, MaryJo. (2019, June 1). Education achievement gap analysis. *Star Tribune*. Retrieved from https://github.com/striblab/201901-achievementgap
+
+Webster, MaryJo. (2019, January 10). Hospital quality ratings data. *Star Tribune*. Retrieved from https://github.com/striblab/201901-hospitalquality
 
 Wehrmeyer, Stefan. (2016, March 21). Euros für Ärzte Data Analysis. *CORRECTIV*. Retrieved from https://github.com/correctiv/awb-notebook
 
@@ -77,7 +81,7 @@ Welsh, Ben. (2017, March 17). California crop production wages analysis. *Los An
 
 Welsh, Ben. (2017, May 25). California H-2A visas analysis. *Los Angeles Times*. Retrieved from https://github.com/datadesk/california-h2a-visas-analysis
 
-Wilber, Jared. (2018, June 5). skatemusic. *The Pudding*. Retrieved from https://github.com/polygraph-cool/skatemusic
+Wilber, Jared. (2018, June 5). skatemusic. *Polygraph*. Retrieved from https://github.com/polygraph-cool/skatemusic
 
 Wilson, Chris. (2016, December 20). Baby Name Politics. *Time*. Retrieved from https://github.com/TimeMagazine/babyname_politics
 
