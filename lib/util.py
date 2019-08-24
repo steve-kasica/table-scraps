@@ -1,7 +1,15 @@
+"""
+    lib/util.py
+    ---------------------------------------------------------------------------------------
+    Some functions shared between Jupyter notebooks
+
+"""
+
 import codecs
 from pdfannots import pdfannots
 import pandas as pd
 import os, glob, re
+from IPython.display import display, Markdown
 
 def getCodes():
     """Extract codes generated in the open-coding process from PDFs"""
@@ -29,3 +37,8 @@ def getCodes():
         })
         data = data.append(df)
     return data
+
+
+def displayMarkdown(msg):
+    """A shortcut function for displaying text as Markdown """
+    return display(Markdown(msg))

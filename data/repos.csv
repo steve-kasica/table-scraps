@@ -1,1385 +1,182 @@
-url,source,is_keeper,repo,owner,org,commits,login
-https://github.com/datadesk/homeless-arrests-analysis,github,False,homeless-arrests-analysis,datadesk,Los Angeles Times,,
-https://github.com/datadesk/kobe-every-shot-ever,github,False,kobe-every-shot-ever,datadesk,Los Angeles Times,,
-https://github.com/datadesk/lapd-crime-classification-analysis,github,False,lapd-crime-classification-analysis,datadesk,Los Angeles Times,,
-https://github.com/datadesk/california-crop-production-wages-analysis,github,False,california-crop-production-wages-analysis,datadesk,Los Angeles Times,,
-https://github.com/datadesk/street-racing-analysis,github,False,street-racing-analysis,datadesk,Los Angeles Times,,
-https://github.com/datadesk/california-electricity-capacity-analysis,github,False,california-electricity-capacity-analysis,datadesk,Los Angeles Times,,
-https://github.com/datadesk/california-fire-zone-analysis,github,False,california-fire-zone-analysis,datadesk,Los Angeles Times,,
-https://github.com/ONLPS/Datasets,github,False,Datasets,ONLPS,ONLPS,,
-https://github.com/Caaddss/coda.br_workshop,github,False,coda.br_workshop,Caaddss,Caaddss,,
-https://github.com/datadesk/california-h2a-visas-analysis,github,False,california-h2a-visas-analysis,datadesk,Los Angeles Times,,
-https://github.com/datadesk/california-ccscore-analysis,github,False,california-ccscore-analysis,datadesk,Los Angeles Times,,
-https://github.com/datastory-org/weekly-chart,github,True,weekly-chart,datastory-org,Datastory,16.0,miroli
-https://github.com/datastory-org/weekly-chart,github,True,weekly-chart,datastory-org,Datastory,5.0,lapidus
-https://github.com/datastory-org/weekly-chart,github,True,weekly-chart,datastory-org,Datastory,3.0,consideRatio
-https://github.com/datadesk/helicopter-accident-analysis,github,False,helicopter-accident-analysis,datadesk,Los Angeles Times,,
-https://github.com/onyxfish/nicar-2017-agate,github,False,nicar-2017-agate,onyxfish,onyxfish,,
-https://github.com/datadesk/la-vacant-building-complaints-analysis,github,False,la-vacant-building-complaints-analysis,datadesk,Los Angeles Times,,
-https://github.com/datadesk/altair-election-maps-example,github,False,altair-election-maps-example,datadesk,Los Angeles Times,,
-https://github.com/croach/trump_voter_fraud_analysis,github,False,trump_voter_fraud_analysis,croach,croach,,
-https://github.com/datadesk/houston-flood-zone-analysis,github,False,houston-flood-zone-analysis,datadesk,Los Angeles Times,,
-https://github.com/datadesk/ferc-enforcement-analysis,github,False,ferc-enforcement-analysis,datadesk,Los Angeles Times,,
-https://github.com/datadesk/la-weedmaps-analysis,github,False,la-weedmaps-analysis,datadesk,Los Angeles Times,,
-https://github.com/jhroy/syllabus-EDM5240-H2019,github,False,syllabus-EDM5240-H2019,jhroy,jhroy,,
-https://github.com/datadesk/la-settlements-analysis,github,False,la-settlements-analysis,datadesk,Los Angeles Times,,
-https://github.com/datadesk/california-k12-notebooks,github,False,california-k12-notebooks,datadesk,Los Angeles Times,,
-https://github.com/datadesk/california-kindergarten-vaccination-analysis,github,False,california-kindergarten-vaccination-analysis,datadesk,Los Angeles Times,,
-https://github.com/annanorberg/eu-kandidater,github,False,eu-kandidater,annanorberg,annanorberg,,
-https://github.com/datadesk/tijuana-districts-map,github,False,tijuana-districts-map,datadesk,Los Angeles Times,,
-https://github.com/tortoisemedia-com/global-ai-index,github,False,global-ai-index,tortoisemedia-com,tortoisemedia-com,,
-https://github.com/datadesk/altair-latimes,github,False,altair-latimes,datadesk,Los Angeles Times,,
-https://github.com/datadesk/native-american-census-analysis,github,False,native-american-census-analysis,datadesk,Los Angeles Times,,
-https://github.com/Tahsin-Mayeesha/times-archive,github,True,times-archive,Tahsin-Mayeesha,Tahsin-Mayeesha,4.0,Tahsin-Mayeesha
-https://github.com/globeandmail/startr,github,False,startr,globeandmail,globeandmail,,
-https://github.com/OpenDataCordoba/blogposts,github,False,blogposts,OpenDataCordoba,OpenDataCordoba,,
-https://github.com/jadianes/data-journalism,github,False,data-journalism,jadianes,jadianes,,
-https://github.com/pippinlee/open-journalism-project,github,False,open-journalism-project,pippinlee,pippinlee,,
-https://github.com/brandonrobertz/autoscrape-py,github,False,autoscrape-py,brandonrobertz,brandonrobertz,,
-https://github.com/school-of-data/r-consortium-proposal,github,False,r-consortium-proposal,school-of-data,school-of-data,,
-https://github.com/cicadatatw/r-viz-workshop,github,False,r-viz-workshop,cicadatatw,cicadatatw,,
-https://github.com/datadesk/construction-jobs-analysis,github,False,construction-jobs-analysis,datadesk,Los Angeles Times,,
-https://github.com/datadesk/nyrb-covers-analysis,github,False,nyrb-covers-analysis,datadesk,Los Angeles Times,,
-https://github.com/datadesk/swana-census-analysis,github,False,swana-census-analysis,datadesk,Los Angeles Times,,
-https://github.com/CodeForAfrica/LivingWage.KE,github,False,LivingWage.KE,CodeForAfrica,CodeForAfrica,,
-https://github.com/jonasengelmann/Language-Analysis-of-Bundestags-Speeches,github,False,Language-Analysis-of-Bundestags-Speeches,jonasengelmann,jonasengelmann,,
-https://github.com/CodeForAfrica/HealthTools.ZA-Ezolwaluko,github,False,HealthTools.ZA-Ezolwaluko,CodeForAfrica,CodeForAfrica,,
-https://github.com/voltdatalab/atlas-noticia,github,False,atlas-noticia,voltdatalab,voltdatalab,,
-https://github.com/datadesk/hollister-ranch-analysis,github,False,hollister-ranch-analysis,datadesk,Los Angeles Times,,
-https://github.com/HussainAther/journalism,github,False,journalism,HussainAther,HussainAther,,
-https://github.com/hupili/djworkshop-cuc2018,github,False,djworkshop-cuc2018,hupili,hupili,,
-https://github.com/manuelvarzen/Vigia,github,False,Vigia,manuelvarzen,manuelvarzen,,
-https://github.com/dannguyen/scrape-senate-financial-disclosures,github,False,scrape-senate-financial-disclosures,dannguyen,dannguyen,,
-https://github.com/reale/wc,github,False,wc,reale,reale,,
-https://github.com/N2ITN/are-you-fake-news,github,False,are-you-fake-news,N2ITN,N2ITN,,
-https://github.com/datadesk/cpi,github,False,cpi,datadesk,Los Angeles Times,,
-https://github.com/neo4j-contrib/trumpworld-graph,github,False,trumpworld-graph,neo4j-contrib,neo4j-contrib,,
-https://github.com/california-civic-data-coalition/first-python-notebook,github,False,first-python-notebook,california-civic-data-coalition,california-civic-data-coalition,,
-https://github.com/datadesk/altair-area-examples,github,False,altair-area-examples,datadesk,Los Angeles Times,,
-https://github.com/nilmolne/Text-Mining-The-New-York-Times-Articles,github,False,Text-Mining-The-New-York-Times-Articles,nilmolne,nilmolne,,
-https://github.com/datadesk/highschool-homicide-analysis,github,False,highschool-homicide-analysis,datadesk,Los Angeles Times,,
-https://github.com/TheOregonian/long-term-care-db,github,True,long-term-care-db,TheOregonian,The Oregonian,23.0,fedorz
-https://github.com/TheOregonian/long-term-care-db,github,True,long-term-care-db,TheOregonian,The Oregonian,3.0,meli-lewis
-https://github.com/lamthuyvo/cuny-advanced-data-journalism,github,False,cuny-advanced-data-journalism,lamthuyvo,lamthuyvo,,
-https://github.com/jfilter/masters-thesis,github,False,masters-thesis,jfilter,jfilter,,
-https://github.com/datadesk/mlbcolors,github,False,mlbcolors,datadesk,Los Angeles Times,,
-https://github.com/rOpenGov/rtimes,github,False,rtimes,rOpenGov,rOpenGov,,
-https://github.com/GolemMediaGmbH/OfficeTemperatureData,github,False,OfficeTemperatureData,GolemMediaGmbH,GolemMediaGmbH,,
-https://github.com/computer-assisted-reporting/NICAR18,github,False,NICAR18,computer-assisted-reporting,computer-assisted-reporting,,
-https://github.com/beecycles/Power_of_Irma,github,True,Power_of_Irma,beecycles,WUFT,16.0,beecycles
-https://github.com/beecycles/Endangered-Species-Act-Louisiana,github,True,Endangered-Species-Act-Louisiana,beecycles,NOLA,12.0,beecycles
-https://github.com/guardian/frontend,github,False,frontend,guardian,guardian,,
-https://github.com/wireservice/lookup,github,False,lookup,wireservice,wireservice,,
-https://github.com/securityfirst/Umbrella_content,github,False,Umbrella_content,securityfirst,securityfirst,,
-https://github.com/smach/R4JournalismBook,github,False,R4JournalismBook,smach,smach,,
-https://github.com/PARINetwork/pari,github,False,pari,PARINetwork,PARINetwork,,
-https://github.com/dailybruin/the-stack,github,False,the-stack,dailybruin,dailybruin,,
-https://github.com/ireapps/first-graphics-app,github,False,first-graphics-app,ireapps,ireapps,,
-https://github.com/california-civic-data-coalition/californiacivicdata.org,github,False,californiacivicdata.org,california-civic-data-coalition,california-civic-data-coalition,,
-https://github.com/19hundreds/risks-workflow,github,False,risks-workflow,19hundreds,19hundreds,,
-https://github.com/TheStatePress/SalaryList,github,False,SalaryList,TheStatePress,TheStatePress,,
-https://github.com/datadesk/responsive-fullscreen-header-example,github,False,responsive-fullscreen-header-example,datadesk,Los Angeles Times,,
-https://github.com/gabrielacaesar/contra-as-fake-news,github,False,contra-as-fake-news,gabrielacaesar,gabrielacaesar,,
-https://github.com/xinmeti/xinmeti.co,github,False,xinmeti.co,xinmeti,xinmeti,,
-https://github.com/formicablu/hearingvoices,github,False,hearingvoices,formicablu,formicablu,,
-https://github.com/ANCIR/InvestigativeCenters.org,github,False,InvestigativeCenters.org,ANCIR,ANCIR,,
-https://github.com/profrobwells/Data-Analysis-Class-Jour-405v-5003,github,False,Data-Analysis-Class-Jour-405v-5003,profrobwells,profrobwells,,
-https://github.com/meedan/montage-web,github,False,montage-web,meedan,meedan,,
-https://github.com/Ohlasy/web,github,False,web,Ohlasy,Ohlasy,,
-https://github.com/vamind/terrific,github,False,terrific,vamind,vamind,,
-https://github.com/natlungfy/natlungfy.github.io,github,False,natlungfy.github.io,natlungfy,natlungfy,,
-https://github.com/xzzhang2/xzzhang2.github.io,github,False,xzzhang2.github.io,xzzhang2,xzzhang2,,
-https://github.com/hackshackers/misinfocon-event-calendar,github,False,misinfocon-event-calendar,hackshackers,hackshackers,,
-https://github.com/ndarville/workfolio,github,False,workfolio,ndarville,ndarville,,
-https://github.com/psolbach/xjournalism-data,github,False,xjournalism-data,psolbach,psolbach,,
-https://github.com/datadesk/census-hard-to-map-analysis,github,True,census-hard-to-map-analysis,datadesk,Los Angeles Times,5.0,palewire
-https://github.com/datadesk/hsr-document-analysis,github,True,hsr-document-analysis,datadesk,Los Angeles Times,7.0,palewire
-https://github.com/ryanvmenezes/lawlers-law,github,True,lawlers-law,ryanvmenezes,Los Angeles Times,47.0,ryanvmenezes
-https://github.com/kyleykim/R_Scripts/tree/master/la-me-ln-california-fire-aircraft-delay,github,True,la-me-ln-california-fire-aircraft-delay,kyleykim,Los Angeles Times,,
-https://github.com/kyleykim/R_Scripts/tree/master/la-me-ln-hhh-unequal,github,True,la-me-ln-hhh-unequal,kyleykim,Los Angeles Times,,
-https://github.com/datadesk/deleon-district-election-results-analysis,github,True,deleon-district-election-results-analysis,datadesk,Los Angeles Times,7.0,palewire
-https://github.com/BuzzFeedNews/2019-04-democratic-candidate-codonors,github,True,2019-04-democratic-candidate-codonors,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2018-12-fake-news-top-50,github,True,2018-12-fake-news-top-50,BuzzFeedNews,BuzzFeed News,,
-https://github.com/BuzzFeedNews/2018-12-wechat-pence/,github,True,,BuzzFeedNews,BuzzFeed News,,
-https://github.com/BuzzFeedNews/2018-10-russian-troll-tweets,github,True,2018-10-russian-troll-tweets,BuzzFeedNews,BuzzFeed News,7.0,paldhous
-https://github.com/BuzzFeedNews/2018-10-midterm-demographics,github,True,2018-10-midterm-demographics,BuzzFeedNews,BuzzFeed News,,
-https://github.com/BuzzFeedNews/2018-09-ftc-analysis,github,True,2018-09-ftc-analysis,BuzzFeedNews,BuzzFeed News,3.0,lamthuyvo
-https://github.com/BuzzFeedNews/2018-08-charlottesville-twitter-trolls,github,True,2018-08-charlottesville-twitter-trolls,BuzzFeedNews,BuzzFeed News,7.0,paldhous
-https://github.com/BuzzFeedNews/2018-07-ofsted-inspections,github,True,2018-07-ofsted-inspections,BuzzFeedNews,BuzzFeed News,2.0,jsvine
-https://github.com/BuzzFeedNews/2018-06-nyc-311-complaints-and-gentrification,github,True,2018-06-nyc-311-complaints-and-gentrification,BuzzFeedNews,BuzzFeed News,2.0,lamthuyvo
-https://github.com/BuzzFeedNews/2018-05-fentanyl-and-cocaine-overdose-deaths,github,True,2018-05-fentanyl-and-cocaine-overdose-deaths,BuzzFeedNews,BuzzFeed News,1.0,scottpham
-https://github.com/BuzzFeedNews/2018-03-oscars-script-diversity-analysis,github,True,2018-03-oscars-script-diversity-analysis,BuzzFeedNews,BuzzFeed News,1.0,scottpham
-https://github.com/BuzzFeedNews/2018-02-olympic-figure-skating-analysis,github,True,2018-02-olympic-figure-skating-analysis,BuzzFeedNews,BuzzFeed News,1.0,jtemplon
-https://github.com/BuzzFeedNews/2018-02-figure-skating-analysis,github,True,2018-02-figure-skating-analysis,BuzzFeedNews,BuzzFeed News,3.0,jtemplon
-https://github.com/BuzzFeedNews/2018-01-trump-state-of-the-union,github,True,2018-01-trump-state-of-the-union,BuzzFeedNews,BuzzFeed News,6.0,paldhous
-https://github.com/BuzzFeedNews/2018-01-twitter-withheld-accounts,github,True,2018-01-twitter-withheld-accounts,BuzzFeedNews,BuzzFeed News,2.0,jsvine
-https://github.com/BuzzFeedNews/2018-01-trump-twitter-wars,github,True,2018-01-trump-twitter-wars,BuzzFeedNews,BuzzFeed News,5.0,paldhous
-https://github.com/BuzzFeedNews/2017-12-fake-news-top-50,github,True,2017-12-fake-news-top-50,BuzzFeedNews,BuzzFeed News,1.0,scottpham
-https://github.com/BuzzFeedNews/2017-12-sexual-misconduct-cable-news-coverage,github,True,2017-12-sexual-misconduct-cable-news-coverage,BuzzFeedNews,BuzzFeed News,1.0,dcldmartin
-https://github.com/BuzzFeedNews/2017-12-eeoc-harassment-charges/,github,True,,BuzzFeedNews,BuzzFeed News,,
-https://github.com/BuzzFeedNews/2017-11-federal-employee-diversity,github,True,2017-11-federal-employee-diversity,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2017-11-gun-sales-estimates,github,True,2017-11-gun-sales-estimates,BuzzFeedNews,BuzzFeed News,3.0,paldhous
-https://github.com/BuzzFeedNews/2017-09-harvey-emissions-update,github,True,2017-09-harvey-emissions-update,BuzzFeedNews,BuzzFeed News,5.0,jsvine
-https://github.com/BuzzFeedNews/2017-09-federal-employee-departure-rates,github,True,2017-09-federal-employee-departure-rates,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2017-09-science-foia,github,True,2017-09-science-foia,BuzzFeedNews,BuzzFeed News,3.0,paldhous
-https://github.com/BuzzFeedNews/2017-08-harvey-emissions-reports,github,True,2017-08-harvey-emissions-reports,BuzzFeedNews,BuzzFeed News,4.0,jsvine
-https://github.com/BuzzFeedNews/2017-08-partisan-sites-and-facebook-pages,github,True,2017-08-partisan-sites-and-facebook-pages,BuzzFeedNews,BuzzFeed News,2.0,jsvine
-https://github.com/BuzzFeedNews/2017-08-spy-plane-finder,github,True,2017-08-spy-plane-finder,BuzzFeedNews,BuzzFeed News,11.0,paldhous
-https://github.com/BuzzFeedNews/2017-07-doj-gs-15,github,True,2017-07-doj-gs-15,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2017-05-us-health-care,github,True,2017-05-us-health-care,BuzzFeedNews,BuzzFeed News,4.0,paldhous
-https://github.com/BuzzFeedNews/2017-04-fake-news-ad-trackers,github,True,2017-04-fake-news-ad-trackers,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2017-01-immigration-and-science,github,True,2017-01-immigration-and-science,BuzzFeedNews,BuzzFeed News,2.0,paldhous
-https://github.com/BuzzFeedNews/2017-01-media-platform-and-news-trust-survey,github,True,2017-01-media-platform-and-news-trust-survey,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2017-01-causes-of-warming,github,True,2017-01-causes-of-warming,BuzzFeedNews,BuzzFeed News,3.0,paldhous
-https://github.com/BuzzFeedNews/2016-12-transgender-rights-survey,github,True,2016-12-transgender-rights-survey,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2016-12-warmest-year,github,True,2016-12-warmest-year,BuzzFeedNews,BuzzFeed News,1.0,paldhous
-https://github.com/BuzzFeedNews/2016-12-medicare-claims-analysis,github,True,2016-12-medicare-claims-analysis,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2016-12-inpatient-discharge-analysis,github,True,2016-12-inpatient-discharge-analysis,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2016-12-river-point-involuntary-commitment-petitions,github,True,2016-12-river-point-involuntary-commitment-petitions,BuzzFeedNews,BuzzFeed News,1.0,taggartk
-https://github.com/BuzzFeedNews/2016-12-fake-news-survey,github,True,2016-12-fake-news-survey,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2016-11-grading-the-election-forecasts,github,True,2016-11-grading-the-election-forecasts,BuzzFeedNews,BuzzFeed News,3.0,jsvine
-https://github.com/BuzzFeedNews/2016-11-grading-the-election-forecasts,github,True,2016-11-grading-the-election-forecasts,BuzzFeedNews,BuzzFeed News,2.0,dmadeka
-https://github.com/BuzzFeedNews/2016-11-voter-power-by-demographic,github,True,2016-11-voter-power-by-demographic,BuzzFeedNews,BuzzFeed News,2.0,jtemplon
-https://github.com/BuzzFeedNews/2016-11-bellwether-counties,github,True,2016-11-bellwether-counties,BuzzFeedNews,BuzzFeed News,1.0,jtemplon
-https://github.com/BuzzFeedNews/2016-10-tech-campaign-contributions,github,True,2016-10-tech-campaign-contributions,BuzzFeedNews,BuzzFeed News,2.0,jsvine
-https://github.com/BuzzFeedNews/2016-10-facebook-fact-check,github,True,2016-10-facebook-fact-check,BuzzFeedNews,BuzzFeed News,3.0,jsvine
-https://github.com/BuzzFeedNews/2016-10-white-ancestry-and-trump-support,github,True,2016-10-white-ancestry-and-trump-support,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2016-09-shy-trumpers,github,True,2016-09-shy-trumpers,BuzzFeedNews,BuzzFeed News,4.0,paldhous
-https://github.com/BuzzFeedNews/2016-09-ucr-analysis,github,True,2016-09-ucr-analysis,BuzzFeedNews,BuzzFeed News,2.0,jtemplon
-https://github.com/BuzzFeedNews/2016-08-sports-gender-gaps,github,True,2016-08-sports-gender-gaps,BuzzFeedNews,BuzzFeed News,3.0,paldhous
-https://github.com/BuzzFeedNews/2016-07-athletic-performances,github,True,2016-07-athletic-performances,BuzzFeedNews,BuzzFeed News,4.0,paldhous
-https://github.com/BuzzFeedNews/2016-07-rnc-dnc-surveillance-planes,github,True,2016-07-rnc-dnc-surveillance-planes,BuzzFeedNews,BuzzFeed News,2.0,paldhous
-https://github.com/BuzzFeedNews/2016-05-H-2-debarments-and-violations,github,True,2016-05-H-2-debarments-and-violations,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2016-04-republican-donor-movements,github,True,2016-04-republican-donor-movements,BuzzFeedNews,BuzzFeed News,2.0,jtemplon
-https://github.com/BuzzFeedNews/2016-04-bernie-sanders-donors,github,True,2016-04-bernie-sanders-donors,BuzzFeedNews,BuzzFeed News,1.0,jtemplon
-https://github.com/BuzzFeedNews/2016-04-federal-surveillance-planes,github,True,2016-04-federal-surveillance-planes,BuzzFeedNews,BuzzFeed News,3.0,paldhous
-https://github.com/BuzzFeedNews/2016-02-republican-donor-movements,github,True,2016-02-republican-donor-movements,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2016-01-immigrant-detention-india,github,True,2016-01-immigrant-detention-india,BuzzFeedNews,BuzzFeed News,2.0,jtemplon
-https://github.com/BuzzFeedNews/2016-01-port-arthur-arrests,github,True,2016-01-port-arthur-arrests,BuzzFeedNews,BuzzFeed News,4.0,taggartk
-https://github.com/BuzzFeedNews/2016-01-port-arthur-arrests,github,True,2016-01-port-arthur-arrests,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2016-01-texas-municipal-courts,github,True,2016-01-texas-municipal-courts,BuzzFeedNews,BuzzFeed News,1.0,taggartk
-https://github.com/BuzzFeedNews/2016-01-tennis-betting-analysis,github,True,2016-01-tennis-betting-analysis,BuzzFeedNews,BuzzFeed News,1.0,jtemplon
-https://github.com/BuzzFeedNews/2015-12-the-coyote,github,True,2015-12-the-coyote,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2015-12-fatal-police-shootings,github,True,2015-12-fatal-police-shootings,BuzzFeedNews,BuzzFeed News,2.0,paldhous
-https://github.com/BuzzFeedNews/2015-12-mass-shooting-intervals,github,True,2015-12-mass-shooting-intervals,BuzzFeedNews,BuzzFeed News,2.0,jsvine
-https://github.com/BuzzFeedNews/2015-12-H-2-visas-and-experience-requirements,github,True,2015-12-H-2-visas-and-experience-requirements,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2015-11-lottery-simulations,github,True,2015-11-lottery-simulations,BuzzFeedNews,BuzzFeed News,7.0,jsvine
-https://github.com/BuzzFeedNews/2015-11-refugees-in-the-united-states,github,True,2015-11-refugees-in-the-united-states,BuzzFeedNews,BuzzFeed News,4.0,jsvine
-https://github.com/BuzzFeedNews/2015-11-refugees-in-the-united-states,github,True,2015-11-refugees-in-the-united-states,BuzzFeedNews,BuzzFeed News,1.0,neuromusic
-https://github.com/BuzzFeedNews/2015-10-walker-donors,github,True,2015-10-walker-donors,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2015-08-immigrant-detention,github,True,2015-08-immigrant-detention,BuzzFeedNews,BuzzFeed News,1.0,jtemplon
-https://github.com/BuzzFeedNews/2015-07-h2-visas-and-enforcement,github,True,2015-07-h2-visas-and-enforcement,BuzzFeedNews,BuzzFeed News,3.0,jsvine
-https://github.com/BuzzFeedNews/2015-07-primates,github,True,2015-07-primates,BuzzFeedNews,BuzzFeed News,2.0,paldhous
-https://github.com/BuzzFeedNews/2015-06-ssm-and-abortion-poll,github,True,2015-06-ssm-and-abortion-poll,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2015-05-talkpay-tweets,github,True,2015-05-talkpay-tweets,BuzzFeedNews,BuzzFeed News,2.0,jsvine
-https://github.com/BuzzFeedNews/2015-03-earthquake-maps,github,True,2015-03-earthquake-maps,BuzzFeedNews,BuzzFeed News,1.0,jtemplon
-https://github.com/BuzzFeedNews/2015-02-texas-cpa-deficiencies,github,True,2015-02-texas-cpa-deficiencies,BuzzFeedNews,BuzzFeed News,1.0,jsvine
-https://github.com/BuzzFeedNews/2015-02-georgia-cpa-scores,github,True,2015-02-georgia-cpa-scores,BuzzFeedNews,BuzzFeed News,2.0,jsvine
-https://github.com/BuzzFeedNews/presidential-language-notebooks,github,True,presidential-language-notebooks,BuzzFeedNews,BuzzFeed News,6.0,jtemplon
-https://github.com/BuzzFeedNews/2014-09-rising-sunday-show-guests,github,True,2014-09-rising-sunday-show-guests,BuzzFeedNews,BuzzFeed News,7.0,jsvine
-https://github.com/BuzzFeedNews/2014-09-rising-sunday-show-guests,github,True,2014-09-rising-sunday-show-guests,BuzzFeedNews,BuzzFeed News,1.0,dwillis
-https://github.com/BuzzFeedNews/2014-09-tuition-and-minimum-wage,github,True,2014-09-tuition-and-minimum-wage,BuzzFeedNews,BuzzFeed News,3.0,jsvine
-https://github.com/BuzzFeedNews/2014-08-st-louis-county-segregation,github,True,2014-08-st-louis-county-segregation,BuzzFeedNews,BuzzFeed News,2.0,jsvine
-https://github.com/BuzzFeedNews/2014-08-irs-scams,github,True,2014-08-irs-scams,BuzzFeedNews,BuzzFeed News,2.0,jtemplon
-https://github.com/BuzzFeedNews/2014-06-firework-injuries,github,True,2014-06-firework-injuries,BuzzFeedNews,BuzzFeed News,4.0,jsvine
-https://github.com/BuzzFeedNews/2014-06-bikeshare-gender-maps,github,True,2014-06-bikeshare-gender-maps,BuzzFeedNews,BuzzFeed News,48.0,jsvine
-https://github.com/wireservice/lookupr,github,False,lookupr,wireservice,wireservice,,
-https://github.com/tarbell-project/tarbell-template,github,False,tarbell-template,tarbell-project,tarbell-project,,
-https://github.com/sunlightlabs/fcc-net-neutrality-comments,github,False,fcc-net-neutrality-comments,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/gun-data-explorer,github,False,gun-data-explorer,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/opencongress,github,False,opencongress,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/brisket,github,False,brisket,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/chartoff,github,False,chartoff,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/foia-data,github,False,foia-data,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/openingparliament,github,False,openingparliament,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/widgets,github,False,widgets,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/horseradish,github,False,horseradish,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/transparencycamp,github,False,transparencycamp,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/the-phantom-mask,github,False,the-phantom-mask,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/Cordray-Jeopardy-Analysis,github,False,Cordray-Jeopardy-Analysis,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/emailcongress,github,False,emailcongress,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/tcamp,github,False,tcamp,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/email-templates,github,False,email-templates,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/wwc,github,False,wwc,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/sf-icons,github,False,sf-icons,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/openfederal,github,False,openfederal,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/bulgogi,github,False,bulgogi,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/earmarkwatch,github,False,earmarkwatch,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/sfcom-2012,github,False,sfcom-2012,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/transbearency,github,False,transbearency,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/act,github,False,act,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/cupcakes,github,False,cupcakes,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/compare-congress,github,False,compare-congress,sunlightlabs,sunlightlabs,,
-https://github.com/sunlightlabs/readthebill,github,False,readthebill,sunlightlabs,sunlightlabs,,
-https://github.com/spiritedmedia/weekly-screenshots,github,False,weekly-screenshots,spiritedmedia,spiritedmedia,,
-https://github.com/reesenewslab/capitolhound,github,False,capitolhound,reesenewslab,reesenewslab,,
-https://github.com/politibot/elecciones-catalanas-21d,github,False,elecciones-catalanas-21d,politibot,politibot,,
-https://github.com/politibot/datos,github,False,datos,politibot,politibot,,
-https://github.com/overview/html-to-pdf-benchmarks,github,False,html-to-pdf-benchmarks,overview,overview,,
-https://github.com/OpenNewsLabs/r-workshop-ire,github,False,r-workshop-ire,OpenNewsLabs,OpenNewsLabs,,
-https://github.com/OpenNewsLabs/perception-vs-reality,github,False,perception-vs-reality,OpenNewsLabs,OpenNewsLabs,,
-https://github.com/OpenNewsLabs/field-guide-security-training-newsroom,github,False,field-guide-security-training-newsroom,OpenNewsLabs,OpenNewsLabs,,
-https://github.com/OpenNewsLabs/Grammar-of-Graphics-Workshop,github,False,Grammar-of-Graphics-Workshop,OpenNewsLabs,OpenNewsLabs,,
-https://github.com/OpenNewsLabs/candina.me,github,False,candina.me,OpenNewsLabs,OpenNewsLabs,,
-https://github.com/OpenNews/srccon,github,False,srccon,OpenNews,OpenNews,,
-https://github.com/OpenNews/srccon2014,github,False,srccon2014,OpenNews,OpenNews,,
-https://github.com/OpenNews/srccon2017,github,False,srccon2017,OpenNews,OpenNews,,
-https://github.com/OpenNews/srccon2015,github,False,srccon2015,OpenNews,OpenNews,,
-https://github.com/OpenNews/srccon2016,github,False,srccon2016,OpenNews,OpenNews,,
-https://github.com/OpenNews/srccon-power,github,False,srccon-power,OpenNews,OpenNews,,
-https://github.com/OpenNews/srccon2018,github,False,srccon2018,OpenNews,OpenNews,,
-https://github.com/OpenNews/opennews-website,github,False,opennews-website,OpenNews,OpenNews,,
-https://github.com/OpenNews/srccon-work,github,False,srccon-work,OpenNews,OpenNews,,
-https://github.com/openelections/openelections-data-ga,github,False,openelections-data-ga,openelections,openelections,,
-https://github.com/openelections/openelections-data-ny,github,False,openelections-data-ny,openelections,openelections,,
-https://github.com/openelections/openelections-data-ky,github,False,openelections-data-ky,openelections,openelections,,
-https://github.com/openelections/openelections-data-wa,github,False,openelections-data-wa,openelections,openelections,,
-https://github.com/openelections/openelections-data-ne,github,False,openelections-data-ne,openelections,openelections,,
-https://github.com/openelections/openelections-sources-nd,github,False,openelections-sources-nd,openelections,openelections,,
-https://github.com/openelections/openelections-data-nd,github,False,openelections-data-nd,openelections,openelections,,
-https://github.com/openelections/openelections.github.io,github,False,openelections.github.io,openelections,openelections,,
-https://github.com/openelections/docs,github,False,docs,openelections,openelections,,
-https://github.com/openelections/openelections-sources-wv,github,False,openelections-sources-wv,openelections,openelections,,
-https://github.com/openelections/openelections-sources-il,github,False,openelections-sources-il,openelections,openelections,,
-https://github.com/openelections/openelections-sources-nj,github,False,openelections-sources-nj,openelections,openelections,,
-https://github.com/openelections/openelections-sources-ct,github,False,openelections-sources-ct,openelections,openelections,,
-https://github.com/openelections/openelections-data-id,github,False,openelections-data-id,openelections,openelections,,
-https://github.com/openelections/openelections-sources-ne,github,False,openelections-sources-ne,openelections,openelections,,
-https://github.com/openelections/openelections-sources-in,github,False,openelections-sources-in,openelections,openelections,,
-https://github.com/openelections/openelections-sources-or,github,False,openelections-sources-or,openelections,openelections,,
-https://github.com/openelections/openelections-sources-ut,github,False,openelections-sources-ut,openelections,openelections,,
-https://github.com/openelections/openelections-sources-ny,github,False,openelections-sources-ny,openelections,openelections,,
-https://github.com/openelections/openelections-sources-co,github,False,openelections-sources-co,openelections,openelections,,
-https://github.com/openelections/openelections-sources-pa,github,False,openelections-sources-pa,openelections,openelections,,
-https://github.com/openelections/openelections-sources-mo,github,False,openelections-sources-mo,openelections,openelections,,
-https://github.com/openelections/blog.openelections.net,github,False,blog.openelections.net,openelections,openelections,,
-https://github.com/openelections/openelections-sources-ks,github,False,openelections-sources-ks,openelections,openelections,,
-https://github.com/openelections/openelections-sources-ma,github,False,openelections-sources-ma,openelections,openelections,,
-https://github.com/openelections/openelections-sources-ca,github,False,openelections-sources-ca,openelections,openelections,,
-https://github.com/NUKnightLab/soundcite,github,False,soundcite,NUKnightLab,NUKnightLab,,
-https://github.com/NUKnightLab/twxplorer,github,False,twxplorer,NUKnightLab,NUKnightLab,,
-https://github.com/NUKnightLab/Picture-Story,github,False,Picture-Story,NUKnightLab,NUKnightLab,,
-https://github.com/NUKnightLab/VRJournFieldGuide,github,False,VRJournFieldGuide,NUKnightLab,NUKnightLab,,
-https://github.com/NUKnightLab/learncms,github,False,learncms,NUKnightLab,NUKnightLab,,
-https://github.com/NUKnightLab/timeline-addon,github,False,timeline-addon,NUKnightLab,NUKnightLab,,
-https://github.com/NUKnightLab/openlab.knightlab.com,github,False,openlab.knightlab.com,NUKnightLab,NUKnightLab,,
-https://github.com/NUKnightLab/blueline,github,False,blueline,NUKnightLab,NUKnightLab,,
-https://github.com/NUKnightLab/device-lab-runbook,github,False,device-lab-runbook,NUKnightLab,NUKnightLab,,
-https://github.com/NUKnightLab/learn-prototype,github,False,learn-prototype,NUKnightLab,NUKnightLab,,
-https://github.com/NUKnightLab/scenevr-author,github,False,scenevr-author,NUKnightLab,NUKnightLab,,
-https://github.com/NUKnightLab/Class-2016F-SEEC,github,False,Class-2016F-SEEC,NUKnightLab,NUKnightLab,,
-https://github.com/newslynx/newslynx.org,github,False,newslynx.org,newslynx,newslynx,,
-https://github.com/newslynx/docs,github,False,docs,newslynx,newslynx,,
-https://github.com/newsappsio/flying-doge,github,False,flying-doge,newsappsio,newsappsio,,
-https://github.com/newsappsio/newsappsio.github.io,github,False,newsappsio.github.io,newsappsio,newsappsio,,
-https://github.com/meedan/pender,github,False,pender,meedan,meedan,,
-https://github.com/meedan/meedan.com,github,False,meedan.com,meedan,meedan,,
-https://github.com/meedan/vframe,github,False,vframe,meedan,meedan,,
-https://github.com/meedan/bridge-reader,github,False,bridge-reader,meedan,meedan,,
-https://github.com/kiln/carbonmap.org,github,False,carbonmap.org,kiln,kiln,,
-https://github.com/kiln/flourish-api-demo-csv,github,False,flourish-api-demo-csv,kiln,kiln,,
-https://github.com/kiln/generative-office-warming,github,False,generative-office-warming,kiln,kiln,,
-https://github.com/jplusplus/noda2018-pandas-workshop,github,False,noda2018-pandas-workshop,jplusplus,jplusplus,,
-https://github.com/jplusplus/ep-corrected-votes,github,False,ep-corrected-votes,jplusplus,jplusplus,,
-https://github.com/jplusplus/bb,github,False,bb,jplusplus,jplusplus,,
-https://github.com/jplusplus/rts-parlometre-generator,github,False,rts-parlometre-generator,jplusplus,jplusplus,,
-https://github.com/jplusplus/themigrantsfiles.com,github,False,themigrantsfiles.com,jplusplus,jplusplus,,
-https://github.com/jplusplus/socialstyrelsen-scraper,github,False,socialstyrelsen-scraper,jplusplus,jplusplus,,
-https://github.com/jplusplus/land-quiz,github,False,land-quiz,jplusplus,jplusplus,,
-https://github.com/jplusplus/viltolyckor_scraper,github,False,viltolyckor_scraper,jplusplus,jplusplus,,
-https://github.com/jplusplus/redirect.themigrantsfiles.com,github,False,redirect.themigrantsfiles.com,jplusplus,jplusplus,,
-https://github.com/jplusplus/random-topic,github,False,random-topic,jplusplus,jplusplus,,
-https://github.com/jplusplus/CrawlerToolkit,github,False,CrawlerToolkit,jplusplus,jplusplus,,
-https://github.com/ireapps/cfj-2018,github,False,cfj-2018,ireapps,ireapps,,
-https://github.com/ireapps/teaching-guide-intro-to-pandas,github,False,teaching-guide-intro-to-pandas,ireapps,ireapps,,
-https://github.com/ireapps/cfj-2017,github,False,cfj-2017,ireapps,ireapps,,
-https://github.com/ireapps/teaching-guide-python-101,github,False,teaching-guide-python-101,ireapps,ireapps,,
-https://github.com/ireapps/teaching-guide-python-scraping,github,False,teaching-guide-python-scraping,ireapps,ireapps,,
-https://github.com/ireapps/ire18-intro-to-r,github,False,ire18-intro-to-r,ireapps,ireapps,,
-https://github.com/ireapps/first-news-app,github,False,first-news-app,ireapps,ireapps,,
-https://github.com/ireapps/lightning-talks,github,False,lightning-talks,ireapps,ireapps,,
-https://github.com/ireapps/coding-for-journalists,github,False,coding-for-journalists,ireapps,ireapps,,
-https://github.com/invinst/complaintDocumentREEs,github,False,complaintDocumentREEs,invinst,invinst,,
-https://github.com/invinst/complaintreports,github,False,complaintreports,invinst,invinst,,
-https://github.com/invinst/chicago-police-data,github,False,chicago-police-data,invinst,invinst,,
-https://github.com/INN/one-liner,github,False,one-liner,INN,INN,,
-https://github.com/govtrack/govtrack-pitch-deck,github,False,govtrack-pitch-deck,govtrack,govtrack,,
-https://github.com/govtrack/civicimpulse.com,github,False,civicimpulse.com,govtrack,govtrack,,
-https://github.com/govtrack/govtrack-insider,github,False,govtrack-insider,govtrack,govtrack,,
-https://github.com/GoogleTrends/parisattacks,github,False,parisattacks,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/mappingthanksgiving,github,False,mappingthanksgiving,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/brussels-attacks,github,False,brussels-attacks,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/oscars_2018,github,False,oscars_2018,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/languages,github,False,languages,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/collapsible_tree,github,False,collapsible_tree,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/traveltrends,github,False,traveltrends,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/GOPHorseRace,github,False,GOPHorseRace,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/indicators,github,False,indicators,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/world-cup-2018,github,False,world-cup-2018,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/crosscheck-dashboard-fr,github,False,crosscheck-dashboard-fr,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/GOPDebate1,github,False,GOPDebate1,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/tilemaps,github,False,tilemaps,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/youtubethanksgiving,github,False,youtubethanksgiving,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/demcands_tree,github,False,demcands_tree,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/zikasearch,github,False,zikasearch,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/tilemaps-france,github,False,tilemaps-france,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/search-tvshows-2017,github,False,search-tvshows-2017,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/independence-day-traffic,github,False,independence-day-traffic,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/chord_diagram,github,False,chord_diagram,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/gop_tree,github,False,gop_tree,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/sotu_2019_state,github,False,sotu_2019_state,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/sotu_2019,github,False,sotu_2019,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/olympics,github,False,olympics,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/demcands1,github,False,demcands1,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/SLElections,github,False,SLElections,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/oscars_2018_embed,github,False,oscars_2018_embed,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/search-senators-2017,github,False,search-senators-2017,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/google_oscars,github,False,google_oscars,GoogleTrends,GoogleTrends,,
-https://github.com/GoogleTrends/sotu_2019_year,github,False,sotu_2019_year,GoogleTrends,GoogleTrends,,
-https://github.com/freedomofpress/securedrop-styleguide,github,False,securedrop-styleguide,freedomofpress,freedomofpress,,
-https://github.com/freedomofpress/securedrop-debian-packaging,github,False,securedrop-debian-packaging,freedomofpress,freedomofpress,,
-https://github.com/freedomofpress/redmine_docs,github,False,redmine_docs,freedomofpress,freedomofpress,,
-https://github.com/documentcloud/pixel-ping,github,False,pixel-ping,documentcloud,documentcloud,,
-https://github.com/documentcloud/documentcloud-notes,github,False,documentcloud-notes,documentcloud,documentcloud,,
-https://github.com/documentcloud/help_center,github,False,help_center,documentcloud,documentcloud,,
-https://github.com/datamade/alderman-attendance,github,True,alderman-attendance,datamade,DataMade,15.0,jmcorrigan
-https://github.com/datamade/data-making-guidelines,github,False,data-making-guidelines,datamade,DataMade,,
-https://github.com/datamade/second-city-zoning,github,False,second-city-zoning,datamade,DataMade,,
-https://github.com/datamade/flask_app_template,github,False,flask_app_template,datamade,DataMade,,
-https://github.com/datamade/clearstreets-web,github,False,clearstreets-web,datamade,DataMade,,
-https://github.com/datamade/election-money,github,False,election-money,datamade,DataMade,,
-https://github.com/datamade/python-chicago-elections,github,False,python-chicago-elections,datamade,DataMade,,
-https://github.com/datamade/elpc_bakken,github,False,elpc_bakken,datamade,DataMade,,
-https://github.com/datamade/ihs-charts,github,False,ihs-charts,datamade,DataMade,,
-https://github.com/datamade/councilmatic-splash,github,False,councilmatic-splash,datamade,DataMade,,
-https://github.com/datamade/sra,github,False,sra,datamade,DataMade,,
-https://github.com/datamade/data-collab-marketing,github,False,data-collab-marketing,datamade,DataMade,,
-https://github.com/coralproject/coralproject-site-2016,github,False,coralproject-site-2016,coralproject,coralproject,,
-https://github.com/coralproject/design,github,False,design,coralproject,coralproject,,
-https://github.com/coralproject/talk-devtools-extension,github,False,talk-devtools-extension,coralproject,coralproject,,
-https://github.com/coralproject/old-coral-project-site,github,False,old-coral-project-site,coralproject,coralproject,,
-https://github.com/civica-digital/como-vamos-api-aplicacion,github,False,como-vamos-api-aplicacion,civica-digital,civica-digital,,
-https://github.com/civica-digital/simple_latam_map,github,False,simple_latam_map,civica-digital,civica-digital,,
-https://github.com/civica-digital/iodc-fbevents,github,False,iodc-fbevents,civica-digital,civica-digital,,
-https://github.com/civica-digital/como-vamos-setup-data,github,False,como-vamos-setup-data,civica-digital,civica-digital,,
-https://github.com/civica-digital/marcha-anticorrupcion,github,False,marcha-anticorrupcion,civica-digital,civica-digital,,
-https://github.com/civica-digital/mi-negocio-mx-widget,github,False,mi-negocio-mx-widget,civica-digital,civica-digital,,
-https://github.com/civica-digital/reto-mexico-static,github,False,reto-mexico-static,civica-digital,civica-digital,,
-https://github.com/City-Bureau/field-guide,github,False,field-guide,City-Bureau,City-Bureau,,
-https://github.com/City-Bureau/documenters-map,github,False,documenters-map,City-Bureau,City-Bureau,,
-https://github.com/City-Bureau/chi-2019-runoff-maps,github,False,chi-2019-runoff-maps,City-Bureau,City-Bureau,,
-https://github.com/City-Bureau/elections-2019-map,github,False,elections-2019-map,City-Bureau,City-Bureau,,
-https://github.com/censusreporter/notebooks,github,False,notebooks,censusreporter,censusreporter,,
-https://github.com/censusreporter/censusreporter,github,False,censusreporter,censusreporter,censusreporter,,
-https://github.com/california-civic-data-coalition/python-calaccess-notebooks,github,False,python-calaccess-notebooks,california-civic-data-coalition,california-civic-data-coalition,,
-https://github.com/ZeitOnline/content-api,github,False,content-api,ZeitOnline,ZeitOnline,,
-https://github.com/ZeitOnline/errorpages,github,False,errorpages,ZeitOnline,ZeitOnline,,
-https://github.com/ZeitOnline/briefkasten-theme,github,False,briefkasten-theme,ZeitOnline,ZeitOnline,,
-https://github.com/youthradio/littlerock9,github,False,littlerock9,youthradio,youthradio,,
-https://github.com/youthradio/Interactive-Fiction-JS-template,github,False,Interactive-Fiction-JS-template,youthradio,youthradio,,
-https://github.com/youthradio/dontgetfaked,github,False,dontgetfaked,youthradio,youthradio,,
-https://github.com/youthradio/litmagSpring,github,False,litmagSpring,youthradio,youthradio,,
-https://github.com/youthradio/CS-plugged,github,False,CS-plugged,youthradio,youthradio,,
-https://github.com/youthradio/TxS-Template,github,False,TxS-Template,youthradio,youthradio,,
-https://github.com/youthradio/litmag_summer2017,github,False,litmag_summer2017,youthradio,youthradio,,
-https://github.com/youthradio/Youth-Radio-Web-Literacy,github,False,Youth-Radio-Web-Literacy,youthradio,youthradio,,
-https://github.com/youthradio/fostercare,github,False,fostercare,youthradio,youthradio,,
-https://github.com/youthradio/unlock_series,github,False,unlock_series,youthradio,youthradio,,
-https://github.com/youthradio/knowYourProps,github,False,knowYourProps,youthradio,youthradio,,
-https://github.com/youthradio/HTMLintro,github,False,HTMLintro,youthradio,youthradio,,
-https://github.com/youthradio/starter-template,github,False,starter-template,youthradio,youthradio,,
-https://github.com/youthradio/bridgeLitMag,github,False,bridgeLitMag,youthradio,youthradio,,
-https://github.com/youthradio/titleIX,github,False,titleIX,youthradio,youthradio,,
-https://github.com/Yleisradio/yle-uutiset,github,False,yle-uutiset,Yleisradio,Yleisradio,,
-https://github.com/Yleisradio/cs-statistics,github,False,cs-statistics,Yleisradio,Yleisradio,,
-https://github.com/wraldata/wraldata.github.io,github,False,wraldata.github.io,wraldata,wraldata,,
-https://github.com/datanews/boroface,github,False,boroface,datanews,datanews,,
-https://github.com/datanews/thunder,github,False,thunder,datanews,datanews,,
-https://github.com/wbez/data,github,True,data,wbez,WBEZ Chicago,7.0,chagan
-https://github.com/wbez/data,github,True,data,wbez,WBEZ Chicago,1.0,pauliebe
-https://github.com/wpinvestigative/immigrant_visas,github,True,immigrant_visas,wpinvestigative,The Washington Post,11.0,andrewbtran
-https://github.com/wpinvestigative/kushner_eb5_census,github,True,kushner_eb5_census,wpinvestigative,The Washington Post,10.0,andrewbtran
-https://github.com/wpinvestigative/fema_claims,github,True,fema_claims,wpinvestigative,The Washington Post,6.0,andrewbtran
-https://github.com/wpinvestigative/global_terrorism_database_analysis,github,True,global_terrorism_database_analysis,wpinvestigative,The Washington Post,3.0,andrewbtran
-https://github.com/wpinvestigative/federal_employees_trump_2017,github,True,federal_employees_trump_2017,wpinvestigative,The Washington Post,6.0,andrewbtran
-https://github.com/washingtonpost/data-national-transit-database-heavy-rail-analysis,github,True,data-national-transit-database-heavy-rail-analysis,washingtonpost,The Washington Post,3.0,jmuyskens
-https://github.com/washingtonpost/arc-custom-embed,github,False,arc-custom-embed,washingtonpost,The Washington Post,,
-https://github.com/WSJ/scroll-watcher,github,False,scroll-watcher,WSJ,WSJ,,
-https://github.com/WSJ/two-step,github,False,two-step,WSJ,WSJ,,
-https://github.com/voxmedia/data-projects,github,True,data-projects,voxmedia,Vox,50.0,soooh
-https://github.com/voxmedia/data-projects,github,True,data-projects,voxmedia,Vox,47.0,frankbi
-https://github.com/voxmedia/data-projects,github,True,data-projects,voxmedia,Vox,10.0,sfrostenson
-https://github.com/voxmedia/data-projects,github,True,data-projects,voxmedia,Vox,4.0,ryanmark
-https://github.com/voxmedia/data-projects,github,True,data-projects,voxmedia,Vox,2.0,aithnefeay
-https://github.com/voxmedia/data-projects,github,True,data-projects,voxmedia,Vox,1.0,jdcauley
-https://github.com/voxmedia/data-projects,github,True,data-projects,voxmedia,Vox,1.0,kavyasukumar
-https://github.com/voxmedia/accessibility,github,False,accessibility,voxmedia,Vox,,
-https://github.com/voxmedia/gliss,github,False,gliss,voxmedia,Vox,,
-https://github.com/voxmedia/Transcriber,github,False,Transcriber,voxmedia,Vox,,
-https://github.com/voxmedia/code-of-conduct,github,False,code-of-conduct,voxmedia,Vox,,
-https://github.com/voxmedia/viz-app,github,False,viz-app,voxmedia,Vox,,
-https://github.com/voxmedia/pixelpunch,github,False,pixelpunch,voxmedia,Vox,,
-https://github.com/voxmedia/captions_burner,github,False,captions_burner,voxmedia,Vox,,
-https://github.com/voxmedia/beat,github,False,beat,voxmedia,Vox,,
-https://github.com/VOANews/cambodia-election,github,False,cambodia-election,VOANews,VOANews,,
-https://github.com/VOANews/internet-freedom,github,False,internet-freedom,VOANews,VOANews,,
-https://github.com/vprnet/vpr-poll,github,False,vpr-poll,vprnet,vprnet,,
-https://github.com/vprnet/embeds,github,False,embeds,vprnet,vprnet,,
-https://github.com/USATODAY/facebook-moderated-comments,github,False,facebook-moderated-comments,USATODAY,USATODAY,,
-https://github.com/USATODAY/usatoday.github.io,github,False,usatoday.github.io,USATODAY,USATODAY,,
-https://github.com/trendct/medicaid_enrollment_analysis,github,True,medicaid_enrollment_analysis,trendct,TrendCT,2.0,jakekara
-https://github.com/trendct/ctnamecleaner,github,False,ctnamecleaner,trendct,TrendCT,,
-https://github.com/trendct/pivot_tables,github,False,pivot_tables,trendct,TrendCT,,
-https://github.com/trendct/college_scorecard,github,False,college_scorecard,trendct,TrendCT,,
-https://github.com/trendct/ctnamecleaner_shiny,github,False,ctnamecleaner_shiny,trendct,TrendCT,,
-https://github.com/trendct/data,github,True,data,trendct,TrendCT,114.0,andrewbtran
-https://github.com/trendct/data,github,True,data,trendct,TrendCT,39.0,jakekara
-https://github.com/trendct/walkthroughs,github,False,walkthroughs,trendct,TrendCT,,
-https://github.com/trendct/ct_opioid_epidemic,github,False,ct_opioid_epidemic,trendct,TrendCT,,
-https://github.com/trendct/ct-tickets,github,False,ct-tickets,trendct,TrendCT,,
-https://github.com/trendct/dunkin-donuts-ct,github,True,dunkin-donuts-ct,trendct,TrendCT,5.0,andrewbtran
-https://github.com/trendct/background_checks,github,False,background_checks,trendct,TrendCT,,
-https://github.com/trendct/ct-drug-zones,github,False,ct-drug-zones,trendct,TrendCT,,
-https://github.com/trendct/weather,github,False,weather,trendct,TrendCT,,
-https://github.com/trendct/employment-by-sector,github,True,employment-by-sector,trendct,TrendCT,4.0,andrewbtran
-https://github.com/trendct/TrendStructureJS,github,False,TrendStructureJS,trendct,TrendCT,,
-https://github.com/globeandmail/fbpac-extension,github,False,fbpac-extension,globeandmail,globeandmail,,
-https://github.com/times/data,github,True,data,times,The Times and Sunday Times,3.0,ltrgoddard
-https://github.com/times/data,github,True,data,times,The Times and Sunday Times,3.0,tomwills
-https://github.com/times/cardkit-v2,github,False,cardkit-v2,times,The Times and Sunday Times,,
-https://github.com/times/budget-calculator,github,False,budget-calculator,times,The Times and Sunday Times,,
-https://github.com/times/times-treemap-budget,github,False,times-treemap-budget,times,The Times and Sunday Times,,
-https://github.com/times/times-countdown,github,False,times-countdown,times,The Times and Sunday Times,,
-https://github.com/TimeMagazine/wikipedia-rankings,github,False,wikipedia-rankings,TimeMagazine,Time,,
-https://github.com/TimeMagazine/marriage_by_degrees,github,True,marriage_by_degrees,TimeMagazine,Time,14.0,wilson428
-https://github.com/TimeMagazine/babyname_politics,github,True,babyname_politics,TimeMagazine,Time,3.0,wilson428
-https://github.com/TimeMagazine/ipums_county_identification,github,False,ipums_county_identification,TimeMagazine,Time,,
-https://github.com/TimeMagazine/census_tables_in_r,github,False,census_tables_in_r,TimeMagazine,Time,,
-https://github.com/TimeMagazine/data-source-files,github,False,data-source-files,TimeMagazine,Time,,
-https://github.com/TimeMagazine/total-births-per-year,github,True,total-births-per-year,TimeMagazine,Time,2.0,wilson428
-https://github.com/texty/amber-methodology,github,False,amber-methodology,texty,texty,,
-https://github.com/texty/parliamentary_elections_forecasting_2019,github,False,parliamentary_elections_forecasting_2019,texty,texty,,
-https://github.com/texty/local-elections-2015,github,False,local-elections-2015,texty,texty,,
-https://github.com/texty/local-elections-2010,github,False,local-elections-2010,texty,texty,,
-https://github.com/texty/trees,github,False,trees,texty,texty,,
-https://github.com/texty/edecl,github,False,edecl,texty,texty,,
-https://github.com/texty/edata,github,False,edata,texty,texty,,
-https://github.com/texty/zno2016utils,github,False,zno2016utils,texty,texty,,
-https://github.com/texty/kyiv_puzzle,github,False,kyiv_puzzle,texty,texty,,
-https://github.com/texty/putler,github,False,putler,texty,texty,,
-https://github.com/texty/salaries,github,False,salaries,texty,texty,,
-https://github.com/texty/manipulator-game,github,False,manipulator-game,texty,texty,,
-https://github.com/texty/kyiv_zno,github,False,kyiv_zno,texty,texty,,
-https://github.com/texty/alcomap,github,False,alcomap,texty,texty,,
-https://github.com/texty/cell_towers,github,False,cell_towers,texty,texty,,
-https://github.com/texty/top2018,github,False,top2018,texty,texty,,
-https://github.com/texty/che_zno,github,False,che_zno,texty,texty,,
-https://github.com/texty/red-line,github,False,red-line,texty,texty,,
-https://github.com/texty/Rmakrdown,github,False,Rmakrdown,texty,texty,,
-https://github.com/texty/cemetery,github,False,cemetery,texty,texty,,
-https://github.com/texty/ukrfilms,github,False,ukrfilms,texty,texty,,
-https://github.com/texty/gas,github,False,gas,texty,texty,,
-https://github.com/texty/sun,github,False,sun,texty,texty,,
-https://github.com/texty/twitter,github,False,twitter,texty,texty,,
-https://github.com/texty/metro,github,False,metro,texty,texty,,
-https://github.com/texty/painters,github,False,painters,texty,texty,,
-https://github.com/texty/labour,github,False,labour,texty,texty,,
-https://github.com/texty/NGO_page,github,False,NGO_page,texty,texty,,
-https://github.com/texty/malanka,github,False,malanka,texty,texty,,
-https://github.com/texty/telegram,github,False,telegram,texty,texty,,
-https://github.com/texty/dja-new,github,False,dja-new,texty,texty,,
-https://github.com/texastribune/docker-workshop,github,False,docker-workshop,texastribune,The Texas Tribune,,
-https://github.com/texastribune/scotus-citizenship-analysis,github,False,scotus-citizenship-analysis,texastribune,The Texas Tribune,,
-https://github.com/texastribune/2017-10-maternal-mortality-analysis,github,True,2017-10-maternal-mortality-analysis,texastribune,The Texas Tribune,15.0,csessig86
-https://github.com/texastribune/donations-app,github,False,donations-app,texastribune,The Texas Tribune,,
-https://github.com/texastribune/donation-builder,github,False,donation-builder,texastribune,The Texas Tribune,,
-https://github.com/texastribune/newsapps-styleguide-2.0,github,False,newsapps-styleguide-2.0,texastribune,The Texas Tribune,,
-https://github.com/texastribune/pen-brackets,github,False,pen-brackets,texastribune,The Texas Tribune,,
-https://github.com/texastribune/500,github,False,500,texastribune,The Texas Tribune,,
-https://github.com/texastribune/p2p,github,False,p2p,texastribune,The Texas Tribune,,
-https://github.com/texastribune/tt_disposal_wells,github,False,tt_disposal_wells,texastribune,The Texas Tribune,,
-https://github.com/texastribune/txlege84,github,False,txlege84,texastribune,The Texas Tribune,,
-https://github.com/texastribune/perry-legacy,github,False,perry-legacy,texastribune,The Texas Tribune,,
-https://github.com/texastribune/state-of-mind-15,github,False,state-of-mind-15,texastribune,The Texas Tribune,,
-https://github.com/texastribune/hurting_for_work,github,False,hurting_for_work,texastribune,The Texas Tribune,,
-https://github.com/texastribune/tx-city,github,False,tx-city,texastribune,The Texas Tribune,,
-https://github.com/texastribune/undrinkable,github,False,undrinkable,texastribune,The Texas Tribune,,
-https://github.com/telegraph/spark-events-banner-template,github,False,spark-events-banner-template,telegraph,telegraph,,
-https://github.com/tbtimes/florida-heart-surgery-analysis,github,True,florida-heart-surgery-analysis,tbtimes,Tampa Bay Times,2.0,nbedi
-https://github.com/tbtimes/Analytic2017,github,False,Analytic2017,tbtimes,Tampa Bay Times,,
-https://github.com/TagesWoche/grundbuch_scrape,github,False,grundbuch_scrape,TagesWoche,TagesWoche,,
-https://github.com/TagesWoche/bikemap_notebook,github,False,bikemap_notebook,TagesWoche,TagesWoche,,
-https://github.com/TagesWoche/analytics,github,False,analytics,TagesWoche,TagesWoche,,
-https://github.com/TagesWoche/abstimmungen2016,github,False,abstimmungen2016,TagesWoche,TagesWoche,,
-https://github.com/TagesWoche/laengi_ftw,github,False,laengi_ftw,TagesWoche,TagesWoche,,
-https://github.com/TagesWoche/lb-theme-tageswoche,github,False,lb-theme-tageswoche,TagesWoche,TagesWoche,,
-https://github.com/sueddeutsche/gen-better-polls,github,False,gen-better-polls,sueddeutsche,Süddeutsche Zeitung,,
-https://github.com/sueddeutsche/dylan-nobelprize,github,True,dylan-nobelprize,sueddeutsche,Süddeutsche Zeitung,1.0,mschories
-https://github.com/SunSentinel/sunsentinel-altair-theme,github,False,sunsentinel-altair-theme,SunSentinel,South Florida Sun Sentinel,,
-https://github.com/SunSentinel/notebooks,github,True,notebooks,SunSentinel,South Florida Sun Sentinel,5.0,aachokey
-https://github.com/SunSentinel/datatables-template,github,False,datatables-template,SunSentinel,South Florida Sun Sentinel,,
-https://github.com/SunSentinel/quiz-template,github,False,quiz-template,SunSentinel,South Florida Sun Sentinel,,
-https://github.com/SunSentinel/leaflet-map-template,github,False,leaflet-map-template,SunSentinel,South Florida Sun Sentinel,,
-https://github.com/slategroup/Amplitude-Data-Munging-,github,False,Amplitude-Data-Munging-,slategroup,slategroup,,
-https://github.com/seattletimes/watermarker,github,False,watermarker,seattletimes,seattletimes,,
-https://github.com/seattletimes/fishing-2015,github,False,fishing-2015,seattletimes,seattletimes,,
-https://github.com/seattletimes/mlk-page,github,False,mlk-page,seattletimes,seattletimes,,
-https://github.com/seattletimes/star-times-spring-2016,github,False,star-times-spring-2016,seattletimes,seattletimes,,
-https://github.com/seattletimes/seattletimes.github.io,github,False,seattletimes.github.io,seattletimes,seattletimes,,
-https://github.com/seattletimes/cuba-package,github,False,cuba-package,seattletimes,seattletimes,,
-https://github.com/seattletimes/pac12-power-2016,github,False,pac12-power-2016,seattletimes,seattletimes,,
-https://github.com/seattletimes/jump,github,False,jump,seattletimes,seattletimes,,
-https://github.com/seattletimes/cartographer,github,False,cartographer,seattletimes,seattletimes,,
-https://github.com/seattletimes/homebrew,github,False,homebrew,seattletimes,seattletimes,,
-https://github.com/sfchronicle/sos-scraper,github,False,sos-scraper,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/sea-level-rise,github,False,sea-level-rise,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/lms-film,github,False,lms-film,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/blm,github,False,blm,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/divisionstreet,github,False,divisionstreet,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/demo_repo,github,False,demo_repo,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/podcast-landing,github,False,podcast-landing,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/pillars-among-the-ruins,github,False,pillars-among-the-ruins,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/lucas,github,False,lucas,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/homeless,github,False,homeless,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/lms-update,github,False,lms-update,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/2017-bar-stars,github,False,2017-bar-stars,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/warriors-commemorative-galleries,github,False,warriors-commemorative-galleries,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/najee,github,False,najee,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/sol-landingpage,github,False,sol-landingpage,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/chinese-regional,github,False,chinese-regional,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/dtf-timeline,github,False,dtf-timeline,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/pulitzer-entry,github,False,pulitzer-entry,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/airbnb,github,False,airbnb,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/tokalon,github,False,tokalon,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/help-guide,github,False,help-guide,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/teacher-pay,github,False,teacher-pay,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/sealevelrise-parts,github,False,sealevelrise-parts,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/flask-breakingnews-admin,github,False,flask-breakingnews-admin,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/jumping-the-shark,github,False,jumping-the-shark,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/future-of-money,github,False,future-of-money,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/sfhp-division-2018,github,False,sfhp-division-2018,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/top100,github,False,top100,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/sfchronicle.github.io,github,False,sfchronicle.github.io,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/airbnb16_site,github,False,airbnb16_site,sfchronicle,sfchronicle,,
-https://github.com/sfchronicle/newstips,github,False,newstips,sfchronicle,sfchronicle,,
-https://github.com/sa-express-news/ELL-data-analysis,github,False,ELL-data-analysis,sa-express-news,sa-express-news,,
-https://github.com/sa-express-news/sapd-crime-scraper,github,False,sapd-crime-scraper,sa-express-news,sa-express-news,,
-https://github.com/sa-express-news/homicides,github,False,homicides,sa-express-news,sa-express-news,,
-https://github.com/sa-express-news/food_estab_inspecs,github,False,food_estab_inspecs,sa-express-news,sa-express-news,,
-https://github.com/sa-express-news/character-reference-modal,github,False,character-reference-modal,sa-express-news,sa-express-news,,
-https://github.com/sa-express-news/wide-template-progress-bar,github,False,wide-template-progress-bar,sa-express-news,sa-express-news,,
-https://github.com/sa-express-news/freeform-code-generator,github,False,freeform-code-generator,sa-express-news,sa-express-news,,
-https://github.com/sa-express-news/graphic-analytics-package,github,False,graphic-analytics-package,sa-express-news,sa-express-news,,
-https://github.com/sa-express-news/san-antonio-boxing,github,False,san-antonio-boxing,sa-express-news,sa-express-news,,
-https://github.com/sa-express-news/sexual-harassment-network,github,False,sexual-harassment-network,sa-express-news,sa-express-news,,
-https://github.com/sa-express-news/podcast-page,github,False,podcast-page,sa-express-news,sa-express-news,,
-https://github.com/stlpublicradio/2019-06-26-hayden-rectangle-analysis,github,True,2019-06-26-hayden-rectangle-analysis,stlpublicradio,St Louis Public Radio,1.0,brentajones
-https://github.com/stlpublicradio/2018-05-31-crime-and-heat-analysis,github,True,2018-05-31-crime-and-heat-analysis,stlpublicradio,St Louis Public Radio,1.0,brentajones
-https://github.com/PostDispatchInteractive/parks,github,False,parks,PostDispatchInteractive,PostDispatchInteractive,,
-https://github.com/PostDispatchInteractive/quizReader,github,False,quizReader,PostDispatchInteractive,PostDispatchInteractive,,
-https://github.com/cirlabs/az_stops,github,False,az_stops,cirlabs,cirlabs,,
-https://github.com/cirlabs/JupyterPandasTraining,github,False,JupyterPandasTraining,cirlabs,cirlabs,,
-https://github.com/cirlabs/space-journalism-handbook,github,False,space-journalism-handbook,cirlabs,cirlabs,,
-https://github.com/cirlabs/concealed-carry,github,False,concealed-carry,cirlabs,cirlabs,,
-https://github.com/thomsonreuters/oqad,github,False,oqad,thomsonreuters,thomsonreuters,,
-https://github.com/thomsonreuters/winrm_ssl,github,False,winrm_ssl,thomsonreuters,thomsonreuters,,
-https://github.com/twreporter/infographics,github,False,infographics,twreporter,twreporter,,
-https://github.com/twreporter/viz-min-wage,github,False,viz-min-wage,twreporter,twreporter,,
-https://github.com/registerguard/bicycle_crashes_2007_2016,github,False,bicycle_crashes_2007_2016,registerguard,registerguard,,
-https://github.com/registerguard/email-scrape,github,False,email-scrape,registerguard,registerguard,,
-https://github.com/registerguard/registerguard.github.io,github,False,registerguard.github.io,registerguard,registerguard,,
-https://github.com/registerguard/discovery,github,False,discovery,registerguard,registerguard,,
-https://github.com/registerguard/recruit_tracker,github,False,recruit_tracker,registerguard,registerguard,,
-https://github.com/registerguard/ballot,github,False,ballot,registerguard,registerguard,,
-https://github.com/registerguard/trials-form-charts,github,False,trials-form-charts,registerguard,registerguard,,
-https://github.com/registerguard/hoot,github,False,hoot,registerguard,registerguard,,
-https://github.com/registerguard/tarbell-timeline,github,False,tarbell-timeline,registerguard,registerguard,,
-https://github.com/registerguard/zeppelin,github,False,zeppelin,registerguard,registerguard,,
-https://github.com/registerguard/osaa,github,False,osaa,registerguard,registerguard,,
-https://github.com/registerguard/image-click,github,False,image-click,registerguard,registerguard,,
-https://github.com/registerguard/signing_day,github,False,signing_day,registerguard,registerguard,,
-https://github.com/registerguard/dfp,github,False,dfp,registerguard,registerguard,,
-https://github.com/registerguard/drone,github,False,drone,registerguard,registerguard,,
-https://github.com/registerguard/django-dox,github,False,django-dox,registerguard,registerguard,,
-https://github.com/registerguard/form-chart-blueprint,github,False,form-chart-blueprint,registerguard,registerguard,,
-https://github.com/Quartz/aistudio-dochate-public,github,False,aistudio-dochate-public,Quartz,Quartz,,
-https://github.com/Quartz/botstudio-trump-of-yore,github,False,botstudio-trump-of-yore,Quartz,Quartz,,
-https://github.com/Quartz/advertised-organic-produce,github,True,advertised-organic-produce,Quartz,Quartz,1.0,yanofsky
-https://github.com/Quartz/aistudio-copterbot-images,github,False,aistudio-copterbot-images,Quartz,Quartz,,
-https://github.com/Quartz/work-from-home,github,True,work-from-home,Quartz,Quartz,18.0,onyxfish
-https://github.com/Quartz/edgar,github,False,edgar,Quartz,Quartz,,
-https://github.com/Quartz/vital-mortality,github,True,vital-mortality,Quartz,Quartz,1.0,onyxfish
-https://github.com/Quartz/space-launches,github,False,space-launches,Quartz,Quartz,,
-https://github.com/Quartz/nyc-trips,github,True,nyc-trips,Quartz,Quartz,1.0,onyxfish
-https://github.com/Quartz/uber-jobs,github,True,uber-jobs,Quartz,Quartz,2.0,onyxfish
-https://github.com/Quartz/media-consumption,github,False,media-consumption,Quartz,Quartz,,
-https://github.com/Quartz/100charts,github,False,100charts,Quartz,Quartz,,
-https://github.com/Quartz/wfh-metro,github,False,wfh-metro,Quartz,Quartz,,
-https://github.com/Quartz/maria-followup,github,True,maria-followup,Quartz,Quartz,8.0,zhoyoyo
-https://github.com/Quartz/playboard-template,github,False,playboard-template,Quartz,Quartz,,
-https://github.com/publicsource/chartereffect,github,False,chartereffect,publicsource,publicsource,,
-https://github.com/propublica/compas-analysis,github,True,compas-analysis,propublica,ProPublica,6.0,thejefflarson
-https://github.com/propublica/compas-analysis,github,True,compas-analysis,propublica,ProPublica,1.0,mroswell
-https://github.com/propublica/compas-analysis,github,True,compas-analysis,propublica,ProPublica,1.0,vatlidak
-https://github.com/propublica/data-nicar-2019,github,False,data-nicar-2019,propublica,ProPublica,,
-https://github.com/propublica/il-tickets-notebooks,github,True,il-tickets-notebooks,propublica,ProPublica,14.0,eads
-https://github.com/propublica/il-tickets-notebooks,github,True,il-tickets-notebooks,propublica,ProPublica,3.0,MattTriano
-https://github.com/propublica/il-tickets-notebooks,github,True,il-tickets-notebooks,propublica,ProPublica,1.0,irufus
-https://github.com/propublica/il-tickets-notebooks,github,True,il-tickets-notebooks,propublica,ProPublica,1.0,pckilgore
-https://github.com/propublica/northern-il-federal-gun-cases,github,False,northern-il-federal-gun-cases,propublica,ProPublica,,
-https://github.com/propublica/il-ticket-loader,github,False,il-ticket-loader,propublica,ProPublica,,
-https://github.com/propublica/propertyassessments,github,True,propertyassessments,propublica,ProPublica,11.0,sandhya-k
-https://github.com/propublica/auditData,github,True,auditData,propublica,ProPublica,1.0,fresques
-https://github.com/propublica/upton,github,False,upton,propublica,ProPublica,,
-https://github.com/propublica/stateface,github,False,stateface,propublica,ProPublica,,
-https://github.com/propublica/daybreak,github,False,daybreak,propublica,ProPublica,,
-https://github.com/propublica/facebook-political-ads,github,False,facebook-political-ads,propublica,ProPublica,,
-https://github.com/propublica/landline,github,False,landline,propublica,ProPublica,,
-https://github.com/propublica/qis,github,False,qis,propublica,ProPublica,,
-https://github.com/propublica/congress-api-docs,github,False,congress-api-docs,propublica,ProPublica,,
-https://github.com/propublica/simpler-tiles,github,False,simpler-tiles,propublica,ProPublica,,
-https://github.com/propublica/staffers,github,False,staffers,propublica,ProPublica,,
-https://github.com/propublica/cookcountyjail2,github,False,cookcountyjail2,propublica,ProPublica,,
-https://github.com/TheOregonian/data_stories,github,True,data_stories,TheOregonian,The Oregonian,18.0,meli-lewis
-https://github.com/TheOregonian/data,github,False,data,TheOregonian,The Oregonian,,
-https://github.com/polygraph-cool/this-american-life,github,True,this-american-life,polygraph-cool,Polygraph,5.0,ashngu
-https://github.com/polygraph-cool/this-american-life,github,True,this-american-life,polygraph-cool,Polygraph,2.0,matthewfdaniels
-https://github.com/polygraph-cool/retraining,github,False,retraining,polygraph-cool,Polygraph,,
-https://github.com/polygraph-cool/skatemusic,github,True,skatemusic,polygraph-cool,Polygraph,18.0,jwilber
-https://github.com/polygraph-cool/job_retraining,github,True,job_retraining,polygraph-cool,Polygraph,31.0,iblind
-https://github.com/polygraph-cool/florida-sandbox,github,True,florida-sandbox,polygraph-cool,Polygraph,9.0,bzjin
-https://github.com/polygraph-cool/how-to-implement-scrollytelling,github,False,how-to-implement-scrollytelling,polygraph-cool,Polygraph,,
-https://github.com/polygraph-cool/comics,github,False,comics,polygraph-cool,Polygraph,,
-https://github.com/polygraph-cool/smoothing_tutorial,github,False,smoothing_tutorial,polygraph-cool,Polygraph,,
-https://github.com/polygraph-cool/templates,github,False,templates,polygraph-cool,Polygraph,,
-https://github.com/polygraph-cool/best-sellers,github,False,best-sellers,polygraph-cool,Polygraph,,
-https://github.com/polygraph-cool/animals_live_stream,github,False,animals_live_stream,polygraph-cool,Polygraph,,
-https://github.com/polygraph-cool/intro_tut_2,github,False,intro_tut_2,polygraph-cool,Polygraph,,
-https://github.com/The-Politico/politico-2018-district-similarity-maps,github,False,politico-2018-district-similarity-maps,The-Politico,Politico,,
-https://github.com/The-Politico/data_news-deserts-analysis,github,True,data_news-deserts-analysis,The-Politico,Politico,10.0,shawnmusgrave
-https://github.com/The-Politico/nicar2018_reactive-frameworks,github,False,nicar2018_reactive-frameworks,The-Politico,Politico,,
-https://github.com/The-Politico/django-slackchat-serializer,github,False,django-slackchat-serializer,The-Politico,Politico,,
-https://github.com/The-Politico/The-Politico.github.io,github,False,The-Politico.github.io,The-Politico,Politico,,
-https://github.com/phillymedia/test-branches,github,False,test-branches,phillymedia,phillymedia,,
-https://github.com/phillymedia/tracks19-longform,github,False,tracks19-longform,phillymedia,phillymedia,,
-https://github.com/phillymedia/brooks,github,False,brooks,phillymedia,phillymedia,,
-https://github.com/phillymedia/puerto-rico-presenation,github,False,puerto-rico-presenation,phillymedia,phillymedia,,
-https://github.com/phillymedia/photo-story-generator,github,False,photo-story-generator,phillymedia,phillymedia,,
-https://github.com/phillymedia/iceland,github,False,iceland,phillymedia,phillymedia,,
-https://github.com/phillymedia/pvietnam,github,False,pvietnam,phillymedia,phillymedia,,
-https://github.com/phillymedia/testilying,github,False,testilying,phillymedia,phillymedia,,
-https://github.com/phillymedia/dynamic-list-tool,github,False,dynamic-list-tool,phillymedia,phillymedia,,
-https://github.com/phillymedia/hoops08,github,False,hoops08,phillymedia,phillymedia,,
-https://github.com/phillymedia/speedy-tree,github,False,speedy-tree,phillymedia,phillymedia,,
-https://github.com/phillymedia/tourist-attractions-rating,github,False,tourist-attractions-rating,phillymedia,phillymedia,,
-https://github.com/phillymedia/propublica-oct2018,github,False,propublica-oct2018,phillymedia,phillymedia,,
-https://github.com/phillymedia/sendak-longform,github,False,sendak-longform,phillymedia,phillymedia,,
-https://github.com/phillymedia/lazy-load-converter,github,False,lazy-load-converter,phillymedia,phillymedia,,
-https://github.com/phillymedia/gerry-precinct_index,github,False,gerry-precinct_index,phillymedia,phillymedia,,
-https://github.com/phillymedia/plabor-longform,github,False,plabor-longform,phillymedia,phillymedia,,
-https://github.com/phillymedia/wordsworth,github,False,wordsworth,phillymedia,phillymedia,,
-https://github.com/phillymedia/ddamix,github,False,ddamix,phillymedia,phillymedia,,
-https://github.com/phillymedia/pear-harbor,github,False,pear-harbor,phillymedia,phillymedia,,
-https://github.com/phillymedia/lockhart-project,github,False,lockhart-project,phillymedia,phillymedia,,
-https://github.com/phillymedia/HOPKINS01,github,False,HOPKINS01,phillymedia,phillymedia,,
-https://github.com/phillymedia/plabor05,github,False,plabor05,phillymedia,phillymedia,,
-https://github.com/phillymedia/CUNNINGHAM,github,False,CUNNINGHAM,phillymedia,phillymedia,,
-https://github.com/phillymedia/idd,github,False,idd,phillymedia,phillymedia,,
-https://github.com/phillymedia/toxic-city-2,github,False,toxic-city-2,phillymedia,phillymedia,,
-https://github.com/phillymedia/hakstol-flyers-coach,github,False,hakstol-flyers-coach,phillymedia,phillymedia,,
-https://github.com/phillymedia/fall-arts-guide,github,False,fall-arts-guide,phillymedia,phillymedia,,
-https://github.com/phillymedia/wilmington,github,False,wilmington,phillymedia,phillymedia,,
-https://github.com/phillymedia/multi-page-template,github,False,multi-page-template,phillymedia,phillymedia,,
-https://github.com/PalmBeachPost/SunshineScorecard,github,False,SunshineScorecard,PalmBeachPost,PalmBeachPost,,
-https://github.com/PalmBeachPost/nicar19scraping,github,False,nicar19scraping,PalmBeachPost,PalmBeachPost,,
-https://github.com/theonion/bower-onion-video-ad-server-frontend,github,False,bower-onion-video-ad-server-frontend,theonion,theonion,,
-https://github.com/theonion/bower-videohub-admin-frontend,github,False,bower-videohub-admin-frontend,theonion,theonion,,
-https://github.com/nzzdev/st-methods,github,True,st-methods,nzzdev,Neue Zürcher Zeitung,25.0,mkolly
-https://github.com/nzzdev/st-methods,github,True,st-methods,nzzdev,Neue Zürcher Zeitung,12.0,HalukaMB
-https://github.com/nzzdev/st-methods,github,True,st-methods,nzzdev,Neue Zürcher Zeitung,2.0,davidbauer
-https://github.com/nzzdev/st-methods,github,True,st-methods,nzzdev,Neue Zürcher Zeitung,1.0,benib
-https://github.com/nzzdev/Q-election-votes,github,False,Q-election-votes,nzzdev,Neue Zürcher Zeitung,,
-https://github.com/nprapps/trump-tweet-analysis,github,True,trump-tweet-analysis,nprapps,National Public Radio,25.0,eads
-https://github.com/nprapps/trump-tweet-analysis,github,True,trump-tweet-analysis,nprapps,National Public Radio,14.0,alykat
-https://github.com/nprapps/trump-tweet-analysis,github,True,trump-tweet-analysis,nprapps,National Public Radio,8.0,brmayes
-https://github.com/nprapps/trump-tweet-analysis,github,True,trump-tweet-analysis,nprapps,National Public Radio,2.0,ghing
-https://github.com/nprapps/trump-tweet-analysis,github,True,trump-tweet-analysis,nprapps,National Public Radio,1.0,jjelosua
-https://github.com/nprapps/school-choice,github,True,school-choice,nprapps,National Public Radio,7.0,brmayes
-https://github.com/nprapps/school-choice,github,True,school-choice,nprapps,National Public Radio,4.0,alykat
-https://github.com/nprapps/mass-shootings,github,True,mass-shootings,nprapps,National Public Radio,6.0,brmayes
-https://github.com/nprapps/federal-aid-data,github,True,federal-aid-data,nprapps,National Public Radio,13.0,brmayes
-https://github.com/nprapps/va-data-analysis,github,True,va-data-analysis,nprapps,National Public Radio,31.0,Bisaha
-https://github.com/nprapps/va-data-analysis,github,True,va-data-analysis,nprapps,National Public Radio,2.0,eads
-https://github.com/nprapps/global-immunization,github,True,global-immunization,nprapps,National Public Radio,12.0,brmayes
-https://github.com/nprapps/global-immunization,github,True,global-immunization,nprapps,National Public Radio,8.0,LeanneAbraham
-https://github.com/nprapps/nprapps.github.com,github,False,nprapps.github.com,nprapps,National Public Radio,,
-https://github.com/nprapps/copydoc,github,False,copydoc,nprapps,National Public Radio,,
-https://github.com/nprapps/anno-lambda-publish,github,False,anno-lambda-publish,nprapps,National Public Radio,,
-https://github.com/npr/text-only-site,github,False,text-only-site,npr,npr,,
-https://github.com/npr/paste-helper,github,False,paste-helper,npr,npr,,
-https://github.com/TheUpshot/leo-senate-model,github,True,leo-senate-model,TheUpshot,New York Times,4.0,keithw
-https://github.com/TheUpshot/leo-senate-model,github,True,leo-senate-model,TheUpshot,New York Times,3.0,m1arc00
-https://github.com/TheUpshot/leo-senate-model,github,True,leo-senate-model,TheUpshot,New York Times,3.0,joshkatz
-https://github.com/TheUpshot/leo-senate-model,github,True,leo-senate-model,TheUpshot,New York Times,1.0,dannguyen
-https://github.com/TheUpshot/2004-2012-presidential-election-model,github,False,2004-2012-presidential-election-model,TheUpshot,New York Times,,
-https://github.com/TheUpshot/prison-admissions,github,False,prison-admissions,TheUpshot,New York Times,,
-https://github.com/TheUpshot/2016-upshot-siena-polls,github,False,2016-upshot-siena-polls,TheUpshot,New York Times,,
-https://github.com/TheUpshot/statement,github,False,statement,TheUpshot,New York Times,,
-https://github.com/nytlabs/text-experiments,github,False,text-experiments,nytlabs,nytlabs,,
-https://github.com/newsdev/archieml.org,github,False,archieml.org,newsdev,newsdev,,
-https://github.com/newsdev/int-newsapps-template,github,False,int-newsapps-template,newsdev,newsdev,,
-https://github.com/newsdev/ap-deja-vu,github,False,ap-deja-vu,newsdev,newsdev,,
-https://github.com/newsdev/elex-admin,github,False,elex-admin,newsdev,newsdev,,
-https://github.com/newsdev/nobake,github,False,nobake,newsdev,newsdev,,
-https://github.com/nytimes/gunsales,github,True,gunsales,nytimes,New York Times,78.0,eddelbuettel
-https://github.com/nytimes/gunsales,github,True,gunsales,nytimes,New York Times,15.0,gka
-https://github.com/nytimes/gunsales,github,True,gunsales,nytimes,New York Times,2.0,joshkeller
-https://github.com/nydailynews/russia-connex,github,False,russia-connex,nydailynews,nydailynews,,
-https://github.com/nydailynews/longform,github,False,longform,nydailynews,nydailynews,,
-https://github.com/nydailynews/shootings-since-sandy-hook,github,False,shootings-since-sandy-hook,nydailynews,nydailynews,,
-https://github.com/nydailynews/school-shootings-map-timeline,github,False,school-shootings-map-timeline,nydailynews,nydailynews,,
-https://github.com/nydailynews/interactive-hub,github,False,interactive-hub,nydailynews,nydailynews,,
-https://github.com/nydailynews/landing-page,github,False,landing-page,nydailynews,nydailynews,,
-https://github.com/nydailynews/trump-annotate,github,False,trump-annotate,nydailynews,nydailynews,,
-https://github.com/nydailynews/extreme-weather,github,False,extreme-weather,nydailynews,nydailynews,,
-https://github.com/nydailynews/central-park-five-documents,github,False,central-park-five-documents,nydailynews,nydailynews,,
-https://github.com/nydailynews/pick-some-places,github,False,pick-some-places,nydailynews,nydailynews,,
-https://github.com/nydailynews/hurricane-sandy-compare,github,False,hurricane-sandy-compare,nydailynews,nydailynews,,
-https://github.com/nydailynews/mets-misery-index,github,False,mets-misery-index,nydailynews,nydailynews,,
-https://github.com/nydailynews/tv-flowchart,github,False,tv-flowchart,nydailynews,nydailynews,,
-https://github.com/nydailynews/write-a-story,github,False,write-a-story,nydailynews,nydailynews,,
-https://github.com/nydailynews/rate-it,github,False,rate-it,nydailynews,nydailynews,,
-https://github.com/nydailynews/funding-chart,github,False,funding-chart,nydailynews,nydailynews,,
-https://github.com/nydailynews/superbowl,github,False,superbowl,nydailynews,nydailynews,,
-https://github.com/nydailynews/elevator-mta,github,False,elevator-mta,nydailynews,nydailynews,,
-https://github.com/nydailynews/oratv-video,github,False,oratv-video,nydailynews,nydailynews,,
-https://github.com/nydailynews/that-was-then,github,False,that-was-then,nydailynews,nydailynews,,
-https://github.com/nydailynews/homeless-311-homeless-census,github,False,homeless-311-homeless-census,nydailynews,nydailynews,,
-https://github.com/nydailynews/mlb-overturned-calls,github,False,mlb-overturned-calls,nydailynews,nydailynews,,
-https://github.com/nydailynews/spending-chart,github,False,spending-chart,nydailynews,nydailynews,,
-https://github.com/nydailynews/vegas-victims,github,False,vegas-victims,nydailynews,nydailynews,,
-https://github.com/nydailynews/style,github,False,style,nydailynews,nydailynews,,
-https://github.com/nydailynews/custom-404,github,False,custom-404,nydailynews,nydailynews,,
-https://github.com/nydailynews/how-long,github,False,how-long,nydailynews,nydailynews,,
-https://github.com/nydailynews/nyc-statue-map,github,False,nyc-statue-map,nydailynews,nydailynews,,
-https://github.com/nydailynews/nyc-middle-schools-shsat,github,False,nyc-middle-schools-shsat,nydailynews,nydailynews,,
-https://github.com/nbcnews/octopus-vr,github,False,octopus-vr,nbcnews,nbcnews,,
-https://github.com/nbcnews/uncover,github,False,uncover,nbcnews,nbcnews,,
-https://github.com/motherjones/r-scatterplot,github,False,r-scatterplot,motherjones,motherjones,,
-https://github.com/mirror-media/infographics,github,False,infographics,mirror-media,mirror-media,,
-https://github.com/MinnPost/minnpost.github.io,github,False,minnpost.github.io,MinnPost,MinnPost,,
-https://github.com/MinnPost/minnpost-temperature-record-breaking-2012,github,False,minnpost-temperature-record-breaking-2012,MinnPost,MinnPost,,
-https://github.com/MinnPost/minnpost-districts-to-watch-2016,github,False,minnpost-districts-to-watch-2016,MinnPost,MinnPost,,
-https://github.com/MinnPost/minnpost-email-templates,github,False,minnpost-email-templates,MinnPost,MinnPost,,
-https://github.com/MinnPost/minnpost-2015-eoy-report,github,False,minnpost-2015-eoy-report,MinnPost,MinnPost,,
-https://github.com/MinnPost/minnpost-givalike-pages,github,False,minnpost-givalike-pages,MinnPost,MinnPost,,
-https://github.com/striblab/201901-achievementgap,github,True,201901-achievementgap,striblab,Star Tribune,13.0,mjwebster
-https://github.com/striblab/201901-hospitalquality,github,True,201901-hospitalquality,striblab,Star Tribune,2.0,mjwebster
-https://github.com/striblab/mn-elections,github,False,mn-elections,striblab,Star Tribune,,
-https://github.com/striblab/20180815-primary_aftermath,github,False,20180815-primary_aftermath,striblab,Star Tribune,,
-https://github.com/striblab/20171012-wetlands,github,False,20171012-wetlands,striblab,Star Tribune,,
-https://github.com/striblab/20160414-prisons,github,False,20160414-prisons,striblab,Star Tribune,,
-https://github.com/striblab/20160623-latino,github,False,20160623-latino,striblab,Star Tribune,,
-https://github.com/striblab/20160729-tests,github,False,20160729-tests,striblab,Star Tribune,,
-https://github.com/striblab/20160824-fair,github,False,20160824-fair,striblab,Star Tribune,,
-https://github.com/striblab/20161220-workerdeaths,github,False,20161220-workerdeaths,striblab,Star Tribune,,
-https://github.com/striblab/20160527-twins,github,False,20160527-twins,striblab,Star Tribune,,
-https://github.com/striblab/20160919-cops,github,False,20160919-cops,striblab,Star Tribune,,
-https://github.com/striblab/20161219-wastewater,github,False,20161219-wastewater,striblab,Star Tribune,,
-https://github.com/striblab/strib-locator,github,False,strib-locator,striblab,Star Tribune,,
-https://github.com/striblab/20140325-walk,github,False,20140325-walk,striblab,Star Tribune,,
-https://github.com/striblab/20170322-foreclosures,github,False,20170322-foreclosures,striblab,Star Tribune,,
-https://github.com/striblab/20160818-libraries,github,False,20160818-libraries,striblab,Star Tribune,,
-https://github.com/striblab/20160906-language,github,False,20160906-language,striblab,Star Tribune,,
-https://github.com/striblab/20190528-names19,github,False,20190528-names19,striblab,Star Tribune,,
-https://github.com/striblab/20170601-boating,github,False,20170601-boating,striblab,Star Tribune,,
-https://github.com/striblab/20170808-college,github,False,20170808-college,striblab,Star Tribune,,
-https://github.com/striblab/20160317-irish,github,False,20160317-irish,striblab,Star Tribune,,
-https://github.com/striblab/20161013-winter,github,False,20161013-winter,striblab,Star Tribune,,
-https://github.com/striblab/20160329-golf,github,False,20160329-golf,striblab,Star Tribune,,
-https://github.com/striblab/20160408-landlords,github,False,20160408-landlords,striblab,Star Tribune,,
-https://github.com/striblab/20130101-robberies,github,False,20130101-robberies,striblab,Star Tribune,,
-https://github.com/striblab/20180111-vikings,github,False,20180111-vikings,striblab,Star Tribune,,
-https://github.com/striblab/20190703-boundary-waters,github,False,20190703-boundary-waters,striblab,Star Tribune,,
-https://github.com/striblab/20160714-mosquitoes,github,False,20160714-mosquitoes,striblab,Star Tribune,,
-https://github.com/striblab/20170614-fishing_licenses,github,False,20170614-fishing_licenses,striblab,Star Tribune,,
-https://github.com/striblab/20170504-counterjs,github,False,20170504-counterjs,striblab,Star Tribune,,
-https://github.com/striblab/2018-mnpoll-sept,github,False,2018-mnpoll-sept,striblab,Star Tribune,,
-https://github.com/datahub/MKE-Offender-Search,github,False,MKE-Offender-Search,datahub,datahub,,
-https://github.com/datahub/ggmjs,github,False,ggmjs,datahub,datahub,,
-https://github.com/datahub/grappelli-nested-inlines,github,False,grappelli-nested-inlines,datahub,datahub,,
-https://github.com/datahub/xmas-art-contest,github,False,xmas-art-contest,datahub,datahub,,
-https://github.com/datahub/jsonline-footer,github,False,jsonline-footer,datahub,datahub,,
-https://github.com/datahub/mapgen,github,False,mapgen,datahub,datahub,,
-https://github.com/datahub/pension-shortfall-map,github,False,pension-shortfall-map,datahub,datahub,,
-https://github.com/datahub/traffic-frontend,github,False,traffic-frontend,datahub,datahub,,
-https://github.com/datahub/wisc-exit-polls,github,False,wisc-exit-polls,datahub,datahub,,
-https://github.com/micnews/distro,github,False,distro,micnews,micnews,,
-https://github.com/micnews/query-dom,github,False,query-dom,micnews,micnews,,
-https://github.com/MiamiHerald/elex2016homepage,github,False,elex2016homepage,MiamiHerald,MiamiHerald,,
-https://github.com/mcclatchy/volu-vid,github,False,volu-vid,mcclatchy,mcclatchy,,
-https://github.com/mcclatchy/honeycomb,github,False,honeycomb,mcclatchy,mcclatchy,,
-https://github.com/mcclatchy/influencers,github,False,influencers,mcclatchy,mcclatchy,,
-https://github.com/mcclatchy/WebXR-Hello-World,github,False,WebXR-Hello-World,mcclatchy,mcclatchy,,
-https://github.com/mcclatchy/lipsum,github,False,lipsum,mcclatchy,mcclatchy,,
-https://github.com/mcclatchy/saratoga,github,False,saratoga,mcclatchy,mcclatchy,,
-https://github.com/mcclatchy/derby-flipbook,github,False,derby-flipbook,mcclatchy,mcclatchy,,
-https://github.com/mcclatchy/lexington,github,False,lexington,mcclatchy,mcclatchy,,
-https://github.com/mcclatchy/design,github,False,design,mcclatchy,mcclatchy,,
-https://github.com/mcclatchy/fort-worth,github,False,fort-worth,mcclatchy,mcclatchy,,
-https://github.com/mcclatchy/charlotte-prisons,github,False,charlotte-prisons,mcclatchy,mcclatchy,,
-https://github.com/mcclatchy/belleville,github,False,belleville,mcclatchy,mcclatchy,,
-https://github.com/themarshallproject/california_crime_rates,github,True,california_crime_rates,themarshallproject,Los Angeles Times,1.0,manuelvilla1859
-https://github.com/themarshallproject/hall-of-justice,github,False,hall-of-justice,themarshallproject,Los Angeles Times,,
-https://github.com/courierjournal/clark-county-school-vote-map,github,False,clark-county-school-vote-map,courierjournal,courierjournal,,
-https://github.com/courierjournal/presto-embed-tool,github,False,presto-embed-tool,courierjournal,courierjournal,,
-https://github.com/courierjournal/confederate-statue-map,github,False,confederate-statue-map,courierjournal,courierjournal,,
-https://github.com/datadesk/geopandas-spatial-join-example,github,False,geopandas-spatial-join-example,datadesk,Los Angeles Times,,
-https://github.com/datadesk/python-road-clipping-example,github,False,python-road-clipping-example,datadesk,Los Angeles Times,,
-https://github.com/datadesk/pandas-squarify-example,github,False,pandas-squarify-example,datadesk,Los Angeles Times,,
-https://github.com/datadesk/python-censusbatchgeocoder-examples,github,False,python-censusbatchgeocoder-examples,datadesk,Los Angeles Times,,
-https://github.com/datadesk/geopandas-intersection-area-example,github,False,geopandas-intersection-area-example,datadesk,Los Angeles Times,,
-https://github.com/datadesk/census-data-aggregator,github,False,census-data-aggregator,datadesk,Los Angeles Times,,
-https://github.com/datadesk/print-map-maker,github,False,print-map-maker,datadesk,Los Angeles Times,,
-https://github.com/datadesk/django-shp2svg,github,False,django-shp2svg,datadesk,Los Angeles Times,,
-https://github.com/datadesk/lat-soundsystem,github,False,lat-soundsystem,datadesk,Los Angeles Times,,
-https://github.com/datadesk/django-la-city-campaign-finance,github,False,django-la-city-campaign-finance,datadesk,Los Angeles Times,,
-https://github.com/TheLens/realestate,github,False,realestate,TheLens,TheLens,,
-https://github.com/TheLens/calculators,github,False,calculators,TheLens,TheLens,,
-https://github.com/labsletemps/20ans,github,False,20ans,labsletemps,labsletemps,,
-https://github.com/laopinion/emailMasivo,github,False,emailMasivo,laopinion,laopinion,,
-https://github.com/laopinion/emailMasivoDeleitese,github,False,emailMasivoDeleitese,laopinion,laopinion,,
-https://github.com/laopinion/mundial,github,False,mundial,laopinion,laopinion,,
-https://github.com/laopinion/emailMasivoFelicitaciones,github,False,emailMasivoFelicitaciones,laopinion,laopinion,,
-https://github.com/laopinion/emailMasivoBienvenido,github,False,emailMasivoBienvenido,laopinion,laopinion,,
-https://github.com/lanacioncom/paso_paso_template,github,False,paso_paso_template,lanacioncom,lanacioncom,,
-https://github.com/lanacioncom/ddjj_front_rails_lanacion,github,False,ddjj_front_rails_lanacion,lanacioncom,lanacioncom,,
-https://github.com/SCPR/static-projects,github,False,static-projects,SCPR,SCPR,,
-https://github.com/SCPR/scpr-email-newsletters,github,False,scpr-email-newsletters,SCPR,SCPR,,
-https://github.com/SCPR/ois,github,False,ois,SCPR,SCPR,,
-https://github.com/SCPR/hsp,github,False,hsp,SCPR,SCPR,,
-https://github.com/SCPR/hackday-news_quiz,github,False,hackday-news_quiz,SCPR,SCPR,,
-https://github.com/SCPR/polling-booth,github,False,polling-booth,SCPR,SCPR,,
-https://github.com/SCPR/scpr-longreads,github,False,scpr-longreads,SCPR,SCPR,,
-https://github.com/SCPR/calif-earthquakes,github,False,calif-earthquakes,SCPR,SCPR,,
-https://github.com/SCPR/ois-transcribable,github,False,ois-transcribable,SCPR,SCPR,,
-https://github.com/SCPR/training-git,github,False,training-git,SCPR,SCPR,,
-https://github.com/InsideEnergy/Data-for-stories,github,False,Data-for-stories,InsideEnergy,InsideEnergy,,
-https://github.com/InsideEnergy/TX-flsa-lawsuits,github,False,TX-flsa-lawsuits,InsideEnergy,InsideEnergy,,
-https://github.com/initiumlab/xinwenlianbo_scrape,github,False,xinwenlianbo_scrape,initiumlab,initiumlab,,
-https://github.com/initiumlab/data-urchin,github,False,data-urchin,initiumlab,initiumlab,,
-https://github.com/initiumlab/hk-legco,github,False,hk-legco,initiumlab,initiumlab,,
-https://github.com/initiumlab/initiumlab.github.io,github,False,initiumlab.github.io,initiumlab,initiumlab,,
-https://github.com/initiumlab/court-simulation,github,False,court-simulation,initiumlab,initiumlab,,
-https://github.com/initiumlab/audification_experiment,github,False,audification_experiment,initiumlab,initiumlab,,
-https://github.com/initiumlab/investigation-simulation,github,False,investigation-simulation,initiumlab,initiumlab,,
-https://github.com/initiumlab/red-pocket,github,False,red-pocket,initiumlab,initiumlab,,
-https://github.com/initiumlab/co2-calculator,github,False,co2-calculator,initiumlab,initiumlab,,
-https://github.com/initiumlab/macau_gambling_report,github,False,macau_gambling_report,initiumlab,initiumlab,,
-https://github.com/initiumlab/deployment-test,github,False,deployment-test,initiumlab,initiumlab,,
-https://github.com/initiumlab/playground,github,False,playground,initiumlab,initiumlab,,
-https://github.com/initiumlab/sports-survey,github,False,sports-survey,initiumlab,initiumlab,,
-https://github.com/initiumlab/react_fun,github,False,react_fun,initiumlab,initiumlab,,
-https://github.com/initiumlab/legco-election-2016,github,False,legco-election-2016,initiumlab,initiumlab,,
-https://github.com/ICIJ/icij-discourse-projects-banner,github,False,icij-discourse-projects-banner,ICIJ,ICIJ,,
-https://github.com/ICIJ/icij-discourse-projects-addon,github,False,icij-discourse-projects-addon,ICIJ,ICIJ,,
-https://github.com/huffpostdata/primary-dropout-votes,github,False,primary-dropout-votes,huffpostdata,huffpostdata,,
-https://github.com/huffpostdata/pollster-models,github,False,pollster-models,huffpostdata,huffpostdata,,
-https://github.com/huffpostdata/google-docs-markup,github,False,google-docs-markup,huffpostdata,huffpostdata,,
-https://github.com/huffpostdata/csv-to-map,github,False,csv-to-map,huffpostdata,huffpostdata,,
-https://github.com/huffpostdata/texas-votes-by-precinct,github,False,texas-votes-by-precinct,huffpostdata,huffpostdata,,
-https://github.com/Houston-Chronicle/2018-voter-guide,github,False,2018-voter-guide,Houston-Chronicle,Houston-Chronicle,,
-https://github.com/Houston-Chronicle/top100,github,False,top100,Houston-Chronicle,Houston-Chronicle,,
-https://github.com/Houston-Chronicle/2018-local-results,github,False,2018-local-results,Houston-Chronicle,Houston-Chronicle,,
-https://github.com/Houston-Chronicle/2018-regional-ballot,github,False,2018-regional-ballot,Houston-Chronicle,Houston-Chronicle,,
-https://github.com/Houston-Chronicle/flood-bonds-2018,github,False,flood-bonds-2018,Houston-Chronicle,Houston-Chronicle,,
-https://github.com/HindustanTimesLabs/mplad-spending,github,False,mplad-spending,HindustanTimesLabs,HindustanTimesLabs,,
-https://github.com/HindustanTimesLabs/mps-attendance-education-crime,github,False,mps-attendance-education-crime,HindustanTimesLabs,HindustanTimesLabs,,
-https://github.com/HindustanTimesLabs/were-hiring,github,False,were-hiring,HindustanTimesLabs,HindustanTimesLabs,,
-https://github.com/HindustanTimesLabs/ipl-ranks-history,github,False,ipl-ranks-history,HindustanTimesLabs,HindustanTimesLabs,,
-https://github.com/HindustanTimesLabs/data-fellowship-2018,github,False,data-fellowship-2018,HindustanTimesLabs,HindustanTimesLabs,,
-https://github.com/HindustanTimesLabs/communal-mlas-list,github,False,communal-mlas-list,HindustanTimesLabs,HindustanTimesLabs,,
-https://github.com/HindustanTimesLabs/evil-twitter-feed,github,False,evil-twitter-feed,HindustanTimesLabs,HindustanTimesLabs,,
-https://github.com/HindustanTimesLabs/ms-subbulakshmi-carnatic-rockstar,github,False,ms-subbulakshmi-carnatic-rockstar,HindustanTimesLabs,HindustanTimesLabs,,
-https://github.com/HindustanTimesLabs/brahmaputra-floods,github,False,brahmaputra-floods,HindustanTimesLabs,HindustanTimesLabs,,
-https://github.com/HindustanTimesLabs/budget-schemes-2018,github,False,budget-schemes-2018,HindustanTimesLabs,HindustanTimesLabs,,
-https://github.com/HindustanTimesLabs/padma-stream-graph,github,False,padma-stream-graph,HindustanTimesLabs,HindustanTimesLabs,,
-https://github.com/HindustanTimesLabs/us-elections-indian-americans,github,False,us-elections-indian-americans,HindustanTimesLabs,HindustanTimesLabs,,
-https://github.com/HindustanTimesLabs/women-candidates-himachal,github,False,women-candidates-himachal,HindustanTimesLabs,HindustanTimesLabs,,
-https://github.com/HindustanTimesLabs/union-budget-2016,github,False,union-budget-2016,HindustanTimesLabs,HindustanTimesLabs,,
-https://github.com/HindustanTimesLabs/chennai-oil-spill,github,False,chennai-oil-spill,HindustanTimesLabs,HindustanTimesLabs,,
-https://github.com/HindustanTimesLabs/uri-in-context,github,False,uri-in-context,HindustanTimesLabs,HindustanTimesLabs,,
-https://github.com/HearstCorp/jiracards,github,False,jiracards,HearstCorp,HearstCorp,,
-https://github.com/hartfordcourant/ctnow_blarkers,github,False,ctnow_blarkers,hartfordcourant,hartfordcourant,,
-https://github.com/gdnmobilelab/inline-video-player,github,False,inline-video-player,gdnmobilelab,gdnmobilelab,,
-https://github.com/gdnmobilelab/smarticles-preview-tool,github,False,smarticles-preview-tool,gdnmobilelab,gdnmobilelab,,
-https://github.com/guardian/guardian.github.com,github,False,guardian.github.com,guardian,guardian,,
-https://github.com/guardian/guss-webfonts,github,False,guss-webfonts,guardian,guardian,,
-https://github.com/guardian/element-radiator,github,False,element-radiator,guardian,guardian,,
-https://github.com/guardian/pasteup-palette,github,False,pasteup-palette,guardian,guardian,,
-https://github.com/guardian/developers-site,github,False,developers-site,guardian,guardian,,
-https://github.com/guardian/interactive-es6,github,False,interactive-es6,guardian,guardian,,
-https://github.com/guardian/element-aws-cloudwatch,github,False,element-aws-cloudwatch,guardian,guardian,,
-https://github.com/guardian/commercial-templates,github,False,commercial-templates,guardian,guardian,,
-https://github.com/guardian/editorial-viewer,github,False,editorial-viewer,guardian,guardian,,
-https://github.com/guardian/commercial-responsive-ads,github,False,commercial-responsive-ads,guardian,guardian,,
-https://github.com/guardian/interactive-atom-template,github,False,interactive-atom-template,guardian,guardian,,
-https://github.com/guardian/guardian-go-android,github,False,guardian-go-android,guardian,guardian,,
-https://github.com/guardian/interactive-oscars-ratings,github,False,interactive-oscars-ratings,guardian,guardian,,
-https://github.com/guardian/interactive-spanish-elections-results,github,False,interactive-spanish-elections-results,guardian,guardian,,
-https://github.com/guardian/bubblechart_template,github,False,bubblechart_template,guardian,guardian,,
-https://github.com/guardian/choropleth_map_maker,github,False,choropleth_map_maker,guardian,guardian,,
-https://github.com/guardian/interactive-thematic-mapmaker,github,False,interactive-thematic-mapmaker,guardian,guardian,,
-https://github.com/guardian/ge2015-results-interactive,github,False,ge2015-results-interactive,guardian,guardian,,
-https://github.com/guardian/gu-email-renderer,github,False,gu-email-renderer,guardian,guardian,,
-https://github.com/guardian/interactive-independence-ads,github,False,interactive-independence-ads,guardian,guardian,,
-https://github.com/guardian/mobile-apps-landing-page,github,False,mobile-apps-landing-page,guardian,guardian,,
-https://github.com/guardian/interactive-now-and-then-embed,github,False,interactive-now-and-then-embed,guardian,guardian,,
-https://github.com/guardian/trump-tracker,github,False,trump-tracker,guardian,guardian,,
-https://github.com/guardian/interactive-previews,github,False,interactive-previews,guardian,guardian,,
-https://github.com/guardian/interactive-email-signups,github,False,interactive-email-signups,guardian,guardian,,
-https://github.com/guardian/support-shared-tokens,github,False,support-shared-tokens,guardian,guardian,,
-https://github.com/guardian/interactive-pollution-worldwide,github,False,interactive-pollution-worldwide,guardian,guardian,,
-https://github.com/guardian/transfer-window-s2016,github,False,transfer-window-s2016,guardian,guardian,,
-https://github.com/guardian/interactive-cif-wellness-table,github,False,interactive-cif-wellness-table,guardian,guardian,,
-https://github.com/GMG-Special-Projects-Desk/pymk-inspector,github,False,pymk-inspector,GMG-Special-Projects-Desk,GMG-Special-Projects-Desk,,
-https://github.com/GMG-Special-Projects-Desk/fares.jalopnik,github,False,fares.jalopnik,GMG-Special-Projects-Desk,GMG-Special-Projects-Desk,,
-https://github.com/gawkermedia/table,github,False,table,gawkermedia,gawkermedia,,
-https://github.com/GannettDigital/GannettAdKit,github,False,GannettAdKit,GannettDigital,GannettDigital,,
-https://github.com/GannettDigital/LIDtool,github,False,LIDtool,GannettDigital,GannettDigital,,
-https://github.com/GannettDigital/spark-sign-up,github,False,spark-sign-up,GannettDigital,GannettDigital,,
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,412.0,dmil
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,114.0,andrewflowers
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,81.0,ritchieking
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,73.0,jayb
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,54.0,atmccann
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,32.0,juruwolfe
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,21.0,BenCasselman
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,21.0,reubenfb
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,15.0,NeilPaine538
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,12.0,bycoffe
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,12.0,gwezerek
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,7.0,MonaChalabi
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,6.0,natesilver538
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,6.0,ellakoeze
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,5.0,ascheink
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,4.0,rhiever
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,3.0,forecasterenten
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,3.0,rudeboybert
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,2.0,adamobeng
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,2.0,frankbi
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,2.0,peterthehan
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,2.0,charliesmart
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,2.0,stephenturner
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,2.0,ppaulojr
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,1.0,adamgibbons
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,1.0,AlJohri
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,1.0,annettechoi
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,1.0,fhoffa
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,1.0,karasinski
-https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,1.0,lauraalkhoury
-https://github.com/fivethirtyeight/guns-data,github,False,guns-data,fivethirtyeight,FiveThirtyEight,,
-https://github.com/fivethirtyeight/d3-pre,github,False,d3-pre,fivethirtyeight,FiveThirtyEight,,
-https://github.com/fivethirtyeight/gulp-d3-pre,github,False,gulp-d3-pre,fivethirtyeight,FiveThirtyEight,,
-https://github.com/fivethirtyeight/d3-pre-renderer,github,False,d3-pre-renderer,fivethirtyeight,FiveThirtyEight,,
-https://github.com/ftlabs/text-summarization-experiment,github,False,text-summarization-experiment,ftlabs,ftlabs,,
-https://github.com/ftlabs/fastclick,github,False,fastclick,ftlabs,ftlabs,,
-https://github.com/ftlabs/single-frame-video,github,False,single-frame-video,ftlabs,ftlabs,,
-https://github.com/ftlabs/left,github,False,left,ftlabs,ftlabs,,
-https://github.com/ftlabs/ftlabs.github.io,github,False,ftlabs.github.io,ftlabs,ftlabs,,
-https://github.com/ftlabs/audio-management,github,False,audio-management,ftlabs,ftlabs,,
-https://github.com/ftlabs/correlations-game,github,False,correlations-game,ftlabs,ftlabs,,
-https://github.com/ftlabs/boilerplates,github,False,boilerplates,ftlabs,ftlabs,,
-https://github.com/ftlabs/template-react,github,False,template-react,ftlabs,ftlabs,,
-https://github.com/ftlabs/allowlist-adblocker,github,False,allowlist-adblocker,ftlabs,ftlabs,,
-https://github.com/ftlabs/crosswords,github,False,crosswords,ftlabs,ftlabs,,
-https://github.com/ftc-editorial/china-gdp,github,False,china-gdp,ftc-editorial,ftc-editorial,,
-https://github.com/ftc-editorial/myanmar_land_rush,github,False,myanmar_land_rush,ftc-editorial,ftc-editorial,,
-https://github.com/ftc-editorial/Myanmar,github,False,Myanmar,ftc-editorial,ftc-editorial,,
-https://github.com/ftc-editorial/football,github,False,football,ftc-editorial,ftc-editorial,,
-https://github.com/ftc-editorial/uber,github,False,uber,ftc-editorial,ftc-editorial,,
-https://github.com/ftc-editorial/twn-election2,github,False,twn-election2,ftc-editorial,ftc-editorial,,
-https://github.com/ftc-editorial/data-report,github,False,data-report,ftc-editorial,ftc-editorial,,
-https://github.com/ftc-editorial/income,github,False,income,ftc-editorial,ftc-editorial,,
-https://github.com/ftc-editorial/twn-election,github,False,twn-election,ftc-editorial,ftc-editorial,,
-https://github.com/FTChinese/iPhoneApp,github,False,iPhoneApp,FTChinese,FTChinese,,
-https://github.com/FTChinese/NewFTCApp-iOS,github,False,NewFTCApp-iOS,FTChinese,FTChinese,,
-https://github.com/FTChinese/ad-management,github,False,ad-management,FTChinese,FTChinese,,
-https://github.com/FTChinese/ebook,github,False,ebook,FTChinese,FTChinese,,
-https://github.com/FTChinese/NEXT,github,False,NEXT,FTChinese,FTChinese,,
-https://github.com/FTChinese/FTCAndroid,github,False,FTCAndroid,FTChinese,FTChinese,,
-https://github.com/FTChinese/ftc-android-kotlin,github,False,ftc-android-kotlin,FTChinese,FTChinese,,
-https://github.com/FTChinese/FTCCApp-iOS,github,False,FTCCApp-iOS,FTChinese,FTChinese,,
-https://github.com/FTChinese/webapp-v2,github,False,webapp-v2,FTChinese,FTChinese,,
-https://github.com/FTChinese/AdTemplates,github,False,AdTemplates,FTChinese,FTChinese,,
-https://github.com/FTChinese/ftacademy,github,False,ftacademy,FTChinese,FTChinese,,
-https://github.com/FTChinese/ad-page,github,False,ad-page,FTChinese,FTChinese,,
-https://github.com/FTChinese/ftcwebapp,github,False,ftcwebapp,FTChinese,FTChinese,,
-https://github.com/FTChinese/FTChinese.github.io,github,False,FTChinese.github.io,FTChinese,FTChinese,,
-https://github.com/FTChinese/chart,github,False,chart,FTChinese,FTChinese,,
-https://github.com/FTChinese/ThirdPartyAd,github,False,ThirdPartyAd,FTChinese,FTChinese,,
-https://github.com/FTChinese/webapp,github,False,webapp,FTChinese,FTChinese,,
-https://github.com/FTChinese/ftcpage,github,False,ftcpage,FTChinese,FTChinese,,
-https://github.com/FTChinese/charts,github,False,charts,FTChinese,FTChinese,,
-https://github.com/FTChinese/ftacademy-node,github,False,ftacademy-node,FTChinese,FTChinese,,
-https://github.com/FTChinese/Web-NewFTCiPhone,github,False,Web-NewFTCiPhone,FTChinese,FTChinese,,
-https://github.com/FTChinese/ebook-new,github,False,ebook-new,FTChinese,FTChinese,,
-https://github.com/Financial-Times/data,github,False,data,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/ftRtools,github,False,ftRtools,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/ft-origami,github,False,ft-origami,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/ui-style-guide,github,False,ui-style-guide,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/origami,github,False,origami,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/crm-meme-templates,github,False,crm-meme-templates,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/shorthand-lambda,github,False,shorthand-lambda,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/hackathon-2016-team-elm,github,False,hackathon-2016-team-elm,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/list-concepts-timelines,github,False,list-concepts-timelines,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/author-alerts,github,False,author-alerts,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/n-messaging-client,github,False,n-messaging-client,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/n-internal-tool,github,False,n-internal-tool,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/responsive-image-proxy-helper,github,False,responsive-image-proxy-helper,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/n-invite-colleagues,github,False,n-invite-colleagues,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/alphaville-ui,github,False,alphaville-ui,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/o-timeline,github,False,o-timeline,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/assanka.net,github,False,assanka.net,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/comphubvids,github,False,comphubvids,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/o-tweet,github,False,o-tweet,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/timesheet-bot,github,False,timesheet-bot,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/o-header--theme-ic,github,False,o-header--theme-ic,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/alphaville-footer,github,False,alphaville-footer,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/n-syn-footer,github,False,n-syn-footer,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/o-ft-header,github,False,o-ft-header,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/o-type,github,False,o-type,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/g-ui,github,False,g-ui,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/g-simplequiz,github,False,g-simplequiz,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/o-ft-buttons,github,False,o-ft-buttons,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/o-ft-footer,github,False,o-ft-footer,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/o-business-card,github,False,o-business-card,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/n-syn-header,github,False,n-syn-header,Financial-Times,Financial-Times,,
-https://github.com/Financial-Times/ft-branded-content,github,False,ft-branded-content,Financial-Times,Financial-Times,,
-https://github.com/economist-components/component-win-cover,github,False,component-win-cover,economist-components,economist-components,,
-https://github.com/the-economist-editorial/elections-2015,github,False,elections-2015,the-economist-editorial,The Economist,,
-https://github.com/the-economist-editorial/Property-taxes-2015,github,True,Property-taxes-2015,the-economist-editorial,The Economist,2.0,JamesFransham
-https://github.com/the-economist-editorial/component-silver-editor,github,False,component-silver-editor,the-economist-editorial,The Economist,,
-https://github.com/the-economist-editorial/component-silver-chartmargins,github,False,component-silver-chartmargins,the-economist-editorial,The Economist,,
-https://github.com/the-economist-editorial/component-silver-chartwrapper,github,False,component-silver-chartwrapper,the-economist-editorial,The Economist,,
-https://github.com/the-economist-editorial/component-silver-tab-bar,github,False,component-silver-tab-bar,the-economist-editorial,The Economist,,
-https://github.com/the-economist-editorial/component-slide-cartoon,github,False,component-slide-cartoon,the-economist-editorial,The Economist,,
-https://github.com/the-economist-editorial/component-silver-bullet,github,False,component-silver-bullet,the-economist-editorial,The Economist,,
-https://github.com/EconomistDigitalSolutions/goberry,github,False,goberry,EconomistDigitalSolutions,EconomistDigitalSolutions,,
-https://github.com/economist-data-team/Property-taxes-2015,github,False,Property-taxes-2015,economist-data-team,economist-data-team,,
-https://github.com/dukechronicle/chronjobs,github,False,chronjobs,dukechronicle,dukechronicle,,
-https://github.com/dowjones/dowjones.github.io,github,False,dowjones.github.io,dowjones,dowjones,,
-https://github.com/thunderdome-data/superbowl-ads,github,False,superbowl-ads,thunderdome-data,thunderdome-data,,
-https://github.com/denverpost/mapgame,github,False,mapgame,denverpost,denverpost,,
-https://github.com/denverpost/oil-gas-deaths,github,False,oil-gas-deaths,denverpost,denverpost,,
-https://github.com/denverpost/mailer,github,False,mailer,denverpost,denverpost,,
-https://github.com/denverpost/homicide-report,github,False,homicide-report,denverpost,denverpost,,
-https://github.com/denverpost/stateofhope,github,False,stateofhope,denverpost,denverpost,,
-https://github.com/denverpost/transgender,github,False,transgender,denverpost,denverpost,,
-https://github.com/denverpost/infinite-article,github,False,infinite-article,denverpost,denverpost,,
-https://github.com/denverpost/ryan-johanningmeier,github,False,ryan-johanningmeier,denverpost,denverpost,,
-https://github.com/denverpost/special-reports,github,False,special-reports,denverpost,denverpost,,
-https://github.com/denverpost/roundup,github,False,roundup,denverpost,denverpost,,
-https://github.com/denverpost/long-haul,github,False,long-haul,denverpost,denverpost,,
-https://github.com/denverpost/earning-clock,github,False,earning-clock,denverpost,denverpost,,
-https://github.com/denverpost/widgets,github,False,widgets,denverpost,denverpost,,
-https://github.com/denverpost/killstorm,github,False,killstorm,denverpost,denverpost,,
-https://github.com/denverpost/footer-javascript,github,False,footer-javascript,denverpost,denverpost,,
-https://github.com/denverpost/vendor-nav,github,False,vendor-nav,denverpost,denverpost,,
-https://github.com/denverpost/wordpress-helpers,github,False,wordpress-helpers,denverpost,denverpost,,
-https://github.com/denverpost/veterans,github,False,veterans,denverpost,denverpost,,
-https://github.com/denverpost/juvenile-justice,github,False,juvenile-justice,denverpost,denverpost,,
-https://github.com/denverpost/extras,github,False,extras,denverpost,denverpost,,
-https://github.com/denverpost/cbd-nfl,github,False,cbd-nfl,denverpost,denverpost,,
-https://github.com/denverpost/stat-tracker,github,False,stat-tracker,denverpost,denverpost,,
-https://github.com/denverpost/sports2014,github,False,sports2014,denverpost,denverpost,,
-https://github.com/denverpost/broncos-fans,github,False,broncos-fans,denverpost,denverpost,,
-https://github.com/denverpost/trial-results,github,False,trial-results,denverpost,denverpost,,
-https://github.com/denverpost/sports,github,False,sports,denverpost,denverpost,,
-https://github.com/denverpost/mental-illness,github,False,mental-illness,denverpost,denverpost,,
-https://github.com/denverpost/weather,github,False,weather,denverpost,denverpost,,
-https://github.com/denverpost/nine-innings,github,False,nine-innings,denverpost,denverpost,,
-https://github.com/denverpost/nouner,github,False,nouner,denverpost,denverpost,,
-https://github.com/DallasMorningNews/nicar-d3-2017,github,False,nicar-d3-2017,DallasMorningNews,DallasMorningNews,,
-https://github.com/DallasMorningNews/interactive_buz,github,False,interactive_buz,DallasMorningNews,DallasMorningNews,,
-https://github.com/DallasMorningNews/photoTemplate,github,False,photoTemplate,DallasMorningNews,DallasMorningNews,,
-https://github.com/DallasMorningNews/flask-pullquote,github,False,flask-pullquote,DallasMorningNews,DallasMorningNews,,
-https://github.com/DallasMorningNews/interactive_cowboys-gameday-2016,github,False,interactive_cowboys-gameday-2016,DallasMorningNews,DallasMorningNews,,
-https://github.com/DallasMorningNews/interactive_dixon-circle,github,False,interactive_dixon-circle,DallasMorningNews,DallasMorningNews,,
-https://github.com/DallasMorningNews/interactive_ninos-migrantes,github,False,interactive_ninos-migrantes,DallasMorningNews,DallasMorningNews,,
-https://github.com/DallasMorningNews/interactives_starterkit,github,False,interactives_starterkit,DallasMorningNews,DallasMorningNews,,
-https://github.com/DallasMorningNews/interactive_healthcare-crossroads,github,False,interactive_healthcare-crossroads,DallasMorningNews,DallasMorningNews,,
-https://github.com/DallasMorningNews/interactive_new-moms,github,False,interactive_new-moms,DallasMorningNews,DallasMorningNews,,
-https://github.com/DallasMorningNews/pulitzer,github,False,pulitzer,DallasMorningNews,DallasMorningNews,,
-https://github.com/DallasMorningNews/interactive_concussions,github,False,interactive_concussions,DallasMorningNews,DallasMorningNews,,
-https://github.com/MailOnline/gargamel,github,False,gargamel,MailOnline,MailOnline,,
-https://github.com/MailOnline/msn_feed_samples,github,False,msn_feed_samples,MailOnline,MailOnline,,
-https://github.com/correctiv/eurosfordoctors-dataharvest2017,github,False,eurosfordoctors-dataharvest2017,correctiv,CORRECTIV,,
-https://github.com/correctiv/sealevel-notebook,github,True,sealevel-notebook,correctiv,CORRECTIV,23.0,felixmichel
-https://github.com/correctiv/sealevel-notebook,github,True,sealevel-notebook,correctiv,CORRECTIV,1.0,sjockers
-https://github.com/correctiv/pflege-notebook,github,True,pflege-notebook,correctiv,CORRECTIV,20.0,stefanw
-https://github.com/correctiv/pflege-notebook,github,True,pflege-notebook,correctiv,CORRECTIV,19.0,sandhya-k
-https://github.com/correctiv/awb-notebook,github,False,awb-notebook,correctiv,CORRECTIV,,
-https://github.com/correctiv/tiden-notebook,github,False,tiden-notebook,correctiv,CORRECTIV,,
-https://github.com/correctiv/notebook-moscheen,github,False,notebook-moscheen,correctiv,CORRECTIV,,
-https://github.com/correctiv/sparkassen-notebooks,github,False,sparkassen-notebooks,correctiv,CORRECTIV,,
-https://github.com/correctiv/stickoxide-notebook,github,False,stickoxide-notebook,correctiv,CORRECTIV,,
-https://github.com/correctiv/starkregen-notebook,github,False,starkregen-notebook,correctiv,CORRECTIV,,
-https://github.com/correctiv/crowdnewsroom-backend,github,False,crowdnewsroom-backend,correctiv,CORRECTIV,,
-https://github.com/correctiv/Cryptophant,github,False,Cryptophant,correctiv,CORRECTIV,,
-https://github.com/correctiv/rent-prices-germany,github,False,rent-prices-germany,correctiv,CORRECTIV,,
-https://github.com/correctiv/crowdnewsroom-landingpage,github,False,crowdnewsroom-landingpage,correctiv,CORRECTIV,,
-https://github.com/correctiv/betriebsraete,github,False,betriebsraete,correctiv,CORRECTIV,,
-https://github.com/correctiv/child-labor-fatal-accidents-turkey,github,False,child-labor-fatal-accidents-turkey,correctiv,CORRECTIV,,
-https://github.com/correctiv/correctiv-gauges,github,False,correctiv-gauges,correctiv,CORRECTIV,,
-https://github.com/correctiv/hiddenfleet-map,github,False,hiddenfleet-map,correctiv,CORRECTIV,,
-https://github.com/correctiv/ppp-map,github,False,ppp-map,correctiv,CORRECTIV,,
-https://github.com/correctiv/russlandhaus,github,False,russlandhaus,correctiv,CORRECTIV,,
-https://github.com/correctiv/viz-simple-startkit,github,False,viz-simple-startkit,correctiv,CORRECTIV,,
-https://github.com/correctiv/polizeiaussendungen-sorted,github,False,polizeiaussendungen-sorted,correctiv,CORRECTIV,,
-https://github.com/correctiv/correctiv.github.io,github,False,correctiv.github.io,correctiv,CORRECTIV,,
-https://github.com/correctiv/mafrica-visualisations,github,False,mafrica-visualisations,correctiv,CORRECTIV,,
-https://github.com/correctiv/syria-aid,github,False,syria-aid,correctiv,CORRECTIV,,
-https://github.com/correctiv/sparkassen-maps,github,False,sparkassen-maps,correctiv,CORRECTIV,,
-https://github.com/correctiv/correctiv-ruhr-maps,github,False,correctiv-ruhr-maps,correctiv,CORRECTIV,,
-https://github.com/correctiv/superbugs-map,github,False,superbugs-map,correctiv,CORRECTIV,,
-https://github.com/correctiv/correctiv-maps-boilerplate,github,False,correctiv-maps-boilerplate,correctiv,CORRECTIV,,
-https://github.com/civio/quienmanda,github,False,quienmanda,civio,civio,,
-https://github.com/civio/quiencobralaobra,github,False,quiencobralaobra,civio,civio,,
-https://github.com/civio/presupuesto-pge,github,False,presupuesto-pge,civio,civio,,
-https://github.com/civio/medicamentalia,github,False,medicamentalia,civio,civio,,
-https://github.com/civio/presupuesto-navarra,github,False,presupuesto-navarra,civio,civio,,
-https://github.com/civio/civio-espanopoly,github,False,civio-espanopoly,civio,civio,,
-https://github.com/civio/presupuesto-arona,github,False,presupuesto-arona,civio,civio,,
-https://github.com/civio/civio-informe-2016,github,False,civio-informe-2016,civio,civio,,
-https://github.com/civio/presupuesto-castellon,github,False,presupuesto-castellon,civio,civio,,
-https://github.com/civio/civio-informe-2014,github,False,civio-informe-2014,civio,civio,,
-https://github.com/civio/presupuesto-castillalamancha,github,False,presupuesto-castillalamancha,civio,civio,,
-https://github.com/civio/presupuesto-canarias,github,False,presupuesto-canarias,civio,civio,,
-https://github.com/civio/presupuesto-madrid,github,False,presupuesto-madrid,civio,civio,,
-https://github.com/civio/civio-informe-2015,github,False,civio-informe-2015,civio,civio,,
-https://github.com/civio/presupuesto-barcelona,github,False,presupuesto-barcelona,civio,civio,,
-https://github.com/civio/presupuesto-polinya,github,False,presupuesto-polinya,civio,civio,,
-https://github.com/chrondata/chrondata.github.io,github,False,chrondata.github.io,chrondata,chrondata,,
-https://github.com/newsapps/public-notebooks,github,True,public-notebooks,newsapps,Chicago Tribune,17.0,ghing
-https://github.com/newsapps/public-notebooks,github,True,public-notebooks,newsapps,Chicago Tribune,13.0,aepton
-https://github.com/newsapps/public-notebooks,github,True,public-notebooks,newsapps,Chicago Tribune,1.0,kcecireyes
-https://github.com/newsapps/ipra_portal_scraper,github,False,ipra_portal_scraper,newsapps,Chicago Tribune,,
-https://github.com/newsapps/python-chicago-elections,github,False,python-chicago-elections,newsapps,Chicago Tribune,,
-https://github.com/thechicagoreporter/ucpd_scraper,github,False,ucpd_scraper,thechicagoreporter,thechicagoreporter,,
-https://github.com/thechicagoreporter/schoolmap,github,False,schoolmap,thechicagoreporter,thechicagoreporter,,
-https://github.com/postandcourier/domestic-violence,github,False,domestic-violence,postandcourier,postandcourier,,
-https://github.com/postandcourier/infant-mortality,github,False,infant-mortality,postandcourier,postandcourier,,
-https://github.com/postandcourier/florence-shooting-map,github,False,florence-shooting-map,postandcourier,postandcourier,,
-https://github.com/PublicI/employment-discrimination,github,True,employment-discrimination,PublicI,Center for Public Integrity,53.0,JoeYerardi
-https://github.com/PublicI/employment-discrimination,github,True,employment-discrimination,PublicI,Center for Public Integrity,1.0,pratheekrebala
-https://github.com/PublicI/out-of-state-contribs,github,False,out-of-state-contribs,PublicI,Center for Public Integrity,,
-https://github.com/PublicI/pulitzer-season,github,False,pulitzer-season,PublicI,Center for Public Integrity,,
-https://github.com/PublicI/medicaid-influence-analysis,github,False,medicaid-influence-analysis,PublicI,Center for Public Integrity,,
-https://github.com/PublicI/per-diems-analysis,github,False,per-diems-analysis,PublicI,Center for Public Integrity,,
-https://github.com/PublicI/hidden-epidemics,github,False,hidden-epidemics,PublicI,Center for Public Integrity,,
-https://github.com/PublicI/broadband-rollout,github,False,broadband-rollout,PublicI,Center for Public Integrity,,
-https://github.com/PublicI/tax-bill-contribs,github,True,tax-bill-contribs,PublicI,Center for Public Integrity,35.0,JoeYerardi
-https://github.com/PublicI/tax-bill-contribs,github,True,tax-bill-contribs,PublicI,Center for Public Integrity,1.0,chriszs
-https://github.com/PublicI/medicaid-graphic,github,False,medicaid-graphic,PublicI,Center for Public Integrity,,
-https://github.com/PublicI/ct-inequality,github,False,ct-inequality,PublicI,Center for Public Integrity,,
-https://github.com/PublicI/tax-race,github,False,tax-race,PublicI,Center for Public Integrity,,
-https://github.com/PublicI/actblue-analysis,github,False,actblue-analysis,PublicI,Center for Public Integrity,,
-https://github.com/cbcrc/koco-modal,github,False,koco-modal,cbcrc,cbcrc,,
-https://github.com/cbcrc/koco-bottom-navbar,github,False,koco-bottom-navbar,cbcrc,cbcrc,,
-https://github.com/buzzfeed-openlab/big-picture,github,False,big-picture,buzzfeed-openlab,buzzfeed-openlab,,
-https://github.com/buzzfeed-openlab/recipe-swap,github,False,recipe-swap,buzzfeed-openlab,buzzfeed-openlab,,
-https://github.com/buzzfeed-openlab/buzzfeed-openlab.github.io,github,False,buzzfeed-openlab.github.io,buzzfeed-openlab,buzzfeed-openlab,,
-https://github.com/buzzfeed-openlab/cali-edge-splash,github,False,cali-edge-splash,buzzfeed-openlab,buzzfeed-openlab,,
-https://github.com/BuzzFeedNews/2017-12-eeoc-harassment-charges,github,False,2017-12-eeoc-harassment-charges,BuzzFeedNews,BuzzFeed News,,
-https://github.com/BuzzFeedNews/2018-12-wechat-pence,github,False,2018-12-wechat-pence,BuzzFeedNews,BuzzFeed News,,
-https://github.com/BuzzFeedNews/2016-11-philadelphia-turnout,github,False,2016-11-philadelphia-turnout,BuzzFeedNews,BuzzFeed News,,
-https://github.com/BuzzFeedNews/2018-07-wildfire-trends,github,False,2018-07-wildfire-trends,BuzzFeedNews,BuzzFeed News,,
-https://github.com/BuzzFeedNews/whtranscripts,github,False,whtranscripts,BuzzFeedNews,BuzzFeed News,,
-https://github.com/BuzzFeedNews/2019-04-climate-change,github,False,2019-04-climate-change,BuzzFeedNews,BuzzFeed News,,
-https://github.com/BuzzFeedNews/us-land-cover,github,False,us-land-cover,BuzzFeedNews,BuzzFeed News,,
-https://github.com/BuzzFeedNews/2019-06-democratic-candidates-twitter,github,False,2019-06-democratic-candidates-twitter,BuzzFeedNews,BuzzFeed News,,
-https://github.com/thebuffalonews/new-york-schools-assessment,github,True,new-york-schools-assessment,thebuffalonews,The Buffalo News,17.0,lexieheinle
-https://github.com/thebuffalonews/school-budgets,github,True,school-budgets,thebuffalonews,The Buffalo News,88.0,lexieheinle
-https://github.com/thebuffalonews/school-budgets,github,True,school-budgets,thebuffalonews,The Buffalo News,2.0,dankirchberger
-https://github.com/thebuffalonews/parking-ticket-block-map,github,True,parking-ticket-block-map,thebuffalonews,The Buffalo News,9.0,lexieheinle
-https://github.com/thebuffalonews/parking-ticket-block-map,github,True,parking-ticket-block-map,thebuffalonews,The Buffalo News,1.0,dankirchberger
-https://github.com/BostonGlobe/2016-01-27_keolis-delays,github,False,2016-01-27_keolis-delays,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/generator-globeproject,github,False,generator-globeproject,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/tsarnaev-cards,github,False,tsarnaev-cards,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/snowfall-totals,github,False,snowfall-totals,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/liquor-licenses-2,github,False,liquor-licenses-2,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/potholes,github,False,potholes,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/boston-rocks,github,False,boston-rocks,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/icerinks,github,False,icerinks,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/spotlight-mental-health,github,False,spotlight-mental-health,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/2015-10-01_amp,github,False,2015-10-01_amp,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/2016-02-08_snowfall_map,github,False,2016-02-08_snowfall_map,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/potholes18,github,False,potholes18,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/stateparks,github,False,stateparks,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/2015-09-28_huts,github,False,2015-09-28_huts,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/maintenance,github,False,maintenance,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/2015-10-14_deer,github,False,2015-10-14_deer,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/schoolbuses,github,False,schoolbuses,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/boston-revealed,github,False,boston-revealed,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/liquor-licenses,github,False,liquor-licenses,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/trump-transcripts,github,False,trump-transcripts,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/2016_delegate_tracker,github,False,2016_delegate_tracker,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/brief,github,False,brief,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/02-23-2015_bondbill,github,False,02-23-2015_bondbill,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/scribblelive_widget,github,False,scribblelive_widget,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/weather-distributions,github,False,weather-distributions,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/chinatown,github,False,chinatown,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/alcohol-graphic,github,False,alcohol-graphic,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/death,github,False,death,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/fluMap,github,False,fluMap,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/03-01-2015-boom,github,False,03-01-2015-boom,BostonGlobe,BostonGlobe,,
-https://github.com/BostonGlobe/gpreview,github,False,gpreview,BostonGlobe,BostonGlobe,,
-https://github.com/BloombergGraphics/2017-wmata-ridership-data,github,False,2017-wmata-ridership-data,BloombergGraphics,BloombergGraphics,,
-https://github.com/BloombergGraphics/2017-trump-llc-documents,github,False,2017-trump-llc-documents,BloombergGraphics,BloombergGraphics,,
-https://github.com/BloombergGraphics/2017-health-insurer-exits-data,github,False,2017-health-insurer-exits-data,BloombergGraphics,BloombergGraphics,,
-https://github.com/bloomberg/scatteract,github,False,scatteract,bloomberg,bloomberg,,
-https://github.com/bloomberg/foml,github,False,foml,bloomberg,bloomberg,,
-https://github.com/bloomberg/redis-cookbook,github,False,redis-cookbook,bloomberg,bloomberg,,
-https://github.com/bloomberg/decorator-taxonomy,github,False,decorator-taxonomy,bloomberg,bloomberg,,
-https://github.com/bloomberg/hackathon-aws-cluster,github,False,hackathon-aws-cluster,bloomberg,bloomberg,,
-https://github.com/bloomberg/bloomberg.github.io,github,False,bloomberg.github.io,bloomberg,bloomberg,,
-https://github.com/BBCVisualJournalism/nhs_winter_data,github,True,nhs_winter_data,BBCVisualJournalism,BBC,,
-https://github.com/BBCVisualJournalism/data-table-trainee-assessment,github,False,data-table-trainee-assessment,BBCVisualJournalism,BBC,,
-https://github.com/BBCVisualJournalism/newsspec_6762,github,False,newsspec_6762,BBCVisualJournalism,BBC,,
-https://github.com/BBCVisualJournalism/newsspec_6925,github,False,newsspec_6925,BBCVisualJournalism,BBC,,
-https://github.com/BBCVisualJournalism/newsspec_6761,github,False,newsspec_6761,BBCVisualJournalism,BBC,,
-https://github.com/BBC-News-Labs/docs,github,False,docs,BBC-News-Labs,BBC-News-Labs,,
-https://github.com/BBC-News-Labs/mp-linked-data,github,False,mp-linked-data,BBC-News-Labs,BBC-News-Labs,,
-https://github.com/BBC-News-Labs/bbcnewslabs-internal-bootstrap,github,False,bbcnewslabs-internal-bootstrap,BBC-News-Labs,BBC-News-Labs,,
-https://github.com/BBC-News-Labs/saved-reading,github,False,saved-reading,BBC-News-Labs,BBC-News-Labs,,
-https://github.com/BBC-News/accessibility-news-and-you,github,False,accessibility-news-and-you,BBC-News,BBC-News,,
-https://github.com/BBC-News/news-app-public,github,False,news-app-public,BBC-News,BBC-News,,
-https://github.com/BBC-Data-Unit/midwife-led-units,github,True,midwife-led-units,BBC-Data-Unit,BBC,16.0,paulbradshaw
-https://github.com/BBC-Data-Unit/cervical-screening,github,True,cervical-screening,BBC-Data-Unit,BBC,6.0,paulbradshaw
-https://github.com/BBC-Data-Unit/eu-elections-2019,github,True,eu-elections-2019,BBC-Data-Unit,BBC,16.0,paulbradshaw
-https://github.com/BBC-Data-Unit/eu-elections-2019,github,True,eu-elections-2019,BBC-Data-Unit,BBC,3.0,danwainwright
-https://github.com/BBC-Data-Unit/internal-migration-london,github,True,internal-migration-london,BBC-Data-Unit,BBC,10.0,paulbradshaw
-https://github.com/BBC-Data-Unit/council-reserves,github,True,council-reserves,BBC-Data-Unit,BBC,12.0,paulbradshaw
-https://github.com/BBC-Data-Unit/council-reserves,github,True,council-reserves,BBC-Data-Unit,BBC,3.0,danwainwright
-https://github.com/BBC-Data-Unit/unused,github,False,unused,BBC-Data-Unit,BBC,,
-https://github.com/BBC-Data-Unit/rail-fare-increases-2019,github,True,rail-fare-increases-2019,BBC-Data-Unit,BBC,11.0,paulbradshaw
-https://github.com/BBC-Data-Unit/council-cuts-charts,github,True,council-cuts-charts,BBC-Data-Unit,BBC,12.0,paulbradshaw
-https://github.com/BBC-Data-Unit/electric-car-charging-points,github,True,electric-car-charging-points,BBC-Data-Unit,BBC,12.0,Alex-Homer
-https://github.com/BBC-Data-Unit/electric-car-charging-points,github,True,electric-car-charging-points,BBC-Data-Unit,BBC,4.0,paulbradshaw
-https://github.com/BBC-Data-Unit/deprivation-premature-deaths,github,True,deprivation-premature-deaths,BBC-Data-Unit,BBC,15.0,Alex-Homer
-https://github.com/BBC-Data-Unit/deprivation-premature-deaths,github,True,deprivation-premature-deaths,BBC-Data-Unit,BBC,3.0,paulbradshaw
-https://github.com/bangordailynews/netsuite,github,False,netsuite,bangordailynews,bangordailynews,,
-https://github.com/bangordailynews/BDN-public-data,github,False,BDN-public-data,bangordailynews,bangordailynews,,
-https://github.com/baltimore-sun-data/bridge-data,github,True,bridge-data,baltimore-sun-data,Baltimore Sun,,
-https://github.com/baltimore-sun-data/census-data-analysis-2018,github,True,census-data-analysis-2018,baltimore-sun-data,Baltimore Sun,,
-https://github.com/baltimore-sun-data/maryland-2018-governor-precinct-map,github,True,maryland-2018-governor-precinct-map,baltimore-sun-data,Baltimore Sun,,
-https://github.com/baltimore-sun-data/school-star-ratings-2018,github,True,school-star-ratings-2018,baltimore-sun-data,Baltimore Sun,1.0,underthecurve
-https://github.com/baltimore-sun-data/school-star-ratings-2018,github,True,school-star-ratings-2018,baltimore-sun-data,Baltimore Sun,1.0,westshawn
-https://github.com/baltimore-sun-data/2019-shootings-analysis,github,True,2019-shootings-analysis,baltimore-sun-data,Baltimore Sun,,
-https://github.com/baltimore-sun-data/2018-voter-registration,github,True,2018-voter-registration,baltimore-sun-data,Baltimore Sun,,
-https://github.com/baltimore-sun-data/2018-shootings-analysis,github,True,2018-shootings-analysis,baltimore-sun-data,Baltimore Sun,6.0,statwonk
-https://github.com/baltimore-sun-data/2018-shootings-analysis,github,True,2018-shootings-analysis,baltimore-sun-data,Baltimore Sun,2.0,underthecurve
-https://github.com/baltimore-sun-data/winter-woes-infrastructure,github,True,winter-woes-infrastructure,baltimore-sun-data,Baltimore Sun,,
-https://github.com/baltimore-sun-data/population-estimates-race-2018,github,True,population-estimates-race-2018,baltimore-sun-data,Baltimore Sun,,
-https://github.com/baltimore-sun-data/population-estimates-analysis-18,github,True,population-estimates-analysis-18,baltimore-sun-data,Baltimore Sun,,
-https://github.com/baltimore-sun-data/vacants-demolish-analysis,github,True,vacants-demolish-analysis,baltimore-sun-data,Baltimore Sun,,
-https://github.com/baltimore-sun-data/salaries-datasette,github,True,salaries-datasette,baltimore-sun-data,Baltimore Sun,144.0,carlmjohnson
-https://github.com/baltimore-sun-data/salaries-datasette,github,True,salaries-datasette,baltimore-sun-data,Baltimore Sun,6.0,carolinp
-https://github.com/baltimore-sun-data/justice-dept-report-graphics-08102016,github,True,justice-dept-report-graphics-08102016,baltimore-sun-data,Baltimore Sun,9.0,carolinp
-https://github.com/baltimore-sun-data/ec-flooding-08012016,github,True,ec-flooding-08012016,baltimore-sun-data,Baltimore Sun,4.0,carolinp
-https://github.com/baltimore-sun-data/worst-landlords-2016,github,True,worst-landlords-2016,baltimore-sun-data,Baltimore Sun,4.0,carolinp
-https://github.com/baltimore-sun-data/worst-landlords-2016,github,True,worst-landlords-2016,baltimore-sun-data,Baltimore Sun,3.0,amarton
-https://github.com/baltimore-sun-data/template-graphics-package,github,True,template-graphics-package,baltimore-sun-data,Baltimore Sun,1.0,amarton
-https://github.com/baltimore-sun-data/preakness-picks,github,True,preakness-picks,baltimore-sun-data,Baltimore Sun,1.0,amarton
-https://github.com/baltimore-sun-data/bdp-overtime,github,True,bdp-overtime,baltimore-sun-data,Baltimore Sun,6.0,amarton
-https://github.com/baltimore-sun-data/voter-guide-2016-live,github,True,voter-guide-2016-live,baltimore-sun-data,Baltimore Sun,22.0,amarton
-https://github.com/baltimore-sun-data/template-longform,github,True,template-longform,baltimore-sun-data,Baltimore Sun,8.0,carolinp
-https://github.com/baltimore-sun-data/template-longform,github,True,template-longform,baltimore-sun-data,Baltimore Sun,2.0,amarton
-https://github.com/baltimore-sun-data/dismissed,github,True,dismissed,baltimore-sun-data,Baltimore Sun,33.0,carolinp
-https://github.com/baltimore-sun-data/dismissed,github,True,dismissed,baltimore-sun-data,Baltimore Sun,24.0,amarton
-https://github.com/statesman/daycare-data-unwatched,github,True,daycare-data-unwatched,statesman,Austin American-Statesman,23.0,dankeemahill
-https://github.com/statesman/demolitions,github,True,demolitions,statesman,Austin American-Statesman,32.0,critmcdonald
-https://github.com/statesman/demolitions,github,True,demolitions,statesman,Austin American-Statesman,1.0,dankeemahill
-https://github.com/statesman/2019-ems-analysis,github,True,2019-ems-analysis,statesman,Austin American-Statesman,1.0,dankeemahill
-https://github.com/statesman/dps-border-analysis-2018,github,True,dps-border-analysis-2018,statesman,Austin American-Statesman,3.0,dankeemahill
-https://github.com/statesman/back_to_school,github,True,back_to_school,statesman,Austin American-Statesman,52.0,oliviakrauth
-https://github.com/statesman/back_to_school,github,True,back_to_school,statesman,Austin American-Statesman,8.0,critmcdonald
-https://github.com/statesman/the-tavern,github,False,the-tavern,statesman,Austin American-Statesman,,
-https://github.com/statesman/mls-tv,github,True,mls-tv,statesman,Austin American-Statesman,15.0,critmcdonald
-https://github.com/statesman/advanced-courses,github,True,advanced-courses,statesman,Austin American-Statesman,13.0,critmcdonald
-https://github.com/statesman/oil-spills,github,True,oil-spills,statesman,Austin American-Statesman,13.0,critmcdonald
-https://github.com/statesman/ice-travis-county,github,True,ice-travis-county,statesman,Austin American-Statesman,7.0,cjwinchester
-https://github.com/statesman/partisan-family-analysis,github,True,partisan-family-analysis,statesman,Austin American-Statesman,2.0,dankeemahill
-https://github.com/statesman/question-of-restraint-analysis,github,False,question-of-restraint-analysis,statesman,Austin American-Statesman,,
-https://github.com/statesman/sh-missing-parrot,github,False,sh-missing-parrot,statesman,Austin American-Statesman,,
-https://github.com/statesman/sh-huston-street,github,False,sh-huston-street,statesman,Austin American-Statesman,,
-https://github.com/statesman/immersive-template,github,False,immersive-template,statesman,Austin American-Statesman,,
-https://github.com/statesman/economic-mobility,github,False,economic-mobility,statesman,Austin American-Statesman,,
-https://github.com/statesman/shorthand,github,False,shorthand,statesman,Austin American-Statesman,,
-https://github.com/statesman/ut-tower-shooting-50th,github,False,ut-tower-shooting-50th,statesman,Austin American-Statesman,,
-https://github.com/statesman/sh-printing-presses,github,False,sh-printing-presses,statesman,Austin American-Statesman,,
-https://github.com/statesman/sh-ted-cruz-rafael-cruz,github,False,sh-ted-cruz-rafael-cruz,statesman,Austin American-Statesman,,
-https://github.com/statesman/cps,github,False,cps,statesman,Austin American-Statesman,,
-https://github.com/statesman/sh-manor-lightning-strike,github,False,sh-manor-lightning-strike,statesman,Austin American-Statesman,,
-https://github.com/statesman/property-tax-impact,github,False,property-tax-impact,statesman,Austin American-Statesman,,
-https://github.com/statesman/paid-to-prosecute,github,False,paid-to-prosecute,statesman,Austin American-Statesman,,
-https://github.com/statesman/sh-wimberley-flood-recovery,github,False,sh-wimberley-flood-recovery,statesman,Austin American-Statesman,,
-https://github.com/statesman/projects-common,github,False,projects-common,statesman,Austin American-Statesman,,
-https://github.com/statesman/tx-school-data,github,True,tx-school-data,statesman,Austin American-Statesman,39.0,dankeemahill
-https://github.com/statesman/tx-school-data,github,True,tx-school-data,statesman,Austin American-Statesman,36.0,cjwinchester
-https://github.com/statesman/tx-school-data,github,True,tx-school-data,statesman,Austin American-Statesman,20.0,critmcdonald
-https://github.com/statesman/tx-school-data,github,True,tx-school-data,statesman,Austin American-Statesman,12.0,AdamHumphrey
-https://github.com/statesman/texas-border,github,False,texas-border,statesman,Austin American-Statesman,,
-https://github.com/theatlantic/citylab-data,github,True,citylab-data,theatlantic,The Atlantic,13.0,dhmontgomery
-https://github.com/theatlantic/host,github,False,host,theatlantic,The Atlantic,,
-https://github.com/NewsappAJC/internet_speeds_GA,github,False,internet_speeds_GA,NewsappAJC,NewsappAJC,,
-https://github.com/associatedpress/aptheme,github,False,aptheme,associatedpress,associatedpress,,
-https://github.com/associatedpress/apdatacheck,github,False,apdatacheck,associatedpress,associatedpress,,
-https://github.com/associatedpress/apstyle,github,False,apstyle,associatedpress,associatedpress,,
-https://github.com/associatedpress/cookiecutter-r-project,github,False,cookiecutter-r-project,associatedpress,associatedpress,,
-https://github.com/AJInteractive/GoogleTrendsPalestineIsrael,github,False,GoogleTrendsPalestineIsrael,AJInteractive,AJInteractive,,
-https://github.com/AJInteractive/palestineremix-search,github,False,palestineremix-search,AJInteractive,AJInteractive,,
-https://github.com/AJInteractive/Batcave_Bootstrap_Starterkit,github,False,Batcave_Bootstrap_Starterkit,AJInteractive,AJInteractive,,
-https://github.com/AJInteractive/palestineremix-video,github,False,palestineremix-video,AJInteractive,AJInteractive,,
-https://github.com/AJInteractive/guns2012,github,False,guns2012,AJInteractive,AJInteractive,,
-https://github.com/AJInteractive/44-45,github,False,44-45,AJInteractive,AJInteractive,,
-https://github.com/abcnews/data-life,github,True,data-life,abcnews,Australian Broadcasting Corporation,24.0,drzax
-https://github.com/abcnews/odyssey-scrollyteller,github,False,odyssey-scrollyteller,abcnews,Australian Broadcasting Corporation,,
-https://github.com/abcnews/north-korea-missile-map,github,False,north-korea-missile-map,abcnews,Australian Broadcasting Corporation,,
-https://github.com/abcnews/generator-aunty,github,False,generator-aunty,abcnews,Australian Broadcasting Corporation,,
-https://github.com/abcnews/odyssey-parallax,github,False,odyssey-parallax,abcnews,Australian Broadcasting Corporation,,
-https://github.com/abcnews/interactive-kids-book,github,False,interactive-kids-book,abcnews,Australian Broadcasting Corporation,,
-https://github.com/abcnews/timeline-navigation,github,False,timeline-navigation,abcnews,Australian Broadcasting Corporation,,
-https://github.com/abcnews/interactive-ssm-map,github,False,interactive-ssm-map,abcnews,Australian Broadcasting Corporation,,
-https://github.com/abcnews/interactive-gay-rights-map,github,False,interactive-gay-rights-map,abcnews,Australian Broadcasting Corporation,,
-https://github.com/abcnews/odyssey-tester,github,False,odyssey-tester,abcnews,Australian Broadcasting Corporation,,
-https://github.com/abcnews/abcnews.github.io,github,False,abcnews.github.io,abcnews,Australian Broadcasting Corporation,,
-https://github.com/abcnews/interactive-penalty-rates-calculator,github,False,interactive-penalty-rates-calculator,abcnews,Australian Broadcasting Corporation,,
-https://github.com/abcnews/interactive-custom-image-loader,github,False,interactive-custom-image-loader,abcnews,Australian Broadcasting Corporation,,
-https://github.com/abcnews/interactive-annotation-debate,github,False,interactive-annotation-debate,abcnews,Australian Broadcasting Corporation,,
-https://github.com/abcnews/interactive-into-the-cave,github,False,interactive-into-the-cave,abcnews,Australian Broadcasting Corporation,,
-https://github.com/abcnews/open-cmid,github,False,open-cmid,abcnews,Australian Broadcasting Corporation,,
-https://observablehq.com/@sahilchinoy/heat-index?collection=@sahilchinoy/nyt-stories,observablehq,True,nyt-stories,@sahilchinoy,New York Times,,
-https://observablehq.com/@sahilchinoy/the-cube-root-law?collection=@sahilchinoy/nyt-stories,observablehq,True,nyt-stories,@sahilchinoy,New York Times,,
-https://observablehq.com/@sahilchinoy/linked-maps?collection=@sahilchinoy/nyt-stories,observablehq,True,nyt-stories,@sahilchinoy,New York Times,,
-https://observablehq.com/@sahilchinoy/expanding-the-house-i?collection=@sahilchinoy/nyt-stories,observablehq,True,nyt-stories,@sahilchinoy,New York Times,,
-https://observablehq.com/@sahilchinoy/expanding-the-house-ii,observablehq,True,expanding-the-house-ii,@sahilchinoy,New York Times,,
-https://observablehq.com/@palewire/the-mondesi-bet-stolen-base-tracker?collection=@palewire/journalism,observablehq,True,journalism,@palewire,Los Angeles Times,,
-https://observablehq.com/@palewire/2018-year-in-review-the-los-angeles-times-master-branch?collection=@palewire/journalism,observablehq,True,journalism,@palewire,Los Angeles Times,,
-https://observablehq.com/@palewire/california-buildings-in-severe-fire-hazard-zones?collection=@palewire/journalism,observablehq,True,journalism,@palewire,Los Angeles Times,,
-https://observablehq.com/@palewire/u-s-consumer-price-index-tracker?collection=@palewire/journalism,observablehq,True,journalism,@palewire,Los Angeles Times,,
-https://observablehq.com/@palewire/trumps-twitter-terminology?collection=@palewire/journalism,observablehq,True,journalism,@palewire,Los Angeles Times,,
-https://observablehq.com/@palewire/the-decline-of-third-parties-in-california-politics?collection=@palewire/journalism,observablehq,True,journalism,@palewire,Los Angeles Times,,
-https://observablehq.com/@palewire/the-ichiro-bet?collection=@palewire/journalism,observablehq,True,journalism,@palewire,Los Angeles Times,,
-https://observablehq.com/@palewire/the-inglewood-lunch-inventory?collection=@palewire/journalism,observablehq,True,journalism,@palewire,Los Angeles Times,,
-https://observablehq.com/@datadesk/the-many-voices-of-the-other-americans,observablehq,True,the-many-voices-of-the-other-americans,@datadesk,Los Angeles Times,,
-https://observablehq.com/@datadesk/u-s-households-without-internet-access-by-county,observablehq,True,u-s-households-without-internet-access-by-county,@datadesk,Los Angeles Times,,
-https://observablehq.com/@datadesk/u-s-households-without-internet-access,observablehq,True,u-s-households-without-internet-access,@datadesk,Los Angeles Times,,
-https://observablehq.com/@datadesk/median-age-by-sex-in-u-s-states-and-territories,observablehq,True,median-age-by-sex-in-u-s-states-and-territories,@datadesk,Los Angeles Times,,
-https://observablehq.com/@datadesk/education-and-income-in-u-s-counties,observablehq,True,education-and-income-in-u-s-counties,@datadesk,Los Angeles Times,,
-https://observablehq.com/@datadesk/the-demographics-and-destiny-of-all-3-220-u-s-counties,observablehq,True,the-demographics-and-destiny-of-all-3-220-u-s-counties,@datadesk,Los Angeles Times,,
-https://observablehq.com/@datadesk/racial-makeup-of-u-s-states-and-territories,observablehq,True,racial-makeup-of-u-s-states-and-territories,@datadesk,Los Angeles Times,,
-https://observablehq.com/@datadesk/latino-population-share-by-u-s-county,observablehq,True,latino-population-share-by-u-s-county,@datadesk,Los Angeles Times,,
-https://observablehq.com/@datadesk/black-and-latino-u-s-population-shares,observablehq,True,black-and-latino-u-s-population-shares,@datadesk,Los Angeles Times,,
-https://observablehq.com/@datadesk/swana-population-map,observablehq,True,swana-population-map,@datadesk,Los Angeles Times,,
+url,source,is_keeper,repo,owner,org,commits
+https://github.com/datastory-org/weekly-chart,github,True,weekly-chart,datastory-org,Datastory,24
+https://github.com/Tahsin-Mayeesha/times-archive,github,True,times-archive,Tahsin-Mayeesha,Tahsin-Mayeesha,4
+https://github.com/TheOregonian/long-term-care-db,github,True,long-term-care-db,TheOregonian,The Oregonian,26
+https://github.com/beecycles/Power_of_Irma,github,True,Power_of_Irma,beecycles,WUFT,16
+https://github.com/beecycles/Endangered-Species-Act-Louisiana,github,True,Endangered-Species-Act-Louisiana,beecycles,NOLA,12
+https://github.com/datadesk/census-hard-to-map-analysis,github,True,census-hard-to-map-analysis,datadesk,Los Angeles Times,5
+https://github.com/datadesk/hsr-document-analysis,github,True,hsr-document-analysis,datadesk,Los Angeles Times,7
+https://github.com/ryanvmenezes/lawlers-law,github,True,lawlers-law,ryanvmenezes,Los Angeles Times,47
+https://github.com/datadesk/deleon-district-election-results-analysis,github,True,deleon-district-election-results-analysis,datadesk,Los Angeles Times,7
+https://github.com/BuzzFeedNews/2019-04-democratic-candidate-codonors,github,True,2019-04-democratic-candidate-codonors,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2018-10-russian-troll-tweets,github,True,2018-10-russian-troll-tweets,BuzzFeedNews,BuzzFeed News,7
+https://github.com/BuzzFeedNews/2018-09-ftc-analysis,github,True,2018-09-ftc-analysis,BuzzFeedNews,BuzzFeed News,3
+https://github.com/BuzzFeedNews/2018-08-charlottesville-twitter-trolls,github,True,2018-08-charlottesville-twitter-trolls,BuzzFeedNews,BuzzFeed News,7
+https://github.com/BuzzFeedNews/2018-07-ofsted-inspections,github,True,2018-07-ofsted-inspections,BuzzFeedNews,BuzzFeed News,2
+https://github.com/BuzzFeedNews/2018-06-nyc-311-complaints-and-gentrification,github,True,2018-06-nyc-311-complaints-and-gentrification,BuzzFeedNews,BuzzFeed News,2
+https://github.com/BuzzFeedNews/2018-05-fentanyl-and-cocaine-overdose-deaths,github,True,2018-05-fentanyl-and-cocaine-overdose-deaths,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2018-03-oscars-script-diversity-analysis,github,True,2018-03-oscars-script-diversity-analysis,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2018-02-olympic-figure-skating-analysis,github,True,2018-02-olympic-figure-skating-analysis,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2018-02-figure-skating-analysis,github,True,2018-02-figure-skating-analysis,BuzzFeedNews,BuzzFeed News,3
+https://github.com/BuzzFeedNews/2018-01-trump-state-of-the-union,github,True,2018-01-trump-state-of-the-union,BuzzFeedNews,BuzzFeed News,6
+https://github.com/BuzzFeedNews/2018-01-twitter-withheld-accounts,github,True,2018-01-twitter-withheld-accounts,BuzzFeedNews,BuzzFeed News,2
+https://github.com/BuzzFeedNews/2018-01-trump-twitter-wars,github,True,2018-01-trump-twitter-wars,BuzzFeedNews,BuzzFeed News,5
+https://github.com/BuzzFeedNews/2017-12-fake-news-top-50,github,True,2017-12-fake-news-top-50,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2017-12-sexual-misconduct-cable-news-coverage,github,True,2017-12-sexual-misconduct-cable-news-coverage,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2017-11-federal-employee-diversity,github,True,2017-11-federal-employee-diversity,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2017-11-gun-sales-estimates,github,True,2017-11-gun-sales-estimates,BuzzFeedNews,BuzzFeed News,3
+https://github.com/BuzzFeedNews/2017-09-harvey-emissions-update,github,True,2017-09-harvey-emissions-update,BuzzFeedNews,BuzzFeed News,5
+https://github.com/BuzzFeedNews/2017-09-federal-employee-departure-rates,github,True,2017-09-federal-employee-departure-rates,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2017-09-science-foia,github,True,2017-09-science-foia,BuzzFeedNews,BuzzFeed News,3
+https://github.com/BuzzFeedNews/2017-08-harvey-emissions-reports,github,True,2017-08-harvey-emissions-reports,BuzzFeedNews,BuzzFeed News,4
+https://github.com/BuzzFeedNews/2017-08-partisan-sites-and-facebook-pages,github,True,2017-08-partisan-sites-and-facebook-pages,BuzzFeedNews,BuzzFeed News,2
+https://github.com/BuzzFeedNews/2017-08-spy-plane-finder,github,True,2017-08-spy-plane-finder,BuzzFeedNews,BuzzFeed News,11
+https://github.com/BuzzFeedNews/2017-07-doj-gs-15,github,True,2017-07-doj-gs-15,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2017-05-us-health-care,github,True,2017-05-us-health-care,BuzzFeedNews,BuzzFeed News,4
+https://github.com/BuzzFeedNews/2017-04-fake-news-ad-trackers,github,True,2017-04-fake-news-ad-trackers,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2017-01-immigration-and-science,github,True,2017-01-immigration-and-science,BuzzFeedNews,BuzzFeed News,2
+https://github.com/BuzzFeedNews/2017-01-media-platform-and-news-trust-survey,github,True,2017-01-media-platform-and-news-trust-survey,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2017-01-causes-of-warming,github,True,2017-01-causes-of-warming,BuzzFeedNews,BuzzFeed News,3
+https://github.com/BuzzFeedNews/2016-12-transgender-rights-survey,github,True,2016-12-transgender-rights-survey,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2016-12-warmest-year,github,True,2016-12-warmest-year,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2016-12-medicare-claims-analysis,github,True,2016-12-medicare-claims-analysis,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2016-12-inpatient-discharge-analysis,github,True,2016-12-inpatient-discharge-analysis,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2016-12-river-point-involuntary-commitment-petitions,github,True,2016-12-river-point-involuntary-commitment-petitions,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2016-12-fake-news-survey,github,True,2016-12-fake-news-survey,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2016-11-grading-the-election-forecasts,github,True,2016-11-grading-the-election-forecasts,BuzzFeedNews,BuzzFeed News,5
+https://github.com/BuzzFeedNews/2016-11-voter-power-by-demographic,github,True,2016-11-voter-power-by-demographic,BuzzFeedNews,BuzzFeed News,2
+https://github.com/BuzzFeedNews/2016-11-bellwether-counties,github,True,2016-11-bellwether-counties,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2016-10-tech-campaign-contributions,github,True,2016-10-tech-campaign-contributions,BuzzFeedNews,BuzzFeed News,2
+https://github.com/BuzzFeedNews/2016-10-facebook-fact-check,github,True,2016-10-facebook-fact-check,BuzzFeedNews,BuzzFeed News,3
+https://github.com/BuzzFeedNews/2016-10-white-ancestry-and-trump-support,github,True,2016-10-white-ancestry-and-trump-support,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2016-09-shy-trumpers,github,True,2016-09-shy-trumpers,BuzzFeedNews,BuzzFeed News,4
+https://github.com/BuzzFeedNews/2016-09-ucr-analysis,github,True,2016-09-ucr-analysis,BuzzFeedNews,BuzzFeed News,2
+https://github.com/BuzzFeedNews/2016-08-sports-gender-gaps,github,True,2016-08-sports-gender-gaps,BuzzFeedNews,BuzzFeed News,3
+https://github.com/BuzzFeedNews/2016-07-athletic-performances,github,True,2016-07-athletic-performances,BuzzFeedNews,BuzzFeed News,4
+https://github.com/BuzzFeedNews/2016-07-rnc-dnc-surveillance-planes,github,True,2016-07-rnc-dnc-surveillance-planes,BuzzFeedNews,BuzzFeed News,2
+https://github.com/BuzzFeedNews/2016-05-H-2-debarments-and-violations,github,True,2016-05-H-2-debarments-and-violations,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2016-04-republican-donor-movements,github,True,2016-04-republican-donor-movements,BuzzFeedNews,BuzzFeed News,2
+https://github.com/BuzzFeedNews/2016-04-bernie-sanders-donors,github,True,2016-04-bernie-sanders-donors,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2016-04-federal-surveillance-planes,github,True,2016-04-federal-surveillance-planes,BuzzFeedNews,BuzzFeed News,3
+https://github.com/BuzzFeedNews/2016-02-republican-donor-movements,github,True,2016-02-republican-donor-movements,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2016-01-immigrant-detention-india,github,True,2016-01-immigrant-detention-india,BuzzFeedNews,BuzzFeed News,2
+https://github.com/BuzzFeedNews/2016-01-port-arthur-arrests,github,True,2016-01-port-arthur-arrests,BuzzFeedNews,BuzzFeed News,5
+https://github.com/BuzzFeedNews/2016-01-texas-municipal-courts,github,True,2016-01-texas-municipal-courts,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2016-01-tennis-betting-analysis,github,True,2016-01-tennis-betting-analysis,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2015-12-the-coyote,github,True,2015-12-the-coyote,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2015-12-fatal-police-shootings,github,True,2015-12-fatal-police-shootings,BuzzFeedNews,BuzzFeed News,2
+https://github.com/BuzzFeedNews/2015-12-mass-shooting-intervals,github,True,2015-12-mass-shooting-intervals,BuzzFeedNews,BuzzFeed News,2
+https://github.com/BuzzFeedNews/2015-12-H-2-visas-and-experience-requirements,github,True,2015-12-H-2-visas-and-experience-requirements,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2015-11-lottery-simulations,github,True,2015-11-lottery-simulations,BuzzFeedNews,BuzzFeed News,7
+https://github.com/BuzzFeedNews/2015-11-refugees-in-the-united-states,github,True,2015-11-refugees-in-the-united-states,BuzzFeedNews,BuzzFeed News,5
+https://github.com/BuzzFeedNews/2015-10-walker-donors,github,True,2015-10-walker-donors,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2015-08-immigrant-detention,github,True,2015-08-immigrant-detention,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2015-07-h2-visas-and-enforcement,github,True,2015-07-h2-visas-and-enforcement,BuzzFeedNews,BuzzFeed News,3
+https://github.com/BuzzFeedNews/2015-07-primates,github,True,2015-07-primates,BuzzFeedNews,BuzzFeed News,2
+https://github.com/BuzzFeedNews/2015-06-ssm-and-abortion-poll,github,True,2015-06-ssm-and-abortion-poll,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2015-05-talkpay-tweets,github,True,2015-05-talkpay-tweets,BuzzFeedNews,BuzzFeed News,2
+https://github.com/BuzzFeedNews/2015-03-earthquake-maps,github,True,2015-03-earthquake-maps,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2015-02-texas-cpa-deficiencies,github,True,2015-02-texas-cpa-deficiencies,BuzzFeedNews,BuzzFeed News,1
+https://github.com/BuzzFeedNews/2015-02-georgia-cpa-scores,github,True,2015-02-georgia-cpa-scores,BuzzFeedNews,BuzzFeed News,2
+https://github.com/BuzzFeedNews/presidential-language-notebooks,github,True,presidential-language-notebooks,BuzzFeedNews,BuzzFeed News,6
+https://github.com/BuzzFeedNews/2014-09-rising-sunday-show-guests,github,True,2014-09-rising-sunday-show-guests,BuzzFeedNews,BuzzFeed News,8
+https://github.com/BuzzFeedNews/2014-09-tuition-and-minimum-wage,github,True,2014-09-tuition-and-minimum-wage,BuzzFeedNews,BuzzFeed News,3
+https://github.com/BuzzFeedNews/2014-08-st-louis-county-segregation,github,True,2014-08-st-louis-county-segregation,BuzzFeedNews,BuzzFeed News,2
+https://github.com/BuzzFeedNews/2014-08-irs-scams,github,True,2014-08-irs-scams,BuzzFeedNews,BuzzFeed News,2
+https://github.com/BuzzFeedNews/2014-06-firework-injuries,github,True,2014-06-firework-injuries,BuzzFeedNews,BuzzFeed News,4
+https://github.com/BuzzFeedNews/2014-06-bikeshare-gender-maps,github,True,2014-06-bikeshare-gender-maps,BuzzFeedNews,BuzzFeed News,48
+https://github.com/datamade/alderman-attendance,github,True,alderman-attendance,datamade,DataMade,15
+https://github.com/wbez/data,github,True,data,wbez,WBEZ Chicago,8
+https://github.com/wpinvestigative/immigrant_visas,github,True,immigrant_visas,wpinvestigative,The Washington Post,11
+https://github.com/wpinvestigative/kushner_eb5_census,github,True,kushner_eb5_census,wpinvestigative,The Washington Post,10
+https://github.com/wpinvestigative/fema_claims,github,True,fema_claims,wpinvestigative,The Washington Post,6
+https://github.com/wpinvestigative/global_terrorism_database_analysis,github,True,global_terrorism_database_analysis,wpinvestigative,The Washington Post,3
+https://github.com/wpinvestigative/federal_employees_trump_2017,github,True,federal_employees_trump_2017,wpinvestigative,The Washington Post,6
+https://github.com/washingtonpost/data-national-transit-database-heavy-rail-analysis,github,True,data-national-transit-database-heavy-rail-analysis,washingtonpost,The Washington Post,3
+https://github.com/voxmedia/data-projects,github,True,data-projects,voxmedia,Vox,115
+https://github.com/trendct/medicaid_enrollment_analysis,github,True,medicaid_enrollment_analysis,trendct,TrendCT,2
+https://github.com/trendct/data,github,True,data,trendct,TrendCT,153
+https://github.com/trendct/dunkin-donuts-ct,github,True,dunkin-donuts-ct,trendct,TrendCT,5
+https://github.com/trendct/employment-by-sector,github,True,employment-by-sector,trendct,TrendCT,4
+https://github.com/times/data,github,True,data,times,The Times and Sunday Times,6
+https://github.com/TimeMagazine/marriage_by_degrees,github,True,marriage_by_degrees,TimeMagazine,Time,14
+https://github.com/TimeMagazine/babyname_politics,github,True,babyname_politics,TimeMagazine,Time,3
+https://github.com/TimeMagazine/total-births-per-year,github,True,total-births-per-year,TimeMagazine,Time,2
+https://github.com/texastribune/2017-10-maternal-mortality-analysis,github,True,2017-10-maternal-mortality-analysis,texastribune,The Texas Tribune,15
+https://github.com/tbtimes/florida-heart-surgery-analysis,github,True,florida-heart-surgery-analysis,tbtimes,Tampa Bay Times,2
+https://github.com/sueddeutsche/dylan-nobelprize,github,True,dylan-nobelprize,sueddeutsche,Süddeutsche Zeitung,1
+https://github.com/SunSentinel/notebooks,github,True,notebooks,SunSentinel,South Florida Sun Sentinel,5
+https://github.com/stlpublicradio/2019-06-26-hayden-rectangle-analysis,github,True,2019-06-26-hayden-rectangle-analysis,stlpublicradio,St Louis Public Radio,1
+https://github.com/stlpublicradio/2018-05-31-crime-and-heat-analysis,github,True,2018-05-31-crime-and-heat-analysis,stlpublicradio,St Louis Public Radio,1
+https://github.com/Quartz/advertised-organic-produce,github,True,advertised-organic-produce,Quartz,Quartz,1
+https://github.com/Quartz/work-from-home,github,True,work-from-home,Quartz,Quartz,18
+https://github.com/Quartz/vital-mortality,github,True,vital-mortality,Quartz,Quartz,1
+https://github.com/Quartz/nyc-trips,github,True,nyc-trips,Quartz,Quartz,1
+https://github.com/Quartz/uber-jobs,github,True,uber-jobs,Quartz,Quartz,2
+https://github.com/Quartz/maria-followup,github,True,maria-followup,Quartz,Quartz,8
+https://github.com/propublica/compas-analysis,github,True,compas-analysis,propublica,ProPublica,8
+https://github.com/propublica/il-tickets-notebooks,github,True,il-tickets-notebooks,propublica,ProPublica,19
+https://github.com/propublica/propertyassessments,github,True,propertyassessments,propublica,ProPublica,11
+https://github.com/propublica/auditData,github,True,auditData,propublica,ProPublica,1
+https://github.com/TheOregonian/data_stories,github,True,data_stories,TheOregonian,The Oregonian,18
+https://github.com/polygraph-cool/this-american-life,github,True,this-american-life,polygraph-cool,Polygraph,7
+https://github.com/polygraph-cool/skatemusic,github,True,skatemusic,polygraph-cool,Polygraph,18
+https://github.com/polygraph-cool/job_retraining,github,True,job_retraining,polygraph-cool,Polygraph,31
+https://github.com/polygraph-cool/florida-sandbox,github,True,florida-sandbox,polygraph-cool,Polygraph,9
+https://github.com/The-Politico/data_news-deserts-analysis,github,True,data_news-deserts-analysis,The-Politico,Politico,10
+https://github.com/nzzdev/st-methods,github,True,st-methods,nzzdev,Neue Zürcher Zeitung,40
+https://github.com/nprapps/trump-tweet-analysis,github,True,trump-tweet-analysis,nprapps,National Public Radio,50
+https://github.com/nprapps/school-choice,github,True,school-choice,nprapps,National Public Radio,11
+https://github.com/nprapps/mass-shootings,github,True,mass-shootings,nprapps,National Public Radio,6
+https://github.com/nprapps/federal-aid-data,github,True,federal-aid-data,nprapps,National Public Radio,13
+https://github.com/nprapps/va-data-analysis,github,True,va-data-analysis,nprapps,National Public Radio,33
+https://github.com/nprapps/global-immunization,github,True,global-immunization,nprapps,National Public Radio,20
+https://github.com/TheUpshot/leo-senate-model,github,True,leo-senate-model,TheUpshot,New York Times,11
+https://github.com/nytimes/gunsales,github,True,gunsales,nytimes,New York Times,95
+https://github.com/striblab/201901-achievementgap,github,True,201901-achievementgap,striblab,Star Tribune,13
+https://github.com/striblab/201901-hospitalquality,github,True,201901-hospitalquality,striblab,Star Tribune,2
+https://github.com/themarshallproject/california_crime_rates,github,True,california_crime_rates,themarshallproject,Los Angeles Times,1
+https://github.com/fivethirtyeight/data,github,True,data,fivethirtyeight,FiveThirtyEight,899
+https://github.com/the-economist-editorial/Property-taxes-2015,github,True,Property-taxes-2015,the-economist-editorial,The Economist,2
+https://github.com/correctiv/sealevel-notebook,github,True,sealevel-notebook,correctiv,CORRECTIV,24
+https://github.com/correctiv/pflege-notebook,github,True,pflege-notebook,correctiv,CORRECTIV,39
+https://github.com/newsapps/public-notebooks,github,True,public-notebooks,newsapps,Chicago Tribune,31
+https://github.com/PublicI/employment-discrimination,github,True,employment-discrimination,PublicI,Center for Public Integrity,54
+https://github.com/PublicI/tax-bill-contribs,github,True,tax-bill-contribs,PublicI,Center for Public Integrity,36
+https://github.com/thebuffalonews/new-york-schools-assessment,github,True,new-york-schools-assessment,thebuffalonews,The Buffalo News,17
+https://github.com/thebuffalonews/school-budgets,github,True,school-budgets,thebuffalonews,The Buffalo News,90
+https://github.com/thebuffalonews/parking-ticket-block-map,github,True,parking-ticket-block-map,thebuffalonews,The Buffalo News,10
+https://github.com/BBC-Data-Unit/midwife-led-units,github,True,midwife-led-units,BBC-Data-Unit,BBC,16
+https://github.com/BBC-Data-Unit/cervical-screening,github,True,cervical-screening,BBC-Data-Unit,BBC,6
+https://github.com/BBC-Data-Unit/eu-elections-2019,github,True,eu-elections-2019,BBC-Data-Unit,BBC,19
+https://github.com/BBC-Data-Unit/internal-migration-london,github,True,internal-migration-london,BBC-Data-Unit,BBC,10
+https://github.com/BBC-Data-Unit/council-reserves,github,True,council-reserves,BBC-Data-Unit,BBC,15
+https://github.com/BBC-Data-Unit/rail-fare-increases-2019,github,True,rail-fare-increases-2019,BBC-Data-Unit,BBC,11
+https://github.com/BBC-Data-Unit/council-cuts-charts,github,True,council-cuts-charts,BBC-Data-Unit,BBC,12
+https://github.com/BBC-Data-Unit/electric-car-charging-points,github,True,electric-car-charging-points,BBC-Data-Unit,BBC,16
+https://github.com/BBC-Data-Unit/deprivation-premature-deaths,github,True,deprivation-premature-deaths,BBC-Data-Unit,BBC,18
+https://github.com/baltimore-sun-data/school-star-ratings-2018,github,True,school-star-ratings-2018,baltimore-sun-data,Baltimore Sun,2
+https://github.com/baltimore-sun-data/2018-shootings-analysis,github,True,2018-shootings-analysis,baltimore-sun-data,Baltimore Sun,8
+https://github.com/baltimore-sun-data/salaries-datasette,github,True,salaries-datasette,baltimore-sun-data,Baltimore Sun,150
+https://github.com/baltimore-sun-data/justice-dept-report-graphics-08102016,github,True,justice-dept-report-graphics-08102016,baltimore-sun-data,Baltimore Sun,9
+https://github.com/baltimore-sun-data/ec-flooding-08012016,github,True,ec-flooding-08012016,baltimore-sun-data,Baltimore Sun,4
+https://github.com/baltimore-sun-data/worst-landlords-2016,github,True,worst-landlords-2016,baltimore-sun-data,Baltimore Sun,7
+https://github.com/baltimore-sun-data/template-graphics-package,github,True,template-graphics-package,baltimore-sun-data,Baltimore Sun,1
+https://github.com/baltimore-sun-data/preakness-picks,github,True,preakness-picks,baltimore-sun-data,Baltimore Sun,1
+https://github.com/baltimore-sun-data/bdp-overtime,github,True,bdp-overtime,baltimore-sun-data,Baltimore Sun,6
+https://github.com/baltimore-sun-data/voter-guide-2016-live,github,True,voter-guide-2016-live,baltimore-sun-data,Baltimore Sun,22
+https://github.com/baltimore-sun-data/template-longform,github,True,template-longform,baltimore-sun-data,Baltimore Sun,10
+https://github.com/baltimore-sun-data/dismissed,github,True,dismissed,baltimore-sun-data,Baltimore Sun,57
+https://github.com/statesman/daycare-data-unwatched,github,True,daycare-data-unwatched,statesman,Austin American-Statesman,23
+https://github.com/statesman/demolitions,github,True,demolitions,statesman,Austin American-Statesman,33
+https://github.com/statesman/2019-ems-analysis,github,True,2019-ems-analysis,statesman,Austin American-Statesman,1
+https://github.com/statesman/dps-border-analysis-2018,github,True,dps-border-analysis-2018,statesman,Austin American-Statesman,3
+https://github.com/statesman/back_to_school,github,True,back_to_school,statesman,Austin American-Statesman,60
+https://github.com/statesman/mls-tv,github,True,mls-tv,statesman,Austin American-Statesman,15
+https://github.com/statesman/advanced-courses,github,True,advanced-courses,statesman,Austin American-Statesman,13
+https://github.com/statesman/oil-spills,github,True,oil-spills,statesman,Austin American-Statesman,13
+https://github.com/statesman/ice-travis-county,github,True,ice-travis-county,statesman,Austin American-Statesman,7
+https://github.com/statesman/partisan-family-analysis,github,True,partisan-family-analysis,statesman,Austin American-Statesman,2
+https://github.com/statesman/tx-school-data,github,True,tx-school-data,statesman,Austin American-Statesman,107
+https://github.com/theatlantic/citylab-data,github,True,citylab-data,theatlantic,The Atlantic,13
+https://github.com/abcnews/data-life,github,True,data-life,abcnews,Australian Broadcasting Corporation,24
