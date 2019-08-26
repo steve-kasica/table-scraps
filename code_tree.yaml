@@ -2,10 +2,12 @@
   desc: 'Codes that describe actions the journalist has taken to wrangle data for further analysis'
   sub:
     - name: import
+      export: True
       desc: 'Codes describing how data is imported into the programming environment.'
       sub:
         - name: grab
           desc: 'Data is imported via download from an external source'
+          export: True
           sub:
             - name: pull tables out of pdf
               desc: 'Using a table extraction tool, such as Tabula, to parse tables inside PDF documents.'
@@ -17,6 +19,7 @@
               desc: 'Data is imported through a database query'
         - name: create
           desc: 'Data is created inside the programming environment'
+          export: True
           sub:
             - name: construct table manually
               desc: 'Using tables where column names and table values were either copy-and-pasted or entered manually.'
@@ -27,11 +30,14 @@
             - name: backfill missing data
               desc: 'Create data observations where there are missing entries.'
         - name: load
+          export: True
           desc: 'Refers to importing files from disk as a table in the environment. Files can be .csv, .xlsx, .fec, and .shp, .RData'
     - name: amend
       desc: '*Amending* a table constitutes creating new columns in the table without *integrating* other tables.'
+      export: True
       sub:
           - name: detrend
+            export: True
             desc: '"filter out the secular effect in order to see what is going on specifically with the phenomenon you are investigating," Philip Meyer in *Precision Journalism*.'
             sub:
                 - name: adjust for inflation
@@ -39,8 +45,10 @@
                 - name: compute index number
                   desc: 'TK'
           - name: encode table identification in row
+            export: True
             desc: 'When some way of identifying the table is encoded as a separate column in each row. Common identification methods include the name of the corresponding file, an arbitrary table name, or boolean value.'
           - name: support network analysis
+            export: True
             desc: 'Actions that modify a table to directly support network analysis'
             sub:
               - name: create edge
@@ -48,6 +56,7 @@
               - name: define edge weights
                 desc: 'Columns that define edge weights'
           - name: formulate performance metric
+            export: True
             desc: 'Codes in this category specify a calculation that is later used to compare different entities or the same entity over time. A recurring theme between many of these notebooks is to compare different entities, such as political parties, by a common, quantitative metric, such as percentage of all newly registered voters.'
             sub:
                 - name: calculate standardized score
@@ -77,6 +86,7 @@
                     - name: calculate difference
                       desc: 'Subtracting two quantitative variables, including scalar values, vectors, and matrices.'
           - name: key generation
+            export: True
             desc: 'Operations that create "key" columns.'
             sub:
                 - name: create a semi-unique key
@@ -88,6 +98,7 @@
                 - name: designate column as primary key
                   desc: 'Designating a column as the unique identifier for all rows in the table.'
           - name: rank data
+            export: True
             desc: 'Operations that encode semantic meaning about the data with table index.'
             sub:
                 - name: assign ranks
@@ -97,14 +108,18 @@
                 - name: sort table
                   desc: 'When rank is implicitly assigned by rearranging row position in the table.'
           - name: create flag
+            export: True
             desc: 'Flags are boolean expressed computed upon column values and used in filtering and grouping'
     - name: clean
+      export: True
       desc: 'Operations to correct erroneous or remove otherwise unwanted rows and values from the table.'
       sub:
           - name: trim fat
+            export: True
             desc: 'Winnow down data that is not relevant to analysis.'
             sub:
                 - name: winnow columns
+                  export: True
                   desc: 'Simply put, these operations remove table columns.'
                   sub:
                     - name: subset columns
@@ -112,6 +127,7 @@
                     - name: align table columns for consolidation
                       desc: 'Dropping columns so that the table can be row-wise concatenated with another table'
                 - name: winnow rows
+                  export: True
                   desc: 'Simply put, these operations remove table rows.'
                   sub:
                       - name: trim by date range
@@ -123,10 +139,13 @@
                       - name: trim by contains value
                         desc: 'Remove rows that do or do not contain specific values or types of values.'
                 - name: remove incomplete data
+                  export: True
                   desc: 'Drop row if value(s) are incomplete, usually denoted as NA.'                        
                 - name: drop erroneous rows
+                  export: True
                   desc: 'Remove rows that have any number of kinds of errors in them.'
                 - name: deduplicate
+                  export: True
                   desc: 'Remove rows from the table that contain two or more of the same "observation." Duplicates may constitute rows with identical values in all, one, or zero columns.'
                   sub:
                       - name: Drop duplicate rows based on prior knowledge
@@ -135,8 +154,10 @@
                         desc: 'Drop row if one or more column values exactly matches all, or some, the same column values of another row.'
           - name: edit
             desc: 'Operations that modify table values'
+            export: True
             sub:
               - name: edit table values
+                export: True
                 desc: 'Directly editing values within a column'
                 sub:
                   - name: fix data errors manually
@@ -146,6 +167,7 @@
                   - name: replace NA values
                     desc: 'Raw data may contain incomplete table values (denoted as NA) or empty values (denoted as NULL)'                
               - name: map column values
+                export: True
                 desc: 'Edit operations that change all values within a column'
                 sub:
                   - name: translate entity names
@@ -173,19 +195,21 @@
                         desc: 'Manually specify rules for combining entities.'
                       - name: bin values
                         desc: 'Classifying quantitative data into ordinal data.'
-                      - name: resolve by substring
-                        desc: 'Taking a substring of each entity expecting that a shorter version will combine some entities.'
                       - name: resolve entity names
                         desc: 'Reconcile different names for the same entity.'
                         sub:
+                          - name: resolve by substring
+                            desc: 'Taking a substring of each entity expecting that a shorter version will combine some entities.'
                           - name: perform entity resolution manually
                             desc: 'Manually specifying the mapping between categorical values, not changing individual rows.'
                           - name: resolve to arbitrary entity name among choices
                             desc: 'The actual text of the entity is not necessary as import as uniqueness'
           - name: format
+            export: True
             desc: 'Operations that modify the table values appearance or style'
             sub:
                 - name: format values
+                  export: True
                   desc: 'Operations that modify the values within the table'
                   sub:
                       - name: change case
@@ -197,6 +221,7 @@
                       - name: correct bad formatting
                         desc: 'Changes that correct ill-formed data such as HTML entities and new lines (\n)'
                 - name: format schema
+                  export: True
                   desc: 'Operations that modify anything except table values'
                   sub:
                       - name: canonicalize column names
@@ -204,8 +229,10 @@
                       - name: change column data type
                         desc: 'For example, changing a column of values from strings to integers'
                 - name: sort table rows
+                  export: True
                   desc: 'Sorting a table in a way that does not rank rows, such as by a unique identifier'
           - name: separate
+            export: True
             desc: 'Mapping one column into more than one because multiple dimensions of the dataset packed into one column'
             sub:
               - name: extract property from datetime
@@ -217,11 +244,14 @@
               - name: get unique values
                 desc: 'TK'
           - name: combine columns
+            export: True
             desc: 'Combining two columns into one'
     - name: integrate
+      export: True
       desc: 'Combining data residing in different tables into one table.'
       sub:
         - name: consolidate
+          export: True
           desc: 'Consolidation is characterized by actions that add essentially combine rows of two tables.'
           sub:
             - name: union tables
@@ -229,11 +259,13 @@
             - name: concatenate files together
               desc: 'TK'
         - name: intersect
+          export: True
           desc: 'Joining two tables such that non-matching rows are excluded from the combined table.'
           sub:
             - name: inner join tables
               desc: 'TK'
         - name: supplement
+          export: True
           desc: 'Supplementation is characterized by integration operations that essentially add columns to existing data'
           sub:
             - name: outer join tables
@@ -249,14 +281,17 @@
             - name: join with lookup table
               desc: 'Two column tables meant for mapping a key from one table to the unique column in the lookup table.'              
         - name: other
+          export: True
           desc: 'Integration operations that do not fall into the other categories'
           sub:
             - name: cartesian product
               desc: 'TK'
     - name: transform
+      export: True
       desc: 'Operations that transform a table into an aggregated, lower-resolution view of the original table.'
       sub:
           - name: summarize
+            export: True
             desc: 'Codes that aggregate and calculate tables to get a more coarse view of the data.'
             sub:
                 - name: join aggregate
@@ -283,6 +318,7 @@
                       - name: create rolling window
                         desc: 'Performs rolling-window aggregation'
           - name: calculate
+            export: True
             desc: 'These are within-column calculations that often, but not always, immediately follow an *aggregation* operation.'
             sub:
                 - name: sum along dimension
@@ -294,6 +330,7 @@
                 - name: count unique values in column
                   desc: 'Produces a scalar with unique values in the column.'
           - name: reshape
+            export: True
             desc: "Operations fundamentally change the table's structure, but do not perform any kind of summarization calculation. *Constructing a pivot table* often involves a *spread-like* operation when defining what values to use as columns in the new table. The difference with *reshaping* is that sometimes the journalist may not summarize the reshaped table."
             sub:
                 - name: spread table
@@ -301,6 +338,7 @@
                 - name: gather table
                   desc: 'Collapses table into key value pairs.'
     - name: display dataset
+      export: True
       desc: 'Different ways to check in on the state of the dataset during wrangling.'
       sub:
           - name: display a table
@@ -314,6 +352,7 @@
                 - name: Visualize data
                   desc: 'Employing any kind of data visualization, including a table'
     - name: check sanity
+      export: True
       desc: 'Operations that confirm the effect of a previous wrangling operation.'
       sub:
           - name: run a test
@@ -341,6 +380,7 @@
               - name: count number of rows
                 desc: 'Printing out the total number of rows in a table'                
     - name: export data
+      export: True
       desc: 'Ways in which journalist export the results of their data wrangling.'
       sub:
           - name: export intermediate results
