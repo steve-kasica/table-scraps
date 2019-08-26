@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>California buildings in severe fire hazard zones</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<body>
+<script type="module">
+
+import {Runtime, Inspector} from "./runtime.js";
+import define from "./@palewire/california-buildings-in-severe-fire-hazard-zones.js";
+
+const runtime = new Runtime();
+const main = runtime.module(define, Inspector.into(document.body));
+
+</script>

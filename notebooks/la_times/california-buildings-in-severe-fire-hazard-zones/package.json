@@ -1,0 +1,14 @@
+{
+  "name": "@palewire/california-buildings-in-severe-fire-hazard-zones",
+  "main": "@palewire/california-buildings-in-severe-fire-hazard-zones.js",
+  "version": "734.0.0",
+  "homepage": "https://observablehq.com/@palewire/california-buildings-in-severe-fire-hazard-zones",
+  "author": {
+    "name": "Ben Welsh",
+    "url": "https://observablehq.com/@palewire"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
