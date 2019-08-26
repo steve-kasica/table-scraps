@@ -4,9 +4,13 @@
     - name: import
       desc: 'Codes describing how data is imported into the programming environment.'
       sub:
-        - name: fetch
+        - name: grab
           desc: 'Data is imported via download from an external source'
           sub:
+            - name: pull tables out of pdf
+              desc: 'Using a table extraction tool, such as Tabula, to parse tables inside PDF documents.'
+            - name: scrape web for data
+              desc: 'Systematically parsing web pages for relevant data'          
             - name: geocode addresses
               desc: 'Translate addresses to latitude-longitude coordinates through web service, such as those from Bing.'
             - name: query database
@@ -20,18 +24,10 @@
               desc: 'Using tables populated programmatically.'
             - name: copy table schema
               desc: 'A table is copied without any values but table column names and type identical, or nearly identical, to another table'
-        - name: extract
-          desc: 'Essentially tabular data may be "locked" in a non-tabular format and need to parsed and extracted into a tabular form.'
-          sub:
-            - name: pull tables out of pdf
-              desc: 'Using a table extraction tool, such as Tabula, to parse tables inside PDF documents.'
-            - name: scrape web for data
-              desc: 'Systematically parsing web pages for relevant data'
+            - name: backfill missing data
+              desc: 'Create data observations where there are missing entries.'
         - name: load
-          desc: 'Import data by reading a file on disk such as a CSV'
-          sub:
-            - name: read as tabular data
-              desc: 'Refers to importing files from disk as a table in the environment. Files can be .csv, .xlsx, .fec, and .shp, .RData'
+          desc: 'Refers to importing files from disk as a table in the environment. Files can be .csv, .xlsx, .fec, and .shp, .RData'
     - name: amend
       desc: '*Amending* a table constitutes creating new columns in the table without *integrating* other tables.'
       sub:
@@ -111,7 +107,7 @@
                 - name: winnow columns
                   desc: 'Simply put, these operations remove table columns.'
                   sub:
-                    - name: subset columns  # TODO, Can we get more specific like below? I think I can address why.
+                    - name: subset columns
                       desc: 'Removing columns from a table by specifying which ones to remove or keep.'
                     - name: align table columns for consolidation
                       desc: 'Dropping columns so that the table can be row-wise concatenated with another table'
@@ -140,66 +136,68 @@
           - name: edit
             desc: 'Operations that modify table values'
             sub:
-                - name: fix data errors manually
-                  desc: 'Instances where individual row-column values are changed by a journalist.'
-                - name: map values
-                  desc: 'Codes that have to do with defining the relationship between two sets of column values'
-                  sub:
-                    - name: translate entity names
-                      desc: 'Performing a bijective mapping between values, often to improve semantic meaning.'
-                      sub:
-                          - name: replace NA values
-                            desc: 'Raw data may contain incomplete table values (denoted as NA) or empty values (denoted as NULL)'
-                          - name: translate entity names manually
-                            desc: 'Manually specify the mapping between individual'
-                          - name: pad column values
-                            desc: 'Adding either character prefixes or suffixes consistently to every row within a column'
-                          - name: join with lookup table
-                            desc: 'Two column tables meant for mapping a key from one table to the unique column in the lookup table.'
-                          - name: scale values
-                            desc: 'Operations that apply some mathematical operation to columns of quantitative data. This code is different from the codes under **Formulate performance metric** because this closer to cleaning.'
-                            sub:
-                              - name: transform vector
-                                desc: 'Apply a transformation to a vector, such as scalar multiplication'
-                              - name: whiten matrix
-                                desc: 'Divide each feature by its standard deviation across all observations to give it unit variance.'
-                    - name: resolve entities
-                      desc: 'A surjective mapping from previous column values to new column values'
-                      sub:
-                          - name: remove with regular expression
-                            desc: 'When column values are replaced with empty strings using regular expressions.'                      
+              - name: edit table values
+                desc: 'Directly editing values within a column'
+                sub:
+                  - name: fix data errors manually
+                    desc: 'Instances where individual row-column values are changed by a journalist.'
+                  - name: remove value characters
+                    desc: 'When characters inside a value are removed, such as periods, commas, dollar signs, etc'
+                  - name: replace NA values
+                    desc: 'Raw data may contain incomplete table values (denoted as NA) or empty values (denoted as NULL)'                
+              - name: map column values
+                desc: 'Edit operations that change all values within a column'
+                sub:
+                  - name: translate entity names
+                    desc: 'Performing a one-to-one mapping between values.'
+                    sub:
+                      - name: translate entity names manually
+                        desc: 'Manually specify the mapping between individual'
+                      - name: pad column values
+                        desc: 'Adding either character prefixes or suffixes consistently to every row within a column'
+                      - name: strip whitespace
+                        desc: 'Removing extra whitespace characters from entity name'
+                      - name: scale values
+                        desc: 'Operations that apply some mathematical operation to columns of quantitative data. This code is different from the codes under **Formulate performance metric** because this closer to cleaning.'
+                        sub:
+                          - name: transform vector
+                            desc: 'Apply a transformation to a vector, such as scalar multiplication'
+                          - name: whiten matrix
+                            desc: 'Divide each feature by its standard deviation across all observations to give it unit variance.'
+                  - name: combine values
+                    desc: 'Codes that map a set of entities to a smaller set of entities' 
+                    sub:
+                      - name: rollup
+                        desc: 'Rename entity to the name of its parent (for hierarchical data)'
+                      - name: combine entities manually
+                        desc: 'Manually specify rules for combining entities.'
+                      - name: bin values
+                        desc: 'Classifying quantitative data into ordinal data.'
+                      - name: resolve by substring
+                        desc: 'Taking a substring of each entity expecting that a shorter version will combine some entities.'
+                      - name: resolve entity names
+                        desc: 'Reconcile different names for the same entity.'
+                        sub:
                           - name: perform entity resolution manually
                             desc: 'Manually specifying the mapping between categorical values, not changing individual rows.'
-                          - name: strip whitespace
-                            desc: 'Removing extra whitespace characters from entity name'
-                          - name: combine entities by string matching
-                            desc: 'If column contains a specific string, then rename entire column to another string.'
-                          - name: reconcile primary keys between tables
-                            desc: 'Name entity resolution between tables to facilitate joining'
                           - name: resolve to arbitrary entity name among choices
-                            desc: 'The actual text of the entity is not necessary as import as uniqueness.'
-    #                       - name: resolve by substring  # TODO, where was this one?
-    #                         desc: 'Taking a substring of each entity with the expectation that a fixed, shorter version will combine some entities.'
-                          - name: bin values
-                            desc: 'Classifying quantitative data into categories, e.g. x > 100 <=> category = "under spent" and x > 100 <=> category = "over spent"'
-                - name: backfill missing data
-                  desc: 'Create new "rows" in the data where there are missing entries.'
+                            desc: 'The actual text of the entity is not necessary as import as uniqueness'
           - name: format
-            desc: 'Operations that modify the table values appearance or style.'
+            desc: 'Operations that modify the table values appearance or style'
             sub:
                 - name: format values
-                  desc: 'Operations that modify the values within the table.'
+                  desc: 'Operations that modify the values within the table'
                   sub:
                       - name: change case
-                        desc: 'Change the case of string values.'
+                        desc: 'Change the case of string values'
                       - name: change date format
                         desc: 'Specify the format which dates should be displayed'
                       - name: round floating point
-                        desc: 'Round floating point numbers.'
+                        desc: 'Round floating point numbers'
                       - name: correct bad formatting
                         desc: 'Changes that correct ill-formed data such as HTML entities and new lines (\n)'
                 - name: format schema
-                  desc: 'Operations that modify anything except table values.'
+                  desc: 'Operations that modify anything except table values'
                   sub:
                       - name: canonicalize column names
                         desc: 'Operations that change column names'
@@ -208,14 +206,14 @@
                 - name: sort table rows
                   desc: 'Sorting a table in a way that does not rank rows, such as by a unique identifier'
           - name: separate
-            desc: 'Mapping one column into more than one because multiple dimensions of the dataset packed into one column.'
+            desc: 'Mapping one column into more than one because multiple dimensions of the dataset packed into one column'
             sub:
               - name: extract property from datetime
                 desc: 'Such as extracting the day of the month, year, etc.. from a datetime column'
               - name: slice column values
-                desc: 'Extracting the relevant column values by character position, e.g. the first five digits of a zip code.'
+                desc: 'Extracting the relevant column values by character position, e.g. the first five digits of a zip code'
               - name: split column on delimiter
-                desc: 'Separate data dimensions by a common character, e.g. lat-long coordinates separated by a comma.'
+                desc: 'Separate data dimensions by a common character, e.g. lat-long coordinates separated by a comma'
               - name: get unique values
                 desc: 'TK'
           - name: combine columns
@@ -248,6 +246,8 @@
               desc: 'When columns from multiple, parallel tables are concatenated together to form a new table.'
             - name: self join table
               desc: 'Join a table with itself'
+            - name: join with lookup table
+              desc: 'Two column tables meant for mapping a key from one table to the unique column in the lookup table.'              
         - name: other
           desc: 'Integration operations that do not fall into the other categories'
           sub:
@@ -317,23 +317,23 @@
       desc: 'Operations that confirm the effect of a previous wrangling operation.'
       sub:
           - name: run a test
-            desc: 'Operations output a clear pass or fail value, often implemented by counting things.'
+            desc: 'Operations output a clear pass or fail value, often implemented by counting things'
             sub:
               - name: report rows with column number discrepancies
-                desc: 'Finds if a row has a different number of columns than the header row.'
+                desc: 'Finds if a row has a different number of columns than the header row'
               - name: test for equality
-                desc: 'Test if two data structures are exactly the same, e.g. two data frames.'
-              - name: test different computations for equality  # The Upshot did this with variance
-                desc: 'Test the results of a calculation against different methods/packages.'
+                desc: 'Test if two data structures are exactly the same, e.g. two data frames'
+              - name: test different computations for equality
+                desc: 'Test the results of a calculation against different methods/packages. The Upshot did this with variance.'
           - name: check results
-            desc: 'Operations that output some visual representation of the table.'
+            desc: 'Operations that output some visual representation of the table'
             sub:
               - name: check results of previous operation
                 desc: ''
               - name: peek at data
                 desc: 'Display the first *n* rows and all columns of the table'
-              - name: inspect table schema  # Tamara had issues with this one
-                desc: ''
+              - name: inspect table schema
+                desc: 'Check the data types of columns'
               - name: display rows with missing values
                 desc: 'E.g. filtering rows with a NA value in a particular column'
               - name: check for NAs
@@ -476,7 +476,12 @@
               desc: 'As outer joins do not drop non-matching rows, those values have NA'
         - name: encode redundant information
           desc: 'When data that already exists in the table is recoded into the table.'
-        - name: data loss from aggregation
-          desc: 'When table columns are lost because they were dropped form resulting table due to not being relevant in aggregation.'
+        - name: post-aggregation clean up
+          desc: 'Pain points that come from the result of grouping a table.'
+          sub:
+            - name: data loss from aggregation
+              desc: 'When table columns are lost because they were dropped form resulting table due to not being relevant in aggregation.'
+            - name: silently dropping values after groupby
+              desc: 'Values other than thsoe being grouped and calculated upon are lost in a group by operation'
         - name: data too large for repo
           desc: 'Raw data cannot be included in SCM because files are too large'
