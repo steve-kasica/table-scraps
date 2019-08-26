@@ -46,7 +46,7 @@ Keemahill, Dan. (2019, February 3). Analysis of Austin-Travis County EMS call da
 
 Keller, Josh; Pearce, Adam. (2016, September 7). US State prison admissions by county. *New York Times*. Retrieved from https://github.com/TheUpshot/prison-admissions
 
-Mayes, Brittany. (2017, April 17). Data analysis for education's school choice in Indiana project. *National Public Radio*. Retrieved from https://github.com/nprapps/school-choice
+Mayes, Brittany Renee. (2017, April 17). Data analysis for education's school choice in Indiana project. *National Public Radio*. Retrieved from https://github.com/nprapps/school-choice
 
 Meiners, Joan. (2018, August 16). Endangered species act Louisiana: American alligator. *NOLA*. Retrieved from https://github.com/beecycles/Endangered-Species-Act-Louisiana
 
