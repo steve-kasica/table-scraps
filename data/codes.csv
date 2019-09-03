@@ -30,7 +30,7 @@
 28,calculate change,calculate percentage difference,"""the difference between two values taken as a percentage of whichever value you are using as the base,"" according to Philip Meyer in *Precision Journalism.* This term is synonymous with percent change.",4,True,6
 29,calculate change,calculate difference,"Subtracting two quantitative variables, including scalar values, vectors, and matrices.",4,True,9
 30,amend,key generation,"Operations that create ""key"" columns.",2,False,9
-31,key generation,create a semi-unique key,"Journalist creates a key that is a close, but imperfect, unique key, e.g. concatenating first name and surname.",3,True,5
+31,key generation,create soft key,"Keys used in matching without a guarentee of uniqueness, such as combinations of names and addresses",3,True,5
 32,key generation,create a unique key,Journalist create a key that is actually unique in the table,3,True,2
 33,key generation,concatenate columns into key,"Combine two string columns into one to create a key, e.g. combine city and state.",3,True,3
 34,key generation,designate column as primary key,Designating a column as the unique identifier for all rows in the table.,3,True,2
@@ -111,7 +111,7 @@
 109,actions,display dataset,Different ways to check in on the state of the dataset during wrangling.,1,False,17
 110,display dataset,format table display,"Operations that adjust the table displace, such as how many decimals to round floats",2,True,5
 111,display dataset,visualize data,"Employing any kind of data visualization, including a table",2,True,16
-112,display dataset,describe stastically,"Generates any kind of descriptive statistics of the dataset's central tendency, dispersion and distribution shape",2,True,0
+112,display dataset,describe statistically,"Generates any kind of descriptive statistics of the dataset's central tendency, dispersion and distribution shape",2,True,2
 113,actions,check sanity,Operations that confirm the effect of a previous wrangling operation.,1,False,24
 114,check sanity,run a test,"Operations output a clear pass or fail value, often implemented by counting things",2,False,5
 115,run a test,report rows with column number discrepancies,Finds if a row has a different number of columns than the header row,3,True,1

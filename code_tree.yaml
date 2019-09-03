@@ -71,8 +71,8 @@
           - name: key generation
             desc: 'Operations that create "key" columns.'
             sub:
-                - name: create a semi-unique key
-                  desc: 'Journalist creates a key that is a close, but imperfect, unique key, e.g. concatenating first name and surname.'
+                - name: create soft key
+                  desc: 'Keys used in matching without a guarentee of uniqueness, such as combinations of names and addresses'
                 - name: create a unique key
                   desc: 'Journalist create a key that is actually unique in the table'
                 - name: concatenate columns into key
@@ -254,7 +254,7 @@
           desc: 'Operations that adjust the table displace, such as how many decimals to round floats'
         - name: visualize data
           desc: 'Employing any kind of data visualization, including a table'
-        - name: describe stastically
+        - name: describe statistically
           desc: "Generates any kind of descriptive statistics of the dataset's central tendency, dispersion and distribution shape"
     - name: check sanity
       desc: 'Operations that confirm the effect of a previous wrangling operation.'
