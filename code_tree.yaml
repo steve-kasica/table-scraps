@@ -38,6 +38,8 @@
                   desc: 'TK'
                 - name: compute index number
                   desc: 'TK'
+                - name: adjust for season
+                  desc: ''
           - name: encode table identification in row
             desc: 'When some way of identifying the table is encoded as a separate column in each row. Common identification methods include the name of the corresponding file, an arbitrary table name, or boolean value.'
           - name: support network analysis
@@ -55,6 +57,8 @@
                 - name: calculate normalized score
                   desc: 'Measuring the differences between groups of different sizes.'
                   sub:
+                      - name: calculate normalized values
+                        desc: 'Detrending values via division to make them comparable, includes both ratios and scaled ratios.'
                       - name: calculate ratio
                         desc: 'Dividing a quantitative variable by another in such a way that enables fair comparisons. Such as per capita'
                       - name: calculate scaled ratio
@@ -68,6 +72,8 @@
                       desc: '"the difference between two values taken as a percentage of whichever value you are using as the base," according to Philip Meyer in *Precision Journalism.* This term is synonymous with percent change.'
                     - name: calculate difference
                       desc: 'Subtracting two quantitative variables, including scalar values, vectors, and matrices.'
+                - name: domain-specific performance metric
+                  desc: 'A domain specific metric, such as the Cube Root Law for legislatures.'
           - name: key generation
             desc: 'Operations that create "key" columns.'
             sub:

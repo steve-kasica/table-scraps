@@ -116,3 +116,6 @@
 [submodule "notebooks/nzz"]
 	path = notebooks/nzz
 	url = https://github.com/swkasica/st-methods.git
+[submodule "notebooks/nytimes/gunsales"]
+	path = notebooks/nytimes/gunsales
+	url = https://github.com/swkasica/gunsales.git

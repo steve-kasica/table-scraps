@@ -4,6 +4,8 @@ In the spirit of journalistic transparency, many journalists publish the data an
 
 ## Journalist notebooks included in open-coding analysis
 
+Aisch, Gregor; Keller, Josh; Eddelbuettel, Dirk. (2016, June 13). Analysis of NICS gun purchase background checks. *New YorkTimes*. Retrieved from https://github.com/nytimes/gunsales
+
 Aldhous, Peter. (2016, September 16). "Shy Trumpers" polling analysis. *BuzzFeed News*. Retrieved from https://github.com/BuzzFeedNews/2016-09-shy-trumpers
 
 Arthur, Rob. (2015, July 30). Buster Posey MVP. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data/tree/master/buster-posey-mvp
