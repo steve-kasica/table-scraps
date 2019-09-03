@@ -1,9 +1,9 @@
 ,parent,name,desc,level,is_leaf,analysis
-0,root,actions,Codes that describe actions the journalist has taken to wrangle data for further analysis,0,False,47
-1,actions,import,Codes describing how data is imported into the programming environment.,1,False,37
-2,import,grab,Data is imported via download from an external source,2,False,5
+0,root,actions,Codes that describe actions the journalist has taken to wrangle data for further analysis,0,False,48
+1,actions,import,Codes describing how data is imported into the programming environment.,1,False,38
+2,import,grab,Data is imported via download from an external source,2,False,6
 3,grab,pull tables out of pdf,"Using a table extraction tool, such as Tabula, to parse tables inside PDF documents.",3,True,1
-4,grab,scrape web for data,Systematically parsing web pages for relevant data,3,True,2
+4,grab,scrape web for data,Systematically parsing web pages for relevant data,3,True,3
 5,grab,geocode addresses,"Translate addresses to latitude-longitude coordinates through web service, such as those from Bing.",3,True,1
 6,grab,query database,Data is imported through a database query,3,True,1
 7,import,create,Data is created inside the programming environment,2,False,9
@@ -11,7 +11,7 @@
 9,create,generate data computationally,Using tables populated programmatically.,3,True,2
 10,create,copy table schema,"A table is copied without any values but table column names and type identical, or nearly identical, to another table",3,True,1
 11,create,backfill missing data,Create data observations where there are missing entries.,3,True,2
-12,import,load,"Refers to importing files from disk as a table in the environment. Files can be .csv, .xlsx, .fec, and .shp, .RData",2,True,33
+12,import,load,"Refers to importing files from disk as a table in the environment. Files can be .csv, .xlsx, .fec, and .shp, .RData",2,True,34
 13,actions,amend,*Amending* a table constitutes creating new columns in the table without *integrating* other tables.,1,False,35
 14,amend,detrend,"""filter out the secular effect in order to see what is going on specifically with the phenomenon you are investigating,"" Philip Meyer in *Precision Journalism*.",2,False,4
 15,detrend,adjust for inflation,TK,3,True,3
@@ -38,13 +38,13 @@
 36,rank data,assign ranks,When a column of numerical ranks is explicitly assigned to rows in the table.,3,True,1
 37,rank data,sort table,When rank is implicitly assigned by rearranging row position in the table.,3,True,12
 38,amend,create flag,Flags are boolean expressed computed upon column values and used in filtering and grouping,2,True,3
-39,actions,clean,Operations to correct erroneous or remove otherwise unwanted rows and values from the table.,1,False,38
-40,clean,trim fat,Winnow down data that is not relevant to analysis.,2,False,27
+39,actions,clean,Operations to correct erroneous or remove otherwise unwanted rows and values from the table.,1,False,39
+40,clean,trim fat,Winnow down data that is not relevant to analysis.,2,False,28
 41,trim fat,winnow columns,"Simply put, these operations remove table columns.",3,False,21
 42,winnow columns,subset columns,Removing columns from a table by specifying which ones to remove or keep.,4,True,19
 43,winnow columns,align table columns for consolidation,Dropping columns so that the table can be row-wise concatenated with another table,4,True,2
-44,trim fat,winnow rows,"Simply put, these operations remove table rows.",3,False,20
-45,winnow rows,trim by date range,Removing rows that are inside or outside a specific date range. This can be a method for detrending data by adjusting for season.,4,True,9
+44,trim fat,winnow rows,"Simply put, these operations remove table rows.",3,False,21
+45,winnow rows,trim by date range,Removing rows that are inside or outside a specific date range. This can be a method for detrending data by adjusting for season.,4,True,10
 46,winnow rows,trim by geographic area,Remove rows that are inside or outside the geographic area.,4,True,3
 47,winnow rows,trim by quantitative threshold,"Remove rows that are above, below, equal to, or not equal to a numeric value.",4,True,7
 48,winnow rows,trim by contains value,Remove rows that do or do not contain specific values or types of values.,4,True,11
@@ -108,81 +108,83 @@
 106,reshape,spread table,Expand two columns of key value pairs into multiple columns.,3,True,5
 107,reshape,gather table,Collapses table into key value pairs.,3,True,5
 108,reshape,cross tabulate,such as with a pivot table/crosstab,3,True,8
-109,actions,display dataset,Different ways to check in on the state of the dataset during wrangling.,1,False,16
+109,actions,display dataset,Different ways to check in on the state of the dataset during wrangling.,1,False,17
 110,display dataset,format table display,"Operations that adjust the table displace, such as how many decimals to round floats",2,True,5
-111,display dataset,visualize data,"Employing any kind of data visualization, including a table",2,True,15
-112,actions,check sanity,Operations that confirm the effect of a previous wrangling operation.,1,False,23
-113,check sanity,run a test,"Operations output a clear pass or fail value, often implemented by counting things",2,False,4
-114,run a test,report rows with column number discrepancies,Finds if a row has a different number of columns than the header row,3,True,1
-115,run a test,test for equality,"Test if two data structures are exactly the same, e.g. two data frames",3,True,2
-116,run a test,test different computations for equality,Test the results of a calculation against different methods/packages. The Upshot did this with variance.,3,True,1
-117,check sanity,check results,Operations that output some visual representation of the table,2,False,21
-118,check results,check results of previous operation,,3,True,2
-119,check results,peek at data,Display the first *n* rows and all columns of the table,3,True,15
-120,check results,inspect table schema,Check the data types of columns,3,True,4
-121,check results,display rows with missing values,E.g. filtering rows with a NA value in a particular column,3,True,1
-122,check results,check for nas,See if any rows have NA values.,3,True,1
-123,check results,count number of rows,Printing out the total number of rows in a table,3,True,3
-124,actions,export,Ways in which journalist export the results of their data wrangling.,1,True,16
-125,root,observations,"These codes cover observations from the coder about the wrangling processes, not actions performed by the journalist.",0,False,46
-126,observations,data acquisition,How the data was acquired by journalists,1,False,22
-127,data acquisition,collect raw data,Using first-hand observations or logs as data.,2,True,5
-128,data acquisition,use previously cleaned data,Data that originated from a colleague.,2,True,1
-129,data acquisition,use public data,"Includes open-source datasets, tables on Wikipedia, etc..",2,True,2
-130,data acquisition,use academic data,,2,True,1
-131,data acquisition,"use non-public, provided data",,2,True,2
-132,data acquisition,use open government data,"Data publically available on open data portals, such as data.gov",2,True,9
-133,data acquisition,freedom of information data,Data that was obtained via FOI/FOIA requests.,2,True,1
-134,data acquisition,use another news orgs data,A dataset previously published by another news organization,2,True,2
-135,data acquisition,use data from colleague,A dataset was provided by another journalist.,2,True,1
-136,observations,workflow building,Codes pertaining to how the wrangling workflow is built.,1,False,13
-137,workflow building,annotate workflow,Adding comments or notes in Markdown that explain what the journalists doing.,2,True,4
-138,workflow building,think computationally,Codes that demonstrate computational thinking on the part of the journalist.,2,False,10
-139,think computationally,architect a subroutine,A set of instructions grouped together to be performed multiple times.,3,True,5
-140,think computationally,architect repeating process,Instances where journalists employed a loop.,3,True,6
-141,workflow building,toggle step on and off,Some wrangling steps were not always run. Toggling off is often accomplished by commenting out code.,2,True,2
-142,observations,wrangling purpose,Why does this data need to be wrangled?,1,False,26
-143,wrangling purpose,input for downstream applications,Output from wrangling will be input into some other program,2,False,20
-144,input for downstream applications,wrangle data for graphics,"Data need to be formatted in order to be visualized in an article, including tables.",3,True,19
-145,input for downstream applications,wrangle data for model,"Data is being wrangled in order to create a model, whether the main point of the piece is for prediction or classification",3,True,1
-146,wrangling purpose,remove erroneous data,There are errors in the data that need to be removed,2,True,2
-147,wrangling purpose,creating new datasets,,2,False,7
-148,creating new datasets,combine drifting datasets,"Reconcile difference in periodically published datasets that have superficially changed over time, such as schema differences or entity names, to consolidate more than one dataset.",3,True,3
-149,creating new datasets,combine seemingly disparate datasets,When a notebook largely constitutes combining seemingly unrelated datasets.,3,True,2
-150,creating new datasets,combine data and geography,Pairing data with GIS info.,3,True,2
-151,wrangling purpose,aggregate the forest from the trees,Data of individual observations is aggregated in an attempt to find some meaningful structure or patterns,2,True,2
-152,observations,analysis,Kinds of analysis data journalists need to wrangle data to perform.,1,False,28
-153,analysis,interpret statistical/ml model,Analyze features from a model such as linear regression or classification trees,2,True,5
-154,analysis,compare different groups along a common metric,The end analysis is just comparing different groups by a common metric.,2,True,11
-155,analysis,show trend over time,Analysis consists of showing how values change over time,2,True,6
-156,analysis,calculate a statistic,"Calculate a single value for from a dataset, such as number of records.",2,True,6
-157,analysis,explain variance,This can be done via PCA,2,True,1
-158,analysis,answer a question,Analysis consists of using data to answer a specific question,2,True,4
-159,analysis,outlier detection,Finding extreme cases or outliers in the data,2,True,3
-160,analysis,find nearest neighbours in the network,(Network analysis) Find the closest neighbours for all points,2,True,1
-161,analysis,explore dynamic network flow,"(Network analysis) explore the flow between different nodes in the graph, e.g. migration between cities.",2,True,3
-162,observations,strategies,General strategies journalists employ when wrangling data.,1,False,12
-163,strategies,tables evolve,Data and objects are destroyed during the wrangling process.,2,False,5
-164,tables evolve,value replacement,The output of any column calculation is reassigned to an existing column.,3,True,1
-165,tables evolve,temporary joining column,When a key for joining two tables is created and destroyed immediately after the join.,3,True,1
-166,tables evolve,refine table,"Table refinement refers to when a table is subset *in place*, a new object is not created in the environment.",3,True,5
-167,strategies,data is precious,Data and objects are neverly actually lost in the programming environment.,2,False,2
-168,data is precious,preserve existing values,The output of any column calculation is assigned to a new column,3,True,2
-169,data is precious,create child table,A child table is a subset of the parent table declared as a new object in the environment.,3,True,1
-170,strategies,set data confidence threshold,"Removes rows where a quantitative value is less than, greater than, or not equal to a numeric value.",2,True,1
-171,strategies,table splitting,"Tables may be divided, partitioned, or otherwise split into multiple tables to accomplish a transformation goal.",2,False,9
-172,table splitting,"split, compute, and merge","First, the journalist partitions a single data frame into multiple, separate data frames. Then, often identical computations are run on all the data frame. Finally, the multiple data frames are consolidated into one data frame again.",3,True,6
-173,table splitting,split and compute,One table is split into two or more and identical computations are applied to each table.,3,True,3
-174,strategies,tolerate dirty data,Analysis continues despite clear data quality issues.,2,True,3
-175,observations,pain points,Areas where journalist seem/could be frustrated in the wrangling process.,1,False,18
-176,pain points,fix incorrect calculation,Calculations in the data are incorrect and the journalist must recalculate them,2,True,1
-177,pain points,repetitive code,Instances where code is repetitively copied and pasted.,2,True,13
-178,pain points,make an incorrect conclusion,Instances where the journalist has made an incorrect conclusion about the data.,2,True,1
-179,pain points,post-merge clean up,Pain points that come from the result of merging two datasets together,2,False,4
-180,post-merge clean up,resort after merge,When a sort has to be re-done because a merge ruining the pre-merged order.,3,True,1
-181,post-merge clean up,fill in na values after an outer join,"As outer joins do not drop non-matching rows, those values have NA",3,True,3
-182,pain points,encode redundant information,When data that already exists in the table is recoded into the table.,2,True,1
-183,pain points,post-aggregation clean up,Pain points that come from the result of grouping a table.,2,False,2
-184,post-aggregation clean up,data loss from aggregation,When table columns are lost because they were dropped form resulting table due to not being relevant in aggregation.,3,True,1
-185,post-aggregation clean up,silently dropping values after groupby,Values other than thsoe being grouped and calculated upon are lost in a group by operation,3,True,1
-186,pain points,data too large for repo,Raw data cannot be included in SCM because files are too large,2,True,1
+111,display dataset,visualize data,"Employing any kind of data visualization, including a table",2,True,16
+112,display dataset,describe stastically,"Generates any kind of descriptive statistics of the dataset's central tendency, dispersion and distribution shape",2,True,0
+113,actions,check sanity,Operations that confirm the effect of a previous wrangling operation.,1,False,24
+114,check sanity,run a test,"Operations output a clear pass or fail value, often implemented by counting things",2,False,5
+115,run a test,report rows with column number discrepancies,Finds if a row has a different number of columns than the header row,3,True,1
+116,run a test,test for equality,"Test if two data structures are exactly the same, e.g. two data frames",3,True,2
+117,run a test,test different computations for equality,Test the results of a calculation against different methods/packages. The Upshot did this with variance.,3,True,1
+118,run a test,validate data quality with domain-specific rules,Such as if the average temperature is higher than the maximum recorded temperature,3,True,1
+119,check sanity,check results,Operations that output some visual representation of the table,2,False,21
+120,check results,check results of previous operation,,3,True,2
+121,check results,peek at data,Display the first *n* rows and all columns of the table,3,True,15
+122,check results,inspect table schema,Check the data types of columns,3,True,4
+123,check results,display rows with missing values,E.g. filtering rows with a NA value in a particular column,3,True,1
+124,check results,check for nas,See if any rows have NA values.,3,True,1
+125,check results,count number of rows,Printing out the total number of rows in a table,3,True,3
+126,actions,export,Ways in which journalist export the results of their data wrangling.,1,True,17
+127,root,observations,"These codes cover observations from the coder about the wrangling processes, not actions performed by the journalist.",0,False,47
+128,observations,data acquisition,How the data was acquired by journalists,1,False,22
+129,data acquisition,collect raw data,Using first-hand observations or logs as data.,2,True,5
+130,data acquisition,use previously cleaned data,Data that originated from a colleague.,2,True,1
+131,data acquisition,use public data,"Includes open-source datasets, tables on Wikipedia, etc..",2,True,2
+132,data acquisition,use academic data,,2,True,1
+133,data acquisition,"use non-public, provided data",,2,True,2
+134,data acquisition,use open government data,"Data publically available on open data portals, such as data.gov",2,True,9
+135,data acquisition,freedom of information data,Data that was obtained via FOI/FOIA requests.,2,True,1
+136,data acquisition,use another news orgs data,A dataset previously published by another news organization,2,True,2
+137,data acquisition,use data from colleague,A dataset was provided by another journalist.,2,True,1
+138,observations,workflow building,Codes pertaining to how the wrangling workflow is built.,1,False,14
+139,workflow building,annotate workflow,Adding comments or notes in Markdown that explain what the journalists doing.,2,True,4
+140,workflow building,think computationally,Codes that demonstrate computational thinking on the part of the journalist.,2,False,11
+141,think computationally,architect a subroutine,A set of instructions grouped together to be performed multiple times.,3,True,6
+142,think computationally,architect repeating process,Instances where journalists employed a loop.,3,True,7
+143,workflow building,toggle step on and off,Some wrangling steps were not always run. Toggling off is often accomplished by commenting out code.,2,True,2
+144,observations,wrangling purpose,Why does this data need to be wrangled?,1,False,27
+145,wrangling purpose,input for downstream applications,Output from wrangling will be input into some other program,2,False,21
+146,input for downstream applications,wrangle data for graphics,"Data need to be formatted in order to be visualized in an article, including tables.",3,True,20
+147,input for downstream applications,wrangle data for model,"Data is being wrangled in order to create a model, whether the main point of the piece is for prediction or classification",3,True,1
+148,wrangling purpose,remove erroneous data,There are errors in the data that need to be removed,2,True,2
+149,wrangling purpose,creating new datasets,,2,False,7
+150,creating new datasets,combine drifting datasets,"Reconcile difference in periodically published datasets that have superficially changed over time, such as schema differences or entity names, to consolidate more than one dataset.",3,True,3
+151,creating new datasets,combine seemingly disparate datasets,When a notebook largely constitutes combining seemingly unrelated datasets.,3,True,2
+152,creating new datasets,combine data and geography,Pairing data with GIS info.,3,True,2
+153,wrangling purpose,aggregate the forest from the trees,Data of individual observations is aggregated in an attempt to find some meaningful structure or patterns,2,True,2
+154,observations,analysis,Kinds of analysis data journalists need to wrangle data to perform.,1,False,28
+155,analysis,interpret statistical/ml model,Analyze features from a model such as linear regression or classification trees,2,True,5
+156,analysis,compare different groups along a common metric,The end analysis is just comparing different groups by a common metric.,2,True,11
+157,analysis,show trend over time,Analysis consists of showing how values change over time,2,True,6
+158,analysis,calculate a statistic,"Calculate a single value for from a dataset, such as number of records.",2,True,6
+159,analysis,explain variance,This can be done via PCA,2,True,1
+160,analysis,answer a question,Analysis consists of using data to answer a specific question,2,True,4
+161,analysis,outlier detection,Finding extreme cases or outliers in the data,2,True,3
+162,analysis,find nearest neighbours in the network,(Network analysis) Find the closest neighbours for all points,2,True,1
+163,analysis,explore dynamic network flow,"(Network analysis) explore the flow between different nodes in the graph, e.g. migration between cities.",2,True,3
+164,observations,strategies,General strategies journalists employ when wrangling data.,1,False,12
+165,strategies,tables evolve,Data and objects are destroyed during the wrangling process.,2,False,5
+166,tables evolve,value replacement,The output of any column calculation is reassigned to an existing column.,3,True,1
+167,tables evolve,temporary joining column,When a key for joining two tables is created and destroyed immediately after the join.,3,True,1
+168,tables evolve,refine table,"Table refinement refers to when a table is subset *in place*, a new object is not created in the environment.",3,True,5
+169,strategies,data is precious,Data and objects are neverly actually lost in the programming environment.,2,False,2
+170,data is precious,preserve existing values,The output of any column calculation is assigned to a new column,3,True,2
+171,data is precious,create child table,A child table is a subset of the parent table declared as a new object in the environment.,3,True,1
+172,strategies,set data confidence threshold,"Removes rows where a quantitative value is less than, greater than, or not equal to a numeric value.",2,True,1
+173,strategies,table splitting,"Tables may be divided, partitioned, or otherwise split into multiple tables to accomplish a transformation goal.",2,False,9
+174,table splitting,"split, compute, and merge","First, the journalist partitions a single data frame into multiple, separate data frames. Then, often identical computations are run on all the data frame. Finally, the multiple data frames are consolidated into one data frame again.",3,True,6
+175,table splitting,split and compute,One table is split into two or more and identical computations are applied to each table.,3,True,3
+176,strategies,tolerate dirty data,Analysis continues despite clear data quality issues.,2,True,3
+177,observations,pain points,Areas where journalist seem/could be frustrated in the wrangling process.,1,False,18
+178,pain points,fix incorrect calculation,Calculations in the data are incorrect and the journalist must recalculate them,2,True,1
+179,pain points,repetitive code,Instances where code is repetitively copied and pasted.,2,True,13
+180,pain points,make an incorrect conclusion,Instances where the journalist has made an incorrect conclusion about the data.,2,True,1
+181,pain points,post-merge clean up,Pain points that come from the result of merging two datasets together,2,False,4
+182,post-merge clean up,resort after merge,When a sort has to be re-done because a merge ruining the pre-merged order.,3,True,1
+183,post-merge clean up,fill in na values after an outer join,"As outer joins do not drop non-matching rows, those values have NA",3,True,3
+184,pain points,encode redundant information,When data that already exists in the table is recoded into the table.,2,True,1
+185,pain points,post-aggregation clean up,Pain points that come from the result of grouping a table.,2,False,2
+186,post-aggregation clean up,data loss from aggregation,When table columns are lost because they were dropped form resulting table due to not being relevant in aggregation.,3,True,1
+187,post-aggregation clean up,silently dropping values after groupby,Values other than thsoe being grouped and calculated upon are lost in a group by operation,3,True,1
+188,pain points,data too large for repo,Raw data cannot be included in SCM because files are too large,2,True,1
