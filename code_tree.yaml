@@ -39,7 +39,7 @@
                 - name: compute index number
                   desc: 'TK'
                 - name: adjust for season
-                  desc: ''
+                  desc: 'The data journalists makes seasonal adjustments to the data to detrend for seasonal trends.'
           - name: encode table identification in row
             desc: 'When some way of identifying the table is encoded as a separate column in each row. Common identification methods include the name of the corresponding file, an arbitrary table name, or boolean value.'
           - name: support network analysis
@@ -52,17 +52,10 @@
           - name: formulate performance metric
             desc: 'Codes in this category specify a calculation that is later used to compare different entities or the same entity over time. A recurring theme between many of these notebooks is to compare different entities, such as political parties, by a common, quantitative metric, such as percentage of all newly registered voters.'
             sub:
-                - name: standardize values  # TODO what's the difference between standardized and normalized? 
+                - name: standardize values
                   desc: 'Measuring deviation from some definition of "normal", e.g. Z-scores'
-                - name: calculate normalized score
-                  desc: 'Measuring the differences between groups of different sizes.'
-                  sub:
-                      - name: calculate normalized values
-                        desc: 'Detrending values via division to make them comparable, includes both ratios and scaled ratios.'
-                      - name: calculate ratio
-                        desc: 'Dividing a quantitative variable by another in such a way that enables fair comparisons. Such as per capita'
-                      - name: calculate scaled ratio
-                        desc: 'For example, calculating per 1,000 rates and percentages.'
+                - name: figure a rate
+                  desc: 'Convert numbers to a normalized rate to "provide a comparison against some easily recognized baseline" Philip Meyer in *Precision Journalism*'
                 - name: calculate central tendency
                   desc: 'Measuring what a typical value is in the data, e.g. mean, median.'
                 - name: calculate change
