@@ -2,10 +2,10 @@
   desc: 'Codes that describe actions the journalist has taken to wrangle data for further analysis'
   sub:
     - name: import
-      desc: 'Codes describing how data is imported into the programming environment.'
+      desc: 'How raw data is introduced into the programming/wrangling environment'
       sub:
-        - name: grab
-          desc: 'Data is imported via download from an external source'
+        - name: fetch
+          desc: 'Data is retrieved from some external sources to the programming environment'
           sub:
             - name: pull tables out of pdf
               desc: 'Using a table extraction tool, such as Tabula, to parse tables inside PDF documents.'
@@ -27,9 +27,9 @@
             - name: backfill missing data
               desc: 'Create data observations where there are missing entries.'
         - name: load
-          desc: 'Refers to importing files from disk as a table in the environment. Files can be .csv, .xlsx, .fec, and .shp, .RData'
-    - name: amend
-      desc: '*Amending* a table constitutes creating new columns in the table without *integrating* other tables.'
+          desc: 'Raw data resides on the local disk and is *loaded* into the environment, includes these file formats: .csv, .xlsx, .fec, .shp, .RData, etc.'
+    - name: amend  # Todo different from edit?
+      desc: '*Amending* the data constitutes make minor changes without *integrating* other tables.'
       sub:
           - name: detrend
             desc: '"filter out the secular effect in order to see what is going on specifically with the phenomenon you are investigating," Philip Meyer in *Precision Journalism*.'
@@ -39,14 +39,14 @@
                 - name: compute index number
                   desc: 'TK'
                 - name: adjust for season
-                  desc: 'The data journalists makes seasonal adjustments to the data to detrend for seasonal trends.'
-          - name: encode table identification in row
-            desc: 'When some way of identifying the table is encoded as a separate column in each row. Common identification methods include the name of the corresponding file, an arbitrary table name, or boolean value.'
-          - name: support network analysis
-            desc: 'Actions that modify a table to directly support network analysis'
+                  desc: 'Making seasonal adjustments to the data to detrend for seasonal trends.'
+          - name: encode table identification in row  # is this provenance?
+            desc: 'When some way of identifying the table is encoded as a separate column in each row. Common identification methods include the name of the corresponding file, an arbitrary table name, or boolean value'
+          - name: network-ify the data
+            desc: 'When the data is inherently a graph, encode table columns and values to represent this structure tabularly'
             sub:
               - name: create edge
-                desc: 'A column with value that define a relationship to another row, which is not necessarily in a different table.'
+                desc: 'A column with value that define a relationship to another row, which is not necessarily in a different table'
               - name: define edge weights
                 desc: 'Columns that define edge weights'
           - name: formulate performance metric
@@ -58,25 +58,22 @@
                   desc: 'Convert numbers to a normalized rate to "provide a comparison against some easily recognized baseline" Philip Meyer in *Precision Journalism*'
                 - name: calculate central tendency
                   desc: 'Measuring what a typical value is in the data, e.g. mean, median.'
-                - name: calculate change
-                  desc: 'Measuring how much things change, usually over time.'
-                  sub:
-                    - name: calculate percentage difference
-                      desc: '"the difference between two values taken as a percentage of whichever value you are using as the base," according to Philip Meyer in *Precision Journalism.* This term is synonymous with percent change.'
-                    - name: calculate difference
-                      desc: 'Subtracting two quantitative variables, including scalar values, vectors, and matrices.'
+                - name: calculate change over time
+                  desc: 'Such as the percentage difference over time.'
+                - name: calculate spread
+                  desc: 'Calculating the difference between two values or rates'
                 - name: domain-specific performance metric
                   desc: 'A domain specific metric, such as the Cube Root Law for legislatures.'
-          - name: key generation
+          - name: generate keys
             desc: 'Operations that create "key" columns.'
             sub:
                 - name: create soft key
                   desc: 'Keys used in matching without a guarentee of uniqueness, such as combinations of names and addresses'
                 - name: create a unique key
                   desc: 'Journalist create a key that is actually unique in the table'
-                - name: concatenate columns into key
+                - name: concatenate columns into key  # This seems just like a concat things.
                   desc: 'Combine two string columns into one to create a key, e.g. combine city and state.'
-                - name: designate column as primary key
+                - name: designate column as primary key  # how is this different from unique key?
                   desc: 'Designating a column as the unique identifier for all rows in the table.'
           - name: rank data
             desc: 'Operations that encode semantic meaning about the data with table index.'
@@ -93,24 +90,19 @@
           - name: trim fat
             desc: 'Winnow down data that is not relevant to analysis.'
             sub:
-                - name: winnow columns
-                  desc: 'Simply put, these operations remove table columns.'
-                  sub:
-                    - name: subset columns
-                      desc: 'Removing columns from a table by specifying which ones to remove or keep.'
-                    - name: align table columns for consolidation
-                      desc: 'Dropping columns so that the table can be row-wise concatenated with another table'
-                - name: winnow rows
-                  desc: 'Simply put, these operations remove table rows.'
-                  sub:
-                      - name: trim by date range
-                        desc: 'Removing rows that are inside or outside a specific date range. This can be a method for detrending data by adjusting for season.'
-                      - name: trim by geographic area
-                        desc: 'Remove rows that are inside or outside the geographic area.'
-                      - name: trim by quantitative threshold
-                        desc: 'Remove rows that are above, below, equal to, or not equal to a numeric value.'
-                      - name: trim by contains value
-                        desc: 'Remove rows that do or do not contain specific values or types of values.'
+              - name: subset columns
+                desc: 'Removing columns from a table by specifying which ones to remove or keep.'            
+              - name: winnow rows
+                desc: 'Simply put, these operations remove table rows.'
+                sub:
+                    - name: trim by date range
+                      desc: 'Removing rows that are inside or outside a specific date range. This can be a method for detrending data by adjusting for season.'
+                    - name: trim by geographic area
+                      desc: 'Remove rows that are inside or outside the geographic area.'
+                    - name: trim by quantitative threshold
+                      desc: 'Remove rows that are above, below, equal to, or not equal to a numeric value.'
+                    - name: trim by contains value
+                      desc: 'Remove rows that do or do not contain specific values or types of values.'
           - name: remove incomplete data
             desc: 'Drop row if value(s) are incomplete, usually denoted as NA.'
           - name: deduplicate
@@ -157,7 +149,7 @@
             sub:
                 - name: format values
                   desc: 'Operations that change value appearence, e.g. change case, specifying date format, rounding floats.'
-                - name: correct bad formatting
+                - name: correct bad formatting  # Same as above?
                   desc: 'Changes that correct ill-formed data such as HTML entities and new lines (\n)'
                 - name: format schema
                   desc: 'Operations that modify anything except table values'
@@ -166,9 +158,9 @@
                         desc: 'Operations that change column names'
                       - name: change column data type
                         desc: 'For example, changing a column of values from strings to integers'
-                - name: sort table rows
+                - name: sort table rows  # don't we already have sort?
                   desc: 'Sorting a table in a way that does not rank rows, such as by a unique identifier'
-          - name: separate
+          - name: separate  # This fits under ammend
             desc: 'Mapping one column into more than one because multiple dimensions of the dataset packed into one column'
             sub:
               - name: extract property from datetime
@@ -179,7 +171,7 @@
                 desc: 'Separate data dimensions by a common character, e.g. lat-long coordinates separated by a comma'
               - name: get unique values
                 desc: 'TK'
-          - name: combine columns
+          - name: combine columns  # This is concat
             desc: 'Combining two columns into one'
     - name: integrate
       desc: 'Combining data residing in different tables into one table.'
@@ -195,16 +187,12 @@
               desc: 'A join that returns rows with no corresponding match in the table being joined two, e.g. left or right joins.'
             - name: full join tables
               desc: 'Combine all rows and all columns of the two tables. a.k.a full outer join'              
-            - name: compute an inter-table column
-              desc: 'When a table uses a column from a *parallel* table (like arrays) to compute a new column.'
             - name: concat parallel tables
               desc: 'When columns from multiple, parallel tables are concatenated together to form a new table.'
-            - name: self join table
-              desc: 'Join a table with itself'
-            - name: join with lookup table
-              desc: 'Two column tables meant for mapping a key from one table to the unique column in the lookup table.'              
         - name: cartesian product
           desc: 'TK'
+        - name: self join table
+          desc: 'Join a table with itself'          
     - name: transform
       desc: 'Operations that transform a table into an aggregated, lower-resolution view of the original table.'
       sub:
@@ -224,14 +212,14 @@
                       desc: 'When a table is grouped by multiple columns, creating hierarchy.'
                     - name: rolling window calculation # TODO was create rolling window
                       desc: 'Performs rolling-window aggregation'                      
-                - name: create lookup table
-                  desc: 'Creating a table with two columns that serves as a map from one value to another.'                  
-          - name: calculate
+                - name: use lookup table
+                  desc: 'Using a table with two columns to map from one value to another.'                  
+          - name: calculate  # Isn't this a performance metric?
             desc: 'These are within-column calculations that often, but not always, immediately follow an *aggregation* operation.'
             sub:
                 - name: sum along dimension
                   desc: 'Calculate the sum of all values within a row or column'
-                - name: get extreme values
+                - name: get extreme values  # Isn't this a performance metric?
                   desc: 'Calculate the highest or lowest value(s)'
                 - name: count value frequency
                   desc: 'Count the frequency of categorical variables within a column'
