@@ -64,6 +64,10 @@
                   desc: 'Calculating the difference between two values or rates'
                 - name: domain-specific performance metric
                   desc: 'A domain specific metric, such as the Cube Root Law for legislatures.'
+                - name: get extreme values
+                  desc: 'Calculate the highest or lowest value(s)'
+                - name: count unique values in column  # TODO, wait what? really? Relookup code from this one.
+                  desc: 'Produces a scalar with unique values in the column.'
           - name: generate keys
             desc: 'Operations that create "key" columns.'
             sub:
@@ -71,9 +75,7 @@
                   desc: 'Keys used in matching without a guarentee of uniqueness, such as combinations of names and addresses'
                 - name: create a unique key
                   desc: 'Journalist create a key that is actually unique in the table'
-                - name: concatenate columns into key  # This seems just like a concat things.
-                  desc: 'Combine two string columns into one to create a key, e.g. combine city and state.'
-                - name: designate column as primary key  # how is this different from unique key?
+                - name: designate column as primary key  # TODO how is this different from unique key?
                   desc: 'Designating a column as the unique identifier for all rows in the table.'
           - name: rank data
             desc: 'Operations that encode semantic meaning about the data with table index.'
@@ -165,7 +167,7 @@
             sub:
               - name: extract value component
                 desc: 'A single row-column value may have multiple bits of info, e.g. dates and addresses, and journalists extracts one component from that value, e.g. year and street, respectively'
-              - name: extract property from datetime  # TODO merge with above
+              - name: extract property from datetime  # TODO merge with "extract value component"
                 desc: 'Such as extracting the day of the month, year, etc.. from a datetime column'
               - name: slice column values
                 desc: 'Extracting the relevant column values by character position, e.g. the first five digits of a zip code'
@@ -173,8 +175,8 @@
                 desc: 'Separate data dimensions by a common character, e.g. lat-long coordinates separated by a comma'
               - name: get unique values
                 desc: 'TK'
-          - name: combine columns  # This is concat
-            desc: 'Combining two columns into one'
+          - name: combine columns
+            desc: 'Combining two columns into one, either through concatenation, addition, etc...'
     - name: integrate
       desc: 'Combining data residing in different tables into one table.'
       sub:
@@ -188,7 +190,7 @@
             - name: outer join tables
               desc: 'A join that returns rows with no corresponding match in the table being joined two, e.g. left or right joins.'
             - name: full join tables
-              desc: 'Combine all rows and all columns of the two tables. a.k.a full outer join'              
+              desc: 'Combine all rows and all columns of the two tables. a.k.a full outer join'
             - name: concat parallel tables
               desc: 'When columns from multiple, parallel tables are concatenated together to form a new table.'
             - name: use lookup table
@@ -216,19 +218,10 @@
                   desc: 'When a table is grouped by multiple columns, creating hierarchy.'
                 - name: rolling window calculation
                   desc: 'Performs rolling-window aggregation'
-                - name: sum along dimension  # TODO delete
-                  desc: 'Calculate the sum of all values within a row or column'                  
             - name: create frequency table
               desc: 'Count the frequency of non-quantitative variables within a column'
             - name: count value frequency  # TODO combine with create frequency table
               desc: 'Count the frequency of categorical variables within a column'                  
-        - name: calculate  # Isn't this a performance metric?
-          desc: 'These are within-column calculations that often, but not always, immediately follow an *aggregation* operation.'
-          sub:
-            - name: get extreme values  # Isn't this a performance metric?
-              desc: 'Calculate the highest or lowest value(s)'
-            - name: count unique values in column
-              desc: 'Produces a scalar with unique values in the column.'
         - name: reshape
           desc: "Operations fundamentally change the table's structure, but do not perform any kind of summarization calculation. *Constructing a pivot table* often involves a *spread-like* operation when defining what values to use as columns in the new table. The difference with *reshaping* is that sometimes the journalist may not summarize the reshaped table."
           sub:
