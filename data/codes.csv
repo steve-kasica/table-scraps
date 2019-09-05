@@ -1,184 +1,172 @@
-,parent,name,desc,level,is_leaf,analysis
-0,root,actions,Codes that describe actions the journalist has taken to wrangle data for further analysis,0,False,50
-1,actions,import,How raw data is introduced into the programming/wrangling environment,1,False,39
-2,import,fetch,Data is retrieved from some external sources to the programming environment,2,False,6
-3,fetch,pull tables out of pdf,"Using a table extraction tool, such as Tabula, to parse tables inside PDF documents.",3,True,1
-4,fetch,geocode addresses,"Translate addresses to latitude-longitude coordinates through web service, such as those from Bing.",3,True,1
-5,fetch,query database,Data is imported through a database query,3,True,1
-6,fetch,scrape web for data,Systematically parsing HTML web pages for relevant data,3,True,3
-7,import,create,Data is created inside the programming environment,2,False,9
-8,create,construct table manually,Using tables where column names and table values were either copy-and-pasted or entered manually.,3,True,5
-9,create,generate data computationally,Using tables populated programmatically.,3,True,2
-10,create,copy table schema,"A table is copied without any values but table column names and type identical, or nearly identical, to another table",3,True,1
-11,create,backfill missing data,Create data observations where there are missing entries.,3,True,2
-12,import,load,"Raw data resides on the local disk and is *loaded* into the environment, includes these file formats: .csv, .xlsx, .fec, .shp, .RData, etc.",2,True,35
-13,actions,amend,*Amending* the data constitutes make minor changes without *integrating* other tables.,1,False,38
-14,amend,detrend,"""filter out the secular effect in order to see what is going on specifically with the phenomenon you are investigating,"" Philip Meyer in *Precision Journalism*.",2,False,5
-15,detrend,adjust for inflation,TK,3,True,3
-16,detrend,compute index number,TK,3,True,1
-17,detrend,adjust for season,Making seasonal adjustments to the data to detrend for seasonal trends.,3,True,1
-18,amend,encode table identification in row,"When some way of identifying the table is encoded as a separate column in each row. Common identification methods include the name of the corresponding file, an arbitrary table name, or boolean value",2,True,4
-19,amend,network-ify the data,"When the data is inherently a graph, encode table columns and values to represent this structure tabularly",2,False,1
-20,network-ify the data,create edge,"A column with value that define a relationship to another row, which is not necessarily in a different table",3,True,1
-21,network-ify the data,define edge weights,Columns that define edge weights,3,True,1
-22,amend,formulate performance metric,"Codes in this category specify a calculation that is later used to compare different entities or the same entity over time. A recurring theme between many of these notebooks is to compare different entities, such as political parties, by a common, quantitative metric, such as percentage of all newly registered voters.",2,False,31
-23,formulate performance metric,standardize values,"Measuring deviation from some definition of ""normal"", e.g. Z-scores",3,True,3
-24,formulate performance metric,figure a rate,"Convert numbers to a normalized rate to ""provide a comparison against some easily recognized baseline"" Philip Meyer in *Precision Journalism*",3,True,16
-25,formulate performance metric,calculate central tendency,"Measuring what a typical value is in the data, e.g. mean, median.",3,True,6
-26,formulate performance metric,calculate change over time,Such as the percentage difference over time.,3,True,7
-27,formulate performance metric,calculate spread,Calculating the difference between two values or rates,3,True,8
-28,formulate performance metric,domain-specific performance metric,"A domain specific metric, such as the Cube Root Law for legislatures.",3,True,2
-29,formulate performance metric,get extreme values,Calculate the highest or lowest value(s),3,True,2
-30,formulate performance metric,count unique values in column,Produces a scalar with unique values in the column.,3,True,3
-31,amend,generate keys,"Operations that create ""key"" columns.",2,False,8
-32,generate keys,create soft key,"Keys used in matching without a guarentee of uniqueness, such as combinations of names and addresses",3,True,5
-33,generate keys,create a unique key,Journalist create a key that is actually unique in the table,3,True,2
-34,generate keys,designate column as primary key,Designating a column as the unique identifier for all rows in the table.,3,True,2
-35,amend,rank data,Operations that encode semantic meaning about the data with table index.,2,False,14
-36,rank data,assign ranks,When a column of numerical ranks is explicitly assigned to rows in the table.,3,True,1
-37,rank data,sort table,When rank is implicitly assigned by rearranging row position in the table.,3,True,14
-38,amend,create flag,Flags are boolean expressed computed upon column values and used in filtering and grouping,2,True,4
-39,actions,clean,Operations to correct erroneous or remove otherwise unwanted rows and values from the table.,1,False,42
-40,clean,trim fat,Winnow down data that is not relevant to analysis.,2,False,29
-41,trim fat,subset columns,Removing columns from a table by specifying which ones to remove or keep.,3,True,22
-42,trim fat,winnow rows,"Simply put, these operations remove table rows.",3,False,23
-43,winnow rows,trim by date range,Removing rows that are inside or outside a specific date range. This can be a method for detrending data by adjusting for season.,4,True,12
-44,winnow rows,trim by geographic area,Remove rows that are inside or outside the geographic area.,4,True,5
-45,winnow rows,trim by quantitative threshold,"Remove rows that are above, below, equal to, or not equal to a numeric value.",4,True,8
-46,winnow rows,trim by contains value,Remove rows that do or do not contain specific values or types of values.,4,True,12
-47,clean,remove incomplete data,"Drop row if value(s) are incomplete, usually denoted as NA.",2,True,3
-48,clean,deduplicate,"Remove rows from the table that contain two or more of the same ""observation."" Duplicates may constitute rows with identical values in all, one, or zero columns.",2,True,8
-49,clean,edit,Operations that modify table values,2,False,20
-50,edit,edit table values,Directly editing values within a column,3,False,12
-51,edit table values,fix data errors manually,Instances where individual row-column values are changed by a journalist.,4,True,2
-52,edit table values,fix mixed data types,"Sometimes a column with be mixed with two data type, e.g. integers and strings.",4,True,1
-53,edit table values,remove value characters,"When characters inside a value are removed, such as periods, commas, dollar signs, etc",4,True,7
-54,edit table values,replace na values,Raw data may contain incomplete table values (denoted as NA) or empty values (denoted as NULL),4,True,4
-55,edit,map column values,Edit operations that change all values within a column,3,False,14
-56,map column values,translate entity names,Performing a one-to-one mapping between values.,4,False,7
-57,translate entity names,translate entity names manually,Manually specify the mapping between individual,5,True,3
-58,translate entity names,pad column values,Adding either character prefixes or suffixes consistently to every row within a column,5,True,2
-59,translate entity names,strip whitespace,Removing extra whitespace characters from entity name,5,True,2
-60,translate entity names,scale values,Operations that apply some mathematical operation to columns of quantitative data. This code is different from the codes under **Formulate performance metric** because this closer to cleaning.,5,True,2
-61,map column values,combine values,Codes that map a set of entities to a smaller set of entities,4,False,7
-62,combine values,bin values,Classifying quantitative data into ordinal data.,5,True,1
-63,combine values,combine entities,Combining values in categorical data,5,True,5
-64,combine values,resolve entities,Classic entity resolution: a column of categorical values has different names for the same entity.,5,True,3
-65,clean,format,Operations that modify the table values appearance or style,2,False,30
-66,format,format values,"Operations that change value appearence, e.g. change case, specifying date format, rounding floats.",3,True,5
-67,format,correct bad formatting,Changes that correct ill-formed data such as HTML entities and new lines (\n),3,True,2
-68,format,format schema,Operations that modify anything except table values,3,False,29
-69,format schema,canonicalize column names,Operations that change column names,4,True,25
-70,format schema,change column data type,"For example, changing a column of values from strings to integers",4,True,16
-71,format,sort table rows,"Sorting a table in a way that does not rank rows, such as by a unique identifier",3,True,1
-72,clean,separate,Mapping one column into more than one because multiple dimensions of the dataset packed into one column,2,False,13
-73,separate,extract value component,"A single row-column value may have multiple bits of info, e.g. dates and addresses, and journalists extracts one component from that value, e.g. year and street, respectively",3,True,1
-74,separate,extract property from datetime,"Such as extracting the day of the month, year, etc.. from a datetime column",3,True,4
-75,separate,slice column values,"Extracting the relevant column values by character position, e.g. the first five digits of a zip code",3,True,6
-76,separate,split column on delimiter,"Separate data dimensions by a common character, e.g. lat-long coordinates separated by a comma",3,True,3
-77,separate,get unique values,TK,3,True,1
-78,clean,combine columns,"Combining two columns into one, either through concatenation, addition, etc...",2,True,5
-79,actions,integrate,Combining data residing in different tables into one table.,1,False,34
-80,integrate,union tables,TK,2,True,16
-81,integrate,inner join tables,TK,2,True,4
-82,integrate,supplement,Supplementation is characterized by integration operations that essentially add columns to existing data,2,False,22
-83,supplement,outer join tables,"A join that returns rows with no corresponding match in the table being joined two, e.g. left or right joins.",3,True,17
-84,supplement,full join tables,Combine all rows and all columns of the two tables. a.k.a full outer join,3,True,5
-85,supplement,concat parallel tables,"When columns from multiple, parallel tables are concatenated together to form a new table.",3,True,1
-86,supplement,use lookup table,Using a table with two columns to map from one value to another.,3,True,4
-87,integrate,cartesian product,TK,2,True,2
-88,integrate,self join table,Join a table with itself,2,True,1
-89,actions,transform,"Operations that transform a table into an aggregated, lower-resolution view of the original table.",1,False,28
-90,transform,summarize,Codes that aggregate and calculate tables to get a more coarse view of the data.,2,False,21
-91,summarize,join aggregate,"""extends the input data objects with aggregate values in a new field"" - Vega-Lite Join Aggregate docs.",3,True,2
-92,summarize,rollup,Rename entity to the name of its parent (for hierarchical data),3,True,2
-93,summarize,aggregate and calculate,"When the data is grouped by one non-quantitative value and some calculation (sum, count, count unique) is applied to a different quantitative value",3,False,19
-94,aggregate and calculate,group by single column,When a table is grouped by a single column.,4,True,13
-95,aggregate and calculate,group by multiple columns,"When a table is grouped by multiple columns, creating hierarchy.",4,True,11
-96,aggregate and calculate,rolling window calculation,Performs rolling-window aggregation,4,True,4
-97,summarize,create frequency table,Count the frequency of non-quantitative variables within a column,3,True,1
-98,summarize,count value frequency,Count the frequency of categorical variables within a column,3,True,7
-99,transform,reshape,"Operations fundamentally change the table's structure, but do not perform any kind of summarization calculation. *Constructing a pivot table* often involves a *spread-like* operation when defining what values to use as columns in the new table. The difference with *reshaping* is that sometimes the journalist may not summarize the reshaped table.",2,False,17
-100,reshape,spread table,Expand two columns of key value pairs into multiple columns.,3,True,5
-101,reshape,gather table,Collapses table into key value pairs.,3,True,5
-102,reshape,cross tabulate,such as with a pivot table/crosstab,3,True,9
-103,actions,display dataset,Different ways to check in on the state of the dataset during wrangling.,1,False,19
-104,display dataset,format table display,"Operations that adjust the table displace, such as how many decimals to round floats",2,True,6
-105,display dataset,visualize data,"Employing any kind of data visualization, including a table",2,True,18
-106,display dataset,describe statistically,"Generates any kind of descriptive statistics of the dataset's central tendency, dispersion and distribution shape",2,True,2
-107,actions,check sanity,Operations that confirm the effect of a previous wrangling operation.,1,False,25
-108,check sanity,run a test,"Operations output a clear pass or fail value, often implemented by counting things",2,False,5
-109,run a test,report rows with column number discrepancies,Finds if a row has a different number of columns than the header row,3,True,1
-110,run a test,test for equality,"Test if two data structures are exactly the same, e.g. two data frames",3,True,2
-111,run a test,test different computations for equality,Test the results of a calculation against different methods/packages. The Upshot did this with variance.,3,True,1
-112,run a test,validate data quality with domain-specific rules,Such as if the average temperature is higher than the maximum recorded temperature,3,True,1
-113,check sanity,check results,Operations that output some visual representation of the table,2,False,22
-114,check results,check results of previous operation,,3,True,2
-115,check results,peek at data,Display the first *n* rows and all columns of the table,3,True,16
-116,check results,inspect table schema,Check the data types of columns,3,True,4
-117,check results,display rows with missing values,E.g. filtering rows with a NA value in a particular column,3,True,1
-118,check results,check for nas,See if any rows have NA values.,3,True,1
-119,check results,count number of rows,Printing out the total number of rows in a table,3,True,4
-120,actions,export,Ways in which journalist export the results of their data wrangling.,1,True,19
-121,root,observations,"These codes cover observations from the coder about the wrangling processes, not actions performed by the journalist.",0,False,49
-122,observations,data acquisition,How the data was acquired by journalists,1,False,23
-123,data acquisition,collect raw data,Using first-hand observations or logs as data.,2,True,5
-124,data acquisition,use previously cleaned data,Data that originated from a colleague.,2,True,1
-125,data acquisition,use public data,"Includes open-source datasets, tables on Wikipedia, etc..",2,True,2
-126,data acquisition,use academic data,,2,True,1
-127,data acquisition,"use non-public, provided data",,2,True,2
-128,data acquisition,use open government data,"Data publically available on open data portals, such as data.gov",2,True,10
-129,data acquisition,freedom of information data,Data that was obtained via FOI/FOIA requests.,2,True,1
-130,data acquisition,use another news orgs data,A dataset previously published by another news organization,2,True,2
-131,data acquisition,use data from colleague,A dataset was provided by another journalist.,2,True,1
-132,observations,workflow building,Codes pertaining to how the wrangling workflow is built.,1,False,16
-133,workflow building,annotate workflow,Adding comments or notes in Markdown that explain what the journalists doing.,2,True,5
-134,workflow building,think computationally,Codes that demonstrate computational thinking on the part of the journalist.,2,False,12
-135,think computationally,architect a subroutine,A set of instructions grouped together to be performed multiple times.,3,True,7
-136,think computationally,architect repeating process,Instances where journalists employed a loop.,3,True,8
-137,workflow building,toggle step on and off,Some wrangling steps were not always run. Toggling off is often accomplished by commenting out code.,2,True,3
-138,observations,wrangling purpose,Why does this data need to be wrangled?,1,False,29
-139,wrangling purpose,input for downstream applications,Output from wrangling will be input into some other program,2,False,23
-140,input for downstream applications,wrangle data for graphics,"Data need to be formatted in order to be visualized in an article, including tables.",3,True,22
-141,input for downstream applications,wrangle data for model,"Data is being wrangled in order to create a model, whether the main point of the piece is for prediction or classification",3,True,1
-142,wrangling purpose,remove erroneous data,There are errors in the data that need to be removed,2,True,2
-143,wrangling purpose,creating new datasets,,2,False,7
-144,creating new datasets,combine drifting datasets,"Reconcile difference in periodically published datasets that have superficially changed over time, such as schema differences or entity names, to consolidate more than one dataset.",3,True,3
-145,creating new datasets,combine seemingly disparate datasets,When a notebook largely constitutes combining seemingly unrelated datasets.,3,True,2
-146,creating new datasets,combine data and geography,Pairing data with GIS info.,3,True,2
-147,wrangling purpose,aggregate the forest from the trees,Data of individual observations is aggregated in an attempt to find some meaningful structure or patterns,2,True,2
-148,observations,analysis,Kinds of analysis data journalists need to wrangle data to perform.,1,False,29
-149,analysis,interpret statistical/ml model,Analyze features from a model such as linear regression or classification trees,2,True,5
-150,analysis,compare different groups along a common metric,The end analysis is just comparing different groups by a common metric.,2,True,12
-151,analysis,show trend over time,Analysis consists of showing how values change over time,2,True,7
-152,analysis,calculate a statistic,"Calculate a single value for from a dataset, such as number of records.",2,True,6
-153,analysis,explain variance,This can be done via PCA,2,True,1
-154,analysis,answer a question,Analysis consists of using data to answer a specific question,2,True,5
-155,analysis,outlier detection,Finding extreme cases or outliers in the data,2,True,4
-156,analysis,find nearest neighbours in the network,(Network analysis) Find the closest neighbours for all points,2,True,1
-157,analysis,explore dynamic network flow,"(Network analysis) explore the flow between different nodes in the graph, e.g. migration between cities.",2,True,3
-158,observations,strategies,General strategies journalists employ when wrangling data.,1,False,14
-159,strategies,tables evolve,Data and objects are destroyed during the wrangling process.,2,False,6
-160,tables evolve,value replacement,The output of any column calculation is reassigned to an existing column.,3,True,1
-161,tables evolve,temporary joining column,When a key for joining two tables is created and destroyed immediately after the join.,3,True,1
-162,tables evolve,refine table,"Table refinement refers to when a table is subset *in place*, a new object is not created in the environment.",3,True,6
-163,strategies,data is precious,Data and objects are neverly actually lost in the programming environment.,2,False,2
-164,data is precious,preserve existing values,The output of any column calculation is assigned to a new column,3,True,2
-165,data is precious,create child table,A child table is a subset of the parent table declared as a new object in the environment.,3,True,1
-166,strategies,set data confidence threshold,"Removes rows where a quantitative value is less than, greater than, or not equal to a numeric value.",2,True,1
-167,strategies,table splitting,"Tables may be divided, partitioned, or otherwise split into multiple tables to accomplish a transformation goal.",2,False,10
-168,table splitting,"split, compute, and merge","First, the journalist partitions a single data frame into multiple, separate data frames. Then, often identical computations are run on all the data frame. Finally, the multiple data frames are consolidated into one data frame again.",3,True,7
-169,table splitting,split and compute,One table is split into two or more and identical computations are applied to each table.,3,True,3
-170,strategies,tolerate dirty data,Analysis continues despite clear data quality issues.,2,True,4
-171,observations,pain points,Areas where journalist seem/could be frustrated in the wrangling process.,1,False,18
-172,pain points,fix incorrect calculation,Calculations in the data are incorrect and the journalist must recalculate them,2,True,1
-173,pain points,repetitive code,Instances where code is repetitively copied and pasted.,2,True,13
-174,pain points,make an incorrect conclusion,Instances where the journalist has made an incorrect conclusion about the data.,2,True,1
-175,pain points,post-merge clean up,Pain points that come from the result of merging two datasets together,2,False,4
-176,post-merge clean up,resort after merge,When a sort has to be re-done because a merge ruining the pre-merged order.,3,True,1
-177,post-merge clean up,fill in na values after an outer join,"As outer joins do not drop non-matching rows, those values have NA",3,True,3
-178,pain points,encode redundant information,When data that already exists in the table is recoded into the table.,2,True,1
-179,pain points,post-aggregation clean up,Pain points that come from the result of grouping a table.,2,False,2
-180,post-aggregation clean up,data loss from aggregation,When table columns are lost because they were dropped form resulting table due to not being relevant in aggregation.,3,True,1
-181,post-aggregation clean up,silently dropping values after groupby,Values other than thsoe being grouped and calculated upon are lost in a group by operation,3,True,1
-182,pain points,data too large for repo,Raw data cannot be included in SCM because files are too large,2,True,1
+parent,name,desc,level,is_leaf,analysis
+root,actions,Codes that describe actions the journalist has taken to wrangle data for further analysis,0,False,50
+actions,import,How raw data is introduced into the programming/wrangling environment,1,False,39
+import,fetch,Data is retrieved from some external sources to the programming environment,2,False,6
+fetch,pull tables out of pdf,"Using a table extraction tool, such as Tabula, to parse tables inside PDF documents.",3,True,1
+fetch,api request,"Make a request to a web API, such as addresses translation service for lat-long coordinates from Bing.",3,True,1
+fetch,query database,Data is imported through a database query,3,True,1
+fetch,scrape web for data,Systematically parsing HTML web pages for relevant data,3,True,3
+import,create,Data is created inside the programming environment,2,False,9
+create,construct table manually,Using tables where column names and table values were either copy-and-pasted or entered manually.,3,True,5
+create,generate data computationally,Using tables populated programmatically.,3,True,2
+create,copy table schema,"A table is copied without any values but table column names and type identical, or nearly identical, to another table",3,True,1
+create,backfill missing data,Create data observations where there are missing entries.,3,True,2
+import,load,"Raw data resides on the local disk and is *loaded* into the environment, includes these file formats: .csv, .xlsx, .fec, .shp, .RData, etc.",2,True,35
+actions,recalculate,Expanding the table by calculating new columns based on existing columns without *integrating* other tables.*,1,False,32
+recalculate,detrend,"""filter out the secular effect in order to see what is going on specifically with the phenomenon you are investigating,"" Philip Meyer in *Precision Journalism*.",2,False,5
+detrend,adjust for inflation,TK,3,True,3
+detrend,compute index number,TK,3,True,1
+detrend,adjust for season,Making seasonal adjustments to the data to detrend for seasonal trends.,3,True,1
+recalculate,formulate performance metric,"Perform a calculation that is later used to compare different entities or the same entity over time. A recurring theme between many of these notebooks is to compare different entities, such as political parties, by a common, quantitative metric, such as percentage of all newly registered voters.",2,False,30
+formulate performance metric,standardize values,"Measuring deviation from some definition of ""normal"", e.g. Z-scores",3,True,3
+formulate performance metric,figure a rate,"Convert numbers to a normalized rate to ""provide a comparison against some easily recognized baseline"" Philip Meyer in *Precision Journalism*",3,True,16
+formulate performance metric,calculate central tendency,"Measuring what a typical value is in the data, e.g. mean, median.",3,True,6
+formulate performance metric,calculate change over time,Such as the percentage difference over time.,3,True,7
+formulate performance metric,calculate spread,Calculating the difference between two values or rates,3,True,8
+formulate performance metric,domain-specific performance metric,"A domain specific metric, such as the Cube Root Law for legislatures.",3,True,2
+formulate performance metric,get extreme values,Calculate the highest or lowest value(s),3,True,2
+actions,modify,*Modifying* the data constitutes make minor changes without *integrating* other tables.,1,False,35
+modify,encode table identification in row,"When some way of identifying the table is encoded as a separate column in each row. Common identification methods include the name of the corresponding file, an arbitrary table name, or boolean value",2,True,4
+modify,network-ify the data,"When the data is inherently a graph, encode table columns and values to represent this structure tabularly",2,False,1
+network-ify the data,create edge,"A column with value that define a relationship to another row, which is not necessarily in a different table",3,True,1
+network-ify the data,define edge weights,Columns that define edge weights,3,True,1
+modify,generate keys,"Operations that create ""key"" columns.",2,False,8
+generate keys,create soft key,"Keys used in matching without a guarentee of uniqueness, such as combinations of names and addresses",3,True,5
+generate keys,create a unique key,Journalist create a key that is actually unique in the table,3,True,4
+modify,rank data,Operations that encode semantic meaning about the data with table index.,2,False,15
+rank data,assign ranks,When a column of numerical ranks is explicitly assigned to rows in the table.,3,True,1
+rank data,sort table,When rank is implicitly assigned by rearranging row position in the table.,3,True,15
+modify,column reshaping,Codes concerning either separating one column into more than one or combining more than one column into one.,2,False,16
+column reshaping,extract column values,Separating a column containing multiple rows,3,True,13
+column reshaping,combine columns,"Combining two columns into one, either through concatenation, addition, etc...",3,True,5
+modify,create flag,Flags are boolean expressed computed upon column values and used in filtering and grouping,2,True,4
+modify,pad column values,Adding either character prefixes or suffixes consistently to every row within a column,2,True,2
+modify,scale values,Operations that apply some mathematical operation to columns of quantitative data. This code is different from the codes under **Formulate performance metric** because this closer to cleaning.,2,True,2
+modify,consolidate values of a single column,Codes that map a set of entities to a smaller set of entities,2,False,8
+consolidate values of a single column,bin values,Consolidating a range of quantitative data into ordinal data,3,True,1
+consolidate values of a single column,combine entities,Consolidating a range of categorical values into a smaller set of categorical values,3,True,7
+actions,clean,"Operations to correct data that might be considered ""dirty""",1,False,38
+clean,trim fat,Remove complete sections of data that just are relevant,2,False,30
+trim fat,subset columns,Removing columns from a table by specifying which ones to remove or keep.,3,True,22
+trim fat,winnow rows,"Simply put, these operations remove table rows.",3,False,24
+winnow rows,trim by date range,Removing rows that are inside or outside a specific date range.,4,True,12
+winnow rows,trim by geographic area,Remove rows that are inside or outside the geographic area.,4,True,5
+winnow rows,trim by quantitative threshold,"Remove rows that are above, below, equal to, or not equal to a numeric value.",4,True,9
+winnow rows,trim by contains value,Remove rows that do or do not contain specific values or types of values.,4,True,12
+clean,remove incomplete data,"Drop row if value(s) are incomplete, usually denoted as NA.",2,True,3
+clean,deduplicate,"Remove rows that contain two or more of the same observation, with identical values in all, one, or zero columns.",2,True,8
+clean,fix values,Individual values have errors that must be corrected.,2,False,14
+fix values,resolve entities,Classic entity resolution: a column of categorical values has different names for the same entity.,3,True,3
+fix values,fix data errors manually,Instances where individual row-column values are changed manually.,3,True,2
+fix values,fix mixed data types,"Sometimes a column with be mixed with two data type, e.g. integers and strings.",3,True,1
+fix values,remove value characters,"When characters inside a value are removed, such as periods, commas, dollar signs, etc",3,True,7
+fix values,replace na values,Raw data may contain incomplete table values (denoted as NA) or empty values (denoted as NULL),3,True,4
+fix values,strip whitespace,Removing extra whitespace characters from entity name,3,True,2
+clean,format,Operations that modify the table values appearance or style,2,False,30
+format,format values,"Operations that change value appearence, e.g. change case, specifying date format, rounding floats.",3,True,7
+format,format schema,Operations that modify anything except table values,3,False,29
+format schema,canonicalize column names,Operations that change column names,4,True,25
+format schema,change column data type,"For example, changing a column of values from strings to integers",4,True,16
+actions,integrate,Combining data residing in different tables into one table.,1,False,34
+integrate,union tables,TK,2,True,16
+integrate,inner join tables,TK,2,True,4
+integrate,supplement,Supplementation is characterized by integration operations that essentially add columns to existing data,2,False,22
+supplement,outer join tables,"A join that returns rows with no corresponding match in the table being joined two, e.g. left or right joins.",3,True,17
+supplement,full join tables,Combine all rows and all columns of the two tables. a.k.a full outer join,3,True,5
+supplement,concat parallel tables,"When columns from multiple, parallel tables are concatenated together to form a new table.",3,True,1
+supplement,use lookup table,Using a table with two columns to map from one value to another.,3,True,5
+integrate,cartesian product,TK,2,True,2
+integrate,self join table,Join a table with itself,2,True,1
+actions,transform,"Operations that transform a table into an aggregated, lower-resolution view of the original table.",1,False,28
+transform,summarize,Codes that aggregate and calculate tables to get a more coarse view of the data.,2,False,20
+summarize,rollup,Rename entity to the name of its parent (for hierarchical data),3,True,2
+summarize,join aggregate,"Extend the table (columnwise) with aggregate values, hence the number of rows stays constant but columns increase",3,True,2
+summarize,group by single column,When a table is grouped by a single column.,3,True,13
+summarize,group by multiple columns,"When a table is grouped by multiple columns, creating hierarchy.",3,True,11
+summarize,rolling window calculation,Performs rolling-window aggregation,3,True,4
+summarize,create frequency table,Count the frequency of non-quantitative variables within a column,3,True,7
+transform,reshape,"Operations fundamentally change the table's structure, but do not perform any kind of summarization calculation. *Constructing a pivot table* often involves a *spread-like* operation when defining what values to use as columns in the new table. The difference with *reshaping* is that sometimes the journalist may not summarize the reshaped table.",2,False,17
+reshape,spread table,Expand two columns of key value pairs into multiple columns.,3,True,5
+reshape,gather table,Collapses table into key value pairs.,3,True,5
+reshape,cross tabulate,such as with a pivot table/crosstab,3,True,9
+actions,display dataset,Different ways to check in on the state of the dataset during wrangling.,1,False,19
+display dataset,format table display,"Operations that adjust the table displace, such as how many decimals to round floats",2,True,6
+display dataset,visualize data,"Employing any kind of data visualization, including a table",2,True,18
+display dataset,describe statistically,"Generates any kind of descriptive statistics of the dataset's central tendency, dispersion and distribution shape",2,True,2
+actions,check sanity,Operations that confirm the effect of a previous wrangling operation.,1,False,25
+check sanity,run a test,"Operations output a clear pass or fail value, often implemented by counting things",2,False,5
+run a test,report rows with column number discrepancies,Finds if a row has a different number of columns than the header row,3,True,1
+run a test,test for equality,"Test if two data structures are exactly the same, e.g. two data frames",3,True,2
+run a test,test different computations for equality,Test the results of a calculation against different methods/packages. The Upshot did this with variance.,3,True,1
+run a test,validate data quality with domain-specific rules,Such as if the average temperature is higher than the maximum recorded temperature,3,True,1
+check sanity,check results,Operations that output some visual representation of the table,2,False,20
+check results,peek at data,Display the first *n* rows and all columns of the table,3,True,17
+check results,inspect table schema,Check the data types of columns,3,True,4
+check results,display rows with missing values,E.g. filtering rows with a NA value in a particular column,3,True,1
+check results,check for nas,See if any rows have NA values.,3,True,1
+check sanity,count the data,Operation that count things in the data set,2,False,8
+count the data,count number of rows,Printing out the total number of rows in a table,3,True,5
+count the data,count unique values,Report the number of unique values in one or more columns,3,True,3
+actions,export,Ways in which journalist export the results of their data wrangling.,1,True,19
+root,observations,"These codes cover observations from the coder about the wrangling processes, not actions performed by the journalist.",0,False,49
+observations,data acquisition,How the data was acquired by journalists,1,False,23
+data acquisition,collect raw data,Using first-hand observations or logs as data.,2,True,5
+data acquisition,use previously cleaned data,Data that originated from a colleague.,2,True,1
+data acquisition,use public data,"Includes open-source datasets, tables on Wikipedia, etc..",2,True,2
+data acquisition,use academic data,,2,True,1
+data acquisition,"use non-public, provided data",,2,True,2
+data acquisition,use open government data,"Data publically available on open data portals, such as data.gov",2,True,10
+data acquisition,freedom of information data,Data that was obtained via FOI/FOIA requests.,2,True,1
+data acquisition,use another news orgs data,A dataset previously published by another news organization,2,True,2
+data acquisition,use data from colleague,A dataset was provided by another journalist.,2,True,1
+observations,workflow building,Codes pertaining to how the wrangling workflow is built.,1,False,16
+workflow building,annotate workflow,Adding comments or notes in Markdown that explain what the journalists doing.,2,True,5
+workflow building,think computationally,Codes that demonstrate computational thinking on the part of the journalist.,2,False,12
+think computationally,architect a subroutine,A set of instructions grouped together to be performed multiple times.,3,True,7
+think computationally,architect repeating process,Instances where journalists employed a loop.,3,True,8
+workflow building,toggle step on and off,Some wrangling steps were not always run. Toggling off is often accomplished by commenting out code.,2,True,3
+observations,wrangling purpose,Why does this data need to be wrangled?,1,False,29
+wrangling purpose,input for downstream applications,Output from wrangling will be input into some other program,2,False,23
+input for downstream applications,wrangle data for graphics,"Data need to be formatted in order to be visualized in an article, including tables.",3,True,22
+input for downstream applications,wrangle data for model,"Data is being wrangled in order to create a model, whether the main point of the piece is for prediction or classification",3,True,1
+wrangling purpose,remove erroneous data,There are errors in the data that need to be removed,2,True,2
+wrangling purpose,creating new datasets,,2,False,7
+creating new datasets,combine drifting datasets,"Reconcile difference in periodically published datasets that have superficially changed over time, such as schema differences or entity names, to consolidate more than one dataset.",3,True,3
+creating new datasets,combine seemingly disparate datasets,When a notebook largely constitutes combining seemingly unrelated datasets.,3,True,2
+creating new datasets,combine data and geography,Pairing data with GIS info.,3,True,2
+wrangling purpose,aggregate the forest from the trees,Data of individual observations is aggregated in an attempt to find some meaningful structure or patterns,2,True,2
+observations,analysis,Kinds of analysis data journalists need to wrangle data to perform.,1,False,29
+analysis,interpret statistical/ml model,Analyze features from a model such as linear regression or classification trees,2,True,5
+analysis,compare different groups along a common metric,The end analysis is just comparing different groups by a common metric.,2,True,12
+analysis,show trend over time,Analysis consists of showing how values change over time,2,True,7
+analysis,calculate a statistic,"Calculate a single value for from a dataset, such as number of records.",2,True,6
+analysis,explain variance,This can be done via PCA,2,True,1
+analysis,answer a question,Analysis consists of using data to answer a specific question,2,True,6
+analysis,outlier detection,Finding extreme cases or outliers in the data,2,True,4
+analysis,find nearest neighbours in the network,(Network analysis) Find the closest neighbours for all points,2,True,1
+analysis,explore dynamic network flow,"(Network analysis) explore the flow between different nodes in the graph, e.g. migration between cities.",2,True,3
+observations,strategies,General strategies journalists employ when wrangling data.,1,False,14
+strategies,tables evolve,Data and objects are destroyed during the wrangling process.,2,False,6
+tables evolve,value replacement,The output of any column calculation is reassigned to an existing column.,3,True,1
+tables evolve,temporary joining column,When a key for joining two tables is created and destroyed immediately after the join.,3,True,1
+tables evolve,refine table,"Table refinement refers to when a table is subset *in place*, a new object is not created in the environment.",3,True,6
+strategies,data is precious,Data and objects are neverly actually lost in the programming environment.,2,False,2
+data is precious,preserve existing values,The output of any column calculation is assigned to a new column,3,True,2
+data is precious,create child table,A child table is a subset of the parent table declared as a new object in the environment.,3,True,1
+strategies,set data confidence threshold,"Removes rows where a quantitative value is less than, greater than, or not equal to a numeric value.",2,True,1
+strategies,table splitting,"Tables may be divided, partitioned, or otherwise split into multiple tables to accomplish a transformation goal.",2,False,10
+table splitting,"split, compute, and merge","First, the journalist partitions a single data frame into multiple, separate data frames. Then, often identical computations are run on all the data frame. Finally, the multiple data frames are consolidated into one data frame again.",3,True,7
+table splitting,split and compute,One table is split into two or more and identical computations are applied to each table.,3,True,3
+strategies,tolerate dirty data,Analysis continues despite clear data quality issues.,2,True,4
+observations,pain points,Areas where journalist seem/could be frustrated in the wrangling process.,1,False,18
+pain points,fix incorrect calculation,Calculations in the data are incorrect and the journalist must recalculate them,2,True,1
+pain points,repetitive code,Instances where code is repetitively copied and pasted.,2,True,13
+pain points,make an incorrect conclusion,Instances where the journalist has made an incorrect conclusion about the data.,2,True,1
+pain points,post-merge clean up,Pain points that come from the result of merging two datasets together,2,False,4
+post-merge clean up,resort after merge,When a sort has to be re-done because a merge ruining the pre-merged order.,3,True,1
+post-merge clean up,fill in na values after an outer join,"As outer joins do not drop non-matching rows, those values have NA",3,True,3
+pain points,encode redundant information,When data that already exists in the table is recoded into the table.,2,True,1
+pain points,post-aggregation clean up,Pain points that come from the result of grouping a table.,2,False,2
+post-aggregation clean up,data loss from aggregation,When table columns are lost because they were dropped form resulting table due to not being relevant in aggregation.,3,True,1
+post-aggregation clean up,silently dropping values after groupby,Values other than thsoe being grouped and calculated upon are lost in a group by operation,3,True,1
+pain points,data too large for repo,Raw data cannot be included in SCM because files are too large,2,True,1

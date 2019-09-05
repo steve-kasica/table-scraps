@@ -9,8 +9,8 @@
           sub:
             - name: pull tables out of pdf
               desc: 'Using a table extraction tool, such as Tabula, to parse tables inside PDF documents.'
-            - name: geocode addresses  # This code could have been make API request if I had seen more of it.
-              desc: 'Translate addresses to latitude-longitude coordinates through web service, such as those from Bing.'
+            - name: API request
+              desc: 'Make a request to a web API, such as addresses translation service for lat-long coordinates from Bing.'
             - name: query database
               desc: 'Data is imported through a database query'
             - name: scrape web for data
@@ -28,155 +28,131 @@
               desc: 'Create data observations where there are missing entries.'
         - name: load
           desc: 'Raw data resides on the local disk and is *loaded* into the environment, includes these file formats: .csv, .xlsx, .fec, .shp, .RData, etc.'
-    - name: amend  # Todo different from edit?
-      desc: '*Amending* the data constitutes make minor changes without *integrating* other tables.'
+    - name: recalculate
+      desc: 'Expanding the table by calculating new columns based on existing columns without *integrating* other tables.*'
       sub:
-          - name: detrend
-            desc: '"filter out the secular effect in order to see what is going on specifically with the phenomenon you are investigating," Philip Meyer in *Precision Journalism*.'
-            sub:
-                - name: adjust for inflation
-                  desc: 'TK'
-                - name: compute index number
-                  desc: 'TK'
-                - name: adjust for season
-                  desc: 'Making seasonal adjustments to the data to detrend for seasonal trends.'
-          - name: encode table identification in row  # is this provenance?
-            desc: 'When some way of identifying the table is encoded as a separate column in each row. Common identification methods include the name of the corresponding file, an arbitrary table name, or boolean value'
-          - name: network-ify the data
-            desc: 'When the data is inherently a graph, encode table columns and values to represent this structure tabularly'
-            sub:
-              - name: create edge
-                desc: 'A column with value that define a relationship to another row, which is not necessarily in a different table'
-              - name: define edge weights
-                desc: 'Columns that define edge weights'
-          - name: formulate performance metric
-            desc: 'Codes in this category specify a calculation that is later used to compare different entities or the same entity over time. A recurring theme between many of these notebooks is to compare different entities, such as political parties, by a common, quantitative metric, such as percentage of all newly registered voters.'
-            sub:
-                - name: standardize values
-                  desc: 'Measuring deviation from some definition of "normal", e.g. Z-scores'
-                - name: figure a rate
-                  desc: 'Convert numbers to a normalized rate to "provide a comparison against some easily recognized baseline" Philip Meyer in *Precision Journalism*'
-                - name: calculate central tendency
-                  desc: 'Measuring what a typical value is in the data, e.g. mean, median.'
-                - name: calculate change over time
-                  desc: 'Such as the percentage difference over time.'
-                - name: calculate spread
-                  desc: 'Calculating the difference between two values or rates'
-                - name: domain-specific performance metric
-                  desc: 'A domain specific metric, such as the Cube Root Law for legislatures.'
-                - name: get extreme values
-                  desc: 'Calculate the highest or lowest value(s)'
-                - name: count unique values in column  # TODO, wait what? really? Relookup code from this one.
-                  desc: 'Produces a scalar with unique values in the column.'
-          - name: generate keys
-            desc: 'Operations that create "key" columns.'
-            sub:
-                - name: create soft key
-                  desc: 'Keys used in matching without a guarentee of uniqueness, such as combinations of names and addresses'
-                - name: create a unique key
-                  desc: 'Journalist create a key that is actually unique in the table'
-                - name: designate column as primary key  # TODO how is this different from unique key?
-                  desc: 'Designating a column as the unique identifier for all rows in the table.'
-          - name: rank data
-            desc: 'Operations that encode semantic meaning about the data with table index.'
-            sub:
-                - name: assign ranks
-                  desc: 'When a column of numerical ranks is explicitly assigned to rows in the table.'
-                - name: sort table
-                  desc: 'When rank is implicitly assigned by rearranging row position in the table.'
-          - name: create flag
-            desc: 'Flags are boolean expressed computed upon column values and used in filtering and grouping'
+        - name: detrend
+          desc: '"filter out the secular effect in order to see what is going on specifically with the phenomenon you are investigating," Philip Meyer in *Precision Journalism*.'
+          sub:
+            - name: adjust for inflation
+              desc: 'TK'
+            - name: compute index number
+              desc: 'TK'
+            - name: adjust for season
+              desc: 'Making seasonal adjustments to the data to detrend for seasonal trends.'                  
+        - name: formulate performance metric
+          desc: 'Perform a calculation that is later used to compare different entities or the same entity over time. A recurring theme between many of these notebooks is to compare different entities, such as political parties, by a common, quantitative metric, such as percentage of all newly registered voters.'
+          sub:
+            - name: standardize values
+              desc: 'Measuring deviation from some definition of "normal", e.g. Z-scores'
+            - name: figure a rate
+              desc: 'Convert numbers to a normalized rate to "provide a comparison against some easily recognized baseline" Philip Meyer in *Precision Journalism*'
+            - name: calculate central tendency
+              desc: 'Measuring what a typical value is in the data, e.g. mean, median.'
+            - name: calculate change over time
+              desc: 'Such as the percentage difference over time.'
+            - name: calculate spread
+              desc: 'Calculating the difference between two values or rates'
+            - name: domain-specific performance metric
+              desc: 'A domain specific metric, such as the Cube Root Law for legislatures.'
+            - name: get extreme values
+              desc: 'Calculate the highest or lowest value(s)'              
+    - name: modify
+      desc: '*Modifying* the data constitutes make minor changes without *integrating* other tables.'
+      sub:
+        - name: encode table identification in row
+          desc: 'When some way of identifying the table is encoded as a separate column in each row. Common identification methods include the name of the corresponding file, an arbitrary table name, or boolean value'
+        - name: network-ify the data
+          desc: 'When the data is inherently a graph, encode table columns and values to represent this structure tabularly'
+          sub:
+            - name: create edge
+              desc: 'A column with value that define a relationship to another row, which is not necessarily in a different table'
+            - name: define edge weights
+              desc: 'Columns that define edge weights'
+        - name: generate keys
+          desc: 'Operations that create "key" columns.'
+          sub:
+              - name: create soft key
+                desc: 'Keys used in matching without a guarentee of uniqueness, such as combinations of names and addresses'
+              - name: create a unique key
+                desc: 'Journalist create a key that is actually unique in the table'
+        - name: rank data
+          desc: 'Operations that encode semantic meaning about the data with table index.'
+          sub:
+            - name: assign ranks
+              desc: 'When a column of numerical ranks is explicitly assigned to rows in the table.'
+            - name: sort table
+              desc: 'When rank is implicitly assigned by rearranging row position in the table.'
+        - name: column reshaping
+          desc: 'Codes concerning either separating one column into more than one or combining more than one column into one.'
+          sub:
+            - name: extract column values
+              desc: 'Separating a column containing multiple rows'
+            - name: combine columns
+              desc: 'Combining two columns into one, either through concatenation, addition, etc...'              
+        - name: create flag
+          desc: 'Flags are boolean expressed computed upon column values and used in filtering and grouping'              
+        - name: pad column values
+          desc: 'Adding either character prefixes or suffixes consistently to every row within a column'
+        - name: scale values
+          desc: 'Operations that apply some mathematical operation to columns of quantitative data. This code is different from the codes under **Formulate performance metric** because this closer to cleaning.'
+        - name: consolidate values of a single column
+          desc: 'Codes that map a set of entities to a smaller set of entities'
+          sub:
+            - name: bin values
+              desc: 'Consolidating a range of quantitative data into ordinal data'
+            - name: combine entities
+              desc: 'Consolidating a range of categorical values into a smaller set of categorical values'
     - name: clean
-      desc: 'Operations to correct erroneous or remove otherwise unwanted rows and values from the table.'
+      desc: 'Operations to correct data that might be considered "dirty"'
       sub:
-          - name: trim fat
-            desc: 'Winnow down data that is not relevant to analysis.'
-            sub:
-              - name: subset columns
-                desc: 'Removing columns from a table by specifying which ones to remove or keep.'            
-              - name: winnow rows
-                desc: 'Simply put, these operations remove table rows.'
-                sub:
-                    - name: trim by date range
-                      desc: 'Removing rows that are inside or outside a specific date range. This can be a method for detrending data by adjusting for season.'
-                    - name: trim by geographic area
-                      desc: 'Remove rows that are inside or outside the geographic area.'
-                    - name: trim by quantitative threshold
-                      desc: 'Remove rows that are above, below, equal to, or not equal to a numeric value.'
-                    - name: trim by contains value
-                      desc: 'Remove rows that do or do not contain specific values or types of values.'
-          - name: remove incomplete data
-            desc: 'Drop row if value(s) are incomplete, usually denoted as NA.'
-          - name: deduplicate
-            desc: 'Remove rows from the table that contain two or more of the same "observation." Duplicates may constitute rows with identical values in all, one, or zero columns.'
-          - name: edit
-            desc: 'Operations that modify table values'
-            sub:
-              - name: edit table values
-                desc: 'Directly editing values within a column'
-                sub:
-                  - name: fix data errors manually
-                    desc: 'Instances where individual row-column values are changed by a journalist.'
-                  - name: fix mixed data types
-                    desc: 'Sometimes a column with be mixed with two data type, e.g. integers and strings.'
-                  - name: remove value characters
-                    desc: 'When characters inside a value are removed, such as periods, commas, dollar signs, etc'
-                  - name: replace NA values
-                    desc: 'Raw data may contain incomplete table values (denoted as NA) or empty values (denoted as NULL)'                
-              - name: map column values
-                desc: 'Edit operations that change all values within a column'
-                sub:
-                  - name: translate entity names
-                    desc: 'Performing a one-to-one mapping between values.'
-                    sub:
-                      - name: translate entity names manually
-                        desc: 'Manually specify the mapping between individual'
-                      - name: pad column values
-                        desc: 'Adding either character prefixes or suffixes consistently to every row within a column'
-                      - name: strip whitespace
-                        desc: 'Removing extra whitespace characters from entity name'
-                      - name: scale values
-                        desc: 'Operations that apply some mathematical operation to columns of quantitative data. This code is different from the codes under **Formulate performance metric** because this closer to cleaning.'
-                  - name: combine values
-                    desc: 'Codes that map a set of entities to a smaller set of entities' 
-                    sub:
-                      - name: bin values
-                        desc: 'Classifying quantitative data into ordinal data.'
-                      - name: combine entities
-                        desc: 'Combining values in categorical data'
-                      - name: resolve entities
-                        desc: 'Classic entity resolution: a column of categorical values has different names for the same entity.'
-          - name: format
-            desc: 'Operations that modify the table values appearance or style'
-            sub:
-                - name: format values
-                  desc: 'Operations that change value appearence, e.g. change case, specifying date format, rounding floats.'
-                - name: correct bad formatting  # Same as above?
-                  desc: 'Changes that correct ill-formed data such as HTML entities and new lines (\n)'
-                - name: format schema
-                  desc: 'Operations that modify anything except table values'
-                  sub:
-                      - name: canonicalize column names
-                        desc: 'Operations that change column names'
-                      - name: change column data type
-                        desc: 'For example, changing a column of values from strings to integers'
-                - name: sort table rows  # don't we already have sort?
-                  desc: 'Sorting a table in a way that does not rank rows, such as by a unique identifier'
-          - name: separate  # This fits under ammend
-            desc: 'Mapping one column into more than one because multiple dimensions of the dataset packed into one column'
-            sub:
-              - name: extract value component
-                desc: 'A single row-column value may have multiple bits of info, e.g. dates and addresses, and journalists extracts one component from that value, e.g. year and street, respectively'
-              - name: extract property from datetime  # TODO merge with "extract value component"
-                desc: 'Such as extracting the day of the month, year, etc.. from a datetime column'
-              - name: slice column values
-                desc: 'Extracting the relevant column values by character position, e.g. the first five digits of a zip code'
-              - name: split column on delimiter
-                desc: 'Separate data dimensions by a common character, e.g. lat-long coordinates separated by a comma'
-              - name: get unique values
-                desc: 'TK'
-          - name: combine columns
-            desc: 'Combining two columns into one, either through concatenation, addition, etc...'
+        - name: trim fat
+          desc: 'Remove complete sections of data that just are relevant'
+          sub:
+            - name: subset columns
+              desc: 'Removing columns from a table by specifying which ones to remove or keep.'            
+            - name: winnow rows
+              desc: 'Simply put, these operations remove table rows.'
+              sub:
+                - name: trim by date range
+                  desc: 'Removing rows that are inside or outside a specific date range.'
+                - name: trim by geographic area
+                  desc: 'Remove rows that are inside or outside the geographic area.'
+                - name: trim by quantitative threshold
+                  desc: 'Remove rows that are above, below, equal to, or not equal to a numeric value.'
+                - name: trim by contains value
+                  desc: 'Remove rows that do or do not contain specific values or types of values.'
+        - name: remove incomplete data
+          desc: 'Drop row if value(s) are incomplete, usually denoted as NA.'
+        - name: deduplicate
+          desc: 'Remove rows that contain two or more of the same observation, with identical values in all, one, or zero columns.'
+        - name: fix values
+          desc: 'Individual values have errors that must be corrected.'
+          sub:
+            - name: resolve entities
+              desc: 'Classic entity resolution: a column of categorical values has different names for the same entity.'          
+            - name: fix data errors manually
+              desc: 'Instances where individual row-column values are changed manually.'
+            - name: fix mixed data types
+              desc: 'Sometimes a column with be mixed with two data type, e.g. integers and strings.'
+            - name: remove value characters
+              desc: 'When characters inside a value are removed, such as periods, commas, dollar signs, etc'
+            - name: replace NA values
+              desc: 'Raw data may contain incomplete table values (denoted as NA) or empty values (denoted as NULL)'
+            - name: strip whitespace
+              desc: 'Removing extra whitespace characters from entity name'
+        - name: format
+          desc: 'Operations that modify the table values appearance or style'
+          sub:
+            - name: format values
+              desc: 'Operations that change value appearence, e.g. change case, specifying date format, rounding floats.'
+            - name: format schema
+              desc: 'Operations that modify anything except table values'
+              sub:
+                - name: canonicalize column names
+                  desc: 'Operations that change column names'
+                - name: change column data type
+                  desc: 'For example, changing a column of values from strings to integers'
     - name: integrate
       desc: 'Combining data residing in different tables into one table.'
       sub:
@@ -205,23 +181,18 @@
         - name: summarize
           desc: 'Codes that aggregate and calculate tables to get a more coarse view of the data.'
           sub:
-            - name: join aggregate
-              desc: '"extends the input data objects with aggregate values in a new field" - Vega-Lite Join Aggregate docs.'
             - name: rollup
-              desc: 'Rename entity to the name of its parent (for hierarchical data)'                  
-            - name: aggregate and calculate
-              desc: 'When the data is grouped by one non-quantitative value and some calculation (sum, count, count unique) is applied to a different quantitative value'
-              sub:
-                - name: group by single column
-                  desc: 'When a table is grouped by a single column.'
-                - name: group by multiple columns
-                  desc: 'When a table is grouped by multiple columns, creating hierarchy.'
-                - name: rolling window calculation
-                  desc: 'Performs rolling-window aggregation'
+              desc: 'Rename entity to the name of its parent (for hierarchical data)'                                
+            - name: join aggregate
+              desc: 'Extend the table (columnwise) with aggregate values, hence the number of rows stays constant but columns increase'
+            - name: group by single column
+              desc: 'When a table is grouped by a single column.'
+            - name: group by multiple columns
+              desc: 'When a table is grouped by multiple columns, creating hierarchy.'
+            - name: rolling window calculation
+              desc: 'Performs rolling-window aggregation'
             - name: create frequency table
               desc: 'Count the frequency of non-quantitative variables within a column'
-            - name: count value frequency  # TODO combine with create frequency table
-              desc: 'Count the frequency of categorical variables within a column'                  
         - name: reshape
           desc: "Operations fundamentally change the table's structure, but do not perform any kind of summarization calculation. *Constructing a pivot table* often involves a *spread-like* operation when defining what values to use as columns in the new table. The difference with *reshaping* is that sometimes the journalist may not summarize the reshaped table."
           sub:
@@ -257,8 +228,6 @@
           - name: check results
             desc: 'Operations that output some visual representation of the table'
             sub:
-              - name: check results of previous operation
-                desc: ''
               - name: peek at data
                 desc: 'Display the first *n* rows and all columns of the table'
               - name: inspect table schema
@@ -267,8 +236,13 @@
                 desc: 'E.g. filtering rows with a NA value in a particular column'
               - name: check for NAs
                 desc: 'See if any rows have NA values.'
-              - name: count number of rows
-                desc: 'Printing out the total number of rows in a table'                
+          - name: count the data
+            desc: 'Operation that count things in the data set'
+            sub:
+               - name: count number of rows
+                 desc: 'Printing out the total number of rows in a table'                
+               - name: count unique values
+                 desc: 'Report the number of unique values in one or more columns'                
     - name: export
       desc: 'Ways in which journalist export the results of their data wrangling.'
 - name: observations
