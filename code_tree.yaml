@@ -9,12 +9,12 @@
           sub:
             - name: pull tables out of pdf
               desc: 'Using a table extraction tool, such as Tabula, to parse tables inside PDF documents.'
-            - name: scrape web for data
-              desc: 'Systematically parsing web pages for relevant data'          
-            - name: geocode addresses
+            - name: geocode addresses  # This code could have been make API request if I had seen more of it.
               desc: 'Translate addresses to latitude-longitude coordinates through web service, such as those from Bing.'
             - name: query database
               desc: 'Data is imported through a database query'
+            - name: scrape web for data
+              desc: 'Systematically parsing HTML web pages for relevant data'
         - name: create
           desc: 'Data is created inside the programming environment'
           sub:
@@ -163,7 +163,9 @@
           - name: separate  # This fits under ammend
             desc: 'Mapping one column into more than one because multiple dimensions of the dataset packed into one column'
             sub:
-              - name: extract property from datetime
+              - name: extract value component
+                desc: 'A single row-column value may have multiple bits of info, e.g. dates and addresses, and journalists extracts one component from that value, e.g. year and street, respectively'
+              - name: extract property from datetime  # TODO merge with above
                 desc: 'Such as extracting the day of the month, year, etc.. from a datetime column'
               - name: slice column values
                 desc: 'Extracting the relevant column values by character position, e.g. the first five digits of a zip code'
@@ -189,51 +191,53 @@
               desc: 'Combine all rows and all columns of the two tables. a.k.a full outer join'              
             - name: concat parallel tables
               desc: 'When columns from multiple, parallel tables are concatenated together to form a new table.'
+            - name: use lookup table
+              desc: 'Using a table with two columns to map from one value to another.'                        
         - name: cartesian product
           desc: 'TK'
         - name: self join table
-          desc: 'Join a table with itself'          
+          desc: 'Join a table with itself'   
     - name: transform
       desc: 'Operations that transform a table into an aggregated, lower-resolution view of the original table.'
       sub:
-          - name: summarize
-            desc: 'Codes that aggregate and calculate tables to get a more coarse view of the data.'
-            sub:
-                - name: join aggregate
-                  desc: '"extends the input data objects with aggregate values in a new field" - Vega-Lite Join Aggregate docs.'
-                - name: rollup
-                  desc: 'Rename entity to the name of its parent (for hierarchical data)'                  
-                - name: aggregate and calculate
-                  desc: ''
-                  sub:
-                    - name: group by single column
-                      desc: 'When a table is grouped by a single column.'
-                    - name: group by multiple columns
-                      desc: 'When a table is grouped by multiple columns, creating hierarchy.'
-                    - name: rolling window calculation # TODO was create rolling window
-                      desc: 'Performs rolling-window aggregation'                      
-                - name: use lookup table
-                  desc: 'Using a table with two columns to map from one value to another.'                  
-          - name: calculate  # Isn't this a performance metric?
-            desc: 'These are within-column calculations that often, but not always, immediately follow an *aggregation* operation.'
-            sub:
-                - name: sum along dimension
-                  desc: 'Calculate the sum of all values within a row or column'
-                - name: get extreme values  # Isn't this a performance metric?
-                  desc: 'Calculate the highest or lowest value(s)'
-                - name: count value frequency
-                  desc: 'Count the frequency of categorical variables within a column'
-                - name: count unique values in column
-                  desc: 'Produces a scalar with unique values in the column.'
-          - name: reshape
-            desc: "Operations fundamentally change the table's structure, but do not perform any kind of summarization calculation. *Constructing a pivot table* often involves a *spread-like* operation when defining what values to use as columns in the new table. The difference with *reshaping* is that sometimes the journalist may not summarize the reshaped table."
-            sub:
-                - name: spread table
-                  desc: 'Expand two columns of key value pairs into multiple columns.'
-                - name: gather table
-                  desc: 'Collapses table into key value pairs.'
-                - name: cross tabulate
-                  desc: 'such as with a pivot table/crosstab'                
+        - name: summarize
+          desc: 'Codes that aggregate and calculate tables to get a more coarse view of the data.'
+          sub:
+            - name: join aggregate
+              desc: '"extends the input data objects with aggregate values in a new field" - Vega-Lite Join Aggregate docs.'
+            - name: rollup
+              desc: 'Rename entity to the name of its parent (for hierarchical data)'                  
+            - name: aggregate and calculate
+              desc: 'When the data is grouped by one non-quantitative value and some calculation (sum, count, count unique) is applied to a different quantitative value'
+              sub:
+                - name: group by single column
+                  desc: 'When a table is grouped by a single column.'
+                - name: group by multiple columns
+                  desc: 'When a table is grouped by multiple columns, creating hierarchy.'
+                - name: rolling window calculation
+                  desc: 'Performs rolling-window aggregation'
+                - name: sum along dimension  # TODO delete
+                  desc: 'Calculate the sum of all values within a row or column'                  
+            - name: create frequency table
+              desc: 'Count the frequency of non-quantitative variables within a column'
+            - name: count value frequency  # TODO combine with create frequency table
+              desc: 'Count the frequency of categorical variables within a column'                  
+        - name: calculate  # Isn't this a performance metric?
+          desc: 'These are within-column calculations that often, but not always, immediately follow an *aggregation* operation.'
+          sub:
+            - name: get extreme values  # Isn't this a performance metric?
+              desc: 'Calculate the highest or lowest value(s)'
+            - name: count unique values in column
+              desc: 'Produces a scalar with unique values in the column.'
+        - name: reshape
+          desc: "Operations fundamentally change the table's structure, but do not perform any kind of summarization calculation. *Constructing a pivot table* often involves a *spread-like* operation when defining what values to use as columns in the new table. The difference with *reshaping* is that sometimes the journalist may not summarize the reshaped table."
+          sub:
+            - name: spread table
+              desc: 'Expand two columns of key value pairs into multiple columns.'
+            - name: gather table
+              desc: 'Collapses table into key value pairs.'
+            - name: cross tabulate
+              desc: 'such as with a pivot table/crosstab'                
     - name: display dataset
       desc: 'Different ways to check in on the state of the dataset during wrangling.'
       sub:

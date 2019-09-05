@@ -50,6 +50,8 @@ Keller, Josh; Pearce, Adam. (2016, September 7). US State prison admissions by c
 
 Olson, Randy. (2015, July 22). US Weather History. *FiveThirtyEight*. Retrieved from https://github.com/fivethirtyeight/data/tree/master/us-weather-history
 
+McDonald, Christian. (2018, April 15). Residential demolitions in Austin. *Austin American-Statesman*. Retrieved from https://github.com/statesman/demolitions
+
 Mayes, Brittany Renee. (2017, April 17). Data analysis for education's school choice in Indiana project. *National Public Radio*. Retrieved from https://github.com/nprapps/school-choice
 
 Meiners, Joan. (2018, August 16). Endangered species act Louisiana: American alligator. *NOLA*. Retrieved from https://github.com/beecycles/Endangered-Species-Act-Louisiana

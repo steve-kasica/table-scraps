@@ -119,3 +119,6 @@
 [submodule "notebooks/nytimes/gunsales"]
 	path = notebooks/nytimes/gunsales
 	url = https://github.com/swkasica/gunsales.git
+[submodule "notebooks/statesman/demolitions"]
+	path = notebooks/statesman/demolitions
+	url = https://github.com/swkasica/demolitions
