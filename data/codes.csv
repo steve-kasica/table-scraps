@@ -108,7 +108,7 @@ check sanity,count the data,Operation that count things in the data set,2,False,
 count the data,count number of rows,Printing out the total number of rows in a table,3,True,5
 count the data,count unique values,Report the number of unique values in one or more columns,3,True,3
 actions,export,Ways in which journalist export the results of their data wrangling.,1,True,19
-root,observations,"These codes cover observations from the coder about the wrangling processes, not actions performed by the journalist.",0,False,49
+root,observations,"These codes cover observations from the coder about the wrangling processes, not actions performed by the journalist.",0,False,50
 observations,data acquisition,How the data was acquired by journalists,1,False,23
 data acquisition,collect raw data,Using first-hand observations or logs as data.,2,True,5
 data acquisition,use previously cleaned data,Data that originated from a colleague.,2,True,1
@@ -135,14 +135,16 @@ creating new datasets,combine drifting datasets,"Reconcile difference in periodi
 creating new datasets,combine seemingly disparate datasets,When a notebook largely constitutes combining seemingly unrelated datasets.,3,True,2
 creating new datasets,combine data and geography,Pairing data with GIS info.,3,True,2
 wrangling purpose,aggregate the forest from the trees,Data of individual observations is aggregated in an attempt to find some meaningful structure or patterns,2,True,2
-observations,analysis,Kinds of analysis data journalists need to wrangle data to perform.,1,False,29
+observations,analysis,Kinds of analysis data journalists need to wrangle data to perform.,1,False,40
 analysis,interpret statistical/ml model,Analyze features from a model such as linear regression or classification trees,2,True,5
-analysis,compare different groups along a common metric,The end analysis is just comparing different groups by a common metric.,2,True,12
-analysis,show trend over time,Analysis consists of showing how values change over time,2,True,7
+analysis,compare different groups along a common metric,The end analysis is just comparing different groups by a common metric.,2,True,21
+analysis,show trend over time,Analysis consists of showing how values change over time,2,True,12
 analysis,calculate a statistic,"Calculate a single value for from a dataset, such as number of records.",2,True,6
 analysis,explain variance,This can be done via PCA,2,True,1
+analysis,identify clusters or lack of clusters,,2,True,1
 analysis,answer a question,Analysis consists of using data to answer a specific question,2,True,6
-analysis,outlier detection,Finding extreme cases or outliers in the data,2,True,4
+analysis,outlier detection,Finding extreme cases or outliers in the data,2,True,5
+analysis,identify extreme values,,2,True,1
 analysis,find nearest neighbours in the network,(Network analysis) Find the closest neighbours for all points,2,True,1
 analysis,explore dynamic network flow,"(Network analysis) explore the flow between different nodes in the graph, e.g. migration between cities.",2,True,3
 observations,strategies,General strategies journalists employ when wrangling data.,1,False,14
