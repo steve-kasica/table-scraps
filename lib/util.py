@@ -39,6 +39,19 @@ def getCodes():
     return data
 
 
+def getCitations():
+    """Export the citations list in README.md as a data frame"""
+    regxp = r'\n([^\n\.\#]+)\.\s\((\d{4}),\s(\w+)\s(\d+)\)\.\s([^\.]+\.)\s\*([^\*]+)\*\.\sRetrieved from https:\/\/(?:[^\/]+\/){2}(.*)\n'
+    with open('README.md') as readme:
+        content = readme.read()
+    citations = re.findall(regxp,content)
+    citations = pd.DataFrame(citations, columns=['journalist', 'year', 'month', 'date', 'analysis', 'organization', 'path'])
+    citations.replace(to_replace=r'data/tree/master/|data-projects/tree/master/|2016/05/|st-methods/tree/master/', 
+                      value='', 
+                      regex=True, 
+                      inplace=True)
+    return citations
+
 def displayMarkdown(msg):
     """A shortcut function for displaying text as Markdown """
     return display(Markdown(msg))

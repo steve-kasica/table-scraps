@@ -135,19 +135,20 @@ creating new datasets,combine drifting datasets,"Reconcile difference in periodi
 creating new datasets,combine seemingly disparate datasets,When a notebook largely constitutes combining seemingly unrelated datasets.,3,True,2
 creating new datasets,combine data and geography,Pairing data with GIS info.,3,True,2
 wrangling purpose,aggregate the forest from the trees,Data of individual observations is aggregated in an attempt to find some meaningful structure or patterns,2,True,2
-observations,analysis,Kinds of analysis data journalists need to wrangle data to perform.,1,False,40
+observations,analysis,Kinds of analysis data journalists need to wrangle data to perform.,1,False,50
 analysis,interpret statistical/ml model,Analyze features from a model such as linear regression or classification trees,2,True,5
-analysis,compare different groups along a common metric,The end analysis is just comparing different groups by a common metric.,2,True,21
-analysis,show trend over time,Analysis consists of showing how values change over time,2,True,12
-analysis,calculate a statistic,"Calculate a single value for from a dataset, such as number of records.",2,True,6
-analysis,explain variance,This can be done via PCA,2,True,1
-analysis,identify clusters or lack of clusters,,2,True,1
-analysis,answer a question,Analysis consists of using data to answer a specific question,2,True,6
+analysis,compare different groups along a common metric,The end analysis is just comparing different groups by a common metric.,2,True,26
+analysis,identify extreme values,,2,True,5
 analysis,outlier detection,Finding extreme cases or outliers in the data,2,True,5
-analysis,identify extreme values,,2,True,1
+analysis,show trend over time,Analysis consists of showing how values change over time,2,True,17
+analysis,calculate a statistic,"Calculate a single value for from a dataset, such as number of records.",2,True,6
+analysis,answer a question,Analysis consists of using data to answer a specific question,2,True,6
+analysis,examine relationship,Analysis consists of examining the relationship between different phenomena,2,True,2
+analysis,explain variance,This can be done via PCA,2,True,1
+analysis,identify clusters or lack of clusters,Look for meaningingful groups within the data,2,True,1
 analysis,find nearest neighbours in the network,(Network analysis) Find the closest neighbours for all points,2,True,1
 analysis,explore dynamic network flow,"(Network analysis) explore the flow between different nodes in the graph, e.g. migration between cities.",2,True,3
-observations,strategies,General strategies journalists employ when wrangling data.,1,False,14
+observations,strategies,General strategies journalists employ when wrangling data.,1,False,15
 strategies,tables evolve,Data and objects are destroyed during the wrangling process.,2,False,6
 tables evolve,value replacement,The output of any column calculation is reassigned to an existing column.,3,True,1
 tables evolve,temporary joining column,When a key for joining two tables is created and destroyed immediately after the join.,3,True,1
@@ -156,8 +157,8 @@ strategies,data is precious,Data and objects are neverly actually lost in the pr
 data is precious,preserve existing values,The output of any column calculation is assigned to a new column,3,True,2
 data is precious,create child table,A child table is a subset of the parent table declared as a new object in the environment.,3,True,1
 strategies,set data confidence threshold,"Removes rows where a quantitative value is less than, greater than, or not equal to a numeric value.",2,True,1
-strategies,table splitting,"Tables may be divided, partitioned, or otherwise split into multiple tables to accomplish a transformation goal.",2,False,10
-table splitting,"split, compute, and merge","First, the journalist partitions a single data frame into multiple, separate data frames. Then, often identical computations are run on all the data frame. Finally, the multiple data frames are consolidated into one data frame again.",3,True,7
+strategies,table splitting,"Tables may be divided, partitioned, or otherwise split into multiple tables to accomplish a transformation goal.",2,False,11
+table splitting,"split, compute, and merge","First, the journalist partitions a single data frame into multiple, separate data frames. Then, often identical computations are run on all the data frame. Finally, the multiple data frames are consolidated into one data frame again.",3,True,8
 table splitting,split and compute,One table is split into two or more and identical computations are applied to each table.,3,True,3
 strategies,tolerate dirty data,Analysis continues despite clear data quality issues.,2,True,4
 observations,pain points,Areas where journalist seem/could be frustrated in the wrangling process.,1,False,18

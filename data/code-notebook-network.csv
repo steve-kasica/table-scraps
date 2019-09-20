@@ -1,0 +1,787 @@
+,analysis,notebook,code
+0,2018-voter-registration,01_processing.ipynb,combine drifting datasets
+1,2018-voter-registration,01_processing.ipynb,pull tables out of pdf
+2,2018-voter-registration,01_processing.ipynb,annotate workflow
+3,2018-voter-registration,01_processing.ipynb,change column data type
+4,2018-voter-registration,01_processing.ipynb,remove value characters
+5,2018-voter-registration,01_processing.ipynb,canonicalize column names
+6,2018-voter-registration,01_processing.ipynb,figure a rate
+7,2018-voter-registration,01_processing.ipynb,repetitive code
+8,2018-voter-registration,01_processing.ipynb,load
+9,2018-voter-registration,01_processing.ipynb,rolling window calculation
+10,2018-voter-registration,01_processing.ipynb,architect repeating process
+11,2018-voter-registration,01_processing.ipynb,union tables
+12,2018-voter-registration,01_processing.ipynb,change column data type
+13,2018-voter-registration,01_processing.ipynb,export
+0,2018-voter-registration,02_analysis.ipynb,calculate change over time
+1,2018-voter-registration,02_analysis.ipynb,annotate workflow
+2,2018-voter-registration,02_analysis.ipynb,load
+3,2018-voter-registration,02_analysis.ipynb,peek at data
+4,2018-voter-registration,02_analysis.ipynb,trim by contains value
+5,2018-voter-registration,02_analysis.ipynb,calculate a statistic
+6,2018-voter-registration,02_analysis.ipynb,show trend over time
+7,2018-voter-registration,02_analysis.ipynb,subset columns
+8,2018-voter-registration,02_analysis.ipynb,group by single column
+9,2018-voter-registration,02_analysis.ipynb,sort table
+10,2018-voter-registration,02_analysis.ipynb,compare different groups along a common metric
+11,2018-voter-registration,02_analysis.ipynb,combine entities
+12,2018-voter-registration,02_analysis.ipynb,visualize data
+13,2018-voter-registration,02_analysis.ipynb,wrangle data for graphics
+0,school-star-ratings-2018,analysis.ipynb,canonicalize column names
+1,school-star-ratings-2018,analysis.ipynb,load
+2,school-star-ratings-2018,analysis.ipynb,calculate a statistic
+3,school-star-ratings-2018,analysis.ipynb,group by multiple columns
+4,school-star-ratings-2018,analysis.ipynb,figure a rate
+5,school-star-ratings-2018,analysis.ipynb,trim by geographic area
+6,school-star-ratings-2018,analysis.ipynb,outlier detection
+7,school-star-ratings-2018,analysis.ipynb,trim by quantitative threshold
+8,school-star-ratings-2018,analysis.ipynb,deduplicate
+9,school-star-ratings-2018,analysis.ipynb,subset columns
+10,school-star-ratings-2018,analysis.ipynb,visualize data
+11,school-star-ratings-2018,analysis.ipynb,wrangle data for graphics
+0,school-star-ratings-2018,mapping.ipynb,load
+1,school-star-ratings-2018,mapping.ipynb,inspect table schema
+2,school-star-ratings-2018,mapping.ipynb,pad column values
+3,school-star-ratings-2018,mapping.ipynb,combine data and geography
+4,school-star-ratings-2018,mapping.ipynb,outer join tables
+5,school-star-ratings-2018,mapping.ipynb,display rows with missing values
+6,school-star-ratings-2018,mapping.ipynb,subset columns
+7,school-star-ratings-2018,mapping.ipynb,export
+0,electric-car-charging-points,calculatingnearestpoints.nb,find nearest neighbours in the network
+1,electric-car-charging-points,calculatingnearestpoints.nb,get extreme values
+2,electric-car-charging-points,calculatingnearestpoints.nb,repetitive code
+3,electric-car-charging-points,calculatingnearestpoints.nb,create edge
+4,electric-car-charging-points,calculatingnearestpoints.nb,define edge weights
+5,electric-car-charging-points,calculatingnearestpoints.nb,architect repeating process
+6,electric-car-charging-points,calculatingnearestpoints.nb,encode redundant information
+7,electric-car-charging-points,calculatingnearestpoints.nb,export
+0,electric-car-charging-points,README.md,use public data
+0,internal-migration-london,convert_matrix_to_table.nb,generate data computationally
+1,internal-migration-london,convert_matrix_to_table.nb,cartesian product
+2,internal-migration-london,convert_matrix_to_table.nb,canonicalize column names
+0,internal-migration-london,README.md,explore dynamic network flow
+0,midwife-led-units,midwife-led-units_calculate_transferrals.ipynb,inspect table schema
+1,midwife-led-units,midwife-led-units_calculate_transferrals.ipynb,annotate workflow
+2,midwife-led-units,midwife-led-units_calculate_transferrals.ipynb,freedom of information data
+3,midwife-led-units,midwife-led-units_calculate_transferrals.ipynb,canonicalize column names
+4,midwife-led-units,midwife-led-units_calculate_transferrals.ipynb,calculate a statistic
+5,midwife-led-units,midwife-led-units_calculate_transferrals.ipynb,test different computations for equality
+6,midwife-led-units,midwife-led-units_calculate_transferrals.ipynb,compare different groups along a common metric
+7,midwife-led-units,midwife-led-units_calculate_transferrals.ipynb,remove value characters
+8,midwife-led-units,midwife-led-units_calculate_transferrals.ipynb,change column data type
+0,new-york-schools-assessment,combine-csv.ipynb,combine drifting datasets
+1,new-york-schools-assessment,combine-csv.ipynb,change column data type
+2,new-york-schools-assessment,combine-csv.ipynb,create a unique key
+3,new-york-schools-assessment,combine-csv.ipynb,extract column values
+0,new-york-schools-assessment,grad-rates.ipynb,compare different groups along a common metric
+1,new-york-schools-assessment,grad-rates.ipynb,change column data type
+2,new-york-schools-assessment,grad-rates.ipynb,canonicalize column names
+3,new-york-schools-assessment,grad-rates.ipynb,subset columns
+0,new-york-schools-assessment,percent-proficiency.ipynb,change column data type
+1,new-york-schools-assessment,percent-proficiency.ipynb,load
+2,new-york-schools-assessment,percent-proficiency.ipynb,use lookup table
+3,new-york-schools-assessment,percent-proficiency.ipynb,repetitive code
+4,new-york-schools-assessment,percent-proficiency.ipynb,backfill missing data
+5,new-york-schools-assessment,percent-proficiency.ipynb,calculate change over time
+0,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,use open government data
+1,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,load
+2,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,test for equality
+3,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,tolerate dirty data
+4,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,make an incorrect conclusion
+5,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,create a unique key
+6,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,group by single column
+7,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,architect a subroutine
+8,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,wrangle data for graphics
+9,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,compare different groups along a common metric
+10,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,figure a rate
+11,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,sort table
+12,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,peek at data
+13,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,trim by quantitative threshold
+14,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,explore dynamic network flow
+15,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,outer join tables
+16,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,fill in na values after an outer join
+17,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,figure a rate
+0,2016-04-republican-donor-movements,donor-movement-analysis.ipynb,explore dynamic network flow
+1,2016-04-republican-donor-movements,donor-movement-analysis.ipynb,canonicalize column names
+2,2016-04-republican-donor-movements,donor-movement-analysis.ipynb,load
+3,2016-04-republican-donor-movements,donor-movement-analysis.ipynb,use open government data
+4,2016-04-republican-donor-movements,donor-movement-analysis.ipynb,change column data type
+5,2016-04-republican-donor-movements,donor-movement-analysis.ipynb,change column data type
+6,2016-04-republican-donor-movements,donor-movement-analysis.ipynb,extract column values
+7,2016-04-republican-donor-movements,donor-movement-analysis.ipynb,extract column values
+8,2016-04-republican-donor-movements,donor-movement-analysis.ipynb,create soft key
+9,2016-04-republican-donor-movements,donor-movement-analysis.ipynb,group by multiple columns
+10,2016-04-republican-donor-movements,donor-movement-analysis.ipynb,spread table
+11,2016-04-republican-donor-movements,donor-movement-analysis.ipynb,architect a subroutine
+12,2016-04-republican-donor-movements,donor-movement-analysis.ipynb,trim by quantitative threshold
+13,2016-04-republican-donor-movements,donor-movement-analysis.ipynb,construct table manually
+14,2016-04-republican-donor-movements,donor-movement-analysis.ipynb,architect repeating process
+0,2016-09-shy-trumpers,shy-trumpers.nb,answer a question
+1,2016-09-shy-trumpers,shy-trumpers.nb,load
+2,2016-09-shy-trumpers,shy-trumpers.nb,use another news orgs data
+3,2016-09-shy-trumpers,shy-trumpers.nb,canonicalize column names
+4,2016-09-shy-trumpers,shy-trumpers.nb,calculate spread
+5,2016-09-shy-trumpers,shy-trumpers.nb,trim by contains value
+6,2016-09-shy-trumpers,shy-trumpers.nb,wrangle data for graphics
+0,2016-11-bellwether-counties,county-predictiveness.ipynb,use academic data
+1,2016-11-bellwether-counties,county-predictiveness.ipynb,load
+2,2016-11-bellwether-counties,county-predictiveness.ipynb,remove incomplete data
+3,2016-11-bellwether-counties,county-predictiveness.ipynb,union tables
+4,2016-11-bellwether-counties,county-predictiveness.ipynb,peek at data
+5,2016-11-bellwether-counties,county-predictiveness.ipynb,extract column values
+6,2016-11-bellwether-counties,county-predictiveness.ipynb,canonicalize column names
+7,2016-11-bellwether-counties,county-predictiveness.ipynb,calculate spread
+8,2016-11-bellwether-counties,county-predictiveness.ipynb,outer join tables
+9,2016-11-bellwether-counties,county-predictiveness.ipynb,group by multiple columns
+10,2016-11-bellwether-counties,county-predictiveness.ipynb,get extreme values
+11,2016-11-bellwether-counties,county-predictiveness.ipynb,spread table
+12,2016-11-bellwether-counties,county-predictiveness.ipynb,cross tabulate
+13,2016-11-bellwether-counties,county-predictiveness.ipynb,rolling window calculation
+14,2016-11-bellwether-counties,county-predictiveness.ipynb,get extreme values
+15,2016-11-bellwether-counties,county-predictiveness.ipynb,calculate central tendency
+0,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,use open government data
+1,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,load
+2,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,architect a subroutine
+3,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,load
+4,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,union tables
+5,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,peek at data
+6,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,outer join tables
+7,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,figure a rate
+8,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,sort table
+9,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,create soft key
+10,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,architect a subroutine
+11,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,remove value characters
+12,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,strip whitespace
+13,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,format values
+14,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,trim by contains value
+15,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,subset columns
+16,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,union tables
+17,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,count unique values
+18,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,group by multiple columns
+19,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,group by single column
+20,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,create frequency table
+21,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,canonicalize column names
+22,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,self join table
+23,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,deduplicate
+24,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,annotate workflow
+25,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,repetitive code
+26,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,export
+27,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,gather table
+28,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,figure a rate
+29,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,compare different groups along a common metric
+0,awb-notebook,awb_meldungen.ipynb,format table display
+1,awb-notebook,awb_meldungen.ipynb,load
+2,awb-notebook,awb_meldungen.ipynb,encode table identification in row
+3,awb-notebook,awb_meldungen.ipynb,canonicalize column names
+4,awb-notebook,awb_meldungen.ipynb,union tables
+5,awb-notebook,awb_meldungen.ipynb,combine drifting datasets
+6,awb-notebook,awb_meldungen.ipynb,peek at data
+7,awb-notebook,awb_meldungen.ipynb,remove erroneous data
+8,awb-notebook,awb_meldungen.ipynb,change column data type
+9,awb-notebook,awb_meldungen.ipynb,backfill missing data
+10,awb-notebook,awb_meldungen.ipynb,silently dropping values after groupby
+11,awb-notebook,awb_meldungen.ipynb,resolve entities
+12,awb-notebook,awb_meldungen.ipynb,calculate a statistic
+13,awb-notebook,awb_meldungen.ipynb,describe statistically
+14,awb-notebook,awb_meldungen.ipynb,visualize data
+15,awb-notebook,awb_meldungen.ipynb,answer a question
+16,awb-notebook,awb_meldungen.ipynb,outlier detection
+0,bechdel,analyze-bechdel.R,load
+1,bechdel,analyze-bechdel.R,trim by date range
+2,bechdel,analyze-bechdel.R,calculate spread
+3,bechdel,analyze-bechdel.R,figure a rate
+4,bechdel,analyze-bechdel.R,split and compute
+5,bechdel,analyze-bechdel.R,visualize data
+6,bechdel,analyze-bechdel.R,interpret statistical/ml model
+7,bechdel,analyze-bechdel.R,calculate central tendency
+8,bechdel,analyze-bechdel.R,calculate a statistic
+0,bechdel,bechdel,inner join tables
+1,bechdel,bechdel,adjust for inflation
+0,bob-ross,bob-ross,collect raw data
+0,bob-ross,cluster-paintings.py,load
+1,bob-ross,cluster-paintings.py,subset columns
+2,bob-ross,cluster-paintings.py,trim by quantitative threshold
+3,bob-ross,cluster-paintings.py,standardize values
+4,bob-ross,cluster-paintings.py,interpret statistical/ml model
+5,bob-ross,cluster-paintings.py,architect repeating process
+0,buster-posey-mvp,baseball_imgcap_for_release.py,collect raw data
+0,buster-posey-mvp,catcher_framing_capture.R,calculate spread
+1,buster-posey-mvp,catcher_framing_capture.R,repetitive code
+2,buster-posey-mvp,catcher_framing_capture.R,calculate central tendency
+3,buster-posey-mvp,catcher_framing_capture.R,visualize data
+0,infrastructure-jobs,infrastructure-jobs.R,load
+1,infrastructure-jobs,infrastructure-jobs.R,use open government data
+2,infrastructure-jobs,infrastructure-jobs.R,outer join tables
+3,infrastructure-jobs,infrastructure-jobs.R,use lookup table
+4,infrastructure-jobs,infrastructure-jobs.R,create a unique key
+5,infrastructure-jobs,infrastructure-jobs.R,trim by contains value
+6,infrastructure-jobs,infrastructure-jobs.R,subset columns
+7,infrastructure-jobs,infrastructure-jobs.R,cross tabulate
+8,infrastructure-jobs,infrastructure-jobs.R,export
+0,librarians,librarians.R,load
+1,librarians,librarians.R,canonicalize column names
+2,librarians,librarians.R,remove value characters
+3,librarians,librarians.R,visualize data
+4,librarians,librarians.R,interpret statistical/ml model
+0,us-weather-history,visualize_weather.py,load
+1,us-weather-history,visualize_weather.py,describe statistically
+2,us-weather-history,visualize_weather.py,wrangle data for graphics
+3,us-weather-history,visualize_weather.py,trim by date range
+4,us-weather-history,visualize_weather.py,visualize data
+0,us-weather-history,wunderground_parser.py,architect a subroutine
+1,us-weather-history,wunderground_parser.py,export
+2,us-weather-history,wunderground_parser.py,load
+3,us-weather-history,wunderground_parser.py,validate data quality with domain-specific rules
+0,us-weather-history,wunderground_scraper.py,scrape web for data
+1,us-weather-history,wunderground_scraper.py,architect a subroutine
+2,us-weather-history,wunderground_scraper.py,architect repeating process
+0,california-buildings-in-severe-fire-hazard-zones,analysis.js,construct table manually
+0,california-ccscore-analysis,analysis.ipynb,format table display
+1,california-ccscore-analysis,analysis.ipynb,load
+2,california-ccscore-analysis,analysis.ipynb,subset columns
+3,california-ccscore-analysis,analysis.ipynb,change column data type
+4,california-ccscore-analysis,analysis.ipynb,inspect table schema
+5,california-ccscore-analysis,analysis.ipynb,peek at data
+6,california-ccscore-analysis,analysis.ipynb,trim by date range
+7,california-ccscore-analysis,analysis.ipynb,deduplicate
+8,california-ccscore-analysis,analysis.ipynb,count number of rows
+9,california-ccscore-analysis,analysis.ipynb,trim by quantitative threshold
+10,california-ccscore-analysis,analysis.ipynb,group by single column
+11,california-ccscore-analysis,analysis.ipynb,create frequency table
+12,california-ccscore-analysis,analysis.ipynb,peek at data
+13,california-ccscore-analysis,analysis.ipynb,repetitive code
+14,california-ccscore-analysis,analysis.ipynb,outer join tables
+15,california-ccscore-analysis,analysis.ipynb,"split, compute, and merge"
+16,california-ccscore-analysis,analysis.ipynb,cross tabulate
+17,california-ccscore-analysis,analysis.ipynb,sort table
+18,california-ccscore-analysis,analysis.ipynb,calculate spread
+19,california-ccscore-analysis,analysis.ipynb,calculate central tendency
+20,california-ccscore-analysis,analysis.ipynb,outer join tables
+21,california-ccscore-analysis,analysis.ipynb,calculate change over time
+22,california-ccscore-analysis,analysis.ipynb,visualize data
+23,california-ccscore-analysis,analysis.ipynb,standardize values
+24,california-ccscore-analysis,analysis.ipynb,export
+0,california-crop-production-wages-analysis,02-transform.ipynb,use open government data
+1,california-crop-production-wages-analysis,02-transform.ipynb,format table display
+2,california-crop-production-wages-analysis,02-transform.ipynb,construct table manually
+3,california-crop-production-wages-analysis,02-transform.ipynb,load
+4,california-crop-production-wages-analysis,02-transform.ipynb,architect repeating process
+5,california-crop-production-wages-analysis,02-transform.ipynb,change column data type
+6,california-crop-production-wages-analysis,02-transform.ipynb,inner join tables
+7,california-crop-production-wages-analysis,02-transform.ipynb,trim by geographic area
+8,california-crop-production-wages-analysis,02-transform.ipynb,trim by contains value
+9,california-crop-production-wages-analysis,02-transform.ipynb,subset columns
+10,california-crop-production-wages-analysis,02-transform.ipynb,adjust for inflation
+11,california-crop-production-wages-analysis,02-transform.ipynb,repetitive code
+12,california-crop-production-wages-analysis,02-transform.ipynb,annotate workflow
+13,california-crop-production-wages-analysis,02-transform.ipynb,group by multiple columns
+14,california-crop-production-wages-analysis,02-transform.ipynb,calculate central tendency
+15,california-crop-production-wages-analysis,02-transform.ipynb,load
+16,california-crop-production-wages-analysis,02-transform.ipynb,union tables
+17,california-crop-production-wages-analysis,02-transform.ipynb,export
+0,california-crop-production-wages-analysis,03-analysis.ipynb,calculate change over time
+1,california-crop-production-wages-analysis,03-analysis.ipynb,load
+2,california-crop-production-wages-analysis,03-analysis.ipynb,peek at data
+3,california-crop-production-wages-analysis,03-analysis.ipynb,trim by geographic area
+4,california-crop-production-wages-analysis,03-analysis.ipynb,answer a question
+5,california-crop-production-wages-analysis,03-analysis.ipynb,trim by contains value
+6,california-crop-production-wages-analysis,03-analysis.ipynb,visualize data
+7,california-crop-production-wages-analysis,03-analysis.ipynb,subset columns
+8,california-crop-production-wages-analysis,03-analysis.ipynb,export
+9,california-crop-production-wages-analysis,03-analysis.ipynb,change column data type
+10,california-crop-production-wages-analysis,03-analysis.ipynb,annotate workflow
+11,california-crop-production-wages-analysis,03-analysis.ipynb,trim by date range
+12,california-crop-production-wages-analysis,03-analysis.ipynb,sort table
+13,california-crop-production-wages-analysis,03-analysis.ipynb,export
+14,california-crop-production-wages-analysis,03-analysis.ipynb,wrangle data for graphics
+0,california-h2a-visas-analysis,01_download.ipynb,use open government data
+0,california-h2a-visas-analysis,02_transform.ipynb,canonicalize column names
+1,california-h2a-visas-analysis,02_transform.ipynb,load
+2,california-h2a-visas-analysis,02_transform.ipynb,subset columns
+3,california-h2a-visas-analysis,02_transform.ipynb,create child table
+4,california-h2a-visas-analysis,02_transform.ipynb,encode table identification in row
+5,california-h2a-visas-analysis,02_transform.ipynb,extract column values
+6,california-h2a-visas-analysis,02_transform.ipynb,preserve existing values
+7,california-h2a-visas-analysis,02_transform.ipynb,trim by date range
+8,california-h2a-visas-analysis,02_transform.ipynb,refine table
+9,california-h2a-visas-analysis,02_transform.ipynb,create a unique key
+10,california-h2a-visas-analysis,02_transform.ipynb,replace na values
+11,california-h2a-visas-analysis,02_transform.ipynb,deduplicate
+12,california-h2a-visas-analysis,02_transform.ipynb,split and compute
+13,california-h2a-visas-analysis,02_transform.ipynb,union tables
+14,california-h2a-visas-analysis,02_transform.ipynb,deduplicate
+15,california-h2a-visas-analysis,02_transform.ipynb,resolve entities
+16,california-h2a-visas-analysis,02_transform.ipynb,combine entities
+17,california-h2a-visas-analysis,02_transform.ipynb,repetitive code
+18,california-h2a-visas-analysis,02_transform.ipynb,group by single column
+19,california-h2a-visas-analysis,02_transform.ipynb,outer join tables
+20,california-h2a-visas-analysis,02_transform.ipynb,encode table identification in row
+21,california-h2a-visas-analysis,02_transform.ipynb,union tables
+22,california-h2a-visas-analysis,02_transform.ipynb,deduplicate
+23,california-h2a-visas-analysis,02_transform.ipynb,export
+0,california-h2a-visas-analysis,03_geocode.ipynb,union tables
+1,california-h2a-visas-analysis,03_geocode.ipynb,load
+2,california-h2a-visas-analysis,03_geocode.ipynb,group by multiple columns
+3,california-h2a-visas-analysis,03_geocode.ipynb,create soft key
+4,california-h2a-visas-analysis,03_geocode.ipynb,combine columns
+5,california-h2a-visas-analysis,03_geocode.ipynb,canonicalize column names
+6,california-h2a-visas-analysis,03_geocode.ipynb,api request
+7,california-h2a-visas-analysis,03_geocode.ipynb,architect a subroutine
+8,california-h2a-visas-analysis,03_geocode.ipynb,sort table
+9,california-h2a-visas-analysis,03_geocode.ipynb,export
+10,california-h2a-visas-analysis,03_geocode.ipynb,temporary joining column
+11,california-h2a-visas-analysis,03_geocode.ipynb,repetitive code
+0,california-h2a-visas-analysis,04_analysis.ipynb,format table display
+1,california-h2a-visas-analysis,04_analysis.ipynb,load
+2,california-h2a-visas-analysis,04_analysis.ipynb,group by single column
+3,california-h2a-visas-analysis,04_analysis.ipynb,visualize data
+4,california-h2a-visas-analysis,04_analysis.ipynb,visualize data
+5,california-h2a-visas-analysis,04_analysis.ipynb,group by multiple columns
+6,california-h2a-visas-analysis,04_analysis.ipynb,cross tabulate
+7,california-h2a-visas-analysis,04_analysis.ipynb,wrangle data for graphics
+8,california-h2a-visas-analysis,04_analysis.ipynb,trim by geographic area
+9,california-h2a-visas-analysis,04_analysis.ipynb,trim by date range
+10,california-h2a-visas-analysis,04_analysis.ipynb,trim by geographic area
+11,california-h2a-visas-analysis,04_analysis.ipynb,remove incomplete data
+12,california-h2a-visas-analysis,04_analysis.ipynb,cross tabulate
+13,california-h2a-visas-analysis,04_analysis.ipynb,calculate change over time
+14,california-h2a-visas-analysis,04_analysis.ipynb,sort table
+15,california-h2a-visas-analysis,04_analysis.ipynb,wrangle data for graphics
+16,california-h2a-visas-analysis,04_analysis.ipynb,export
+17,california-h2a-visas-analysis,04_analysis.ipynb,change column data type
+18,california-h2a-visas-analysis,04_analysis.ipynb,canonicalize column names
+19,california-h2a-visas-analysis,04_analysis.ipynb,replace na values
+20,california-h2a-visas-analysis,04_analysis.ipynb,visualize data
+21,california-h2a-visas-analysis,04_analysis.ipynb,subset columns
+0,census-hard-to-map-analysis,notebook.ipynb,wrangle data for graphics
+1,census-hard-to-map-analysis,notebook.ipynb,use open government data
+2,census-hard-to-map-analysis,notebook.ipynb,change column data type
+3,census-hard-to-map-analysis,notebook.ipynb,load
+4,census-hard-to-map-analysis,notebook.ipynb,peek at data
+5,census-hard-to-map-analysis,notebook.ipynb,canonicalize column names
+6,census-hard-to-map-analysis,notebook.ipynb,load
+7,census-hard-to-map-analysis,notebook.ipynb,subset columns
+8,census-hard-to-map-analysis,notebook.ipynb,inner join tables
+9,census-hard-to-map-analysis,notebook.ipynb,tolerate dirty data
+10,census-hard-to-map-analysis,notebook.ipynb,export
+11,census-hard-to-map-analysis,notebook.ipynb,extract column values
+12,census-hard-to-map-analysis,notebook.ipynb,sort table
+13,census-hard-to-map-analysis,notebook.ipynb,group by single column
+14,census-hard-to-map-analysis,notebook.ipynb,create frequency table
+0,swana-population-map,swana-population-map.js,wrangle data for graphics
+1,swana-population-map,swana-population-map.js,change column data type
+2,swana-population-map,swana-population-map.js,trim by quantitative threshold
+0,Endangered-Species-Act-Louisiana,alligators.R,wrangle data for graphics
+1,Endangered-Species-Act-Louisiana,alligators.R,load
+2,Endangered-Species-Act-Louisiana,alligators.R,peek at data
+3,Endangered-Species-Act-Louisiana,alligators.R,canonicalize column names
+4,Endangered-Species-Act-Louisiana,alligators.R,change column data type
+5,Endangered-Species-Act-Louisiana,alligators.R,scale values
+6,Endangered-Species-Act-Louisiana,alligators.R,visualize data
+0,school-choice,data_exploration.ipynb,load
+1,school-choice,data_exploration.ipynb,figure a rate
+2,school-choice,data_exploration.ipynb,calculate change over time
+3,school-choice,data_exploration.ipynb,show trend over time
+4,school-choice,data_exploration.ipynb,calculate spread
+0,school-choice,special_education.ipynb,load
+1,school-choice,special_education.ipynb,combine entities
+2,school-choice,special_education.ipynb,full join tables
+3,school-choice,special_education.ipynb,fill in na values after an outer join
+0,gunsales,analysis.R,domain-specific performance metric
+1,gunsales,analysis.R,adjust for season
+2,gunsales,analysis.R,refine table
+3,gunsales,analysis.R,figure a rate
+4,gunsales,analysis.R,format values
+5,gunsales,analysis.R,"split, compute, and merge"
+6,gunsales,analysis.R,architect repeating process
+7,gunsales,analysis.R,"split, compute, and merge"
+8,gunsales,analysis.R,export
+0,gunsales,functions.R,cross tabulate
+1,gunsales,functions.R,trim by geographic area
+2,gunsales,functions.R,trim by date range
+3,gunsales,functions.R,sort table
+4,gunsales,functions.R,subset columns
+5,gunsales,functions.R,canonicalize column names
+6,gunsales,functions.R,architect a subroutine
+0,gunsales,gunsales.Rmd,wrangle data for graphics
+1,gunsales,gunsales.Rmd,visualize data
+0,heat-index,sahil_chinoy_heat_index,wrangle data for graphics
+1,heat-index,sahil_chinoy_heat_index,compute index number
+2,heat-index,sahil_chinoy_heat_index,generate data computationally
+3,heat-index,sahil_chinoy_heat_index,construct table manually
+4,heat-index,sahil_chinoy_heat_index,cartesian product
+0,prison-admissions,combine.r,subset columns
+1,prison-admissions,combine.r,union tables
+0,prison-admissions,export.rmd,remove value characters
+1,prison-admissions,export.rmd,preserve existing values
+2,prison-admissions,export.rmd,create flag
+3,prison-admissions,export.rmd,refine table
+4,prison-admissions,export.rmd,spread table
+5,prison-admissions,export.rmd,full join tables
+6,prison-admissions,export.rmd,"split, compute, and merge"
+7,prison-admissions,export.rmd,figure a rate
+8,prison-admissions,export.rmd,wrangle data for graphics
+0,the-cube-root-law,the_cube_root_law.js,load
+1,the-cube-root-law,the_cube_root_law.js,subset columns
+2,the-cube-root-law,the_cube_root_law.js,change column data type
+3,the-cube-root-law,the_cube_root_law.js,construct table manually
+4,the-cube-root-law,the_cube_root_law.js,rolling window calculation
+5,the-cube-root-law,the_cube_root_law.js,domain-specific performance metric
+6,the-cube-root-law,the_cube_root_law.js,use public data
+7,the-cube-root-law,the_cube_root_law.js,extract column values
+0,1805-regionen im fokus des US-praesidenten,stateOfUnion.R,union tables
+1,1805-regionen im fokus des US-praesidenten,stateOfUnion.R,visualize data
+2,1805-regionen im fokus des US-praesidenten,stateOfUnion.R,concat parallel tables
+3,1805-regionen im fokus des US-praesidenten,stateOfUnion.R,figure a rate
+4,1805-regionen im fokus des US-praesidenten,stateOfUnion.R,wrangle data for graphics
+5,1805-regionen im fokus des US-praesidenten,stateOfUnion.R,gather table
+6,1805-regionen im fokus des US-praesidenten,stateOfUnion.R,combine columns
+7,1805-regionen im fokus des US-praesidenten,stateOfUnion.R,concat parallel tables
+8,1805-regionen im fokus des US-praesidenten,stateOfUnion.R,sort table
+9,1805-regionen im fokus des US-praesidenten,stateOfUnion.R,peek at data
+0,1805-regionen im fokus des US-praesidenten,stateOfUnion.sh,collect raw data
+0,skatemusic,clean_genre_script.R,load
+1,skatemusic,clean_genre_script.R,combine entities
+2,skatemusic,clean_genre_script.R,trim by contains value
+3,skatemusic,clean_genre_script.R,export
+0,skatemusic,joyplot.R,load
+1,skatemusic,joyplot.R,subset columns
+2,skatemusic,joyplot.R,trim by date range
+3,skatemusic,joyplot.R,group by single column
+4,skatemusic,joyplot.R,count number of rows
+5,skatemusic,joyplot.R,group by multiple columns
+6,skatemusic,joyplot.R,canonicalize column names
+7,skatemusic,joyplot.R,remove incomplete data
+8,skatemusic,joyplot.R,figure a rate
+9,skatemusic,joyplot.R,rolling window calculation
+10,skatemusic,joyplot.R,export
+0,skatemusic,SkateMusicOutline.ipynbr,compare different groups along a common metric
+1,skatemusic,SkateMusicOutline.ipynbr,join aggregate
+2,skatemusic,SkateMusicOutline.ipynbr,figure a rate
+3,skatemusic,SkateMusicOutline.ipynbr,wrangle data for graphics
+4,skatemusic,SkateMusicOutline.ipynbr,trim by quantitative threshold
+0,auditData,dataToJSON.R,wrangle data for graphics
+1,auditData,dataToJSON.R,load
+2,auditData,dataToJSON.R,union tables
+3,auditData,dataToJSON.R,combine entities
+4,auditData,dataToJSON.R,combine columns
+5,auditData,dataToJSON.R,pad column values
+6,auditData,dataToJSON.R,peek at data
+7,auditData,dataToJSON.R,combine columns
+0,employment-discrimination,employment-discrimination.ipynb,format table display
+1,employment-discrimination,employment-discrimination.ipynb,change column data type
+2,employment-discrimination,employment-discrimination.ipynb,inspect table schema
+3,employment-discrimination,employment-discrimination.ipynb,subset columns
+4,employment-discrimination,employment-discrimination.ipynb,refine table
+5,employment-discrimination,employment-discrimination.ipynb,union tables
+6,employment-discrimination,employment-discrimination.ipynb,inspect table schema
+7,employment-discrimination,employment-discrimination.ipynb,canonicalize column names
+8,employment-discrimination,employment-discrimination.ipynb,calculate a statistic
+9,employment-discrimination,employment-discrimination.ipynb,count unique values
+10,employment-discrimination,employment-discrimination.ipynb,answer a question
+11,employment-discrimination,employment-discrimination.ipynb,calculate a statistic
+12,employment-discrimination,employment-discrimination.ipynb,answer a question
+13,employment-discrimination,employment-discrimination.ipynb,"split, compute, and merge"
+14,employment-discrimination,employment-discrimination.ipynb,cross tabulate
+15,employment-discrimination,employment-discrimination.ipynb,compare different groups along a common metric
+16,employment-discrimination,employment-discrimination.ipynb,repetitive code
+17,employment-discrimination,employment-discrimination.ipynb,cross tabulate
+18,employment-discrimination,employment-discrimination.ipynb,export
+0,employment-discrimination,process_eeoc.sh,peek at data
+1,employment-discrimination,process_eeoc.sh,union tables
+0,nyc-trips,analyze.R,repetitive code
+1,nyc-trips,analyze.R,extract column values
+2,nyc-trips,analyze.R,full join tables
+3,nyc-trips,analyze.R,figure a rate
+4,nyc-trips,analyze.R,gather table
+5,nyc-trips,analyze.R,wrangle data for graphics
+0,work-from-home,atus.R,data too large for repo
+1,work-from-home,atus.R,load
+2,work-from-home,atus.R,create flag
+3,work-from-home,atus.R,outer join tables
+4,work-from-home,atus.R,split and compute
+5,work-from-home,atus.R,copy table schema
+6,work-from-home,atus.R,show trend over time
+0,work-from-home,ipums.R,use lookup table
+1,work-from-home,ipums.R,load
+2,work-from-home,ipums.R,adjust for inflation
+3,work-from-home,ipums.R,split and compute
+0,work-from-home,validate_weight_math.R,test for equality
+0,201901-achievementgap,basicskills_districts.R,load
+1,201901-achievementgap,basicskills_districts.R,replace na values
+2,201901-achievementgap,basicskills_districts.R,group by multiple columns
+3,201901-achievementgap,basicskills_districts.R,"use non-public, provided data"
+4,201901-achievementgap,basicskills_districts.R,union tables
+5,201901-achievementgap,basicskills_districts.R,show trend over time
+6,201901-achievementgap,basicskills_districts.R,full join tables
+7,201901-achievementgap,basicskills_districts.R,outer join tables
+8,201901-achievementgap,basicskills_districts.R,bin values
+0,201901-achievementgap,build_data.R,combine columns
+1,201901-achievementgap,build_data.R,query database
+2,201901-achievementgap,build_data.R,combine columns
+3,201901-achievementgap,build_data.R,bin values
+4,201901-achievementgap,build_data.R,outer join tables
+5,201901-achievementgap,build_data.R,bin values
+6,201901-achievementgap,build_data.R,replace na values
+0,201901-achievementgap,generate_charts.R,trim by date range
+1,201901-achievementgap,generate_charts.R,trim by contains value
+2,201901-achievementgap,generate_charts.R,deduplicate
+3,201901-achievementgap,generate_charts.R,architect repeating process
+4,201901-achievementgap,generate_charts.R,gather table
+5,201901-achievementgap,generate_charts.R,subset columns
+6,201901-achievementgap,generate_charts.R,wrangle data for graphics
+0,201901-hospitalquality,hospital_quality_script.R,load
+1,201901-hospitalquality,hospital_quality_script.R,fix mixed data types
+2,201901-hospitalquality,hospital_quality_script.R,subset columns
+3,201901-hospitalquality,hospital_quality_script.R,canonicalize column names
+4,201901-hospitalquality,hospital_quality_script.R,trim by contains value
+5,201901-hospitalquality,hospital_quality_script.R,inner join tables
+6,201901-hospitalquality,hospital_quality_script.R,spread table
+7,201901-hospitalquality,hospital_quality_script.R,"split, compute, and merge"
+8,201901-hospitalquality,hospital_quality_script.R,compare different groups along a common metric
+9,201901-hospitalquality,hospital_quality_script.R,export
+0,2019-ems-analysis,analysis.ipynb,load
+1,2019-ems-analysis,analysis.ipynb,peek at data
+2,2019-ems-analysis,analysis.ipynb,rollup
+3,2019-ems-analysis,analysis.ipynb,figure a rate
+4,2019-ems-analysis,analysis.ipynb,cross tabulate
+5,2019-ems-analysis,analysis.ipynb,show trend over time
+6,2019-ems-analysis,analysis.ipynb,group by multiple columns
+7,2019-ems-analysis,analysis.ipynb,aggregate the forest from the trees
+8,2019-ems-analysis,analysis.ipynb,extract column values
+9,2019-ems-analysis,analysis.ipynb,figure a rate
+10,2019-ems-analysis,analysis.ipynb,cross tabulate
+0,2019-ems-analysis,map_grid.ipynb,compare different groups along a common metric
+1,2019-ems-analysis,map_grid.ipynb,load
+2,2019-ems-analysis,map_grid.ipynb,outer join tables
+3,2019-ems-analysis,map_grid.ipynb,combine data and geography
+4,2019-ems-analysis,map_grid.ipynb,cross tabulate
+5,2019-ems-analysis,map_grid.ipynb,figure a rate
+6,2019-ems-analysis,map_grid.ipynb,replace na values
+7,2019-ems-analysis,map_grid.ipynb,group by single column
+8,2019-ems-analysis,map_grid.ipynb,canonicalize column names
+9,2019-ems-analysis,map_grid.ipynb,figure a rate
+0,demolitions,01_Download_Process.ipynb,use open government data
+1,demolitions,01_Download_Process.ipynb,change column data type
+2,demolitions,01_Download_Process.ipynb,load
+3,demolitions,01_Download_Process.ipynb,union tables
+4,demolitions,01_Download_Process.ipynb,create frequency table
+5,demolitions,01_Download_Process.ipynb,trim by contains value
+6,demolitions,01_Download_Process.ipynb,count number of rows
+7,demolitions,01_Download_Process.ipynb,trim by date range
+8,demolitions,01_Download_Process.ipynb,export
+9,demolitions,01_Download_Process.ipynb,sort table
+0,demolitions,02_Analysis_Full_demos.ipynb,format table display
+1,demolitions,02_Analysis_Full_demos.ipynb,answer a question
+2,demolitions,02_Analysis_Full_demos.ipynb,show trend over time
+3,demolitions,02_Analysis_Full_demos.ipynb,subset columns
+4,demolitions,02_Analysis_Full_demos.ipynb,wrangle data for graphics
+5,demolitions,02_Analysis_Full_demos.ipynb,visualize data
+6,demolitions,02_Analysis_Full_demos.ipynb,group by single column
+7,demolitions,02_Analysis_Full_demos.ipynb,canonicalize column names
+8,demolitions,02_Analysis_Full_demos.ipynb,peek at data
+9,demolitions,02_Analysis_Full_demos.ipynb,group by multiple columns
+10,demolitions,02_Analysis_Full_demos.ipynb,tolerate dirty data
+11,demolitions,02_Analysis_Full_demos.ipynb,trim by geographic area
+12,demolitions,02_Analysis_Full_demos.ipynb,outlier detection
+13,demolitions,02_Analysis_Full_demos.ipynb,toggle step on and off
+14,demolitions,02_Analysis_Full_demos.ipynb,annotate workflow
+15,demolitions,02_Analysis_Full_demos.ipynb,extract column values
+0,demolitions,02_Analysis_Partial_demos.ipynb,trim by quantitative threshold
+0,demolitions,02_Construction.ipynb,format values
+1,demolitions,02_Construction.ipynb,create flag
+0,demolitions,02_Contractors.ipynb,compare different groups along a common metric
+0,2018-05-31-crime-and-heat-analysis,crimes-and-heat.ipynb,combine seemingly disparate datasets
+1,2018-05-31-crime-and-heat-analysis,crimes-and-heat.ipynb,use open government data
+2,2018-05-31-crime-and-heat-analysis,crimes-and-heat.ipynb,peek at data
+3,2018-05-31-crime-and-heat-analysis,crimes-and-heat.ipynb,create soft key
+4,2018-05-31-crime-and-heat-analysis,crimes-and-heat.ipynb,extract column values
+5,2018-05-31-crime-and-heat-analysis,crimes-and-heat.ipynb,group by single column
+6,2018-05-31-crime-and-heat-analysis,crimes-and-heat.ipynb,create frequency table
+7,2018-05-31-crime-and-heat-analysis,crimes-and-heat.ipynb,trim by date range
+8,2018-05-31-crime-and-heat-analysis,crimes-and-heat.ipynb,load
+9,2018-05-31-crime-and-heat-analysis,crimes-and-heat.ipynb,union tables
+10,2018-05-31-crime-and-heat-analysis,crimes-and-heat.ipynb,outer join tables
+11,2018-05-31-crime-and-heat-analysis,crimes-and-heat.ipynb,calculate central tendency
+12,2018-05-31-crime-and-heat-analysis,crimes-and-heat.ipynb,"split, compute, and merge"
+13,2018-05-31-crime-and-heat-analysis,crimes-and-heat.ipynb,sort table
+14,2018-05-31-crime-and-heat-analysis,crimes-and-heat.ipynb,visualize data
+0,long-term-care-db,facilities-analysis,answer a question
+1,long-term-care-db,facilities-analysis,figure a rate
+0,long-term-care-db,mung-3-25-scrape,"use non-public, provided data"
+1,long-term-care-db,mung-3-25-scrape,canonicalize column names
+2,long-term-care-db,mung-3-25-scrape,load
+3,long-term-care-db,mung-3-25-scrape,union tables
+4,long-term-care-db,mung-3-25-scrape,canonicalize column names
+5,long-term-care-db,mung-3-25-scrape,subset columns
+6,long-term-care-db,mung-3-25-scrape,refine table
+7,long-term-care-db,mung-3-25-scrape,outer join tables
+8,long-term-care-db,mung-3-25-scrape,remove erroneous data
+9,long-term-care-db,mung-3-25-scrape,trim by contains value
+10,long-term-care-db,mung-3-25-scrape,encode table identification in row
+11,long-term-care-db,mung-3-25-scrape,sort table
+12,long-term-care-db,mung-3-25-scrape,deduplicate
+13,long-term-care-db,mung-3-25-scrape,combine entities
+14,long-term-care-db,mung-3-25-scrape,scrape web for data
+15,long-term-care-db,mung-3-25-scrape,deduplicate
+16,long-term-care-db,mung-3-25-scrape,fill in na values after an outer join
+17,long-term-care-db,mung-3-25-scrape,encode table identification in row
+18,long-term-care-db,mung-3-25-scrape,use lookup table
+19,long-term-care-db,mung-3-25-scrape,fix data errors manually
+20,long-term-care-db,mung-3-25-scrape,cross tabulate
+21,long-term-care-db,mung-3-25-scrape,aggregate the forest from the trees
+22,long-term-care-db,mung-3-25-scrape,compare different groups along a common metric
+23,long-term-care-db,mung-3-25-scrape,outer join tables
+24,long-term-care-db,mung-3-25-scrape,combine entities
+25,long-term-care-db,mung-3-25-scrape,export
+0,babyname_politics,read_names.R,combine seemingly disparate datasets
+1,babyname_politics,read_names.R,load
+2,babyname_politics,read_names.R,figure a rate
+3,babyname_politics,read_names.R,architect a subroutine
+4,babyname_politics,read_names.R,union tables
+5,babyname_politics,read_names.R,count number of rows
+6,babyname_politics,read_names.R,create soft key
+7,babyname_politics,read_names.R,combine columns
+8,babyname_politics,read_names.R,join aggregate
+9,babyname_politics,read_names.R,group by single column
+10,babyname_politics,read_names.R,create frequency table
+11,babyname_politics,read_names.R,sort table
+12,babyname_politics,read_names.R,extract column values
+13,babyname_politics,read_names.R,trim by quantitative threshold
+14,babyname_politics,read_names.R,resort after merge
+15,babyname_politics,read_names.R,join aggregate
+16,babyname_politics,read_names.R,format values
+17,babyname_politics,read_names.R,peek at data
+18,babyname_politics,read_names.R,export
+19,babyname_politics,read_names.R,repetitive code
+20,babyname_politics,read_names.R,calculate spread
+21,babyname_politics,read_names.R,data loss from aggregation
+0,babyname_politics,utils.R,change column data type
+1,babyname_politics,utils.R,canonicalize column names
+2,babyname_politics,utils.R,trim by date range
+3,babyname_politics,utils.R,assign ranks
+4,babyname_politics,utils.R,architect a subroutine
+5,babyname_politics,utils.R,sort table
+6,babyname_politics,utils.R,repetitive code
+0,wikipedia-rankings,README.md,collect raw data
+0,wikipedia-rankings,wikipedia.r,load
+1,wikipedia-rankings,wikipedia.r,export
+2,wikipedia-rankings,wikipedia.r,standardize values
+3,wikipedia-rankings,wikipedia.r,explain variance
+4,wikipedia-rankings,wikipedia.r,visualize data
+5,wikipedia-rankings,wikipedia.r,export
+0,general-election-2015-classification-tree,explainer.html,interpret statistical/ml model
+0,general-election-2015-classification-tree,live_elections_night_classification_tree.R,load
+1,general-election-2015-classification-tree,live_elections_night_classification_tree.R,figure a rate
+2,general-election-2015-classification-tree,live_elections_night_classification_tree.R,outer join tables
+3,general-election-2015-classification-tree,live_elections_night_classification_tree.R,outer join tables
+4,general-election-2015-classification-tree,live_elections_night_classification_tree.R,format values
+5,general-election-2015-classification-tree,live_elections_night_classification_tree.R,check for nas
+6,general-election-2015-classification-tree,live_elections_night_classification_tree.R,load
+7,general-election-2015-classification-tree,live_elections_night_classification_tree.R,figure a rate
+8,general-election-2015-classification-tree,live_elections_night_classification_tree.R,create flag
+9,general-election-2015-classification-tree,live_elections_night_classification_tree.R,gather table
+10,general-election-2015-classification-tree,live_elections_night_classification_tree.R,rollup
+11,general-election-2015-classification-tree,live_elections_night_classification_tree.R,wrangle data for model
+0,lending-club,index.rmd,outer join tables
+1,lending-club,index.rmd,figure a rate
+2,lending-club,index.rmd,sort table
+3,lending-club,index.rmd,wrangle data for graphics
+4,lending-club,index.rmd,show trend over time
+0,verge-uber-launch-dates,readme.md,use another news orgs data
+0,verge-uber-launch-dates,uber_scraper.py,scrape web for data
+1,verge-uber-launch-dates,uber_scraper.py,collect raw data
+0,vox-central-line-infections,build.sh,format values
+1,vox-central-line-infections,build.sh,subset columns
+2,vox-central-line-infections,build.sh,sort table
+3,vox-central-line-infections,build.sh,trim by contains value
+4,vox-central-line-infections,build.sh,replace na values
+5,vox-central-line-infections,build.sh,deduplicate
+6,vox-central-line-infections,build.sh,remove value characters
+7,vox-central-line-infections,build.sh,outer join tables
+8,vox-central-line-infections,build.sh,report rows with column number discrepancies
+0,vox-central-line-infections,location.py,canonicalize column names
+1,vox-central-line-infections,location.py,extract column values
+0,vox-central-line-infections,render.sh,subset columns
+1,vox-central-line-infections,render.sh,replace na values
+2,vox-central-line-infections,render.sh,toggle step on and off
+0,vox-central-line-infections,run.sh,toggle step on and off
+0,federal_employees_trump_2017,employment.Rmd,use open government data
+1,federal_employees_trump_2017,employment.Rmd,load
+2,federal_employees_trump_2017,employment.Rmd,outer join tables
+3,federal_employees_trump_2017,employment.Rmd,use lookup table
+4,federal_employees_trump_2017,employment.Rmd,remove value characters
+5,federal_employees_trump_2017,employment.Rmd,trim by contains value
+6,federal_employees_trump_2017,employment.Rmd,subset columns
+7,federal_employees_trump_2017,employment.Rmd,encode table identification in row
+8,federal_employees_trump_2017,employment.Rmd,repetitive code
+9,federal_employees_trump_2017,employment.Rmd,combine entities
+10,federal_employees_trump_2017,employment.Rmd,canonicalize column names
+11,federal_employees_trump_2017,employment.Rmd,deduplicate
+12,federal_employees_trump_2017,employment.Rmd,union tables
+13,federal_employees_trump_2017,employment.Rmd,deduplicate
+14,federal_employees_trump_2017,employment.Rmd,group by single column
+15,federal_employees_trump_2017,employment.Rmd,resolve entities
+16,federal_employees_trump_2017,employment.Rmd,cross tabulate
+17,federal_employees_trump_2017,employment.Rmd,fix data errors manually
+18,federal_employees_trump_2017,employment.Rmd,calculate change over time
+19,federal_employees_trump_2017,employment.Rmd,full join tables
+20,federal_employees_trump_2017,employment.Rmd,combine entities
+21,federal_employees_trump_2017,employment.Rmd,spread table
+22,federal_employees_trump_2017,employment.Rmd,visualize data
+23,federal_employees_trump_2017,employment.Rmd,wrangle data for graphics
+0,federal_employees_trump_2017,separation.Rmd,load
+1,federal_employees_trump_2017,separation.Rmd,canonicalize column names
+2,federal_employees_trump_2017,separation.Rmd,combine entities
+3,federal_employees_trump_2017,separation.Rmd,outer join tables
+4,federal_employees_trump_2017,separation.Rmd,remove value characters
+5,federal_employees_trump_2017,separation.Rmd,resolve entities
+6,federal_employees_trump_2017,separation.Rmd,trim by date range
+7,federal_employees_trump_2017,separation.Rmd,group by multiple columns
+8,federal_employees_trump_2017,separation.Rmd,count number of rows
+9,federal_employees_trump_2017,separation.Rmd,repetitive code
+10,federal_employees_trump_2017,separation.Rmd,group by single column
+11,federal_employees_trump_2017,separation.Rmd,compare different groups along a common metric
+0,Power_of_Irma,bailey_code.R,load
+1,Power_of_Irma,bailey_code.R,count unique values
+2,Power_of_Irma,bailey_code.R,group by single column
+3,Power_of_Irma,bailey_code.R,create frequency table
+4,Power_of_Irma,bailey_code.R,refine table
+5,Power_of_Irma,bailey_code.R,"split, compute, and merge"
+6,Power_of_Irma,bailey_code.R,outer join tables
+7,Power_of_Irma,bailey_code.R,export
+8,Power_of_Irma,bailey_code.R,peek at data
+9,Power_of_Irma,bailey_code.R,toggle step on and off
+10,Power_of_Irma,bailey_code.R,tolerate dirty data
+11,Power_of_Irma,bailey_code.R,extract column values
+12,Power_of_Irma,bailey_code.R,canonicalize column names
+13,Power_of_Irma,bailey_code.R,strip whitespace
+14,Power_of_Irma,bailey_code.R,use previously cleaned data
+15,Power_of_Irma,bailey_code.R,use data from colleague
+16,Power_of_Irma,bailey_code.R,outer join tables
+17,Power_of_Irma,bailey_code.R,set data confidence threshold
+18,Power_of_Irma,bailey_code.R,scale values
+19,Power_of_Irma,bailey_code.R,interpret statistical/ml model
+20,Power_of_Irma,bailey_code.R,visualize data
+21,Power_of_Irma,bailey_code.R,"split, compute, and merge"
+22,Power_of_Irma,bailey_code.R,outlier detection
+23,Power_of_Irma,bailey_code.R,outlier detection
+24,Power_of_Irma,bailey_code.R,export
+0,Power_of_Irma,EJUF_GRUcode.R,value replacement
+1,Power_of_Irma,EJUF_GRUcode.R,strip whitespace
+2,Power_of_Irma,EJUF_GRUcode.R,extract column values
+3,Power_of_Irma,EJUF_GRUcode.R,extract column values
+4,Power_of_Irma,EJUF_GRUcode.R,fix incorrect calculation
+5,Power_of_Irma,EJUF_GRUcode.R,format values
+6,Power_of_Irma,EJUF_GRUcode.R,calculate spread
+7,Power_of_Irma,EJUF_GRUcode.R,subset columns
+8,Power_of_Irma,EJUF_GRUcode.R,repetitive code
+9,Power_of_Irma,EJUF_GRUcode.R,toggle step on and off
+10,Power_of_Irma,EJUF_GRUcode.R,outer join tables
+11,Power_of_Irma,EJUF_GRUcode.R,visualize data
+0,Power_of_Irma,liana_code.R,change column data type
+1,Power_of_Irma,liana_code.R,load
+2,Power_of_Irma,liana_code.R,set data confidence threshold
+3,Power_of_Irma,liana_code.R,visualize data
+4,Power_of_Irma,liana_code.R,interpret statistical/ml model
+5,Power_of_Irma,liana_code.R,wrangle data for graphics

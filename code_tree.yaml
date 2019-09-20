@@ -296,7 +296,7 @@
         - name: remove erroneous data
           desc: 'There are errors in the data that need to be removed'
         - name: creating new datasets
-          desc: ''
+          desc: 'The purpose of wrangling is to create a new dataset.'
           sub:
             - name: combine drifting datasets
               desc: 'Reconcile difference in periodically published datasets that have superficially changed over time, such as schema differences or entity names, to consolidate more than one dataset.'
@@ -313,16 +313,22 @@
           desc: 'Analyze features from a model such as linear regression or classification trees'
         - name: compare different groups along a common metric
           desc: 'The end analysis is just comparing different groups by a common metric.'
+        - name: identify extreme values
+          desc: 'Identify values that are at the ends of the range, but not strictly outliers.'
+        - name: outlier detection # TODO merge with identify extreme values
+          desc: 'Finding extreme cases or outliers in the data'
         - name: show trend over time
           desc: 'Analysis consists of showing how values change over time'
         - name: calculate a statistic
           desc: 'Calculate a single value for from a dataset, such as number of records.'
+        - name: answer a question
+          desc: 'Analysis consists of using data to answer a specific question'          
+        - name: examine relationship
+          desc: 'Analysis consists of examining the relationship between different phenomena'
         - name: explain variance
           desc: 'This can be done via PCA'
-        - name: answer a question
-          desc: 'Analysis consists of using data to answer a specific question'
-        - name: outlier detection
-          desc: 'Finding extreme cases or outliers in the data'
+        - name: identify clusters or lack of clusters
+          desc: 'Look for meaningingful groups within the data'
         - name: find nearest neighbours in the network
           desc: '(Network analysis) Find the closest neighbours for all points'
         - name: explore dynamic network flow
