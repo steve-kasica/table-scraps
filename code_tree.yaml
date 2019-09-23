@@ -70,12 +70,14 @@
             - name: define edge weights
               desc: 'Columns that define edge weights'
         - name: generate keys
-          desc: 'Operations that create "key" columns.'
+          desc: 'Operations that create "key" columns, a.k.a skolemization'
           sub:
               - name: create soft key
                 desc: 'Keys used in matching without a guarentee of uniqueness, such as combinations of names and addresses'
               - name: create a unique key
                 desc: 'Journalist create a key that is actually unique in the table'
+              - name: prep key for joining
+                desc: 'Clean existing key column prior to joining'
         - name: rank data
           desc: 'Operations that encode semantic meaning about the data with table index.'
           sub:
@@ -174,7 +176,7 @@
         - name: cartesian product
           desc: 'TK'
         - name: self join table
-          desc: 'Join a table with itself'   
+          desc: 'Join a table with itself'
     - name: transform
       desc: 'Operations that transform a table into an aggregated, lower-resolution view of the original table.'
       sub:

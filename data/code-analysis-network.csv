@@ -128,6 +128,14 @@ create a unique key,new-york-schools-assessment,combine-csv.ipynb,3.0,True
 create a unique key,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,3.0,True
 create a unique key,infrastructure-jobs,infrastructure-jobs.R,3.0,True
 create a unique key,california-h2a-visas-analysis,02_transform.ipynb,3.0,True
+create a unique key,prison-admissions,export.rmd,3.0,True
+create a unique key,nyc-trips,analyze.R,3.0,True
+prep key for joining,2016-11-bellwether-counties,county-predictiveness.ipynb,3.0,True
+prep key for joining,2019-04-democratic-candidate-codonors,analyze-campaign-codonors.ipynb,3.0,True
+prep key for joining,california-crop-production-wages-analysis,02-transform.ipynb,3.0,True
+prep key for joining,census-hard-to-map-analysis,notebook.ipynb,3.0,True
+prep key for joining,school-choice,special_education.ipynb,3.0,True
+prep key for joining,Power_of_Irma,EJUF_GRUcode.R,3.0,True
 assign ranks,babyname_politics,utils.R,3.0,True
 sort table,2018-voter-registration,02_analysis.ipynb,3.0,True
 sort table,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,3.0,True
@@ -359,6 +367,7 @@ union tables,long-term-care-db,mung-3-25-scrape,2.0,True
 union tables,babyname_politics,read_names.R,2.0,True
 union tables,federal_employees_trump_2017,employment.Rmd,2.0,True
 inner join tables,bechdel,bechdel,2.0,True
+inner join tables,infrastructure-jobs,infrastructure-jobs.R,2.0,True
 inner join tables,california-crop-production-wages-analysis,02-transform.ipynb,2.0,True
 inner join tables,census-hard-to-map-analysis,notebook.ipynb,2.0,True
 inner join tables,201901-hospitalquality,hospital_quality_script.R,2.0,True
@@ -627,6 +636,7 @@ remove erroneous data,long-term-care-db,mung-3-25-scrape,2.0,True
 combine drifting datasets,2018-voter-registration,01_processing.ipynb,3.0,True
 combine drifting datasets,new-york-schools-assessment,combine-csv.ipynb,3.0,True
 combine drifting datasets,awb-notebook,awb_meldungen.ipynb,3.0,True
+combine drifting datasets,california-h2a-visas-analysis,02_transform.ipynb,3.0,True
 combine seemingly disparate datasets,2018-05-31-crime-and-heat-analysis,crimes-and-heat.ipynb,3.0,True
 combine seemingly disparate datasets,babyname_politics,read_names.R,3.0,True
 combine data and geography,school-star-ratings-2018,mapping.ipynb,3.0,True
@@ -882,6 +892,13 @@ generate keys,new-york-schools-assessment,combine-csv.ipynb,2.0,False
 generate keys,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,2.0,False
 generate keys,infrastructure-jobs,infrastructure-jobs.R,2.0,False
 generate keys,california-h2a-visas-analysis,02_transform.ipynb,2.0,False
+generate keys,prison-admissions,export.rmd,2.0,False
+generate keys,nyc-trips,analyze.R,2.0,False
+generate keys,2016-11-bellwether-counties,county-predictiveness.ipynb,2.0,False
+generate keys,california-crop-production-wages-analysis,02-transform.ipynb,2.0,False
+generate keys,census-hard-to-map-analysis,notebook.ipynb,2.0,False
+generate keys,school-choice,special_education.ipynb,2.0,False
+generate keys,Power_of_Irma,EJUF_GRUcode.R,2.0,False
 rank data,babyname_politics,utils.R,2.0,False
 rank data,2018-voter-registration,02_analysis.ipynb,2.0,False
 rank data,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,2.0,False
@@ -1086,6 +1103,7 @@ integrate,long-term-care-db,mung-3-25-scrape,1.0,False
 integrate,babyname_politics,read_names.R,1.0,False
 integrate,federal_employees_trump_2017,employment.Rmd,1.0,False
 integrate,bechdel,bechdel,1.0,False
+integrate,infrastructure-jobs,infrastructure-jobs.R,1.0,False
 integrate,census-hard-to-map-analysis,notebook.ipynb,1.0,False
 integrate,201901-hospitalquality,hospital_quality_script.R,1.0,False
 supplement,school-star-ratings-2018,mapping.ipynb,2.0,False
@@ -1318,6 +1336,7 @@ wrangling purpose,long-term-care-db,mung-3-25-scrape,1.0,False
 creating new datasets,2018-voter-registration,01_processing.ipynb,2.0,False
 creating new datasets,new-york-schools-assessment,combine-csv.ipynb,2.0,False
 creating new datasets,awb-notebook,awb_meldungen.ipynb,2.0,False
+creating new datasets,california-h2a-visas-analysis,02_transform.ipynb,2.0,False
 creating new datasets,2018-05-31-crime-and-heat-analysis,crimes-and-heat.ipynb,2.0,False
 creating new datasets,babyname_politics,read_names.R,2.0,False
 creating new datasets,school-star-ratings-2018,mapping.ipynb,2.0,False
@@ -1508,29 +1527,30 @@ modify,babyname_politics,read_names.R,1.0,False
 modify,new-york-schools-assessment,combine-csv.ipynb,1.0,False
 modify,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,1.0,False
 modify,infrastructure-jobs,infrastructure-jobs.R,1.0,False
+modify,nyc-trips,analyze.R,1.0,False
+modify,2016-11-bellwether-counties,county-predictiveness.ipynb,1.0,False
+modify,california-crop-production-wages-analysis,02-transform.ipynb,1.0,False
+modify,census-hard-to-map-analysis,notebook.ipynb,1.0,False
+modify,school-choice,special_education.ipynb,1.0,False
+modify,Power_of_Irma,EJUF_GRUcode.R,1.0,False
 modify,babyname_politics,utils.R,1.0,False
 modify,2018-voter-registration,02_analysis.ipynb,1.0,False
 modify,california-ccscore-analysis,analysis.ipynb,1.0,False
 modify,california-crop-production-wages-analysis,03-analysis.ipynb,1.0,False
 modify,california-h2a-visas-analysis,04_analysis.ipynb,1.0,False
-modify,census-hard-to-map-analysis,notebook.ipynb,1.0,False
 modify,gunsales,functions.R,1.0,False
 modify,1805-regionen im fokus des US-praesidenten,stateOfUnion.R,1.0,False
 modify,demolitions,01_Download_Process.ipynb,1.0,False
 modify,lending-club,index.rmd,1.0,False
 modify,vox-central-line-infections,build.sh,1.0,False
-modify,2016-11-bellwether-counties,county-predictiveness.ipynb,1.0,False
 modify,the-cube-root-law,the_cube_root_law.js,1.0,False
-modify,nyc-trips,analyze.R,1.0,False
 modify,2019-ems-analysis,analysis.ipynb,1.0,False
 modify,demolitions,02_Analysis_Full_demos.ipynb,1.0,False
 modify,vox-central-line-infections,location.py,1.0,False
-modify,Power_of_Irma,EJUF_GRUcode.R,1.0,False
 modify,201901-achievementgap,build_data.R,1.0,False
 actions,prison-admissions,export.rmd,0.0,False
 actions,demolitions,02_Construction.ipynb,0.0,False
 modify,201901-achievementgap,basicskills_districts.R,1.0,False
-modify,school-choice,special_education.ipynb,1.0,False
 modify,skatemusic,clean_genre_script.R,1.0,False
 modify,federal_employees_trump_2017,separation.Rmd,1.0,False
 clean,2018-voter-registration,02_analysis.ipynb,1.0,False
@@ -1621,7 +1641,6 @@ actions,employment-discrimination,process_eeoc.sh,0.0,False
 actions,bechdel,bechdel,0.0,False
 integrate,school-star-ratings-2018,mapping.ipynb,1.0,False
 integrate,2015-11-refugees-in-the-united-states,us-refugee-analysis.ipynb,1.0,False
-integrate,infrastructure-jobs,infrastructure-jobs.R,1.0,False
 integrate,california-ccscore-analysis,analysis.ipynb,1.0,False
 integrate,work-from-home,atus.R,1.0,False
 integrate,201901-achievementgap,build_data.R,1.0,False
@@ -1798,6 +1817,7 @@ wrangling purpose,general-election-2015-classification-tree,live_elections_night
 observations,awb-notebook,awb_meldungen.ipynb,0.0,False
 wrangling purpose,2018-voter-registration,01_processing.ipynb,1.0,False
 wrangling purpose,new-york-schools-assessment,combine-csv.ipynb,1.0,False
+wrangling purpose,california-h2a-visas-analysis,02_transform.ipynb,1.0,False
 wrangling purpose,2018-05-31-crime-and-heat-analysis,crimes-and-heat.ipynb,1.0,False
 wrangling purpose,babyname_politics,read_names.R,1.0,False
 wrangling purpose,school-star-ratings-2018,mapping.ipynb,1.0,False

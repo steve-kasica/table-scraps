@@ -30,9 +30,10 @@ modify,encode table identification in row,"When some way of identifying the tabl
 modify,network-ify the data,"When the data is inherently a graph, encode table columns and values to represent this structure tabularly",2,False,1
 network-ify the data,create edge,"A column with value that define a relationship to another row, which is not necessarily in a different table",3,True,1
 network-ify the data,define edge weights,Columns that define edge weights,3,True,1
-modify,generate keys,"Operations that create ""key"" columns.",2,False,8
+modify,generate keys,"Operations that create ""key"" columns, a.k.a skolemization",2,False,15
 generate keys,create soft key,"Keys used in matching without a guarentee of uniqueness, such as combinations of names and addresses",3,True,5
-generate keys,create a unique key,Journalist create a key that is actually unique in the table,3,True,4
+generate keys,create a unique key,Journalist create a key that is actually unique in the table,3,True,6
+generate keys,prep key for joining,Clean existing key column prior to joining,3,True,6
 modify,rank data,Operations that encode semantic meaning about the data with table index.,2,False,15
 rank data,assign ranks,When a column of numerical ranks is explicitly assigned to rows in the table.,3,True,1
 rank data,sort table,When rank is implicitly assigned by rearranging row position in the table.,3,True,15
@@ -69,7 +70,7 @@ format schema,canonicalize column names,Operations that change column names,4,Tr
 format schema,change column data type,"For example, changing a column of values from strings to integers",4,True,16
 actions,integrate,Combining data residing in different tables into one table.,1,False,34
 integrate,union tables,TK,2,True,16
-integrate,inner join tables,TK,2,True,4
+integrate,inner join tables,TK,2,True,5
 integrate,supplement,Supplementation is characterized by integration operations that essentially add columns to existing data,2,False,22
 supplement,outer join tables,"A join that returns rows with no corresponding match in the table being joined two, e.g. left or right joins.",3,True,17
 supplement,full join tables,Combine all rows and all columns of the two tables. a.k.a full outer join,3,True,5
@@ -130,15 +131,15 @@ wrangling purpose,input for downstream applications,Output from wrangling will b
 input for downstream applications,wrangle data for graphics,"Data need to be formatted in order to be visualized in an article, including tables.",3,True,22
 input for downstream applications,wrangle data for model,"Data is being wrangled in order to create a model, whether the main point of the piece is for prediction or classification",3,True,1
 wrangling purpose,remove erroneous data,There are errors in the data that need to be removed,2,True,2
-wrangling purpose,creating new datasets,,2,False,7
-creating new datasets,combine drifting datasets,"Reconcile difference in periodically published datasets that have superficially changed over time, such as schema differences or entity names, to consolidate more than one dataset.",3,True,3
+wrangling purpose,creating new datasets,The purpose of wrangling is to create a new dataset.,2,False,8
+creating new datasets,combine drifting datasets,"Reconcile difference in periodically published datasets that have superficially changed over time, such as schema differences or entity names, to consolidate more than one dataset.",3,True,4
 creating new datasets,combine seemingly disparate datasets,When a notebook largely constitutes combining seemingly unrelated datasets.,3,True,2
 creating new datasets,combine data and geography,Pairing data with GIS info.,3,True,2
 wrangling purpose,aggregate the forest from the trees,Data of individual observations is aggregated in an attempt to find some meaningful structure or patterns,2,True,2
 observations,analysis,Kinds of analysis data journalists need to wrangle data to perform.,1,False,50
 analysis,interpret statistical/ml model,Analyze features from a model such as linear regression or classification trees,2,True,5
 analysis,compare different groups along a common metric,The end analysis is just comparing different groups by a common metric.,2,True,26
-analysis,identify extreme values,,2,True,5
+analysis,identify extreme values,"Identify values that are at the ends of the range, but not strictly outliers.",2,True,5
 analysis,outlier detection,Finding extreme cases or outliers in the data,2,True,5
 analysis,show trend over time,Analysis consists of showing how values change over time,2,True,17
 analysis,calculate a statistic,"Calculate a single value for from a dataset, such as number of records.",2,True,6
