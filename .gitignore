@@ -12,3 +12,4 @@
 .python_history
 __pycache__
 secrets.yaml
+.bash_history*
