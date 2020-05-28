@@ -1,0 +1,7 @@
+[1]OpenRefine, “2018 Survey Results,” OpenRefine, Jun. 16, 2018. http://openrefine.org/my%20category/2018/07/16/2018-survey-results.html.
+[2]Trifacta, Cloud Dataprep. .
+[3]B. Bradley, Data Wrangling with R, 1st ed. Springer International Publishing, 2016.
+[4]Subscribe, “From Freebase Gridworks to Google Refine and now OpenRefine.” http://kb.refinepro.com/2012/10/from-freebase-gridworks-to-google.html (accessed Dec. 05, 2019).
+[5]D. Huynh, Open Refine. 2012.
+[6]T. Rattenburg, J. Hellerstein, J. Heer, S. Kandel, and C. Carreras, “Principles of Data Wrangling,” p. 94.
+[7]Tableau Prep. .

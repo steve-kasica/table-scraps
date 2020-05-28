@@ -24,3 +24,5 @@ RUN wget https://bootstrap.pypa.io/get-pip.py \
 
 # Install Python 2.7 modules
 RUN ~/.local/bin/pip2.7 install pandas xlrd latimes-calculate timeout_decorator geopy geopandas matplotlib scipy --user
+
+RUN conda install -c anaconda jupyter_client=5.3.1

@@ -1,0 +1,126 @@
+[1]P. Bradshaw, “(More than) 4 examples of computational thinking in journalism | Online Journalism Blog.” https://onlinejournalismblog.com/2017/10/06/4-examples-of-computational-thinking-in-journalism/ (accessed Apr. 16, 2020).
+[2]OpenRefine, “2018 Survey Results,” OpenRefine, Jun. 16, 2018. http://openrefine.org/my%20category/2018/07/16/2018-survey-results.html.
+[3]J. Stray, “A Computational Journalism Reading List,” jonathanstray.com, Apr. 18, 2011. http://jonathanstray.com/a-computational-journalism-reading-list.
+[4]S. Rogers, “A data journalism workflow,” Simon Rogers, Jan. 27, 2013. https://simonrogers.net/2013/01/27/a-data-journalism-workflow/ (accessed Apr. 16, 2020).
+[5]Y. L. Simmhan, B. Plale, and D. Gannon, “A survey of data provenance in e-science,” SIGMOD Rec., vol. 34, no. 3, pp. 31–36, Sep. 2005, doi: 10.1145/1084805.1084812.
+[6]S. Cohen, “Advanced OpenRefine: Using regular expressions,” presented at the 2016 CAR Conference, Denver, Mar. 11, 2016, [Online]. Available: https://github.com/sarahcnyt/data-journalism/tree/master/openrefine.
+[7]A. Cairo, “Alberto Cairo: Data journalism needs to up its own standards,” Nieman Lab, Jul. 09, 2014. https://www.niemanlab.org/2014/07/alberto-cairo-data-journalism-needs-to-up-its-own-standards/.
+[8]S. Krishnan and E. Wu, “AlphaClean: Automatic Generation of Data Cleaning Pipelines,” arXiv:1904.11827 [cs], May 2019, Accessed: Apr. 18, 2020. [Online]. Available: http://arxiv.org/abs/1904.11827.
+[9]F. Naumann and M. Herschel, “An Introduction to Duplicate Detection,” Synthesis Lectures on Data Management, vol. 2, no. 1, pp. 1–87, Jan. 2010, doi: 10.2200/S00262ED1V01Y201003DTM003.
+[10]J. Bryan, “Behind every great vis ... there’s a great deal of wrangling,” presented at the VDS at IEEE VIS 2019, Vancouver, Canada, Oct. 20, 2019, [Online]. Available: http://www.visualdatascience.org/2019/program/.
+[11]F. Nguyen, S. Shrestha, J. Germuska, Y.-S. Kim, and J. Hullman, “Belief-Driven Data Journalism,” p. 5, 2019.
+[12]J. Wang, L. Li, and A. Zeller, “Better Code, Better Sharing: On the Need of Analyzing Jupyter Notebooks,” p. 5.
+[13]D. Goldston, “Big data: Data wrangling,” Nature, Sep. 03, 2008. https://www.nature.com/articles/455015a (accessed Apr. 21, 2020).
+[14]R. Tuchinda, P. Szekely, and C. A. Knoblock, “Building Mashups by example,” in Proceedings of the 13th international conference on Intelligent user interfaces - IUI ’08, Gran Canaria, Spain, 2008, p. 139, doi: 10.1145/1378773.1378792.
+[15]E. D. Ragan, A. Endert, J. Sanyal, and J. Chen, “Characterizing Provenance in Visualization and Data Analysis: An Organizational Framework of Provenance Types and Purposes,” IEEE Trans. Visual. Comput. Graphics, vol. 22, no. 1, pp. 31–40, Jan. 2016, doi: 10.1109/TVCG.2015.2467551.
+[16]Y. Kang and J. Stasko, “Characterizing the intelligence analysis process through a longitudinal field study: Implications for visual analytics,” Information Visualization, vol. 13, no. 2, pp. 134–158, Apr. 2014, doi: 10.1177/1473871612468877.
+[17]M. Coddington, “Clarifying Journalism’s Quantitative Turn: A typology for evaluating data journalism, computational journalism, and computer-assisted reporting,” Digital Journalism, vol. 3, no. 3, pp. 331–348, May 2015, doi: 10.1080/21670811.2014.976400.
+[18]L. M. Haas, M. A. Hernández, H. Ho, L. Popa, and M. Roth, “Clio grows up: from research prototype to industrial tool,” in Proceedings of the 2005 ACM SIGMOD international conference on Management of data  - SIGMOD ’05, Baltimore, Maryland, 2005, p. 805, doi: 10.1145/1066157.1066252.
+[19]Trifacta, Cloud Dataprep. .
+[20]S. Cohen, J. T. Hamilton, and F. Turner, “Computational journalism,” Commun. ACM, vol. 54, no. 10, p. 66, Oct. 2011, doi: 10.1145/2001269.2001288.
+[21]M. Meyer and J. Dykes, “Criteria for Rigor in Visualization Design Study,” IEEE Trans. Visual. Comput. Graphics, pp. 1–1, 2019, doi: 10.1109/TVCG.2019.2934539.
+[22]A. Satyanarayan et al., “Critical Reflections on Visualization Authoring Systems,” IEEE Trans. Visual. Comput. Graphics, pp. 1–1, 2019, doi: 10.1109/TVCG.2019.2934281.
+[23]M. Bilgic, L. Licamele, L. Getoor, and B. Shneiderman, “D-Dupe: An Interactive Tool for Entity Resolution in Social Networks,” in 2006 IEEE Symposium On Visual Analytics Science And Technology, Oct. 2006, pp. 43–50, doi: 10.1109/VAST.2006.261429.
+[24]M. Koehler et al., “Data context informed data wrangling,” in 2017 IEEE International Conference on Big Data (Big Data), Dec. 2017, pp. 956–963, doi: 10.1109/BigData.2017.8258015.
+[25]S. Rogers, “Data journalism at the Guardian: what is it and how do we do it?,” The Guardian, Jul. 28, 2011.
+[26]S. Rogers, J. Schwabish, and D. Bowers, “Data Journalism in 2017: The Current State and Challenges Facing the Field Today,” Google News Lab, Sep. 2017. [Online]. Available: https://newslab.withgoogle.com/assets/docs/data-journalism-in-2017.pdf.
+[27]“Data Journalism Made Easier, Faster, and More Collaborative,” Medium, Jul. 07, 2018. https://medium.com/@Workbench/data-journalism-made-easier-faster-and-more-collaborative-e33081bf0080 (accessed Mar. 13, 2020).
+[28]T. Furche, G. Gottlob, L. Libkin, G. Orsi, and N. W. Paton, “Data Wrangling for Big Data: Challenges and Opportunities.,” in EDBT, 2016, vol. 16, pp. 473–478.
+[29]B. Bradley, Data Wrangling with R, 1st ed. Springer International Publishing, 2016.
+[30]F. Endel and H. Piringer, “Data Wrangling: Making data useful again,” IFAC-PapersOnLine, vol. 48, no. 1, pp. 111–112, Jan. 2015, doi: 10.1016/j.ifacol.2015.05.197.
+[31]A. Savinov, “DataCommandr: Column-oriented Data Integration, Transformation and Analysis.,” in IoTBD, 2016, pp. 339–347.
+[32]D. Koop and J. Patel, “Dataﬂow Notebooks: Encoding and Tracking Dependencies of Cells,” p. 7.
+[33]J. Hamilton, Democracy’s Detectives: The Economics of Investigative Journalism. Harvard University Press, 2018.
+[34]Z. Abedjan et al., “Detecting data errors: Where are we and what needs to be done?,” Proceedings of the VLDB Endowment, vol. 9, no. 12, pp. 993–1004, 2016.
+[35]A. M. Cabrera et al., “DIBS: A data integration benchmark suite,” in Companion of the 2018 ACM/SPEC International Conference on Performance Engineering, 2018, pp. 25–28.
+[36]E. L. Hutchins, J. D. Hollan, and D. A. Norman, “Direct Manipulation Interfaces,” Human-Computer Interaction, vol. 1, no. 4, pp. 331–338, 1985, doi: 10.1207/s15327051hci0104\_2.
+[37]S. Sunne, “Diving into Data Journalism: Strategies for your newsroom,” American Press Institute, Mar. 09, 2016. https://www.americanpressinstitute.org/publications/reports/strategy-studies/data-journalism/.
+[38]D. Nguyen, “Dollars for Docs: Using Google Refine to Clean Messy Data,” ProPublica. https://www.propublica.org/nerds/using-google-refine-for-data-cleaning (accessed Apr. 21, 2020).
+[39]“Editorial innovation in news.” https://bbcnewslabs.co.uk/news/2019/editorial-innovation/ (accessed Apr. 16, 2020).
+[40]Effective Use of Data - Nils Mulvad. 2018.
+[41]J. Stray, D. Gillmor, and J. Udell, “Enabling Workflows in Journalism and Fact-checking with Annotation,” presented at the I Annotate 2018, Jun. 05, 2018, [Online]. Available: https://www.youtube.com/watch?v=UV_FHtHaVkA.
+[42]B. Howe et al., “End-to-End eScience: Integrating Workflow, Query, Visualization, and Provenance at an Ocean Observatory,” in 2008 IEEE Fourth International Conference on eScience, Indianapolis, IN, USA, Dec. 2008, pp. 127–134, doi: 10.1109/eScience.2008.67.
+[43]J. Lin, J. Wong, J. Nichols, A. Cypher, and T. A. Lau, “End-user programming of mashups with vegemite,” in Proceedingsc of the 13th international conference on Intelligent user interfaces - IUI ’09, Sanibel Island, Florida, USA, 2008, p. 97, doi: 10.1145/1502650.1502667.
+[44]S. Kandel, A. Paepcke, J. M. Hellerstein, and J. Heer, “Enterprise Data Analysis and Visualization: An Interview Study,” IEEE Trans. Visual. Comput. Graphics, vol. 18, no. 12, pp. 2917–2926, Dec. 2012, doi: 10.1109/TVCG.2012.219.
+[45]T. Dasu and T. Johnson, Exploratory Data Mining and Data Cleaning, 1st ed. New York, NY, USA: John Wiley & Sons, Inc., 2003.
+[46]Subscribe, “From Freebase Gridworks to Google Refine and now OpenRefine.” http://kb.refinepro.com/2012/10/from-freebase-gridworks-to-google.html (accessed Dec. 05, 2019).
+[47]J. M. Hellerstein et al., “Ground: A Data Context Service,” p. 12.
+[48]T. Rekatsinas, X. Chu, I. F. Ilyas, and C. Ré, “HoloClean: holistic data repairs with probabilistic inference,” Proc. VLDB Endow., vol. 10, no. 11, pp. 1190–1201, Aug. 2017, doi: 10.14778/3137628.3137631.
+[49]“How 5 Data Dynamos Do Their Jobs - The New York Times.” https://www.nytimes.com/2019/06/12/reader-center/data-reporting-spreadsheets.html (accessed Apr. 17, 2020).
+[50]M. Muller et al., “How Data Science Workers Work with Data: Discovery, Capture, Curation, Design, Creation,” in Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems - CHI ’19, Glasgow, Scotland Uk, 2019, pp. 1–15, doi: 10.1145/3290605.3300356.
+[51]B. Heravi, “How is data journalism changing the newsroom?,” presented at the TEDxUCD, Dublin, Dec. 13, 2017, [Online]. Available: https://www.youtube.com/watch?v=iJKIWxYEAZI&list=WL&index=72&t=0s.
+[52]B. V. and D. Journalism, “How the BBC Visual and Data Journalism team works with graphics in R,” Medium, Feb. 01, 2019. https://medium.com/bbc-visual-and-data-journalism/how-the-bbc-visual-and-data-journalism-team-works-with-graphics-in-r-ed0b35693535 (accessed Apr. 16, 2020).
+[53]S. Rogers, “How to: get to grips with data journalism,” Journalism.co.uk, Jan. 25, 2011. https://www.journalism.co.uk/skills/how-to-get-to-grips-with-data-journalism/s7/a542402/ (accessed Apr. 21, 2020).
+[54]M. Koehler et al., “Incorporating Data Context to Cost-Effectively Automate End-to-End Data Wrangling,” IEEE Trans. Big Data, pp. 1–1, 2019, doi: 10.1109/TBDATA.2019.2907588.
+[55]H. Sharp, J. Preece, and Y. Rogers, Interaction Design: Beyond Human-Computer Interaction. Wiley, 2019.
+[56]S. Sarawagi and A. Bhamidipaty, “Interactive deduplication using active learning,” in Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining, Edmonton, Alberta, Canada, Jul. 2002, pp. 269–278, doi: 10.1145/775047.775087.
+[57]Hyunmo Kang, L. Getoor, B. Shneiderman, M. Bilgic, and L. Licamele, “Interactive Entity Resolution in Relational Data: A Visual Analytic Tool and Its Evaluation,” IEEE Trans. Visual. Comput. Graphics, vol. 14, no. 5, pp. 999–1014, Sep. 2008, doi: 10.1109/TVCG.2008.55.
+[58]“Introducing agate: a Better Data Analysis Library for Journalists.” https://source.opennews.org/articles/introducing-agate/ (accessed Mar. 07, 2020).
+[59]G. Becker, “IPython extensions for data analysis documents.” https://www.youtube.com/watch?v=iQPagwhad_8 (accessed Apr. 17, 2020).
+[60]John Keefe - Newsgeist 2019 Ignite Talks. .
+[61]S. Teal, “Journalists: Now Tableau Prep is free for you,” Tableau Public, Apr. 26, 2018. https://public.tableau.com/en-us/s/blog/2018/05/journalists-now-tableau-prep-free-you (accessed Dec. 06, 2019).
+[62]Keynote:  Nick Diakopoulos, Northwestern University. .
+[63]H. Stitz, S. Gratzl, H. Piringer, T. Zichner, and M. Streit, “KnowledgePearls : Provenance-Based Visualization Retrieval,” IEEE Trans. Visual. Comput. Graphics, vol. 25, no. 1, pp. 120–130, Jan. 2019, doi: 10.1109/TVCG.2018.2865024.
+[64]B. Welsh, latimes-calculate. Los Angeles Times, 2014.
+[65]E. Media, Lisa Gibbs, Director of News Partnerships, Associated Press. 2019.
+[66]M. Correll, M. Li, G. Kindlmann, and C. Scheidegger, “Looks Good To Me: Visualizations As Sanity Checks,” IEEE Trans. Visual. Comput. Graphics, vol. 25, no. 1, pp. 830–839, Jan. 2019, doi: 10.1109/TVCG.2018.2864907.
+[67]J. Stray, “Making AI work for Investigative Journalism,” presented at the Algorithms, Automation, and News, Munich, May 23, 2018, [Online]. Available: https://www.youtube.com/watch?v=msZqSlcSqag.
+[68]J. Wong and J. I. Hong, “Making mashups with marmite: towards end-user programming for the web,” in Proceedings of the SIGCHI Conference on Human Factors in Computing Systems  - CHI ’07, San Jose, California, USA, 2007, pp. 1435–1444, doi: 10.1145/1240624.1240842.
+[69]J. Stray, “Making NLP work for Investigative Journalism,” Berkeley Institute for Data Science, Nov. 09, 2017, [Online]. Available: https://www.youtube.com/watch?v=yRP9DL8E36A.
+[70]D. Herzog, Mapping the News: Case Studies in GIS and Journalism. Esri Press, 2003.
+[71]J. Dean and S. Ghemawat, “MapReduce: simplified data processing on large clusters,” Commun. ACM, vol. 51, no. 1, p. 107, Jan. 2008, doi: 10.1145/1327452.1327492.
+[72]G. King, “Muck: A Build Tool for Data Journalists,” Tow Center for Digital Journalism, Feb. 2018. [Online]. Available: https://doi.org/10.7916/D8J68VCC.
+[73]C. Stoiber et al., “Netflower: Dynamic Network Visualization for Data Journalists,” Computer Graphics Forum, vol. 38, no. 3, pp. 699–711, Jun. 2019, doi: 10.1111/cgf.13721.
+[74]J. Stray, “Network Analysis in Journalism: Practices and Possibilities,” Proc. KDD, p. 8, Aug. 2017.
+[75]“Newsroom jobs fell 25% from 2008 to 2018, mainly in newspapers | Pew Research Center.” https://www.pewresearch.org/fact-tank/2019/07/09/u-s-newsroom-employment-has-dropped-by-a-quarter-since-2008/ (accessed Apr. 16, 2020).
+[76]A. Bajak and J. Wihbey, “Newsroom Textual Analysis and Visualization Tools Built With R Shiny,” p. 3.
+[77]Global Investigative Journalism Network, “Nils Mulvad - Excel is 90% of data journalism - YouTube,” YouTube. https://www.youtube.com/watch?v=aahUKhuB9Bw (accessed Dec. 06, 2019).
+[78]D. Huynh, Open Refine. 2012.
+[79]A. Bigelow, C. Nobre, M. Meyer, and A. Lex, “Origraph: Interactive Network Wrangling,” in IEEE VAST, 2019, p. 12.
+[80]J. Heer and A. Perer, “Orion: A System for Modeling, Transformation and Visualization of Multidimensional Heterogeneous Networks,” in IEEE Visual Analytics Science and Technology, Providence, Rhode Island, USA, Oct. 2011, p. 10.
+[81]V. Cheyne, “PDF Problems,” The Investigative Reporters & Editors Journal, vol. 42, no. 4, p. 40, 2019.
+[82]Y. L. Simmhan, B. Plale, D. Gannon, and S. Marru, “Performance Evaluation of the Karma Provenance Framework for Scientific Workflows,” in Provenance and Annotation of Data, Berlin, Heidelberg, 2006, pp. 222–236, doi: 10.1007/11890850_23.
+[83]D. F. Huynh, R. C. Miller, and D. R. Karger, “Potluck: Data Mash-Up Tool for Casual Users,” Web Semant., vol. 6, no. 4, p. 14, Nov. 2008, doi: 10.1017/j.websem.2008.09.005.
+[84]V. Raman and J. M. Hellerstein, “Potter’s Wheel: An Interactive Data Cleaning System,” in Proceedings of the 27th International Conference on Very Large Data Bases, San Francisco, CA, USA, 2001, pp. 381–390, Accessed: Nov. 05, 2019. [Online]. Available: http://dl.acm.org/citation.cfm?id=645927.672045.
+[85]P. Meyer, Precision Journalism: A Reporter’s Introduction to Social Science Methods, Fourth. Rowman & Littlefield Publishers, Inc, 2002.
+[86]J. Heer, J. M. Hellerstein, and S. Kandel, “Predictive Interaction for Data Transformation,” Proc. Conference on Innovative Data Systems Research (CIDR), p. 7, Jan. 2015.
+[87]M. Tulio Pires, “Preparing data,” Data Journalism and Visualization with Free Tools, Oct. 21, 2019. https://journalismcourses.org/course/view.php?id=44&section=3.
+[88]T. Rattenburg, J. Hellerstein, J. Heer, S. Kandel, and C. Carreras, “Principles of Data Wrangling,” p. 94.
+[89]P. J. Guo, S. Kandel, J. M. Hellerstein, and J. Heer, “Proactive Wrangling: Mixed-initiative End-user Programming of Data Transformation Scripts,” in Proceedings of the 24th Annual ACM Symposium on User Interface Software and Technology, New York, NY, USA, 2011, pp. 65–74, doi: 10.1145/2047196.2047205.
+[90]S. Kandel, R. Parikh, A. Paepcke, J. M. Hellerstein, and J. Heer, “Profiler: integrated statistical analysis and visualization for data quality assessment,” in Proceedings of the International Working Conference on Advanced Visual Interfaces - AVI ’12, Capri Island, Italy, 2012, p. 547, doi: 10.1145/2254556.2254659.
+[91]C. Groskopf, proof. Wireservice, 2015.
+[92]N. Gehlenborg et al., “Reﬁnery: a data management, analysis, and visualization platform utilizing the Galaxy workbench,” p. 1.
+[93]R. Peng, “Reproducible Research in Computational Science,” Science, vol. 334, no. 6060, pp. 1227–1228, Dec. 2011, doi: 10.1126/science.1213443.
+[94]S. Kandel et al., “Research Directions in Data Wrangling: Visualizations and Transformations for Usable and Credible Data,” Information Visualization, vol. 10, no. 4, pp. 271–288, Oct. 2011, doi: 10.1177/1473871611415994.
+[95]Tableau Prep. .
+[96]N. Whitaker, “Taking the initiative with data journalism,” Google, Apr. 10, 2019. https://blog.google/outreach-initiatives/google-news-initiative/taking-initiative-data-journalism/ (accessed Apr. 17, 2020).
+[97]C. Berret and C. Phillips, Teaching Data and Computational Journalism. Columbia Journalism School, 2016.
+[98]D. M. Russell, M. J. Stefii, P. Pirolli, S. K. Card, and C. Hill, “The Cost Structure of Sensemaking,” p. 8.
+[99]D. Deng et al., “The Data Civilizer System,” p. 7.
+[100]J. Gray, L. Bounegru, L. Chambers, European Journalism Centre, and Open Knowledge Foundation, Eds., The data journalism handbook, 1st ed. Sebastopol, CA: O’Reilly Media, 2012.
+[101]B. Kovach and T. Rosentiel, The Elements of Journalism: What Newspeople Should Know and the Public Should Expect. Three Rivers Press, 2007.
+[102]S. Rogers, “The first Guardian data journalism: May 5, 1821,” the Guardian, Sep. 26, 2011. http://www.theguardian.com/news/datablog/2011/sep/26/data-journalism-guardian (accessed Mar. 19, 2020).
+[103]D. Kennedy, “The Old File-Drawer Problem,” Science, vol. 305, no. 5683, pp. 451–451, Jul. 2004, doi: 10.1126/science.305.5683.451.
+[104]C. Groskopf, “The Quartz guide to bad data,” Quartz, Apr. 15, 2020. https://github.com/Quartz/bad-data-guide (accessed Apr. 15, 2020).
+[105]E. F. Codd, The Relational Model for Database Management, 2nd ed. Boston: Addison-Wesley Longman Publishing.
+[106]H. Wickham, “The Split-Apply-Combine Strategy for Data Analysis,” Journal of Statistical Software, vol. 40, no. 1, pp. 1–29, Apr. 2011, doi: 10.18637/jss.v040.i01.
+[107]B. Heravi, “The State of Data Journalism Globally,” presented at the European Data and Computational Journalism Conference, 2017, Accessed: Apr. 22, 2020. [Online]. Available: http://hdl.handle.net/10197/8634.
+[108]N. Konstantinou et al., “The VADA architecture for cost-effective data wrangling,” in Proceedings of the 2017 ACM International Conference on Management of Data, 2017, pp. 1599–1602.
+[109]H. Wickham, “Tidy Data,” Journal of Statistical Software, vol. 59, no. 1, pp. 1–23, Sep. 2014, doi: 10.18637/jss.v059.i10.
+[110]J. Fulda, M. Brehmer, and T. Munzner, “TimeLineCurator: Interactive Authoring of Visual Timelines from Unstructured Text,” IEEE Trans. Visual. Comput. Graphics, vol. 22, no. 1, pp. 300–309, Jan. 2016, doi: 10.1109/TVCG.2015.2467531.
+[111]P. Ralph, “Toward Methodological Guidelines for Process Theories and Taxonomies in Software Engineering,” IIEEE Trans. Software Eng., vol. 45, no. 7, pp. 712–735, Jul. 2019, doi: 10.1109/TSE.2018.2796554.
+[112]A. Veglis and C. Bratsas, “Towards A Taxonomy of Data Journalism,” JMC, vol. 3, no. 11, pp. 109–121, Sep. 2017, doi: 10.17349/jmc117309.
+[113]Trifacta Wrangler. Trifacta.
+[114]E. Grieco, “U.S. newsroom employment has dropped a quarter since 2008, with greatest decline at newspapers,” U.S. newsroom employment has dropped by a quarter since 2008, with greatest decline at newspapers, Jul. 09, 2019. https://www.pewresearch.org/fact-tank/2019/07/09/u-s-newsroom-employment-has-dropped-by-a-quarter-since-2008/ (accessed Feb. 26, 2020).
+[115]J. Liu, N. Boukhelifa, and J. R. Eagan, “Understanding the Role of Alternatives in Data Analysis Practices,” IEEE Trans. Visual. Comput. Graphics, pp. 1–1, 2019, doi: 10.1109/TVCG.2019.2934593.
+[116]S. Ahuja, M. Roth, R. Gangadharaiah, P. Schwarz, and R. Bastidas, “Using machine learning to accelerate data wrangling,” in 2016 IEEE 16th International Conference on Data Mining Workshops (ICDMW), 2016, pp. 343–349.
+[117]K. A. Ericsson and H. A. Simon, “Verbal reports as data,” Psychological Review, vol. 87, no. 3, pp. 215–251, 1980, doi: 10.1037/0033-295X.87.3.215.
+[118]L. Bavoil et al., “VisTrails: enabling interactive multiple-view visualizations,” in VIS 05. IEEE Visualization, 2005., Oct. 2005, pp. 135–142, doi: 10.1109/VISUAL.2005.1532788.
+[119]E. Javier, Ed., Visual Journalism: Infographics from the World’s Best Newsrooms and Designers. gestalten, 2017.
+[120]T. Munzner, Visualization Analysis and Design, 1st ed. A K Peters/CRC Press, 2014.
+[121]G. G. Robertson, M. P. Czerwinski, and J. E. Churchill, “Visualization of mappings between schemas,” in Proceedings of the SIGCHI conference on Human factors in computing systems  - CHI ’05, Portland, Oregon, USA, 2005, p. 431, doi: 10.1145/1054972.1055032.
+[122]R. Gordon, “Want to build a data journalism team? You’ll need these three people,” Knight Lab, Jun. 28, 2013. https://knightlab.northwestern.edu/2013/06/28/want-to-build-a-data-journalism-team-youll-need-these-three-people/.
+[123]J. Stray, “What do Journalists do with Documents? Field Notes for Natural Language Processing Researchers,” p. 5.
+[124]B. Welsh, “What is a Data Desk?,” presented at the PyData LA, Los Angeles, Nov. 29, 2018, Accessed: Dec. 01, 2018. [Online]. Available: https://www.youtube.com/watch?v=_73obGWno1.
+[125]Workbench. Tables Inc.
+[126]S. Kandel, A. Paepcke, J. Hellerstein, and J. Heer, “Wrangler: interactive visual specification of data transformation scripts,” in Proceedings of the 2011 annual conference on Human factors in computing systems - CHI ’11, Vancouver, BC, Canada, 2011, p. 3363, doi: 10.1145/1978942.1979444.

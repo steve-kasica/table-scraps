@@ -1,0 +1,124 @@
+code,updated
+group by single column,group by variable
+group by varaibles,group by variable
+group by,group by variable
+get extreme value,get extreme values
+value replacement,variable replacement
+canonicalize column names,canonicalize variable names
+canonicalize column rows,canonicalize variable names
+cross-tabulate,cross tabulate
+convert date to integer,change var type
+construct table manually,construct data manually
+combine variables,consolidate variables
+combine columns,consolidate variables
+full join tables,full join 
+outer join tables,outer join
+count data,count number of rows
+remove value characters,change var type
+standardize values,standardize variable
+calculate ranks,assign ranks
+change variable type,change var type
+prep key for joining,align variables
+test different computations for equality,test for equality
+create data,construct data manually
+remove columns,remove variables
+extract date component,parse variable
+trim by contains value,trim by categorical value
+architect subroutine,construct a subroutine
+convert var type,change var type
+trim rows by quantitative threshold,trim by quantitative threshold
+edit data values,edit values
+annotate workflow,annotations
+load data,load
+format table display,format values
+concat parallel tables,concat parallel datasets
+combine data and geography,geolocate dataset records
+toggle step on and off,toggle operation
+architect a subroutine,construct a subroutine
+calculate central tendency,describe statistically
+create a uniquekey,create a unique key
+filter by quantitative threshold,trim by quantitative threshold
+strip whitespace,standardize categorical variables
+trim rows by date range,trim by date range
+create frequency table,create a frequency table
+calculate child table,create child table
+standardize variable names,standardize categorical variables
+figure rate,figure a rate
+filter by categorical variable,trim by categorical value
+trim whitespace,standardize categorical variables
+inspect schema,inspect data schema
+self join table,self join dataset
+inspect table schema,inspect data schema
+create child tables,create child table
+rollup,combine categorical values
+fix data errors manually,edit values
+trim by categorical variable,trim by categorical value
+imput missing values,impute missing data
+filter by date range,trim by date range
+find nearest neighbors in the network,perform network analysis
+change column data type,change var type
+consolidate values,combine categorical values
+consolidate values of a single variable,combine categorical values
+extract column values,parse variable
+format value,format values
+scale value,scale values
+sort table,sort
+sort values,sort
+domain-specific performance metric,domain-specific performance metric
+gather table,gather
+union tables,union datasets
+encode table identification in row,generate dataset identification
+group by variables,group by variable
+outer join,outer join
+filter by categorical value,group by variable
+inner join tables,inner join
+change var types,change var type
+group by multiple columns,group by variable
+use lookup table,Create lookup table
+open govt data,govt data portal
+outlier detection,identify extreme values
+transpose,transpose
+create unique key,create a unique key
+architect repeating process,construct data pipeline
+lookup table value,create lookup table
+pad column values,parse variable
+full join,full join
+change var data type, change var type
+entity resolution,resolve entities
+data is from government data poral,govt data portal
+cross tabular,cross tabulate
+create flag,create a flag
+spread,calculate spread
+combine seemingly disparate datasets,merge seemingly disparate datasets
+calculate statistic,calculate a statistic
+standardize categorical values,standardize categorical variables
+fix mixed data types,change var type
+rename variables,canonicalize variable names
+count observations,count number of rows
+consolidate variable values,combine categorical values
+scale variable,scale values
+standardize variable levels,combine categorical values
+parse variables,parse variable
+encode table id,generate dataset identification
+impute missing values,impute missing data
+subset columns,remove variables
+calculate frequency table,create a frequency table
+remove attributes,remove variables
+data is from government data portal,govt data portal
+combine entities,combine categorical values
+remove incomplete values,remove incomplete data
+trim by quantiative threshold,trim by quantitative threshold
+change variable data type,change var type
+answer a question,lookup table values
+data is from government data portal,govt data portal
+compare different groups along a common metric,compare groups
+data is from government data poral,govt data portal
+use open government data,govt data portal
+aggregate the forest from the trees,generate high-level summary
+calculate domain-specific performance metric,domain-specific performance metric
+combine drifting datasets,combine periodic data
+data is from government data portal,govt data portal
+divide & conquer,split and compute
+divide and conquer,split and compute
+create annotations,annotations
+create togglable operations,toggle operation

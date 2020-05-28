@@ -1,0 +1,174 @@
+parent,name,alias,desc,level,is_leaf,type,shortcode,total,percent
+root,import,,How raw data is introduced into the wrangling environment,0,False,actions,A.I,48,0.96
+import,fetch,,Data is retrieved from a source external to the wrangling environment,1,False,actions,A.I.a,6,0.12
+fetch,extract data from pdf,,"Using a data extraction tool, such as Tabula, to parse tables inside PDF documents",2,True,actions,A.I.a.1,1,0.02
+fetch,api request,Make an API Request,Making a request to a web service,2,True,actions,A.I.a.2,1,0.02
+fetch,query database,Query a Database,Importing data through a database connection,2,True,actions,A.I.a.3,1,0.02
+fetch,scrape web for data,Scrape the Web for Data,Parsing HTML web pages for data,2,True,actions,A.I.a.4,3,0.06
+import,create,,Data is created inside the wrangling environment,1,False,actions,A.I.b,26,0.52
+create,construct data manually,,The data is either copy-and-pasted or values are created manually,2,True,actions,A.I.b.1,7,0.14
+create,generate data computationally,,Using data with values generated programmatically,2,True,actions,A.I.b.2,4,0.08
+create,copy table schema,Copy Data Schema,Data is copied with a schema but without any values,2,True,actions,A.I.b.3,1,0.02
+create,impute missing data,,"Replace missing data values either manually, through data entry, or systematically through an R functions such as `lag`.",2,True,actions,A.I.b.4,5,0.1
+create,create child table,Create Child Dataset,A child dataset is a subset of the parent dataset declared as a new object in the environment.,2,True,actions,A.I.b.5,18,0.36
+import,load,,Data resides on the local disk and is loaded into the environment,1,True,actions,A.I.c,42,0.84
+root,clean,,"The process of removing incorrect, incomplete, inaccurate, misformatted or otherwise corrupt observations, variables, and values within a dataset.",0,False,actions,A.C,41,0.82
+clean,remove,,"Approaches to cleaning data that involve removing observations, variables, and values",1,False,actions,A.C.a,21,0.42
+remove,deduplicate,,Remove duplicate observations,2,True,actions,A.C.a.1,10,0.2
+remove,remove non-data rows,,Remove notes and comments that are not observations,2,True,actions,A.C.a.2,6,0.12
+remove,remove incomplete data,,"Drop observation if it contains incomplete values, often denoted as NA or Null",2,True,actions,A.C.a.3,13,0.26
+clean,replace,,"Approaches to data cleaning that involve replacing observations, variables, and values",1,False,actions,A.C.b,21,0.42
+replace,replace na values,,Journalists replace NA values of a variable with another values. NA values can be denoted in various ways,2,True,actions,A.C.b.1,12,0.24
+replace,edit values,,"Existing data values are incorrect, but not NA, and must be changed by the journalist",2,True,actions,A.C.b.2,5,0.1
+replace,resolve entities,,"Resolving the issue of different categorical values for the same entitiy. This wrangling actions is particularly suited towards fixing common data issues such as misspellings, inconsistent date formats, and name ordering.",2,True,actions,A.C.b.3,4,0.08
+replace,standardize categorical variables,,"Make levels conform to some set of rules, such as replacing whitespace for underscore, trimming whitespace, etc",2,True,actions,A.C.b.4,5,0.1
+replace,scale values,,"Operations that apply some mathematical operation to a quantitative variable in the spirit of fixing data errors. For example, quantitative data may be in the millions and only display significant digits.",2,True,actions,A.C.b.5,4,0.08
+clean,reformat,,"Wrangling operations that modify the table entry's appearance or style, but not value",1,False,actions,A.C.c,39,0.78
+reformat,format values,,"Operations that change value appearence, but not the underly variable type: changing case, specifying date format, rounding floats",2,True,actions,A.C.c.1,15,0.3
+reformat,canonicalize variable names,,Operations that change column names,2,True,actions,A.C.c.2,31,0.62
+reformat,change var type,Change Variable Type,"Change a variable type: dates, string, currencies, numerics. This operation can be done to addresses variables with mixed data types",2,True,actions,A.C.c.3,34,0.68
+root,merge,,Operations that combining multiple datasets,0,False,actions,A.M,36,0.72
+merge,union datasets,,Combining multiple datasets with identical variables into one dataset,1,True,actions,A.M.a,18,0.36
+merge,inner join,,Take the intersection of two datasets on a shared key variable,1,True,actions,A.M.b,8,0.16
+merge,supplement,,The variables of one dataset are supplemented with the variables of another dataset,1,False,actions,A.M.c,29,0.58
+supplement,outer join,,Retain observations with no corresponding match in the dataset being joined upon,2,True,actions,A.M.c.1,24,0.48
+supplement,full join,,Retain observations with no corresponding match in either dataset,2,True,actions,A.M.c.2,5,0.1
+supplement,concat parallel datasets,,"Join two datasets by position, without specifying a joining key",2,True,actions,A.M.c.3,5,0.1
+merge,cartesian product,,Create a new dataset by the unique pairing of each key in their respective datasets,1,True,actions,A.M.d,2,0.04
+merge,self join dataset,,Create a new dataset by joining it with itself,1,True,actions,A.M.e,1,0.02
+root,profile,,Operations the inspect the state of the data during wrangling,0,False,actions,A.P,37,0.74
+profile,run a test,,Audit the data by constructing a pass or fail scenario,1,False,actions,A.P.a,6,0.12
+run a test,report rows with column number discrepancies,,Check the number of columns or rows between tables,2,True,actions,A.P.a.1,1,0.02
+run a test,test for equality,,Test if two data structures are exactly the same,2,True,actions,A.P.a.2,3,0.06
+run a test,test for null values,,Test the results of a calculation against different methods/packages,2,True,actions,A.P.a.3,1,0.02
+run a test,validate data quality with domain-specific rules,,"Test with a domain-specific rule for the data, such as checking if the average temperature is higher than the maximum recorded value",2,True,actions,A.P.a.4,1,0.02
+profile,check results,,Output the dataset for review,1,False,actions,A.P.b,35,0.7
+check results,peek at data,,"Display the first *n* observations, or take a random sample, with all variables of the dataset",2,True,actions,A.P.b.1,19,0.38
+check results,inspect data schema,,Check the data types of columns,2,True,actions,A.P.b.2,4,0.08
+check results,select rows with missing values,,"Inspect the dataset for observations with a missing value, often denoted as NA",2,True,actions,A.P.b.3,2,0.04
+check results,check for nas,,See if any observations have NA values,2,True,actions,A.P.b.4,1,0.02
+check results,visualize data,,"Employ any kind of data visualization, including tables",2,True,actions,A.P.b.5,26,0.52
+profile,summarize dataset,,Summarize the dataset numerically,1,False,actions,A.P.c,17,0.34
+summarize dataset,count number of rows,Count Rows,Print the total number of observations,2,True,actions,A.P.c.1,7,0.14
+summarize dataset,count unique values,,Report the number of unique values in one or more variables,2,True,actions,A.P.c.2,3,0.06
+summarize dataset,describe statistically,,"Generate descriptive statistics of the dataset, such as central tendency, dispersion, or distribution shape",2,True,actions,A.P.c.3,8,0.16
+root,derive,,Expand upon the original dataset without integrating another dataset,0,False,actions,A.D,45,0.9
+derive,detrend,,Remove the secular effect from a variable; these are not considered data cleaning operations because values are not erroneous,1,False,actions,A.D.a,5,0.1
+detrend,adjust for inflation,,Remove the effect of price inflation from data,2,True,actions,A.D.a.1,3,0.06
+detrend,compute index number,,Calculate the change in a variable over time,2,True,actions,A.D.a.2,1,0.02
+detrend,adjust for season,,Adjust a variable to compensate for seasonal effect,2,True,actions,A.D.a.3,1,0.02
+derive,consolidate variable values,,"Map a set of unique values to a smaller set, which is different from entity resolution",1,False,actions,A.D.b,14,0.28
+consolidate variable values,bin values,,Consolidate a quantitative variable into a smaller set of ordinal data,2,True,actions,A.D.b.1,2,0.04
+consolidate variable values,combine categorical values,,Consolidate the levels of a categorical variable into a smaller set of levels.,2,True,actions,A.D.b.2,12,0.24
+derive,generate unique identifiers,,Attempt to create unique identifiers,1,False,actions,A.D.c,17,0.34
+generate unique identifiers,generate observation identification,,Produce unique identification for each observation,2,False,actions,A.D.c.1,14,0.28
+generate observation identification,create soft key,,Keys not guarenteed to be unique per observation,3,True,actions,A.D.c.1.i,5,0.1
+generate observation identification,create a unique key,,Keys are guarenteed to be unique per observation,3,True,actions,A.D.c.1.ii,11,0.22
+generate unique identifiers,generate dataset identification,,Add a table identification value as a variable for all observations,2,True,actions,A.D.c.2,5,0.1
+derive,subset the dataset,,Reduce the size or complexity of the actively wrangled dataset,1,False,actions,A.D.d,41,0.82
+subset the dataset,remove variables,,Specify which variables to remove or retain from a dataset,2,True,actions,A.D.d.1,31,0.62
+subset the dataset,remove observations,,Specify which observations to remove or retain from a dataset,2,False,actions,A.D.d.2,35,0.7
+remove observations,trim by date range,,Remove based on observations inside or outside a range of dates,3,True,actions,A.D.d.2.i,16,0.32
+remove observations,trim by geographic area,,Remove based on observations inside or outside the geographic region,3,True,actions,A.D.d.2.ii,11,0.22
+remove observations,trim by quantitative threshold,,"Remove based on observations above, below, equal to, or not equal to a quantitative value",3,True,actions,A.D.d.2.iii,18,0.36
+remove observations,trim by categorical value,,Remove based on observations that do or do not contain specific a specific value,3,True,actions,A.D.d.2.iv,22,0.44
+derive,formulate a performance metric,,Calculate a quantitative variable,1,False,actions,A.D.e,33,0.66
+formulate a performance metric,assign ranks,,Order observations explicitly as a variable,2,True,actions,A.D.e.1,3,0.06
+formulate a performance metric,standardize variable,,"Measure deviation from ""normal,"" such as z-scores",2,True,actions,A.D.e.2,4,0.08
+formulate a performance metric,figure a rate,,Calculate a normalized rate to provide a baseline for comparison,2,True,actions,A.D.e.3,23,0.46
+formulate a performance metric,calculate change over time,,Calculate percentage change over time,2,True,actions,A.D.e.4,8,0.16
+formulate a performance metric,calculate spread,,Calculate the difference between two values or rates,2,True,actions,A.D.e.5,11,0.22
+formulate a performance metric,domain-specific performance metric,,Calculate a domain-specific metric,2,True,actions,A.D.e.6,4,0.08
+formulate a performance metric,get extreme values,,Calculate the highest or lowest values in a variable,2,True,actions,A.D.e.7,3,0.06
+root,transform,,"Create or revise table variables based on existing variables, without *integrating* other tables",0,False,actions,A.T,35,0.7
+transform,reshape,Reshape Table,"Change the table's structure, without summarizing any data",1,False,actions,A.T.a,21,0.42
+reshape,transpose,,Change places between rows and columns within a table or matrix,2,True,actions,A.T.a.1,1,0.02
+reshape,cross tabulate,,Create a pivot table or crosstab,2,True,actions,A.T.a.2,9,0.18
+reshape,spread table,,Expand two columns of key value pairs into multiple columns,2,True,actions,A.T.a.3,5,0.1
+reshape,gather,,Collapse table into key value pairs,2,True,actions,A.T.a.4,6,0.12
+reshape,create a flag,,Spread a categorical variable into multiple boolean variables,2,True,actions,A.T.a.5,4,0.08
+transform,modify variables,,Change properties of variables within a dataset,1,False,actions,A.T.b,20,0.4
+modify variables,parse variable,,Separate variables into multiple new variables using position or regular expressions,2,True,actions,A.T.b.1,15,0.3
+modify variables,consolidate variables,,Combine two different variables into one composite variable,2,True,actions,A.T.b.2,7,0.14
+modify variables,replace variable levels,,Change the value of a level in a categorical variable to another value,2,True,actions,A.T.b.3,3,0.06
+transform,summarize,,Aggregate observations to summarize a phenomenon; we consider this a structural change as it effectively coarsens the dataset,1,False,actions,A.T.c,30,0.6
+summarize,group by variable,,Group or partition by the levels of one or more categorical variables,2,True,actions,A.T.c.1,27,0.54
+summarize,aggregate,,"Aggregate quantitative values using functions such as sum, mean, median, or count",2,True,actions,A.T.c.2,23,0.46
+summarize,rolling window calculation,,Perform rolling-window aggregation,2,True,actions,A.T.c.3,3,0.06
+transform,sort,,Order observations implicitly by position within a data structure,1,True,actions,A.T.d,22,0.44
+root,export,,Export the results of data wrangling either by writing results to disk or return data from a function,0,True,actions,A.E,32,0.64
+root,source,,Codes that describe how the raw data was obtained by journalists,0,False,process,P.S,24,0.48
+source,collect data,,Journalists are the initial data collector,1,False,process,P.S.a,6,0.12
+collect data,collect raw data,,The journalist collected the raw data themselves.,2,True,process,P.S.a.1,5,0.1
+collect data,freedom of information data,,Data that was obtained via FOI/FOIA requests,2,True,process,P.S.a.2,1,0.02
+source,acquire data,,Journalists acquired data from another party,1,False,process,P.S.b,19,0.38
+acquire data,use previously cleaned data,,Data that originated from a colleague,2,True,process,P.S.b.1,1,0.02
+acquire data,use public data,,"Includes open-source datasets, datasets on Wikipedia, etc",2,True,process,P.S.b.2,2,0.04
+acquire data,use academic data,,Use data collected from an academic study,2,True,process,P.S.b.3,1,0.02
+acquire data,"use non-public, provided data",,Use data that is not publically available,2,True,process,P.S.b.4,2,0.04
+acquire data,govt data portal,use open-government data portal,Data publically available on civic data portals,2,True,process,P.S.b.5,11,0.22
+acquire data,use another news orgs data,,A dataset previously published by another news organization,2,True,process,P.S.b.6,2,0.04
+acquire data,use data from colleague,,A dataset was provided by another journalist,2,True,process,P.S.b.7,1,0.02
+root,workflow,,Codes pertaining to how the wrangling workflow is built.,0,False,process,P.W,21,0.42
+workflow,annotations,,Adding comments or notes in Markdown that explain what the journalists doing.,1,True,process,P.W.a,5,0.1
+workflow,comp. processes,,Codes that demonstrate computational thinking on the part of the journalist.,1,False,process,P.W.b,18,0.36
+comp. processes,construct a subroutine,,A set of instructions grouped together to be performed multiple times,2,True,process,P.W.b.1,14,0.28
+comp. processes,construct data pipeline,,An instance where one script is designed to handle multiple data sources. Often journalists construct subroutines and loops.,2,True,process,P.W.b.2,8,0.16
+workflow,toggle operation,,"Ensuring that some code segments are not always run, such as by commenting out lines of code",1,True,process,P.W.c,3,0.06
+root,cause,,"Based on the final output and comments, why does it seem like this data needs to be wrangled?",0,False,process,P.C,30,0.6
+cause,downstream input,,Output from wrangling will be input into some other program,1,False,process,P.C.a,30,0.6
+downstream input,wrangle data for graphics,,"Data need to be formatted in order to be visualized in an article, including datasets.",2,True,process,P.C.a.1,20,0.4
+downstream input,wrangle data for model,,"Data is being wrangled in order to create a model, whether the main point of the piece is for prediction or classification",2,True,process,P.C.a.2,1,0.02
+downstream input,create new datasets,,These raw datasets are being wrangled in order to create a new dataset,2,False,process,P.C.a.3,10,0.2
+create new datasets,combine periodic data,,Combine many separate datasets published over time into one dataset,3,True,process,P.C.a.3.i,5,0.1
+create new datasets,merge seemingly disparate datasets,,When a notebook largely constitutes combining seemingly unrelated datasets,3,True,process,P.C.a.3.ii,2,0.04
+create new datasets,geolocate dataset records,,Pairing data with GIS info,3,True,process,P.C.a.3.iii,3,0.06
+downstream input,generate high-level summary,,Data of individual observations is aggregated in an attempt to find some meaningful structure or patterns,2,True,process,P.C.a.4,2,0.04
+root,themes,,General themes for how data objects are transformed throughout the wrangling process,0,False,process,P.T,26,0.52
+themes,divide and conquer,,Instances where the data wrangling processes separates one objects into smaller components,1,False,process,P.T.a,14,0.28
+divide and conquer,"split, compute, and merge",,"First, the journalist partitions a single data frame into multiple, separate data frames. Then, often identical computations are run on all the data frame. Finally, the multiple data frames are consolidated into one data frame again",2,True,process,P.T.a.1,4,0.08
+divide and conquer,split and compute,,One dataset is split into two or more and identical computations are applied to each dataset,2,True,process,P.T.a.2,12,0.24
+themes,join aggregate,,"When aggregated statistics about a dataset are added to the datasets as a variable, either columnwise or row-wise (as with `adorn_totals` in R)",1,True,process,P.T.b,3,0.06
+themes,create a frequency table,,A table the displays the frequency of categorical variables within a column,1,True,process,P.T.c,13,0.26
+themes,trim fat,,"Trim the fat refers to when large amounts of observations or variables are removed from the dataset early in the wrangling processes, if not as the first step of wrangling. We infer that these sections are irrelevant to further analysis.",1,True,process,P.T.d,1,0.02
+themes,align variables,,"Modifying dataset variables to match each other, often prior to merging datasets.",1,True,process,P.T.e,8,0.16
+root,analysis,,Kinds of analysis data journalists need to wrangle data to perform,0,False,process,P.A,50,1.0
+analysis,interpret statistical/ml model,Interpret Model,Analyze features from a model such as linear regression or classification trees,1,True,process,P.A.a,5,0.1
+analysis,compare groups,,The end analysis is just comparing different groups by a common metric,1,True,process,P.A.b,27,0.54
+analysis,identify extreme values,,"Identify values that are at the ends of the range, but not strictly outliers",1,True,process,P.A.c,9,0.18
+analysis,show trend over time,,Analysis consists of showing how values change over time,1,True,process,P.A.d,18,0.36
+analysis,calculate a statistic,,"Calculate a single value from a dataset, such as number of records",1,True,process,P.A.e,7,0.14
+analysis,count the data,,"Analysis involves count-based metrics on the datasets including percentages, with optional filtering and aggregation",1,True,process,P.A.f,5,0.1
+analysis,lookup table values,,Analysis consists looking up values in a table,1,True,process,P.A.g,6,0.12
+analysis,examine relationship,,Analysis consists of examining the relationship between different phenomena,1,True,process,P.A.h,2,0.04
+analysis,explain variance,,This can be done via PCA,1,True,process,P.A.i,1,0.02
+analysis,search for clusters,,"Look for groups within the data where its presence, or lack thereof, is significant",1,True,process,P.A.j,1,0.02
+analysis,perform network analysis,,"Journalists perform any kind of network analysis, such as finding all nearest neighbors in the network",1,True,process,P.A.k,2,0.04
+analysis,explore dynamic network flow,,"(Network analysis) explore the flow between different nodes in the graph, e.g. migration between cities",1,True,process,P.A.l,2,0.04
+analysis,create lookup table,,Make a table with two columns to map from one value to another,1,True,process,P.A.m,6,0.12
+analysis,aggregate join,,Aggregating a table and then joining those results to the original table,1,True,process,P.A.n,1,0.02
+root,management,,General strategies journalists for anaging data within the wrangling environment,0,False,process,P.M,9,0.18
+management,object persistence,,How do journalists regard previous version of datasets after applying transformation functions?,1,False,process,P.M.a,6,0.12
+object persistence,data evolves,,Data and objects are overwritten and replaced during the wrangling process,2,False,process,P.M.a.1,6,0.12
+data evolves,variable replacement,,The output of any column calculation is reassigned to an existing column,3,True,process,P.M.a.1.i,1,0.02
+data evolves,temporary joining column,,When a key for joining two datasets is created and deleted immediately after the join,3,True,process,P.M.a.1.ii,1,0.02
+data evolves,refine table,,"dataset refinement refers to when a table is subset in place, a new object is not created in the environment",3,True,process,P.M.a.1.iii,6,0.12
+object persistence,preserve existing values,data is precious,"Previous ""versions"" of datasets, variables, and observations are left intact within the environment",2,True,process,P.M.a.2,2,0.04
+management,data quality,,"How journalits proceed when data may be incomplete, erroneous, or otherwise not 100% clean",1,False,process,P.M.b,5,0.1
+data quality,set data confidence threshold,,"Removes rows where a quantitative value is less than, greater than, or not equal to a numeric value",2,True,process,P.M.b.1,2,0.04
+data quality,tolerate dirty data,,Analysis continues despite clear data quality issues,2,True,process,P.M.b.2,4,0.08
+root,pain points,,Areas where journalist seem/could be frustrated in the wrangling process,0,False,process,P.P,23,0.46
+pain points,fix incorrect calculation,,Calculations in the data are incorrect and the journalist must recalculate them,1,True,process,P.P.a,1,0.02
+pain points,repetitive code,,Instances where code is repetitively copied and pasted,1,True,process,P.P.b,17,0.34
+pain points,make an incorrect conclusion,,Instances where the journalist has made an incorrect conclusion about the data,1,True,process,P.P.c,1,0.02
+pain points,post-merge clean up,,Pain points that come from the result of merging two datasets together,1,False,process,P.P.d,6,0.12
+post-merge clean up,resort after merge,,When a sort has to be re-done because a merge ruining the pre-merged order,2,True,process,P.P.d.1,1,0.02
+post-merge clean up,fill in na values after an outer join,,"As outer joins do not drop non-matching rows, those values have NA",2,True,process,P.P.d.2,5,0.1
+post-merge clean up,lossy join,,When data is lost after integrating two tables,2,True,process,P.P.d.3,1,0.02
+post-merge clean up,remove duplicate variables,,Two tables may have duplicate variables and duplicate variables need to be removed,2,True,process,P.P.d.4,2,0.04
+pain points,post-aggregation clean up,,Pain points that come from the result of grouping a table,1,False,process,P.P.e,2,0.04
+post-aggregation clean up,data loss from aggregation,,When table columns are lost because they were dropped form resulting dataset due to not being relevant in aggregation,2,True,process,P.P.e.1,1,0.02
+post-aggregation clean up,silently dropping values after groupby,,Values other than those being grouped and calculated upon are lost in a group-by operation,2,True,process,P.P.e.2,1,0.02
+pain points,data too large for repo,,Raw data cannot be included because files are too large,1,True,process,P.P.f,1,0.02
+pain points,schema drift,,When the schema of a perennially published datasets varies from edition to edition,1,True,process,P.P.g,1,0.02
+pain points,data type shyness,,Users often seem to avoid using built in data types,1,True,process,P.P.h,1,0.02

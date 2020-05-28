@@ -1,0 +1,8 @@
+[1]Y. L. Simmhan, B. Plale, and D. Gannon, “A survey of data provenance in e-science,” SIGMOD Rec., vol. 34, no. 3, pp. 31–36, Sep. 2005, doi: 10.1145/1084805.1084812.
+[2]F. Naumann and M. Herschel, “An Introduction to Duplicate Detection,” Synthesis Lectures on Data Management, vol. 2, no. 1, pp. 1–87, Jan. 2010, doi: 10.2200/S00262ED1V01Y201003DTM003.
+[3]L. M. Haas, M. A. Hernández, H. Ho, L. Popa, and M. Roth, “Clio grows up: from research prototype to industrial tool,” in Proceedings of the 2005 ACM SIGMOD international conference on Management of data  - SIGMOD ’05, Baltimore, Maryland, 2005, p. 805, doi: 10.1145/1066157.1066252.
+[4]T. Dasu and T. Johnson, Exploratory Data Mining and Data Cleaning, 1st ed. New York, NY, USA: John Wiley & Sons, Inc., 2003.
+[5]J. Dean and S. Ghemawat, “MapReduce: simplified data processing on large clusters,” Commun. ACM, vol. 51, no. 1, p. 107, Jan. 2008, doi: 10.1145/1327452.1327492.
+[6]V. Raman and J. M. Hellerstein, “Potter’s Wheel: An Interactive Data Cleaning System,” in Proceedings of the 27th International Conference on Very Large Data Bases, San Francisco, CA, USA, 2001, pp. 381–390, Accessed: Nov. 05, 2019. [Online]. Available: http://dl.acm.org/citation.cfm?id=645927.672045.
+[7]J. Heer, J. M. Hellerstein, and S. Kandel, “Predictive Interaction for Data Transformation,” Proc. Conference on Innovative Data Systems Research (CIDR), p. 7, Jan. 2015.
+[8]G. G. Robertson, M. P. Czerwinski, and J. E. Churchill, “Visualization of mappings between schemas,” in Proceedings of the SIGCHI conference on Human factors in computing systems  - CHI ’05, Portland, Oregon, USA, 2005, p. 431, doi: 10.1145/1054972.1055032.

@@ -1,0 +1,229 @@
+- name: Import
+  desc: 'How raw data is introduced into the wrangling environment'
+  sub:
+    - name: Fetch
+      desc: 'Data is retrieved from a source external to the wrangling environment'
+      sub:
+        - name: Extract Data From PDF
+          desc: 'Using a data extraction tool, such as Tabula, to parse tables inside PDF documents'
+        - name: api Request
+          alias: Make an API Request
+          desc: 'Making a request to a web service'
+        - name: Query database
+          alias: Query a Database
+          desc: 'Importing data through a database connection'
+        - name: Scrape web for data
+          alias: Scrape the Web for Data
+          desc: 'Parsing HTML web pages for data'
+    - name: Create
+      desc: 'Data is created inside the wrangling environment'
+      sub:
+        - name: Construct Data Manually
+          desc: 'The data is either copy-and-pasted or values are created manually'
+        - name: Generate Data Computationally
+          desc: 'Using data with values generated programmatically'
+        - name: copy table schema
+          alias: Copy Data Schema
+          desc: 'Data is copied with a schema but without any values'
+        - name: Impute Missing Data
+          desc: 'Replace missing data values either manually, through data entry, or systematically through an R functions such as `lag`.'
+        - name: create child table
+          alias: Create Child Dataset
+          desc: 'A child dataset is a subset of the parent dataset declared as a new object in the environment.'
+    - name: Load
+      desc: 'Data resides on the local disk and is loaded into the environment'
+- name: Clean
+  desc: 'The process of removing incorrect, incomplete, inaccurate, misformatted or otherwise corrupt observations, variables, and values within a dataset.'
+  sub:
+    - name: Remove
+      desc: "Approaches to cleaning data that involve removing observations, variables, and values"
+      sub:
+        - name: Deduplicate
+          desc: 'Remove duplicate observations'
+        - name: Remove Non-Data Rows
+          desc: 'Remove notes and comments that are not observations'
+        - name: Remove Incomplete Data
+          desc: 'Drop observation if it contains incomplete values, often denoted as NA or Null'
+    - name: Replace
+      desc: "Approaches to data cleaning that involve replacing observations, variables, and values"
+      sub:
+        - name: Replace NA Values
+          desc: 'Journalists replace NA values of a variable with another values. NA values can be denoted in various ways'
+        - name: Edit Values
+          desc: 'Existing data values are incorrect, but not NA, and must be changed by the journalist'
+        - name: Resolve Entities
+          desc: 'Resolving the issue of different categorical values for the same entitiy. This wrangling actions is particularly suited towards fixing common data issues such as misspellings, inconsistent date formats, and name ordering.'
+        - name: Standardize Categorical Variables
+          desc: 'Make levels conform to some set of rules, such as replacing whitespace for underscore, trimming whitespace, etc'
+        - name: Scale Values
+          desc: 'Operations that apply some mathematical operation to a quantitative variable in the spirit of fixing data errors. For example, quantitative data may be in the millions and only display significant digits.'
+    - name: Reformat
+      desc: "Wrangling operations that modify the table entry's appearance or style, but not value"
+      sub:
+        - name: Format Values
+          desc: 'Operations that change value appearence, but not the underly variable type: changing case, specifying date format, rounding floats'          
+        - name: Canonicalize Variable Names
+          desc: 'Operations that change column names'
+        - name: change var type
+          alias: Change Variable Type
+          desc: 'Change a variable type: dates, string, currencies, numerics. This operation can be done to addresses variables with mixed data types'
+- name: Merge
+  desc: 'Operations that combining multiple datasets'
+  sub:
+    - name: Union Datasets
+      desc: 'Combining multiple datasets with identical variables into one dataset'
+    - name: Inner Join
+      desc: 'Take the intersection of two datasets on a shared key variable'
+    - name: Supplement
+      desc: 'The variables of one dataset are supplemented with the variables of another dataset'
+      sub:
+        - name: Outer Join
+          desc: 'Retain observations with no corresponding match in the dataset being joined upon'
+        - name: Full Join
+          desc: 'Retain observations with no corresponding match in either dataset'
+        - name: Concat Parallel Datasets 
+          desc: 'Join two datasets by position, without specifying a joining key'
+    - name: Cartesian Product
+      desc: 'Create a new dataset by the unique pairing of each key in their respective datasets'
+    - name: Self Join Dataset
+      desc: 'Create a new dataset by joining it with itself'
+- name: Profile
+  desc: 'Operations the inspect the state of the data during wrangling'
+  sub:
+    - name: Run a Test
+      desc: 'Audit the data by constructing a pass or fail scenario'
+      sub:
+        - name: Report Rows With Column Number Discrepancies
+          desc: 'Check the number of columns or rows between tables'
+        - name: Test for Equality
+          desc: 'Test if two data structures are exactly the same'
+        - name: Test for Null Values
+          desc: 'Test the results of a calculation against different methods/packages'
+        - name: Validate Data Quality with Domain-Specific Rules
+          desc: 'Test with a domain-specific rule for the data, such as checking if the average temperature is higher than the maximum recorded value'
+    - name: Check Results
+      desc: 'Output the dataset for review'
+      sub:
+        - name: Peek at Data
+          desc: 'Display the first *n* observations, or take a random sample, with all variables of the dataset'
+        - name: Inspect Data Schema
+          desc: 'Check the data types of columns'
+        - name: Select Rows with Missing Values
+          desc: 'Inspect the dataset for observations with a missing value, often denoted as NA'
+        - name: Check for NAs
+          desc: 'See if any observations have NA values'
+        - name: Visualize Data
+          desc: 'Employ any kind of data visualization, including tables'                
+    - name: Summarize Dataset
+      desc: 'Summarize the dataset numerically'
+      sub:
+        - name: Count Number of Rows
+          alias: Count Rows
+          desc: 'Print the total number of observations'
+        - name: Count Unique Values
+          desc: 'Report the number of unique values in one or more variables'
+        - name: Describe Statistically
+          desc: "Generate descriptive statistics of the dataset, such as central tendency, dispersion, or distribution shape"
+- name: Derive
+  desc: 'Expand upon the original dataset without integrating another dataset'
+  sub: 
+    - name: Detrend
+      desc: 'Remove the secular effect from a variable; these are not considered data cleaning operations because values are not erroneous'
+      sub:
+        - name: Adjust for Inflation
+          desc: 'Remove the effect of price inflation from data'
+        - name: Compute Index Number
+          desc: 'Calculate the change in a variable over time'
+        - name: Adjust for Season
+          desc: 'Adjust a variable to compensate for seasonal effect'  
+    - name: Consolidate Variable Values
+      desc: 'Map a set of unique values to a smaller set, which is different from entity resolution'
+      sub:
+        - name: Bin Values
+          desc: 'Consolidate a quantitative variable into a smaller set of ordinal data'
+        - name: Combine Categorical Values
+          desc: 'Consolidate the levels of a categorical variable into a smaller set of levels.'
+    - name: Generate Unique Identifiers
+      desc: 'Attempt to create unique identifiers'
+      sub:
+        - name: Generate Observation Identification
+          desc: 'Produce unique identification for each observation'
+          sub: 
+            - name: Create Soft Key
+              desc: 'Keys not guarenteed to be unique per observation'
+            - name: Create a Unique Key
+              desc: 'Keys are guarenteed to be unique per observation'
+        - name: Generate Dataset Identification
+          desc: 'Add a table identification value as a variable for all observations'          
+    - name: Subset the Dataset
+      desc: 'Reduce the size or complexity of the actively wrangled dataset'
+      sub:
+        - name: Remove Variables
+          desc: 'Specify which variables to remove or retain from a dataset'              
+        - name: Remove Observations
+          desc: 'Specify which observations to remove or retain from a dataset'
+          sub:
+            - name: Trim by Date Range
+              desc: 'Remove based on observations inside or outside a range of dates'
+            - name: Trim by Geographic Area
+              desc: 'Remove based on observations inside or outside the geographic region'
+            - name: Trim by Quantitative Threshold
+              desc: 'Remove based on observations above, below, equal to, or not equal to a quantitative value'
+            - name: Trim by Categorical Value
+              desc: 'Remove based on observations that do or do not contain specific a specific value'          
+    - name: Formulate a Performance Metric
+      desc: 'Calculate a quantitative variable'
+      sub:
+        - name: Assign Ranks
+          desc: 'Order observations explicitly as a variable'
+        - name: Standardize Variable
+          desc: 'Measure deviation from "normal," such as z-scores'
+        - name: Figure a Rate
+          desc: 'Calculate a normalized rate to provide a baseline for comparison'
+        - name: Calculate Change Over Time
+          desc: 'Calculate percentage change over time'
+        - name: Calculate Spread
+          desc: 'Calculate the difference between two values or rates'
+        - name: Domain-Specific Performance Metric
+          desc: 'Calculate a domain-specific metric'
+        - name: Get Extreme Values
+          desc: 'Calculate the highest or lowest values in a variable'
+- name: Transform
+  desc: 'Create or revise table variables based on existing variables, without *integrating* other tables'
+  sub:
+    - name: Reshape
+      alias: Reshape Table
+      desc: "Change the table's structure, without summarizing any data"
+      sub:
+        - name: Transpose
+          desc: 'Change places between rows and columns within a table or matrix'
+        - name: Cross Tabulate
+          desc: 'Create a pivot table or crosstab'        
+        - name: Spread Table
+          desc: 'Expand two columns of key value pairs into multiple columns'
+        - name: Gather
+          desc: 'Collapse table into key value pairs'
+        - name: Create a Flag
+          desc: 'Spread a categorical variable into multiple boolean variables'
+    - name: Modify Variables
+      desc: 'Change properties of variables within a dataset'
+      sub:
+        - name: Parse Variable
+          desc: 'Separate variables into multiple new variables using position or regular expressions'
+        - name: Consolidate Variables
+          desc: 'Combine two different variables into one composite variable'
+        - name: Replace Variable Levels
+          desc: 'Change the value of a level in a categorical variable to another value'          
+    - name: Summarize
+      desc: 'Aggregate observations to summarize a phenomenon; we consider this a structural change as it effectively coarsens the dataset'
+      sub:
+        - name: Group By Variable
+          desc: 'Group or partition by the levels of one or more categorical variables'
+        - name: Aggregate
+          desc: 'Aggregate quantitative values using functions such as sum, mean, median, or count'
+        - name: Rolling Window Calculation
+          desc: 'Perform rolling-window aggregation'
+    - name: Sort
+      desc: 'Order observations implicitly by position within a data structure'
+- name: Export
+  desc: 'Export the results of data wrangling either by writing results to disk or return data from a function'

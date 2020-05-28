@@ -1,0 +1,21 @@
+[1]S. Rogers, “A data journalism workflow,” Simon Rogers, Jan. 27, 2013. https://simonrogers.net/2013/01/27/a-data-journalism-workflow/ (accessed Apr. 16, 2020).
+[2]R. Tuchinda, P. Szekely, and C. A. Knoblock, “Building Mashups by example,” in Proceedings of the 13th international conference on Intelligent user interfaces - IUI ’08, Gran Canaria, Spain, 2008, p. 139, doi: 10.1145/1378773.1378792.
+[3]L. M. Haas, M. A. Hernández, H. Ho, L. Popa, and M. Roth, “Clio grows up: from research prototype to industrial tool,” in Proceedings of the 2005 ACM SIGMOD international conference on Management of data  - SIGMOD ’05, Baltimore, Maryland, 2005, p. 805, doi: 10.1145/1066157.1066252.
+[4]S. Cohen, J. T. Hamilton, and F. Turner, “Computational journalism,” Commun. ACM, vol. 54, no. 10, p. 66, Oct. 2011, doi: 10.1145/2001269.2001288.
+[5]B. Bradley, Data Wrangling with R, 1st ed. Springer International Publishing, 2016.
+[6]F. Endel and H. Piringer, “Data Wrangling: Making data useful again,” IFAC-PapersOnLine, vol. 48, no. 1, pp. 111–112, Jan. 2015, doi: 10.1016/j.ifacol.2015.05.197.
+[7]J. Lin, J. Wong, J. Nichols, A. Cypher, and T. A. Lau, “End-user programming of mashups with vegemite,” in Proceedingsc of the 13th international conference on Intelligent user interfaces - IUI ’09, Sanibel Island, Florida, USA, 2008, p. 97, doi: 10.1145/1502650.1502667.
+[8]S. Kandel, A. Paepcke, J. M. Hellerstein, and J. Heer, “Enterprise Data Analysis and Visualization: An Interview Study,” IEEE Trans. Visual. Comput. Graphics, vol. 18, no. 12, pp. 2917–2926, Dec. 2012, doi: 10.1109/TVCG.2012.219.
+[9]B. V. and D. Journalism, “How the BBC Visual and Data Journalism team works with graphics in R,” Medium, Feb. 01, 2019. https://medium.com/bbc-visual-and-data-journalism/how-the-bbc-visual-and-data-journalism-team-works-with-graphics-in-r-ed0b35693535 (accessed Apr. 16, 2020).
+[10]J. Wong and J. I. Hong, “Making mashups with marmite: towards end-user programming for the web,” in Proceedings of the SIGCHI Conference on Human Factors in Computing Systems  - CHI ’07, San Jose, California, USA, 2007, pp. 1435–1444, doi: 10.1145/1240624.1240842.
+[11]J. Dean and S. Ghemawat, “MapReduce: simplified data processing on large clusters,” Commun. ACM, vol. 51, no. 1, p. 107, Jan. 2008, doi: 10.1145/1327452.1327492.
+[12]A. Bigelow, C. Nobre, M. Meyer, and A. Lex, “Origraph: Interactive Network Wrangling,” in IEEE VAST, 2019, p. 12.
+[13]J. Heer and A. Perer, “Orion: A System for Modeling, Transformation and Visualization of Multidimensional Heterogeneous Networks,” in IEEE Visual Analytics Science and Technology, Providence, Rhode Island, USA, Oct. 2011, p. 10.
+[14]D. F. Huynh, R. C. Miller, and D. R. Karger, “Potluck: Data Mash-Up Tool for Casual Users,” Web Semant., vol. 6, no. 4, p. 14, Nov. 2008, doi: 10.1017/j.websem.2008.09.005.
+[15]T. Rattenburg, J. Hellerstein, J. Heer, S. Kandel, and C. Carreras, “Principles of Data Wrangling,” p. 94.
+[16]S. Kandel et al., “Research Directions in Data Wrangling: Visualizations and Transformations for Usable and Credible Data,” Information Visualization, vol. 10, no. 4, pp. 271–288, Oct. 2011, doi: 10.1177/1473871611415994.
+[17]N. Whitaker, “Taking the initiative with data journalism,” Google, Apr. 10, 2019. https://blog.google/outreach-initiatives/google-news-initiative/taking-initiative-data-journalism/ (accessed Apr. 17, 2020).
+[18]H. Wickham, “The Split-Apply-Combine Strategy for Data Analysis,” Journal of Statistical Software, vol. 40, no. 1, pp. 1–29, Apr. 2011, doi: 10.18637/jss.v040.i01.
+[19]H. Wickham, “Tidy Data,” Journal of Statistical Software, vol. 59, no. 1, pp. 1–23, Sep. 2014, doi: 10.18637/jss.v059.i10.
+[20]G. G. Robertson, M. P. Czerwinski, and J. E. Churchill, “Visualization of mappings between schemas,” in Proceedings of the SIGCHI conference on Human factors in computing systems  - CHI ’05, Portland, Oregon, USA, 2005, p. 431, doi: 10.1145/1054972.1055032.
+[21]S. Kandel, A. Paepcke, J. Hellerstein, and J. Heer, “Wrangler: interactive visual specification of data transformation scripts,” in Proceedings of the 2011 annual conference on Human factors in computing systems - CHI ’11, Vancouver, BC, Canada, 2011, p. 3363, doi: 10.1145/1978942.1979444.

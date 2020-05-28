@@ -8,7 +8,7 @@
 import codecs
 from pdfannots import pdfannots
 import pandas as pd
-import os, glob, re
+import os, glob, re, yaml
 from IPython.display import display, Markdown
 
 def getCodes():
@@ -55,3 +55,65 @@ def getCitations():
 def displayMarkdown(msg):
     """A shortcut function for displaying text as Markdown """
     return display(Markdown(msg))
+
+def getCodeset(fn):
+    """Parse YAML file into a codeset dataframe"""
+    with open(fn, 'r') as f:
+        code_yaml = yaml.safe_load(f)
+    
+    codes = []
+
+    def preTreeWalk(pNode, node, func, lvl=0):
+        """ A recursive, pre-order traversal of the code groups YAML structure"""
+        leaf = 'sub' not in node.keys()
+        func(pNode, node, lvl, leaf)
+        if not leaf:
+            for child in node['sub']:
+                preTreeWalk(node, child, func, lvl + 1)
+                
+#     def calcShortcode(prev, curr, lvl):
+#         """ Calculate the shortcode for this item """
+#         sc = None
+#         lvl_threshold = 1
+# #        alpha = [
+# #            []
+# #        ]
+        
+#         if lvl <= lvl_threshold:
+#             # Use code name's first character in shortcode
+#             if prev['level'] == lvl:
+#                 sc = prev.get('shortcode', '') + '.' + curr['name'][0]
+#             elif prev['level'] > lvl:
+#                 sc = prev.get('shortcode', '')[0:-1] + '.' + curr['name'][0]
+#             elif prev['level'] < lvl:
+#                 sc = prev.get('shortcode', '') + '.' + curr['name'][0]
+#         else:
+#             # Switch to alpha numeric categorization
+#             if prev['level'] == lvl:
+#                 sc = prev.get('shortcode', '')[0:-1] + str(int(curr['name'][0]) + 1)
+#             elif prev['level'] > lvl:
+#                 sc_stem = prev.get('shortcode', '')[0:-2]
+#                 sc = s_stemc + '.' + str(int(sc_stem[-1]) + 1)
+#             elif prev['level'] < lvl:
+#                 sc = prev.get('shortcode', '') + '.' + '1'
+        
+# # #        if c['level'] <= lvl_threshold:
+# #         sc = prev.get('shortcode', '') + '.' + curr['name'][0]
+# # #        else:
+# # #            sc = p['level'] + '.1'
+#         return sc.upper()
+
+    parseYaml = lambda parent, child, lvl, leaf: codes.append({
+        'parent': parent.get('name', '').lower(),
+        'name': child.get('alias', child['name']).lower(),
+        'desc': child['desc'],
+#        'shortcode': calcShortcode(codes[-1], child, lvl),
+        'level': lvl,
+        'is_leaf': leaf
+    })
+
+    for grp in code_yaml:
+        preTreeWalk({'name': 'root'}, grp, parseYaml)
+
+    codes = pd.DataFrame(codes)#[['parent', 'name', 'desc', 'level', 'is_leaf']]
+    return codes
