@@ -70,42 +70,10 @@ def getCodeset(fn):
         if not leaf:
             for child in node['sub']:
                 preTreeWalk(node, child, func, lvl + 1)
-                
-#     def calcShortcode(prev, curr, lvl):
-#         """ Calculate the shortcode for this item """
-#         sc = None
-#         lvl_threshold = 1
-# #        alpha = [
-# #            []
-# #        ]
-        
-#         if lvl <= lvl_threshold:
-#             # Use code name's first character in shortcode
-#             if prev['level'] == lvl:
-#                 sc = prev.get('shortcode', '') + '.' + curr['name'][0]
-#             elif prev['level'] > lvl:
-#                 sc = prev.get('shortcode', '')[0:-1] + '.' + curr['name'][0]
-#             elif prev['level'] < lvl:
-#                 sc = prev.get('shortcode', '') + '.' + curr['name'][0]
-#         else:
-#             # Switch to alpha numeric categorization
-#             if prev['level'] == lvl:
-#                 sc = prev.get('shortcode', '')[0:-1] + str(int(curr['name'][0]) + 1)
-#             elif prev['level'] > lvl:
-#                 sc_stem = prev.get('shortcode', '')[0:-2]
-#                 sc = s_stemc + '.' + str(int(sc_stem[-1]) + 1)
-#             elif prev['level'] < lvl:
-#                 sc = prev.get('shortcode', '') + '.' + '1'
-        
-# # #        if c['level'] <= lvl_threshold:
-# #         sc = prev.get('shortcode', '') + '.' + curr['name'][0]
-# # #        else:
-# # #            sc = p['level'] + '.1'
-#         return sc.upper()
 
     parseYaml = lambda parent, child, lvl, leaf: codes.append({
         'parent': parent.get('name', '').lower(),
-        'name': child.get('alias', child['name']).lower(),
+        'name': child.get('alias', child['name']),
         'desc': child['desc'],
 #        'shortcode': calcShortcode(codes[-1], child, lvl),
         'level': lvl,

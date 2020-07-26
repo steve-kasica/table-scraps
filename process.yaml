@@ -1,171 +1,174 @@
-- name: source
+- name: Source
   desc: 'Codes that describe how the raw data was obtained by journalists'
   sub:
-      - name: collect data
+      - name: Collect Data
         desc: 'Journalists are the initial data collector'
         sub:
-          - name: collect raw data
+          - name: Collect Raw Data
             desc: 'The journalist collected the raw data themselves.'
-          - name: Freedom of Information data
+          - name: Freedom of Information Data
             desc: 'Data that was obtained via FOI/FOIA requests'
-      - name: acquire data
+      - name: Acquire Data
         desc: 'Journalists acquired data from another party'
         sub:
-          - name: use previously cleaned data
+          - name: Use Previously Cleaned Data
             desc: 'Data that originated from a colleague'
-          - name: use public data
+          - name: Use Public Data
             desc: 'Includes open-source datasets, datasets on Wikipedia, etc'
-          - name: use academic data
+          - name: Use Academic Data
             desc: 'Use data collected from an academic study'
-          - name: use non-public, provided data
+          - name: Use Non-Public, Provided data
             desc: 'Use data that is not publically available'
           - name: govt data portal
-            alias: use open-government data portal
+            alias: Use Open-Government Data Portal
             desc: 'Data publically available on civic data portals'
-          - name: use another news orgs data
+          - name: Use Another News Orgs Data
+            alias: "Use Another News Organization's Data"
             desc: 'A dataset previously published by another news organization'
           - name: use data from colleague
+            alias: "Use a colleague's Data"
             desc: 'A dataset was provided by another journalist'
-- name: workflow
+- name: Workflow
   desc: 'Codes pertaining to how the wrangling workflow is built.'
   sub:
     - name: Annotations
       desc: 'Adding comments or notes in Markdown that explain what the journalists doing.'
     - name: Comp. processes
+      alias: 'Computational Process'
       desc: 'Codes that demonstrate computational thinking on the part of the journalist.'
       sub:
-        - name: construct a subroutine
+        - name: Construct a Subroutine
           desc: 'A set of instructions grouped together to be performed multiple times'
-        - name: construct data pipeline
+        - name: Construct Data Pipeline
           desc: 'An instance where one script is designed to handle multiple data sources. Often journalists construct subroutines and loops.'
-    - name: toggle operation
+    - name: Toggle Operation
       desc: 'Ensuring that some code segments are not always run, such as by commenting out lines of code'
-- name: cause
+- name: Cause
   desc: 'Based on the final output and comments, why does it seem like this data needs to be wrangled?'
   sub:
-    - name: downstream input
+    - name: Downstream Input
       desc: 'Output from wrangling will be input into some other program'
       sub:
-        - name: wrangle data for graphics
+        - name: Wrangle Data for Graphics
           desc: 'Data need to be formatted in order to be visualized in an article, including datasets.'
-        - name: wrangle data for model
+        - name: Wrangle Data for Model
           desc: 'Data is being wrangled in order to create a model, whether the main point of the piece is for prediction or classification'
-        - name: create new datasets
+        - name: Create New Datasets
           desc: 'These raw datasets are being wrangled in order to create a new dataset'
           sub:
-            - name: Combine periodic data
+            - name: Combine Periodic Data
               desc: 'Combine many separate datasets published over time into one dataset'
-            - name: Merge seemingly disparate datasets
+            - name: Merge Seemingly Disparate Datasets
               desc: 'When a notebook largely constitutes combining seemingly unrelated datasets'
-            - name: Geolocate dataset records
+            - name: Geolocate Dataset Records
               desc: 'Pairing data with GIS info'
-        - name: Generate high-level summary
+        - name: Generate High-Level Summary
           desc: 'Data of individual observations is aggregated in an attempt to find some meaningful structure or patterns'
-- name: themes
+- name: Themes
   desc: 'General themes for how data objects are transformed throughout the wrangling process'
   sub:
-    - name: divide and conquer
+    - name: Divide and Conquer
       desc: "Instances where the data wrangling processes separates one objects into smaller components"
       sub:
-        - name: split, compute, and merge
+        - name: Split, Compute, and Merge
           desc: 'First, the journalist partitions a single data frame into multiple, separate data frames. Then, often identical computations are run on all the data frame. Finally, the multiple data frames are consolidated into one data frame again'
-        - name: split and compute
+        - name: Split and Compute
           desc: 'One dataset is split into two or more and identical computations are applied to each dataset'      
-    - name: join aggregate
+    - name: Join Aggregate
       desc: 'When aggregated statistics about a dataset are added to the datasets as a variable, either columnwise or row-wise (as with `adorn_totals` in R)'      
-    - name: create a frequency table
+    - name: Create a Frequency Table
       desc: 'A table the displays the frequency of categorical variables within a column'
-    - name: trim fat
+    - name: Trim Fat
       desc: 'Trim the fat refers to when large amounts of observations or variables are removed from the dataset early in the wrangling processes, if not as the first step of wrangling. We infer that these sections are irrelevant to further analysis.'      
-    - name: align variables
+    - name: Align Variables
       desc: 'Modifying dataset variables to match each other, often prior to merging datasets.'          
-- name: analysis
+- name: Analysis
   desc: 'Kinds of analysis data journalists need to wrangle data to perform'
   sub:
     - name: interpret statistical/ML model
       alias: Interpret Model
       desc: 'Analyze features from a model such as linear regression or classification trees'
-    - name: compare groups
+    - name: Compare Groups
       desc: 'The end analysis is just comparing different groups by a common metric'
-    - name: identify extreme values
+    - name: Identify Extreme Values
       desc: 'Identify values that are at the ends of the range, but not strictly outliers'
-    - name: show trend over time
+    - name: Show Trend Over Time
       desc: 'Analysis consists of showing how values change over time'
-    - name: calculate a statistic
+    - name: Calculate a Statistic
       desc: 'Calculate a single value from a dataset, such as number of records'
-    - name: count the data
+    - name: Count the Data
       desc: 'Analysis involves count-based metrics on the datasets including percentages, with optional filtering and aggregation'
-    - name: Lookup table values
+    - name: Lookup Table Values
       desc: 'Analysis consists looking up values in a table'
-    - name: examine relationship
+    - name: Examine Relationship
       desc: 'Analysis consists of examining the relationship between different phenomena'
-    - name: explain variance
+    - name: Explain Variance
       desc: 'This can be done via PCA'
-    - name: search for clusters
+    - name: Search for Clusters
       desc: 'Look for groups within the data where its presence, or lack thereof, is significant'
-    - name: perform network analysis
+    - name: Perform Network Analysis
       desc: 'Journalists perform any kind of network analysis, such as finding all nearest neighbors in the network'
-    - name: explore dynamic network flow
+    - name: Explore Dynamic Network Flow
       desc: '(Network analysis) explore the flow between different nodes in the graph, e.g. migration between cities'
-    - name: Create lookup table
+    - name: Create Lookup Table
       desc: 'Make a table with two columns to map from one value to another'          
-    - name: aggregate join
+    - name: Aggregate Join
       desc: 'Aggregating a table and then joining those results to the original table'
-- name: management
+- name: Management
   desc: 'General strategies journalists for anaging data within the wrangling environment'
   sub:
-    - name: object persistence
+    - name: Object Persistence
       desc: 'How do journalists regard previous version of datasets after applying transformation functions?'
       sub:
-        - name: data evolves
+        - name: Data Evolves
           desc: 'Data and objects are overwritten and replaced during the wrangling process'
           sub:
-            - name: variable replacement
+            - name: Variable Replacement
               desc: 'The output of any column calculation is reassigned to an existing column'
-            - name: temporary joining column
+            - name: Temporary Joining Column
               desc: 'When a key for joining two datasets is created and deleted immediately after the join'
-            - name: refine table
-              desc: 'dataset refinement refers to when a table is subset in place, a new object is not created in the environment'
+            - name: Refine Table
+              desc: 'Dataset refinement refers to when a table is subset in place, a new object is not created in the environment'
         - name: preserve existing values
-          alias: data is precious
+          alias: Data is Precious
           desc: 'Previous "versions" of datasets, variables, and observations are left intact within the environment'
-    - name: data quality
+    - name: Data Quality
       desc: 'How journalits proceed when data may be incomplete, erroneous, or otherwise not 100% clean'
       sub:
-        - name: set data confidence threshold
+        - name: Set Data Confidence Threshold
           desc: 'Removes rows where a quantitative value is less than, greater than, or not equal to a numeric value'
-        - name: tolerate dirty data
+        - name: Tolerate Dirty Data
           desc: 'Analysis continues despite clear data quality issues'
-- name: pain points
+- name: Pain Points
   desc: 'Areas where journalist seem/could be frustrated in the wrangling process'
   sub:
-    - name: fix incorrect calculation
+    - name: Fix Incorrect Calculation
       desc: 'Calculations in the data are incorrect and the journalist must recalculate them'      
-    - name: repetitive code
+    - name: Repetitive Code
       desc: 'Instances where code is repetitively copied and pasted'
-    - name: make an incorrect conclusion
+    - name: Make an Incorrect Conclusion
       desc: 'Instances where the journalist has made an incorrect conclusion about the data'
-    - name: post-merge clean up
+    - name: Post-Merge Clean Up
       desc: 'Pain points that come from the result of merging two datasets together'
       sub:
-        - name: resort after merge
+        - name: Resort after Merge
           desc: 'When a sort has to be re-done because a merge ruining the pre-merged order'
-        - name: fill in NA values after an outer join
+        - name: Fill in NA Values After an Outer Join
           desc: 'As outer joins do not drop non-matching rows, those values have NA'
-        - name: lossy join
+        - name: Lossy Join
           desc: 'When data is lost after integrating two tables'
-        - name: remove duplicate variables
+        - name: Remove Duplicate Variables
           desc: 'Two tables may have duplicate variables and duplicate variables need to be removed'
-    - name: post-aggregation clean up
+    - name: Post-Aggregation Clean Up
       desc: 'Pain points that come from the result of grouping a table'
       sub:
-        - name: data loss from aggregation
+        - name: Data Loss from Aggregation
           desc: 'When table columns are lost because they were dropped form resulting dataset due to not being relevant in aggregation'
-        - name: silently dropping values after groupby
+        - name: Silently Dropping Values After Groupby
           desc: 'Values other than those being grouped and calculated upon are lost in a group-by operation'
-    - name: data too large for repo
+    - name: Data too Large for Repo
       desc: 'Raw data cannot be included because files are too large'
-    - name: schema drift
+    - name: Schema Drift
       desc: 'When the schema of a perennially published datasets varies from edition to edition'
-    - name: data type shyness
+    - name: Data Type Shyness
       desc: 'Users often seem to avoid using built in data types'
