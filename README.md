@@ -1,4 +1,6 @@
-# Data Wrangling in Journalism
+# Table Scraps
+
+## An Actionable Framework for Multi-Table DataWrangling From An Artifact Study of Computational Journalism
 
 In the spirit of journalistic transparency, many journalists publish the data and code behind the data-driven articles and graphics. One popular location for hosting this supplementary material is [GitHub](https://github.com/about), a website that provides hosting for software development and data science using a distributed source code management system called [Git](https://git-scm.com/about). The public availability of this data analysis material presents an opportunity for qualitative analysis of the kinds of data wrangling processes data journalists perform *in the wild.*
 
