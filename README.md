@@ -1,7 +1,8 @@
-# Table Scraps
-An Actionable Framework for Multi-Table Data Wrangling From An Artifact Study of Computational Journalism
+# Table Scraps: An Actionable Framework for Multi-Table Data Wrangling From An Artifact Study of Computational Journalism
 
-In the spirit of journalistic transparency, many journalists publish the data and code behind the data-driven articles and graphics. One popular location for hosting this supplementary material is [GitHub](https://github.com/about), a website that provides hosting for software development and data science using a distributed source code management system called [Git](https://git-scm.com/about). The public availability of this data analysis material presents an opportunity for qualitative analysis of the kinds of data wrangling processes data journalists perform *in the wild.*
+## Abstract
+
+For the many journalists who use data and computation to report the news, data wrangling is an integral part of their work.Despite an abundance of literature on data wrangling in the context of enterprise data analysis, little is known about the specificoperations, processes, and pain points journalists encounter while performing this tedious, time-consuming task. To better understandthe needs of this user group, we conduct a technical observation study of 50 public repositories of data and analysis code authoredby 33 professional journalists at 26 news organizations. We develop two detailed and cross-cutting taxonomies of data wrangling incomputational journalism, for actions and for processes. We observe the extensive use of multiple tables, a notable gap in previouswrangling analyses.  We develop a concise, actionable framework for general multi-table data wrangling that includes wranglingoperations documented in our taxonomy that are without clear parallels in other work. This framework, the first to incorporate tablesas first-class objects, will support future interactive wrangling tools for both computational journalism and general-purpose use. Weassess the generative and descriptive power of our framework through discussion of its relationship to our set of taxonomies.
 
 ## Journalist notebooks included in open-coding analysis
 
